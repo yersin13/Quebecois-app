@@ -1,9 +1,9 @@
-import { IonAvatar, IonButton, IonCard, IonCardContent, IonCardTitle, IonContent, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonPage, IonText, IonThumbnail, IonTitle, IonToolbar } from '@ionic/react';
+import { IonAvatar, IonButton, IonCard, IonCardContent, IonCardTitle, IonContent, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonPage, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import { entriesHome } from '../data-home';
 import { closeCircle } from 'ionicons/icons'
 import './Home.css';
-
+import { home as homeIcon, settings as settingsIcon, planetOutline as planetIcon } from 'ionicons/icons'
 const Home: React.FC = () => {
   return (
     <IonPage>
@@ -20,15 +20,11 @@ const Home: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent className="ion-padding home-content">
-        <IonHeader collapse="condense">
-          {/* <IonToolbar>
-            <IonTitle size="large">Blank</IonTitle>
-          </IonToolbar> */}
-        </IonHeader>
+       
         <IonList className="home-list">
           {entriesHome.map((entry)=>
             <IonCard className="home-card">
-<IonItem button routerLink="" className="home-item" lines="none">
+<IonItem button routerLink={entry.route} className="home-item" lines="none">
 
             <IonThumbnail className="home-thumbnail" slot="end">
               <IonImg className="home-item-img" src={entry.src}  />
@@ -44,7 +40,19 @@ const Home: React.FC = () => {
           
         
         </IonList>
+       
       </IonContent>
+      <IonTabBar slot="bottom">
+<IonTabButton tab="profile"  href="/home" >
+    <IonIcon className="icons" icon={homeIcon} />
+    <IonLabel className="label">Home</IonLabel>
+  </IonTabButton>
+  
+  <IonTabButton tab="settings" href="/test" >
+  <IonIcon className="icons" icon={settingsIcon} />
+    <IonLabel className="label">Settings</IonLabel>
+  </IonTabButton>
+</IonTabBar>
     </IonPage>
   );
 };

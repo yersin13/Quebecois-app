@@ -1,0 +1,39 @@
+*{
+    /* font-family:; */
+}
+h3{
+    font:bold;
+    padding-right: 5px;
+}
+.logo{
+    width: 10%;
+    height: 10%;
+    /* padding-left: ; */
+    align-content: center;
+    justify-self: center;
+    justify-content: center;
+    
+}
+.overview-item-img{
+     border-radius:15px;
+}
+.toolbar-div{
+display: flex;
+justify-content: center;
+/* align-content: center; */
+
+align-items:center;
+
+ 
+}
+
+.overview-content-text{
+    color:white;
+}
+.overview-title{
+    color :white;
+}
+.overview-card{
+    background-color: #001f97;
+    border-radius: 10px;
+}
