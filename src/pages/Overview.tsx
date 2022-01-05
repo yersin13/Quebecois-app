@@ -21,13 +21,13 @@ const Overview: React.FC = () => {
       <IonContent>
       <IonList className="overview-list">
           
-            <IonCard className="overview-card">
+            <IonCard className="card-item">
 
               
       
          <IonCardHeader>
            <IonCardTitle>
-             <h3  className="overview-title">   An Overview of Quebecois Slang </h3>
+             <h3  className="overview-title ">   An Overview of Quebecois Slang </h3>
              <img className="overview-item-img" src="./assets/overview.jpg"  />
              
            </IonCardTitle>
@@ -55,6 +55,7 @@ const Overview: React.FC = () => {
           
         
         </IonList>
+        
       </IonContent>
       <IonTabBar slot="bottom">
 <IonTabButton tab="profile"  href="/home" >
@@ -62,10 +63,10 @@ const Overview: React.FC = () => {
     <IonLabel className="label">Home</IonLabel>
   </IonTabButton>
   
-  <IonTabButton tab="settings" href="/settings" >
+  {/* <IonTabButton tab="settings" href="/settings" >
   <IonIcon className="icons" icon={settingsIcon} />
     <IonLabel className="label">Settings</IonLabel>
-  </IonTabButton>
+  </IonTabButton> */}
 </IonTabBar>
     </IonPage>
   );

@@ -28,12 +28,12 @@ align-items:center;
 }
 
 .overview-content-text{
-    color:white;
+    color:#001f97;
 }
 .overview-title{
-    color :white;
+    color :#001f97;
 }
-.overview-card{
-    background-color: #001f97;
+.card{
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
 }

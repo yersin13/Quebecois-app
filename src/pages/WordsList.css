@@ -1,0 +1,29 @@
+.expressions-text{
+    color:#001f97;
+}
+.expressions-search{
+    color: #001f97;
+    /* background-color: #rrggbbaa; */
+    /* color:white; */
+}
+
+.expressions-img{
+    border-radius: 10px;
+}
+.sub-logo{
+    width: 70px;
+    height: 40px;
+}
+.div-sub-logo{
+    display: flex;
+    height: 50px;
+    width: 250px;
+    justify-content: center;
+    padding-left: 10px;
+    justify-content: space-between;
+}
+.sub-logo-expression{
+    height: 10px;
+    width: 20px;
+    padding-right: 2px;
+}

@@ -1,0 +1,79 @@
+.answer-text{
+  color: white;
+}
+.example{
+  color: grey;
+  font-style: italic;
+  font-size: 13px;
+}
+.trivia-name{
+  color:#001f97;
+  justify-content: center;
+  text-align: center;
+
+}
+.item-answer{
+  background-color: #001f97;
+}
+.incorrect-answer{
+  color: red;
+  /* justify-content: center; */
+  text-align: center;
+
+}
+.alert-md .alert-message {
+  background: red;
+}
+ion-alert{
+  --background: #801ce4;
+}
+.alert .alert-wrapper{
+  background-color: rgba(255, 0, 0, 0.904);
+height: 100px;
+width: 300px;
+justify-content: center;
+ 
+}
+
+.alert .alert-message{
+  text-align: center;
+  align-items: center;
+}
+
+/* .alert{
+  background-color: rgba(255, 0, 0, 0.1);
+} */
+.alert .alert-title{
+  text-align: center;
+}
+
+.overview-item-img{
+  height: 100px;
+}
+
+.counter{
+  justify-content: space-between;
+  display: flex;
+}
+.question-text{
+  padding: none;
+  margin:none;
+}
+.icons-answers{
+  /* padding: 10px; */
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 30px;
+  width:30px;
+}
+.answer-thumbnail{
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.question-title{
+  color: #001f97;
+}

@@ -67,12 +67,18 @@
 
   --ion-item-background: #rrggbbaa;
 
-  --ion-toolbar-background: #001f97;
+  
+  /* --ion-toolbar-background: #001f97; */
+  --ion-toolbar-background: #rrggbbaa;
 
   --ion-tab-bar-background: #001f97;
 
-  --ion-background-color:rgb(230, 231, 240);
-
+  /* --ion-background-color:#001f97; */
+  /* --ion-background-color:#007FFF; */
+  --ion-background-color:rgba(255, 255, 255, 0.938);
+  /* --ion-background-color:#b8d9f8; */
+  /* --ion-background-color:#b6bfe4; */
+  /* --ion-text-color: #ffffff; */
   --ion-text-color: #ffffff;
   --ion-text-color-rgb: 255,255,255;
   --ion-toolbar-segment-color-checked:yellow;
@@ -80,10 +86,26 @@
   
 }
 .icons, .label{
-  color:white;
+  color:rgb(255, 255, 255);
   /* opacity: 0.5; */
 }
-*{
-  /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+
+.card{
+  background-color: #001f97;
 }
 
+
+.font{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* font-family: 'Montserrat', sans-serif; */
+  /* font-family: 'Montserrat', sans-serif; */
+font-size: 20px;
+
+}
+
+.card-item{
+  background-color: white;
+}
+.font-family{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

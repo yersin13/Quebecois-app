@@ -1,39 +1,76 @@
 *{
-    font-family:;
+    /* font-family:; */
 }
-h3{
-    font:bold;
-    padding-right: 5px;
+h3, h4 ,h1, h5, h6{
+   font:bold;
+    /* padding-right: 5px;  */
+    /* color: #001f97; */
 }
-.logo{
-    width: 10%;
-    height: 10%;
+.logo-toolbar{
+  
     /* padding-left: ; */
     align-content: center;
     justify-self: center;
     justify-content: center;
+   height: fit-content;
+
     
 }
+.home-logo{
+  height: 10%;
+  width: 10%;
+  border-radius: 10px;
+  justify-content: center;
+  align-content: center;
+}
+
+.home-div-logo{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.home-text-logo{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0;
+    padding-right: 7px;
+ font-size: 25px;
+    margin: 0;
+    color: #001f97;
+    /* color:white; */
+    font: bold;
+    text-align: center;
+    text-align: center;
+}
+
 .toolbar-div{
 display: flex;
 justify-content: center;
-/* align-content: center; */
-
+align-content: center;
+/* height: 10%; */
+/* width: fit-content; */
+  height: 50%;
 align-items:center;
 
  
 }
 .home-title{
-    color: #001f97;
+  
+    padding: 0;
+    margin: 0;
+    color: white;
     font: bold;
     text-align: center;
-    font-size: 25px;
+    /* font-size: 25px; */
 }
 
 .home-item-img{
     border-radius: 10px;
- 
-     
+ /* height: 50%; */
+ width: 40%;
+     /* padding-left: 10px; */
+     margin: 0;
    }
 .home-content{
     align-content: space-between;
@@ -64,13 +101,59 @@ align-items:center;
      background-color: transparent;
      
    }
+   /* #001f97 */
 .home-card{
-    background-color: #001f97;
+    /* background-color:rgb(255, 255, 255); */
     border-radius: 10px;
+    padding: 0;
+    margin: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+   
 }
 .home-text{
     font-size: 14px;
     opacity: 0.8;
+    color: #001f97;
     /* text-shadow: tomato; */
     /* word-spacing: 0.05rem; */
 }
+
+.background-image{
+    background-image: url('/src/overview.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.div-card-home{
+    display: flex;
+}
+
+.image-home{
+
+border-radius: 10px;
+
+}
+
+.home-random-title {
+    color:#001f97;
+    /* color: #001f97; */
+    padding: 0;
+    padding-bottom: 3px;
+    margin: 0;
+    text-align: center;
+}
+.home-random-text{
+    color:#001f97;
+    /* color: #001f97; */
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.card-random{
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
