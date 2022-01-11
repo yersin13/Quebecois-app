@@ -21,9 +21,12 @@ const CornerMusic: React.FC = () => {
       </IonHeader>
       <IonContent>
       <IonList className="music-list">
-
+<div className='div-text-music'>
+<p className='text-music'>Being a modern cosmopolitan society, today, all types of music can be found in Quebec. From folk music to hip hop, music has always played an important role in Quebercers culture. From La Bolduc in the 1920s–1930s to the contemporary artists, the music in Quebec has produced multiple songwriters, pop singers, crooners and music groups.</p>
+</div>
         {music.map((entry)=>
         <div>
+          
            {/* <h5 className='music-genre'>{entry.name}</h5>
             <p className='music-genre '>Genre: {entry.genre}</p> */}
           <IonCard className="card-music" >

@@ -96,7 +96,7 @@
 
 
 .font{
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
   /* font-family: 'Montserrat', sans-serif; */
   /* font-family: 'Montserrat', sans-serif; */
 font-size: 20px;
@@ -107,5 +107,14 @@ font-size: 20px;
   background-color: white;
 }
 .font-family{
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
 }
+
+*{
+  /* font-family: 'Amiri', serif; */
+  font-family: 'Mulish', sans-serif;
+}
+/* h1,h2,h3,h4,h5,h6{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+} */

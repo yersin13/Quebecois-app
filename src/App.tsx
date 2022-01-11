@@ -17,7 +17,10 @@ import FrenchGame from './pages/Game/FrenchGame';
 import Corner from './corner/Corner';
 import CornerMusic from './corner/CornerMusic';
 import FilmsCorner from './corner/FilmsCorner';
-
+import Film from './corner/Film'
+import FoodCorner from './corner/FoodCorner';
+import Food from './corner/Food';
+import MemesCorner from './corner/MemesCorner';
 
 
 
@@ -40,8 +43,24 @@ const App: React.FC = () => (
         <Route exact path="/corner-music">
         <CornerMusic />
         </Route>
+
+        <Route exact path="/corner-food">
+        <FoodCorner />
+        </Route>
+        <Route exact path="/corner-food/:id">
+        <Food />
+        </Route>
+
         <Route exact path="/corner-films">
         <FilmsCorner />
+        </Route>
+
+        <Route exact path="/corner-memes">
+        <MemesCorner />
+        </Route>
+        
+    <Route exact path="/corner-films/:id">
+        <Film />
         </Route>
 
         <Route exact path="/expressions-list">

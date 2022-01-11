@@ -4,7 +4,7 @@ import { entriesHome } from '../data-home';
 import { closeCircle } from 'ionicons/icons'
 import { home as homeIcon, settings as settingsIcon, planetOutline as planetIcon } from 'ionicons/icons'
 import './Corner.css';
-
+import { useParams } from 'react-router';
 import { films } from '../data-films';
 
 
@@ -13,7 +13,13 @@ const slideOpts = {
   speed: 400
 };
 
-const FilmsCorner: React.FC = () => {
+interface RouteParams {
+  id: string;
+}
+
+
+const Film: React.FC = () => {
+  const { id } = useParams<RouteParams>();
   return (
     <IonPage>
       <IonHeader>
@@ -27,29 +33,29 @@ const FilmsCorner: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent>
-        <IonList className="music-list">\
-
-   {films.map((entry)=>
-<IonItem button routerLink={`/corner-films/${entry.id}`}  lines="none" className="item-films-corner">
-<h3 className='text-films-corner'>{entry.name}</h3>
-</IonItem>
-   )}
-      {/* <div className='div-films'>
+        <IonList className="music-list">
+{films.filter((entry) => {
+            if (entry.id === id)
+              return entry
+          }).map((entry) =>
+  
+      <div className='div-films'>
  
              
      
- <h3 className='text-film'>Louis Cyr: l’homme le plus fort du monde (Louis Cyr)</h3>
+ <h3 className='text-film'>{entry.name}</h3>
  
-     <p className='text-film '>Genre: Comedy/Sports</p>
+     <p className='text-film '>{entry.genre}</p>
      
-     <p className='text-film '>Region: Quebec.</p>
+     <p className='text-film '>{entry.region}</p>
      
-     <p className='text-film '>In the late 19th century, after years of delighting crowds with astounding feats of strength, Louis Cyr was considered the strongest man in the world. Based on his true story, this charming biopic recounts the many successes, heartbreaks and obstacles — both inside and out of the athletic arena — that Louis (Bertrand) faced on his climb from obscurity to international fame. Louis’ best friend recounts the story to the strongman’s estranged daughter — from Louis’ poverty-stricken childhood through the ups and downs of his circus career — and shares with us the fascinating life of this Quebec hero. </p>
+     <p className='text-film '>{entry.sinopsys} </p>
 
-<iframe className='film-video' width="100%" height="300px" src="https://www.youtube.com/embed/BXHkxpqMsHU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+<iframe className='film-video' width="100%" height="300px" src={entry.src} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 </div>
-  
+          )}
+{/*   
       <div className='div-films'>
  
              
@@ -105,4 +111,4 @@ The film was short-listed for the Best Foreign Language Film Oscar. </p>
   );
 };
 
-export default FilmsCorner;
+export default Film;
