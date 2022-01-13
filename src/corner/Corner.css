@@ -57,9 +57,19 @@ height:120px;
 .text-music{
     color:#001f97;
 }
+.text-music-item{
+    color:#001f97;
+    text-align: center;
+    margin:0;
+}
 .div-text-music{
     padding-right: 10px;
     padding-left: 10px;
+}
+.iframe-music{
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 .music-genre{
     color:#ffffff;
@@ -69,17 +79,17 @@ height:120px;
     margin: 0;
 }
 .text-film{
-    color:#001f97;
+    color:#5d5f68;
     /* margin-bottom: 10px; */
 }
 
 .item-films-corner{
-    background-color:#001f97;
+    background-color:#a7b6f321;
     /* padding:10px; */
     margin:10px;
     border-radius:10px;
 }
 
 .text-films-corner{
-    color:white;
+    color:#001f97;
 }

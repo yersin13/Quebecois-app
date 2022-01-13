@@ -1,6 +1,6 @@
 import { IonAlert, IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonChip, IonContent, IonFooter, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonPage, IonSearchbar, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToolbar, useIonLoading } from '@ionic/react';
 import ExploreContainer from '../../components/ExploreContainer';
-import { home as homeIcon, settings as settingsIcon, planetOutline as planetIcon, pin, checkboxOutline, closeCircleOutline } from 'ionicons/icons'
+import { home as homeIcon, settings as settingsIcon, planetOutline as planetIcon, pin, checkboxOutline, closeCircleOutline, skullOutline, checkmarkCircleOutline } from 'ionicons/icons'
 import './Game.css';
 import { questionsFrench } from '../../data-french-game';
 
@@ -15,7 +15,6 @@ interface RouteParams {
 
 
 const FrenchGame: React.FC = () => {
-
 
   const [present, dismiss] = useIonLoading();
 
@@ -37,71 +36,97 @@ const FrenchGame: React.FC = () => {
   const [finish, setFinish] = useState(false);
 
   // score
-const [keepScore, setKeepScore]= useState(0);
-const [finalScore, setFinalScore] = useState(0)
-const [haveAnswered, setHaveAnswered] = useState(true);
-  // questionsFrench.length
+  const [keepScore, setKeepScore] = useState(0);
+  const [finalScore, setFinalScore] = useState(0)
+  const [haveAnswered, setHaveAnswered] = useState(true);
+  const [light1, setLight1] = useState(false);
+  const [light2, setLight2] = useState(false);
+  const [light3, setLight3] = useState(false);
+  const [light4, setLight4] = useState(false);
+  const [light5, setLight5] = useState(false);
+
+  const [icon1, setIcon1] = useState(false);
+  const [icon2, setIcon2] = useState(false);
+  const [icon3, setIcon3] = useState(false);
+  const [icon4, setIcon4] = useState(false);
+  const [icon5, setIcon5] = useState(false);
+  // questions.length
 
 
   const [percentages, setPercentages] = useState(0);
   const handleAnswerOptionClick1 = (isCorrect: boolean, answer1: any) => {
- 
+
     setHaveAnswered1(true)
+   
 
     if (isCorrect) {
-     
+      renderChecksWin()
       setCorrect(true)
-setKeepScore(1)   
+      setKeepScore(1)
       setColor1(true)
+      
+         
     }
 
     else {
       setColor1(false)
+      renderChecksFail()
     }
   };
   const handleAnswerOptionClick2 = (isCorrect: boolean, answer2: any) => {
 
     setHaveAnswered2(true)
-
+    
+    
     if (isCorrect) {
-
+      renderChecksWin()
       setCorrect(true)
-setKeepScore(1)   
+      setKeepScore(1)
       setColor2(true)
+      
+
     }
 
     else {
       setColor2(false)
+      renderChecksFail()
     }
   };
   const handleAnswerOptionClick3 = (isCorrect: boolean, answer3: any) => {
 
     setHaveAnswered3(true)
-
+    
     if (isCorrect) {
-
+      renderChecksWin()
       setCorrect(true)
-setKeepScore(1)   
+      setKeepScore(1)
       setColor3(true)
+
+     
     }
 
     else {
       setColor3(false)
+      renderChecksFail()
     }
   };
   const handleAnswerOptionClick4 = (isCorrect: boolean, answer4: any) => {
 
     setHaveAnswered4(true)
-
+  
+   
     if (isCorrect) {
-
+      renderChecksWin()
       setCorrect(true)
-setKeepScore(1)   
+      setKeepScore(1)
       setColor4(true)
+     
+      
     }
 
     else {
       setColor4(false)
+      renderChecksFail()
     }
   };
 
@@ -109,9 +134,9 @@ setKeepScore(1)
 
   const handleNextQuestion = () => {
     setCounter(counter + 1)
-    if (counter < 10) {
+    if (counter < 5) {
       const nextQuestion = Math.floor(Math.random() * questionsFrench.length)
-      // console.log(nextQuestion)
+  
       setCurrentQuestion(nextQuestion);
       setHaveAnswered1(false)
       setHaveAnswered2(false)
@@ -124,13 +149,16 @@ setKeepScore(1)
       setColor3(false)
       setColor4(false)
 
+
       setKeepScore(0)
       setHaveAnswered(true)
-      console.log(finalScore)
+     
+      
     } else {
       setFinish(true)
-      console.log(finalScore)
+     
       percentage()
+    
     }
 
 
@@ -139,61 +167,116 @@ setKeepScore(1)
 
   const keepPlaying = () => {
 
-    const nextQuestion = Math.floor(Math.random() * questionsFrench.length)
+    
     // console.log(nextQuestion)
-    setCurrentQuestion(nextQuestion);
+
     setHaveAnswered1(false)
     setHaveAnswered2(false)
     setHaveAnswered3(false)
     setHaveAnswered4(false)
+
+    setIcon1(false)
+    setIcon2(false)
+    setIcon3(false)
+    setIcon4(false)
+    setIcon5(false)
+
+    setLight1(false)
+    setLight2(false)
+    setLight3(false)
+    setLight4(false)
+    setLight5(false)
 
     setCorrect(false)
     setColor1(false)
     setColor2(false)
     setColor3(false)
     setColor4(false)
-    setCounter(0);
+    
     setFinish(false)
-
+    setCounter(1);
+   
+    setHaveAnswered(true)
+setKeepScore(0)
     setFinalScore(0)
+   
+    const nextQuestion = Math.floor(Math.random() * questionsFrench.length)
+    setCurrentQuestion(nextQuestion);
   }
 
-  
 
-    // const divRef = useRef(null);
-    useEffect(() => {
-    if(haveAnswered1 && haveAnswered){
-      setFinalScore( finalScore + keepScore)
-      
+
+  // const divRef = useRef(null);
+  useEffect(() => {
+    if (haveAnswered1 && haveAnswered) {
+      setFinalScore(finalScore + keepScore)
+       renderChecksWin()
+       renderChecksFail()
       setHaveAnswered(false)
-    }if(haveAnswered2 && haveAnswered ){
-      setFinalScore( finalScore + keepScore)
-      
+    } if (haveAnswered2 && haveAnswered) {
+      setFinalScore(finalScore + keepScore)
+      renderChecksWin()
+      renderChecksFail()
       setHaveAnswered(false)
-    }if(haveAnswered3 && haveAnswered){
-      setFinalScore( finalScore + keepScore)
-      
+    } if (haveAnswered3 && haveAnswered) {
+      setFinalScore(finalScore + keepScore)
+      renderChecksWin()
+      renderChecksFail()
       setHaveAnswered(false)
-    }if(haveAnswered4 && haveAnswered){
-      setFinalScore( finalScore + keepScore)
-      
+    } if (haveAnswered4 && haveAnswered) {
+      setFinalScore(finalScore + keepScore)
+      renderChecksWin()
+      renderChecksFail()
       setHaveAnswered(false)
     }
-    });
+  });
 
+ const renderChecksFail = ()=>{
+   if (counter==1 && keepScore===0){
+ setLight1(true)
+ setIcon1(true)
+   }if (counter==2 && keepScore===0){
+    setLight2(true)
+    setIcon2(true)
+   }if (counter==3 && keepScore===0){
+    setLight3(true)
+    setIcon3(true)
+  }if (counter==4 && keepScore===0){
+    setLight4(true)
+    setIcon4(true)
+  }if (counter==5 && keepScore===0){
+    setLight5(true)
+    setIcon5(true)
+  }
+ }
 
- 
-
-  
-
-const percentage = ()=>{
- 
-  const total = 10
-  const divide= finalScore
-  setPercentages((100 * divide) / total)
-
+ const renderChecksWin = ()=>{
+  if (counter==1 && keepScore===1){
+    setLight1(false)
+setIcon1(true)
+  }if (counter==2 && keepScore===1){
+    setLight2(false)
+   setIcon2(true)
+  }if (counter==3 && keepScore===1){
+    setLight3(false)
+   setIcon3(true)
+ }if (counter==4 && keepScore===1){
+  setLight4(false)
+   setIcon4(true)
+ }if (counter==5 && keepScore===1){
+  setLight5(false)
+   setIcon5(true)
+ }
 }
 
+
+  const percentage = () => {
+
+    const total = 5
+    const divide = finalScore
+    setPercentages((100 * divide) / total)
+
+  }
   
 
 
@@ -242,7 +325,7 @@ const percentage = ()=>{
                         <h5 className='question-text question-title'>Good work</h5>
                       </IonItem>
 
-                      <h3>{finalScore}/10</h3>
+                      <h3>{finalScore}/5</h3>
                       <h3>{percentages}%</h3>
 
                     </div>
@@ -264,6 +347,14 @@ const percentage = ()=>{
 
 
                   <div className='question-section'>
+                  <IonItem lines="none">
+  
+  {icon1 ? (light1 ? <IonIcon className="icons-answers-fail" icon={skullOutline} /> : <IonIcon className="icons-answers-win" icon={checkmarkCircleOutline} />) : ""}
+   {icon2 ? (light2 ? <IonIcon className="icons-answers-fail" icon={skullOutline} /> : <IonIcon className="icons-answers-win" icon={checkmarkCircleOutline} />) : ""}
+   {icon3 ? (light3 ? <IonIcon className="icons-answers-fail" icon={skullOutline} /> : <IonIcon className="icons-answers-win" icon={checkmarkCircleOutline} />) : ""}
+   {icon4 ? (light4 ? <IonIcon className="icons-answers-fail" icon={skullOutline} /> : <IonIcon className="icons-answers-win" icon={checkmarkCircleOutline} />) : ""}
+   {icon5 ? (light5 ? <IonIcon className="icons-answers-fail" icon={skullOutline} /> : <IonIcon className="icons-answers-win" icon={checkmarkCircleOutline} />) : ""}
+</IonItem>
 
 
 
@@ -351,7 +442,7 @@ const percentage = ()=>{
                     : <p></p>}
                   <IonThumbnail >
                     <IonChip >
-                      <IonLabel color="primary">{counter}/10</IonLabel>
+                      <IonLabel color="primary">{counter}/5</IonLabel>
                     </IonChip>
                   </IonThumbnail>
                 </IonCard>
@@ -363,17 +454,7 @@ const percentage = ()=>{
 
 
       </IonContent>
-      {/* <IonTabBar slot="bottom">
-      <IonTabButton tab="profile" href="/home" >
-        <IonIcon className="icons" icon={homeIcon} />
-        <IonLabel className="label">Home</IonLabel>
-      </IonTabButton> */}
-
-      {/* <IonTabButton tab="settings" href="/settings" >
-        <IonIcon className="icons" icon={settingsIcon} />
-        <IonLabel className="label">Settings</IonLabel>
-      </IonTabButton> */}
-      {/* </IonTabBar> */}
+ 
 
     </IonPage>
   );

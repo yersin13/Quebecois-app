@@ -67,6 +67,28 @@ justify-content: center;
   height: 30px;
   width:30px;
 }
+.red{
+  color:red;
+}
+
+.icons-answers-win{
+  color:#32CD30;
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 30px;
+  width:30px;
+  text-align: end;
+}
+.icons-answers-fail{
+  color:#DC143C;
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 30px;
+  width:30px;
+  text-align: end;
+}
 .answer-thumbnail{
   justify-content: center;
   align-items: center;
