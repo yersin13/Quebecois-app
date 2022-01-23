@@ -45,9 +45,7 @@ const Film: React.FC = () => {
      
  <h3 className='text-film'>{entry.name}</h3>
  
-     <p className='text-film '>{entry.genre}</p>
-     
-     <p className='text-film '>{entry.region}</p>
+
      
      <p className='text-film '>{entry.sinopsys} </p>
 

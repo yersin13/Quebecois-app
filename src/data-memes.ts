@@ -1,80 +1,80 @@
 export const memes =[
     
   {
-        id: '1',
+        id: 'meme1',
         src: './assets/memes/meme1.jpeg ',
     },
     {
-        id: '2',
+        id: 'meme2',
         src: './assets/memes/meme2.jpeg ',
     },
     {
-        id: '3',
+        id: 'meme3',
         src: './assets/memes/meme3.jpeg ',
     },
     {
-        id: '4',
+        id: 'meme4',
         src: './assets/memes/meme4.jpeg ',
     },
     {
-        id: '5',
+        id: 'meme5',
         src: './assets/memes/meme5.jpeg ',
     },
     {
-        id: '6',  
+        id: 'meme6',  
         src: './assets/memes/meme6.jpeg ',
     },
   
     {
-        id: '8',
+        id: 'meme8',
         src: './assets/memes/meme8.jpg ',
     },
     {
-        id: '9',
+        id: 'meme9',
         src: './assets/memes/meme9.jpeg ',
     },
     {
-        id: '10',
+        id: 'meme10',
         src: './assets/memes/meme10.jpg ',
     },
     {
-        id: '11',
+        id: 'meme11',
         src: './assets/memes/meme11.jpeg ',
     },
     {
-        id: '12',
+        id: 'meme12',
         src: './assets/memes/meme12.jpg ',
     },
     {
-        id: '13',
+        id: 'meme13',
         src: './assets/memes/meme13.jpeg ',
     },
     {
-        id: '14 ',
+        id: 'meme14 ',
         src: './assets/memes/meme14.jpg ',
     },
     {
-        id: ' 15',
+        id: ' meme15',
         src: './assets/memes/meme15.jpeg ',
     },
     {
-        id: '16 ',
+        id: 'meme16 ',
         src: './assets/memes/meme16.jpeg ',
     },
     {
-        id: '17 ',
+        id: 'meme17 ',
         src: './assets/memes/meme17.jpg ',
     },
     {
-        id: '18 ',
+        id: 'meme18 ',
         src: './assets/memes/meme18.jpeg ',
     },
     {
-        id: '19 ',
+        id: 'meme19 ',
         src: './assets/memes/meme19.jpeg ',
     },
     {
-        id: '20 ',
+        id: 'meme20 ',
         src: './assets/memes/meme20.jpeg ',
     },
 

@@ -48,12 +48,12 @@ const Expressions: React.FC = () => {
                 <br />
                 
                 <audio controls >
-                  <source src={entry.src}></source>
+                 {entry.src? <source src={entry.src}></source>:"no"} 
                 </audio>
 
                 <br />
                 <br />
-                <img src={entry.img} alt="" />
+                <img src={entry.img? entry.img:"./assets/qcflag.png" } alt="" />
 
                 <p className="text example" >{entry.example}</p>
                 <br />
@@ -64,7 +64,7 @@ const Expressions: React.FC = () => {
                   <h2 className="text">English:</h2>
                 </div>
 
-                <p className="text">{entry.englishMeaning}</p>
+                <p className="text">{entry.english}</p>
 
                 <br />
                 
@@ -73,7 +73,7 @@ const Expressions: React.FC = () => {
                   <h2 className="text">French:</h2>
                 </div>
 
-                <p className="text" >{entry.frenchMeaning}</p>
+                <p className="text" >{entry.french}</p>
 
 
               </IonCardContent>

@@ -64,7 +64,7 @@ const WordsList: React.FC = () => {
       {entriesWords.filter((entry)=>{
 if (searchText == ""){
   return entry
-} else if (entry.english.toLocaleLowerCase().includes(searchText.toLocaleLowerCase()))
+} else if (entry.quebec.toLocaleLowerCase().includes(searchText.toLocaleLowerCase()))
     return entry  }).map((entry)=>
        <IonItem button 
        onClick={() => {
@@ -73,13 +73,13 @@ if (searchText == ""){
            duration: 300
          })
        }}  routerLink={`/words-list/${entry.id}`} className="expressions-item">
-          <IonLabel ><h2 className="expressions-text">
+          {/* <IonLabel ><h2 className="expressions-text">
           <img className='sub-logo-expression'  src="../assets/usa.png" alt="" />
-            {entry.english}</h2></IonLabel>
+            {entry.english}</h2></IonLabel> */}
           <p>-</p>
        <IonLabel ><h2 className="expressions-text">
        <img className='sub-logo-expression'  src="../assets/qcflag.png" alt="" />
-         {entry.quebec}</h2></IonLabel>
+       {entry.id}.- {entry.quebec}</h2></IonLabel>
        {/* <IonThumbnail>
       <img className="expressions-img" src={entry.src} alt="" />
       </IonThumbnail> */}
@@ -99,7 +99,6 @@ if (searchText == ""){
             loadingText="Loading more data..."
           ></IonInfiniteScrollContent>
         </IonInfiniteScroll>
-   
       </IonContent>
       <IonTabBar slot="bottom">
 <IonTabButton tab="profile"  href="/home" >

@@ -78,7 +78,7 @@ const Home: React.FC = () => {
                 </p>
                 <p className='home-random-text font-family'>
                 <img className='sub-logo-expression'  src="../assets/usa.png" alt="" />  
-                 {entriesExpressions[random].englishMeaning}
+                 {entriesExpressions[random].english}
                 </p>
               </IonCardTitle>
             </IonCardHeader>

@@ -41,7 +41,7 @@ const Words: React.FC = () => {
                   <h1 className="expression-header text bold">{entry.quebec}</h1>
          </div>
          <br />
-                <img className="expression-img" src={entry.src} alt="" />
+                <img className="expression-img" src={entry.src ? entry.src :"./assets/qcflag.png"} alt="" />
                 <br />
                
          <br />

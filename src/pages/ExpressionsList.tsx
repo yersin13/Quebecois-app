@@ -64,7 +64,7 @@ const ExpressionsList: React.FC = () => {
       {entriesExpressions.filter((entry)=>{
 if (searchText == ""){
   return entry
-} else if (entry.englishMeaning.toLocaleLowerCase().includes(searchText.toLocaleLowerCase()))
+} else if (entry.quebec.toLocaleLowerCase().includes(searchText.toLocaleLowerCase()))
     return entry  }).map((entry)=>
        <IonItem button 
        onClick={() => {
@@ -74,12 +74,12 @@ if (searchText == ""){
          })
        }}  routerLink={`/expressions-list/${entry.id}`} className="expressions-item">
          <div>
-         <IonLabel ><h6 className="expressions-text">
+         {/* <IonLabel ><h6 className="expressions-text">
            <img className='sub-logo-expression'  src="../assets/usa.png" alt="" />
-           {entry.englishMeaning}</h6></IonLabel>
+           {entry.englishMeaning}</h6></IonLabel> */}
        <IonLabel ><h6 className="expressions-text">
           <img className='sub-logo-expression'  src="../assets/qcflag.png" alt="" />
-          {entry.quebec}</h6></IonLabel>
+          {entry.id}.- {entry.quebec}</h6></IonLabel>
          </div>
       
        {/* <IonThumbnail>

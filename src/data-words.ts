@@ -344,14 +344,1127 @@ export const entriesWords =[
         frenchMeaning: 'Si l\'on vous demande de sortir les vidanges, on ne parle pas de votre voiture ! ',
         englishMeaning: ' If you are asked to take out "les vidanges", we are not talking about your car!',
         src: './assets/images/vidanges.jpg  ',
-    }
-    // {
-    //     id: '38',
-    //     quebec: '',
-    //     french: ' ',
-    //     english: ' ',
-    //     frenchMeaning: ' ',
-    //     englishMeaning: ' ',
-    //     src: '  ',
-    // }
+    },
+    {
+        id: "38",
+        quebec: "Glace ",
+        french: " Patinoire",
+        english: "Rink"
+      },
+      {
+        id: "39",
+        quebec: "Sloche ",
+        french: " Neige fondue",
+        english: "Melted snow"
+      },
+      {
+        id: "40",
+        quebec: "Souffleuse ",
+        french: " C’est le chasse-neige",
+        english: " It's the snowplow"
+      },
+      {
+        id: "41",
+        quebec: "Traîne-sauvage ",
+        french: " C’est une luge",
+        english: " It's a sled"
+      },
+      {
+        id: "42",
+        quebec: "Y pleut des cordes ",
+        french: " Il pleut beaucoup",
+        english: "It is raining hard"
+      },
+      {
+        id: "43",
+        quebec: "Pleut des clous ",
+        french: " Pleut beaucoup",
+        english: "rains a lot"
+      },
+      {
+        id: "44",
+        quebec: "À la prochaine ",
+        french: " Au revoir",
+        english: "Bye"
+      },
+      {
+        id: "45",
+        quebec: "À la revoyure ",
+        french: " Au revoir ou à bientôt",
+        english: "Goodbye or see you soon"
+      },
+      {
+        id: "46",
+        quebec: "Bienvenu ",
+        french: " Correspond à l’expression “je vous en prie”",
+        english: " Corresponds to the expression “please”"
+      },
+      {
+        id: "47",
+        quebec: "Bonjour ",
+        french: " Bonne journée",
+        english: "Have a good day"
+      },
+      {
+        id: "48",
+        quebec: "Ça fait plaisir ",
+        french: " De rien",
+        english: " You're welcome"
+      },
+      {
+        id: "49",
+        quebec: "Babines ",
+        french: " Les lèvres",
+        english: "The lips"
+      },
+      {
+        id: "50",
+        quebec: "Babouner ",
+        french: " (ou faire la baboune) bouder",
+        english: " (or pout) sulk"
+      },
+      {
+        id: "51",
+        quebec: "Bédaine ",
+        french: " Se dit d’un gros ventre",
+        english: "Said of a big belly"
+      },
+      {
+        id: "52",
+        quebec: "Brailler ",
+        french: " Signifie pleurer",
+        english: " Means to cry"
+      },
+      {
+        id: "53",
+        quebec: "Capoter ",
+        french: " Être très excité, content",
+        english: " To be very excited, happy"
+      },
+      {
+        id: "54",
+        quebec: "Foufounnes ",
+        french: " Ce sont les fesses",
+        english: " These are the buttocks"
+      },
+      {
+        id: "55",
+        quebec: "Frencher (se) ",
+        french: " C’est s’embrasser sur la bouche, à la française à quoi",
+        english: " It's kissing on the mouth, in the French way to what"
+      },
+      {
+        id: "56",
+        quebec: "Gosses ou les chnolles ",
+        french: " Ce sont les testicules",
+        english: " These are the testicles"
+      },
+      {
+        id: "57",
+        quebec: "Craque ",
+        french: " Fente des seins ou des fesses",
+        english: "Breast or buttocks cleft"
+      },
+      {
+        id: "58",
+        quebec: "Donner un bec ",
+        french: " l’une des plus connue, c’est le baiser",
+        english: " one of the best known is the kiss"
+      },
+      {
+        id: "59",
+        quebec: "Minoucher ",
+        french: " Signifie caresser",
+        english: " Means to caress"
+      },
+      {
+        id: "60",
+        quebec: "Agace-pissette",
+        french: "  une aguicheuse",
+        english: "a teaser"
+      },
+      {
+        id: "61",
+        quebec: "Gros jos",
+        french: "  gros seins",
+        english: "big breasts"
+      },
+      {
+        id: "62",
+        quebec: "Accomoder ",
+        french: " Signifie rendre service à quelqu’un",
+        english: " means to serve someone"
+      },
+      {
+        id: "63",
+        quebec: "Achaler ",
+        french: " Veut dire importuner, déranger ou agacer quelqu’un",
+        english: " Means to annoy, disturb or annoy someone"
+      },
+      {
+        id: "64",
+        quebec: "Arsoudre ",
+        french: " Apparaître",
+        english: "Appear"
+      },
+      {
+        id: "65",
+        quebec: "Astheure ",
+        french: " Maintenant",
+        english: "Now"
+      },
+      {
+        id: "66",
+        quebec: "Aubaine (ou vente) ",
+        french: " Ce sont les soldes",
+        english: " These are the sales"
+      },
+      {
+        id: "67",
+        quebec: "Bibitte ",
+        french: " Non non je vous arrête, c’est un insecte",
+        english: " No no I'm arresting you, it's an insect"
+      },
+      {
+        id: "68",
+        quebec: "Bon yeu ",
+        french: " Bon dieu",
+        english: "Good God"
+      },
+      {
+        id: "69",
+        quebec: "Broche à foin ",
+        french: " Quelque chose de mal organisé",
+        english: "Something unorganized"
+      },
+      {
+        id: "70",
+        quebec: "C’est tiguidou ",
+        french: " C’est super",
+        english: " That's great"
+      },
+      {
+        id: "71",
+        quebec: "Change ",
+        french: " La monnaie",
+        english: " The currency"
+      },
+      {
+        id: "72",
+        quebec: "Cenne (noire) ",
+        french: " Une pièce d’un centime",
+        english: "A penny coin"
+      },
+      {
+        id: "73",
+        quebec: "Chialer ",
+        french: " Se plaindre",
+        english: " To complain"
+      },
+      {
+        id: "74",
+        quebec: "Chicaner (se) ",
+        french: " Veut dire se disputer",
+        english: " means to argue"
+      },
+      {
+        id: "75",
+        quebec: "Coquerelle ",
+        french: " Le cafard",
+        english: " The cockroach"
+      },
+      {
+        id: "76",
+        quebec: "Coupe (une) ",
+        french: " Quelques",
+        english: " Some"
+      },
+      {
+        id: "77",
+        quebec: "Cruiser ",
+        french: " C’est le fait de draguer",
+        english: " It's flirting"
+      },
+      {
+        id: "78",
+        quebec: "Cute ",
+        french: " Veut dire mignon",
+        english: " means cute"
+      },
+      {
+        id: "79",
+        quebec: "Dispendieux ",
+        french: " Signifie coûteux, cher",
+        english: "Means costly, expensive"
+      },
+      {
+        id: "80",
+        quebec: "Enfarger (s) ",
+        french: " C’est le fait de s’emmêler les pinceaux",
+        english: " It is the fact of tangling the brushes"
+      },
+      {
+        id: "81",
+        quebec: "À peu près ",
+        french: " Environ",
+        english: "About"
+      },
+      {
+        id: "82",
+        quebec: "Fête ",
+        french: " ça correspond à l’anniversaire",
+        english: " it corresponds to the birthday"
+      },
+      {
+        id: "83",
+        quebec: "Fin ",
+        french: " C’est quelqu’un d’aimable",
+        english: " He's a kind person"
+      },
+      {
+        id: "84",
+        quebec: "Flusher ",
+        french: " Jeter",
+        english: "To throw"
+      },
+      {
+        id: "85",
+        quebec: "Gang ",
+        french: " rien à voir avec les malfaiteurs, c’est la bande, le groupe d’amis",
+        english: " nothing to do with the criminals, it's the band, the group of friends"
+      },
+      {
+        id: "86",
+        quebec: "Garnotte ",
+        french: " C’est un caillou",
+        english: " It's a pebble"
+      },
+      {
+        id: "87",
+        quebec: "Garrocher ",
+        french: " C’est lancer quelque chose",
+        english: " It's to start something"
+      },
+      {
+        id: "88",
+        quebec: "Jaser ",
+        french: " Veut dire discuter, parler",
+        english: " means to discuss, to talk"
+      },
+      {
+        id: "89",
+        quebec: "Joke ",
+        french: " C’est une blague, vient directement de l’anglais",
+        english: " It's a joke, comes directly from English"
+      },
+      {
+        id: "90",
+        quebec: "Joual ",
+        french: " C’est le parler populaire québécois",
+        english: " It's the popular speech of french"
+      },
+      {
+        id: "91",
+        quebec: "Kekchose ",
+        french: " Quelque chose",
+        english: "Something"
+      },
+      {
+        id: "92",
+        quebec: "Maringouin ",
+        french: " Un moustique",
+        english: " A mosquito"
+      },
+      {
+        id: "93",
+        quebec: "Merde ",
+        french: " Bonne chance",
+        english: "Good luck"
+      },
+      {
+        id: "94",
+        quebec: "Niaiser ",
+        french: " Duper, berner, charier",
+        english: " trick, deceive, spoof"
+      },
+      {
+        id: "95",
+        quebec: "Pantoute ",
+        french: " Signifie pas du tout",
+        english: " Mean not at all"
+      },
+      {
+        id: "96",
+        quebec: "Pas mal ",
+        french: " Cela veut dire assez",
+        english: " That means enough"
+      },
+      {
+        id: "97",
+        quebec: "Pas pire ",
+        french: " Très bien",
+        english: " Very well"
+      },
+      {
+        id: "98",
+        quebec: "Piasse (piastre) ",
+        french: " C’est le Dollar",
+        english: " It's the dollar"
+      },
+      {
+        id: "99",
+        quebec: "Pitoune ",
+        french: " Belle fille",
+        english: "Beautiful girl"
+      },
+      {
+        id: "100",
+        quebec: "Placotter ",
+        french: " C’est le fait de bavarder",
+        english: " It's talking"
+      },
+      {
+        id: "101",
+        quebec: "Platte ",
+        french: " C’est ennuyeux",
+        english: " It's boring"
+      },
+      {
+        id: "102",
+        quebec: "Pogner ",
+        french: " Cela signifie prendre, ou  avoir du succès avec les filles",
+        english: " It means to take, or to have success with the girls"
+      },
+      {
+        id: "103",
+        quebec: "Présentement ",
+        french: " En ce moment",
+        english: " Right now"
+      },
+      {
+        id: "104",
+        quebec: "Sifleux ",
+        french: " C’est une marmotte",
+        english: " It's a groundhog"
+      },
+      {
+        id: "105",
+        quebec: "S’ostiner ",
+        french: " S’entêter",
+        english: "be stubborn"
+      },
+      {
+        id: "106",
+        quebec: "Spécial ",
+        french: " Veut dire en solde, en promotion",
+        english: "Means on sale, on promotion"
+      },
+      {
+        id: "107",
+        quebec: "Spotter ",
+        french: " Signifie apercevoir",
+        english: "Means to glimpse"
+      },
+      {
+        id: "108",
+        quebec: "T’sais ",
+        french: " tu sais",
+        english: "you know"
+      },
+      {
+        id: "109",
+        quebec: "Toffe ",
+        french: " Veut dire difficile",
+        english: " means difficult"
+      },
+      {
+        id: "110",
+        quebec: "Toune ",
+        french: " La chanson",
+        english: " The song"
+      },
+      {
+        id: "111",
+        quebec: "Toutoune ",
+        french: " Se dit d’une femme qui fait de l’embonpoint",
+        english: " Said of a woman who is overweight"
+      },
+      {
+        id: "112",
+        quebec: "Tripper ",
+        french: " Signifie prendre du plaisir, aimer beaucoup",
+        english: " Means to enjoy, to love a lot"
+      },
+      {
+        id: "113",
+        quebec: "Trouble ",
+        french: " Veut dire le problème",
+        english: " means the problem"
+      },
+      {
+        id: "114",
+        quebec: "Varger ",
+        french: " Signifie cogner, donner des coups",
+        english: " Means to knock, kick"
+      },
+      {
+        id: "115",
+        quebec: "Vedger ",
+        french: " Rester à ne rien faire (de productif)",
+        english: " Do nothing (productive)"
+      },
+      {
+        id: "116",
+        quebec: "Zigner ",
+        french: " Signifie tourner en rond, perdre son temps",
+        english: " Means going around in circles, wasting your time"
+      },
+      {
+        id: "117",
+        quebec: "Zigonner ",
+        french: " Veut dire essayer sans succès",
+        english: " Means to try without success"
+      },
+      {
+        id: "118",
+        quebec: "Zizique ",
+        french: " C’est la musique",
+        english: " It's the music"
+      },
+      {
+        id: "119",
+        quebec: "Accoté ",
+        french: " Représente le fait d’être en concubinage",
+        english: " Represents the fact of being in concubinage"
+      },
+      {
+        id: "120",
+        quebec: "Balloune ",
+        french: " C’est un ballon",
+        english: " It's a ball"
+      },
+      {
+        id: "121",
+        quebec: "Balayeuse ",
+        french: " Aspirateur",
+        english: "Vacuum"
+      },
+      {
+        id: "122",
+        quebec: "Bat’feu ",
+        french: " C’est un briquet",
+        english: " It's a lighter"
+      },
+      {
+        id: "123",
+        quebec: "Batterie",
+        french: " C’est la pile que l’on met dans un appareil",
+        english: " It's the battery that you put in a device"
+      },
+      {
+        id: "124",
+        quebec: "Bebelle ",
+        french: " C’est un objet sans valeur",
+        english: " It's a worthless item."
+      },
+      {
+        id: "125",
+        quebec: "Bécosses ",
+        french: " Ce sont les toilettes",
+        english: " These are the toilets"
+      },
+      {
+        id: "126",
+        quebec: "Blonde ",
+        french: " Correspond à la petite amie, petite copine",
+        english: " Matches girlfriend, girlfriend"
+      },
+      {
+        id: "127",
+        quebec: "Boîte à malle ",
+        french: " C’est la boîte aux lettres",
+        english: " This is the mailbox"
+      },
+      {
+        id: "128",
+        quebec: "Bol de toilettes ",
+        french: " La cuvette des toilettes",
+        english: " The toilet bowl"
+      },
+      {
+        id: "129",
+        quebec: "Boucane ",
+        french: " Se dit de la fumée",
+        english: " Said of the smoke"
+      },
+      {
+        id: "130",
+        quebec: "BS (il est sur l’BS) ",
+        french: " L’aide sociale",
+        english: "Social assistance"
+      },
+      {
+        id: "131",
+        quebec: "Carosse ",
+        french: " C’est la poussette pour bébé",
+        english: "This is the baby stroller"
+      },
+      {
+        id: "132",
+        quebec: "Cassé ",
+        french: " Fauché",
+        english: " Broke"
+      },
+      {
+        id: "133",
+        quebec: "Chaudière ",
+        french: " Un seau",
+        english: "Bucket"
+      },
+      {
+        id: "134",
+        quebec: "Chum ",
+        french: " un ami. Veut dire aussi petit-ami quand dit par une fille",
+        english: " a friend. Also means boyfriend when said by a girl"
+      },
+      {
+        id: "135",
+        quebec: "Circulaire ",
+        french: " Dépliant publicitaire",
+        english: "Flyer"
+      },
+      {
+        id: "136",
+        quebec: "Corde (de bois) ",
+        french: " Une pile ou un tas de bois",
+        english: " A pile or heap of wood"
+      },
+      {
+        id: "137",
+        quebec: "Flos ",
+        french: " Ce sont les enfants",
+        english: " These are the children"
+      },
+      {
+        id: "138",
+        quebec: "Laveuse ",
+        french: " C’est une machine à laver le linge",
+        english: " It's a washing machine"
+      },
+      {
+        id: "139",
+        quebec: "Magasiner ",
+        french: " Faire ses achats, ses courses",
+        english: " Shopping, shopping"
+      },
+      {
+        id: "140",
+        quebec: "M’aller ",
+        french: " Poster une lettre un courrier",
+        english: " Post a letter a mail"
+      },
+      {
+        id: "141",
+        quebec: "Napkin ",
+        french: " Une serviette en papier",
+        english: "A paper towel"
+      },
+      {
+        id: "142",
+        quebec: "Personne âgée ",
+        french: " Aîné",
+        english: " Elder"
+      },
+      {
+        id: "143",
+        quebec: "Pitonner ",
+        french: " Veut dire zapper avec la télécommande",
+        english: " Means zapping with the remote"
+      },
+      {
+        id: "144",
+        quebec: "Sécheuse ",
+        french: " C’est un sèche-linge",
+        english: " It's a clothes dryer"
+      },
+      {
+        id: "145",
+        quebec: "Vidanges ",
+        french: " Ce sont les poubelles",
+        english: " These are the trash cans"
+      },
+      {
+        id: "146",
+        quebec: "Vue (une) ",
+        french: " C’est un film",
+        english: " It's a film"
+      },
+      {
+        id: "147",
+        quebec: "Ajusteur ",
+        french: " C’est un expert dans les assurances",
+        english: " He is an insurance expert."
+      },
+      {
+        id: "148",
+        quebec: "Babillard ",
+        french: " C’est un tableau d’affichage avec punaise",
+        english: "It's a pin board"
+      },
+      {
+        id: "149",
+        quebec: "Backer ",
+        french: " Donner son accord, son approbation",
+        english: " Giving consent, approval"
+      },
+      {
+        id: "150",
+        quebec: "Barguinner ",
+        french: " Cela signifie marchander quelque chose",
+        english: " It means to haggle over something"
+      },
+      {
+        id: "151",
+        quebec: "Bosser ",
+        french: " Se comporter comme si on était le patron",
+        english: " Act like you're the boss"
+      },
+      {
+        id: "152",
+        quebec: "Botcher ",
+        french: " Bâcler",
+        english: "rush"
+      },
+      {
+        id: "153",
+        quebec: "Canceller ",
+        french: " Vient de l’anglais cancel signifiant annuler",
+        english: " Comes from the English cancel meaning to cancel"
+      },
+      {
+        id: "154",
+        quebec: "Cegep ",
+        french: " C’est le lycée, le collège",
+        english: " It's high school, college"
+      },
+      {
+        id: "155",
+        quebec: "Charger ",
+        french: " C’est l’action de facturer",
+        english: " It is the act of invoicing"
+      },
+      {
+        id: "156",
+        quebec: "Commandite ",
+        french: " C’est un sponsor",
+        english: " He's a sponsor"
+      },
+      {
+        id: "157",
+        quebec: "Filière ",
+        french: " Dossier",
+        english: " Case"
+      },
+      {
+        id: "158",
+        quebec: "Plugger ",
+        french: " Brancher",
+        english: "Connect"
+      },
+      {
+        id: "159",
+        quebec: "Récipiendaire ",
+        french: " Veut dire le lauréat",
+        english: " means the winner"
+      },
+      {
+        id: "160",
+        quebec: "Royautés ",
+        french: " Ce sont les droits d’auteur",
+        english: " It's copyright"
+      },
+      {
+        id: "161",
+        quebec: "Scéduler ",
+        french: " Dérivé de l’anglais signifiant planifier",
+        english: " Derived from English meaning to plan"
+      },
+      {
+        id: "162",
+        quebec: "Tip (tipper) ",
+        french: " C’est le pourboire",
+        english: " It's the tip"
+      },
+      {
+        id: "163",
+        quebec: "Barrer ",
+        french: " C’est fermer à clé sa porte ou sa voiture",
+        english: " It's locking your door or your car"
+      },
+      {
+        id: "164",
+        quebec: "Bazou ",
+        french: " Se dit d’une ancienne voiture en mauvais état",
+        english: " Said of an old car in poor condition"
+      },
+      {
+        id: "165",
+        quebec: "Bécyk ",
+        french: " C’est un vélo, une bicyclette",
+        english: " It's a bicycle, a bicycle"
+      },
+      {
+        id: "166",
+        quebec: "Char ",
+        french: " C’est une automobile, une voiture",
+        english: " It's an automobile, a car"
+      },
+      {
+        id: "167",
+        quebec: "Chauffer ",
+        french: " Veut dire conduire une voiture",
+        english: " Means driving a car"
+      },
+      {
+        id: "168",
+        quebec: "Citron ",
+        french: " Une voiture pourrie",
+        english: "A rotten car"
+      },
+      {
+        id: "169",
+        quebec: "Clancher ",
+        french: " Accélérer",
+        english: "Accelerate"
+      },
+      {
+        id: "170",
+        quebec: "Flasheur ",
+        french: " C’est le clignotant des voitures",
+        english: "It's the flashing lights of cars"
+      },
+      {
+        id: "171",
+        quebec: "Gaz ",
+        french: " C’est l’essence que l’on met dans nos voitures ou chars pour ceux qui ont suivi",
+        english: " It is the gasoline that we put in our cars or tanks for those who followed"
+      },
+      {
+        id: "172",
+        quebec: "Lignes ",
+        french: " C’est la frontière américaine",
+        english: " This is the US border"
+      },
+      {
+        id: "173",
+        quebec: "Parcomètre ",
+        french: " Parcmètre",
+        english: " Meter"
+      },
+      {
+        id: "174",
+        quebec: "Ticket ",
+        french: " C’est une contravention",
+        english: " It's a violation"
+      },
+      {
+        id: "175",
+        quebec: "Valise ",
+        french: " C’est le coffre d’une voiture",
+        english: " It's the trunk of a car"
+      },
+      {
+        id: "176",
+        quebec: "Bambocheur ",
+        french: " Se dit d’une personne qui fait la fête autrement dit un fêtard",
+        english: " Said of a person who celebrates, in other words a party animal"
+      },
+      {
+        id: "177",
+        quebec: "Barbier ",
+        french: " Signifie un coiffeur",
+        english: " Means a hairdresser"
+      },
+      {
+        id: "178",
+        quebec: "Barniques ",
+        french: " Des lunettes",
+        english: " Glasses"
+      },
+      {
+        id: "179",
+        quebec: "Bas ",
+        french: " Ce sont nos bonnes vieilles chaussettes",
+        english: " These are our good old socks"
+      },
+      {
+        id: "180",
+        quebec: "Blouse ",
+        french: " Une chemise",
+        english: "A shirt"
+      },
+      {
+        id: "181",
+        quebec: "Bobettes ",
+        french: " Ce sont les culottes ou les sous-vêtements",
+        english: " These are the panties or the underwear"
+      },
+      {
+        id: "182",
+        quebec: "Brassière ",
+        french: " C’est un soutien-gorge",
+        english: " It's a bra"
+      },
+      {
+        id: "183",
+        quebec: "Ca fitte ben ",
+        french: " Ca correspond",
+        english: "It matches"
+      },
+      {
+        id: "184",
+        quebec: "Capot ",
+        french: " Rien à voir avec la voiture, c’est un manteau",
+        english: " Nothing to do with the car, it's a coat"
+      },
+      {
+        id: "185",
+        quebec: "Chaussettes",
+        french: " Les pantoufles donc à ne pas confondre avec bas",
+        english: " Slippers therefore not to be confused with stockings"
+      },
+      {
+        id: "186",
+        quebec: "Débarbouillette ",
+        french: " C’est un gant de toilette",
+        english: " It's a washcloth"
+      },
+      {
+        id: "187",
+        quebec: "Flyé ",
+        french: " Se dit de quelque chose d’original",
+        english: " Said of something original"
+      },
+      {
+        id: "188",
+        quebec: "Mitaine ",
+        french: " C’est une moufle",
+        english: " It's a mitten"
+      },
+      {
+        id: "189",
+        quebec: "Moumoute ",
+        french: " Une perruque",
+        english: "A wig"
+      },
+      {
+        id: "190",
+        quebec: "Peignure ",
+        french: " Se dit d’une coiffure",
+        english: " Said of a hairstyle"
+      },
+      {
+        id: "191",
+        quebec: "Tuque ",
+        french: " C’est un bonnet de laine tricotée",
+        english: " It's a knitted wool hat"
+      },
+      {
+        id: "192",
+        quebec: "Verge ",
+        french: " C’est une mesure de tissu (36 pouces 91,44 cm)",
+        english: " This is a fabric measurement (36 inches 91.44 cm)"
+      },
+      {
+        id: "193",
+        quebec: "Zipper ",
+        french: " C’est fermer une fermeture éclair",
+        english: " It's closing a zipper"
+      },
+      {
+        id: "194",
+        quebec: "Bière tablette ",
+        french: " Se dit d’une bière tiède",
+        english: " Said of a lukewarm beer"
+      },
+      {
+        id: "195",
+        quebec: "Blé d’Inde ",
+        french: " Le maïs",
+        english: " The corn"
+      },
+      {
+        id: "196",
+        quebec: "Bleuets ",
+        french: " Ce sont les myrtilles",
+        english: " These are the blueberries"
+      },
+      {
+        id: "197",
+        quebec: "Breuvage ",
+        french: " Boisson",
+        english: "Drink"
+      },
+      {
+        id: "198",
+        quebec: "Broue ",
+        french: " Bière",
+        english: "Beer"
+      },
+      {
+        id: "199",
+        quebec: "Canne ",
+        french: " Boite de conserve ou canette",
+        english: "Can or can"
+      },
+      {
+        id: "200",
+        quebec: "Coke ",
+        french: " Coca-cola",
+        english: " Coca Cola"
+      },
+      {
+        id: "201",
+        quebec: "Dépanneur ",
+        french: " C’est l’épicerie de quartier ouverte le soir",
+        english: " It's the neighborhood grocery store open in the evening"
+      },
+      {
+        id: "202",
+        quebec: "Gomme ",
+        french: " C’est un chewing-gum",
+        english: " It's a chewing gum"
+      },
+      {
+        id: "203",
+        quebec: "Liqueur ",
+        french: " Ce sont les boissons gazeuse, la limonade",
+        english: " It's soft drinks, lemonade"
+      },
+      {
+        id: "204",
+        quebec: "Pinote ",
+        french: " C’est l’arachide",
+        english: " It's the peanut"
+      },
+      {
+        id: "205",
+        quebec: "Bitcher ",
+        french: " Dire du mal de quelqu’un",
+        english: " speak ill of someone"
+      },
+      {
+        id: "206",
+        quebec: "Capoté ",
+        french: " Un fou",
+        english: " A mad person"
+      },
+      {
+        id: "207",
+        quebec: "Crosseur ",
+        french: " Se dit de quelqu’un de malhonnête",
+        english: " Said of someone who is dishonest"
+      },
+      {
+        id: "208",
+        quebec: "Epais ",
+        french: " se dit de quelqu’un qui est niais, idiot",
+        english: "said of someone who is silly, stupid"
+      },
+      {
+        id: "209",
+        quebec: "Gino ",
+        french: " Se dit d’un macho",
+        english: " Said of a macho"
+      },
+      {
+        id: "210",
+        quebec: "Guidoune ",
+        french: " Une pétasse",
+        english: "A bitch"
+      },
+      {
+        id: "211",
+        quebec: "Quétaine ",
+        french: " Ringard, Kitch",
+        english: "Nerdy, kitsch"
+      },
+      {
+        id: "212",
+        quebec: "Niaiseux ",
+        french: " C’est un imbécile, idiot",
+        english: " He's a fool, fool"
+      },
+      {
+        id: "213",
+        quebec: "Nono, nounoune ",
+        french: " c’est un abruti",
+        english: " he's a jerk"
+      },
+      {
+        id: "214",
+        quebec: "Ostie, ‘stie ! ",
+        french: " Ce sont des jurons, plus précisément M… ou p….!",
+        english: " These are swear words, more precisely M… or p….!"
+      },
+      {
+        id: "215",
+        quebec: "Robineux ",
+        french: " Est un clochard",
+        english: " Is a tramp"
+      },
+      {
+        id: "216",
+        quebec: "Sacrer ",
+        french: " Signifie jurer, blasphémer",
+        english: " Means to swear, to blaspheme"
+      },
+      {
+        id: "217",
+        quebec: "Tabarnac ",
+        french: " C’est le blasphème",
+        english: "It's blasphemy"
+      },
+      {
+        id: "218",
+        quebec: "Tannant ou tannante ",
+        french: " Se dit de quelqu’un ou de quelque chose qui est énervant",
+        english: "Said of someone or something that is annoying"
+      },
+      {
+        id: "219",
+        quebec: "Téteux ",
+        french: " C’est un fayot",
+        english: "It's a bean"
+      },
+      {
+        id: "220",
+        quebec: "Ti-cul ",
+        french: " C’est un morveux",
+        english: " He's a brat"
+      },
+      {
+        id: "221",
+        quebec: "Toton ",
+        french: " C’est un nigaud,  un  imbécile",
+        english: " He's a simpleton, a fool"
+      },
+      {
+        id: "222",
+        quebec: "Trappe ",
+        french: " Veut dire la gueule",
+        english: " Means the mouth"
+      },
+      {
+        id: "223",
+        quebec: "Twit ",
+        french: " C’est un crétin, un idiot",
+        english: " He's a moron, an idiot"
+      },
+      {
+        id: "224",
+        quebec: "Un bon yabe ",
+        french: " Un bon diable",
+        english: "a good devil"
+      }
 ]
