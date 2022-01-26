@@ -22,9 +22,11 @@ h3, h4 ,h1, h5, h6{
   border-radius: 10px;
   justify-content: center;
   align-content: center;
+  
 }
 
 .home-div-logo{
+   margin-top:20px;
     display: flex;
     align-items:center;
     justify-content: center;
@@ -33,13 +35,15 @@ h3, h4 ,h1, h5, h6{
 }
 .home-text-logo{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* font-weight:bold; */
     padding: 0;
-    padding-right: 7px;
- font-size: 25px;
+    padding-left: 7px;
+ font-size: 30px;
     margin: 0;
-    color: #001f97;
+    /* color: #001f97; */
+    color:white;
     /* color:white; */
-    font: bold;
+    /* font: bold; */
     text-align: center;
     text-align: center;
 }
@@ -73,10 +77,10 @@ align-items:center;
      margin: 0;
    }
 .home-content{
-    align-content: space-between;
+    /* align-content: space-between; */
     /* background-color: black; */
-    border-radius:15px;
-    padding: 10px;
+    /* border-radius:15px; */
+    /* padding: 10px; */
 }
 .home-item{
      padding: 10px;
@@ -119,12 +123,13 @@ align-items:center;
     /* word-spacing: 0.05rem; */
 }
 
-.background-image{
+/* .background-image{
     background-image: url('/src/overview.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+    
+} */
 
 .div-card-home{
     display: flex;

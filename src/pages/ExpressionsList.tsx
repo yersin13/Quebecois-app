@@ -77,9 +77,9 @@ if (searchText == ""){
          {/* <IonLabel ><h6 className="expressions-text">
            <img className='sub-logo-expression'  src="../assets/usa.png" alt="" />
            {entry.englishMeaning}</h6></IonLabel> */}
-       <IonLabel ><h6 className="expressions-text">
+       <IonLabel ><h2 className="expressions-text">
           <img className='sub-logo-expression'  src="../assets/qcflag.png" alt="" />
-          {entry.id}.- {entry.quebec}</h6></IonLabel>
+          {entry.id}.- {entry.quebec}</h2></IonLabel>
          </div>
       
        {/* <IonThumbnail>

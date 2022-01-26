@@ -21,63 +21,6 @@ const Corner: React.FC = () => {
       <IonContent>
         <IonList className="overview-list">
 
-          {/* <IonCard button className="card">
-            <IonItem >
-              <h4 className='label'>Music Quebecois</h4>
-             <IonThumbnail slot='end'>
-               <img src="/assets/9.png" alt="" />
-             </IonThumbnail>
-            </IonItem>
-          </IonCard>
-          <IonCard button className="card">
-            <IonItem >
-              <h4 className='label'>Culture Quebecois</h4>
-             <IonThumbnail slot='end'>
-               <img src="/assets/10.png" alt="" />
-             </IonThumbnail>
-            </IonItem>
-          </IonCard>
-          <IonCard button className="card">
-            <IonItem >
-              <h4 className='label'>Films Quebecois</h4>
-             <IonThumbnail slot='end'>
-               <img src="/assets/11.png" alt="" />
-             </IonThumbnail>
-            </IonItem>
-          </IonCard>
-          <IonCard button className="card">
-            <IonItem >
-              <h4 className='label'>Memes Quebecois</h4>
-             <IonThumbnail slot='end'>
-               <img src="/assets/12.png" alt="" />
-             </IonThumbnail>
-            </IonItem>
-          </IonCard>
-          <IonCard button className="card">
-            <IonItem >
-              <h4 className='label'> Food Quebecois</h4>
-             <IonThumbnail slot='end'>
-               <img src="/assets/13.png" alt="" />
-             </IonThumbnail>
-            </IonItem>
-          </IonCard>
-          <IonCard button className="card">
-            <IonItem >
-              <h4 className='label'> Places Quebecois</h4>
-             <IonThumbnail slot='end'>
-               <img src="/assets/14.png" alt="" />
-             </IonThumbnail>
-            </IonItem>
-          </IonCard>
-          <IonCard button className="card">
-            <IonItem >
-              <h4 className='label'> Random</h4>
-             <IonThumbnail slot='end'>
-               <img src="/assets/15.png" alt="" />
-             </IonThumbnail>
-            </IonItem>
-          </IonCard> */}
-
           <IonGrid>
             <IonRow>
               <IonCol size="6">
@@ -138,7 +81,7 @@ const Corner: React.FC = () => {
                 </IonCard>
               </IonCol>
             </IonRow>
-            <IonRow>
+            {/* <IonRow>
 
 
               <IonCol size="6">
@@ -154,8 +97,8 @@ const Corner: React.FC = () => {
 
                 </IonCard>
               </IonCol>
-            </IonRow>
-            <IonRow>
+            </IonRow> */}
+            {/* <IonRow>
               <IonCol size="6">
 
                 <IonCard button routerLink="/words-list" className="card corner-card " >
@@ -184,7 +127,7 @@ const Corner: React.FC = () => {
               </IonCol>
 
 
-            </IonRow>
+            </IonRow> */}
           </IonGrid>
 
         </IonList>

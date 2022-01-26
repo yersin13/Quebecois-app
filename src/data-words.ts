@@ -349,379 +349,442 @@ export const entriesWords =[
         id: "38",
         quebec: "Glace ",
         french: " Patinoire",
-        english: "Rink"
+        english: "Rink",
+        // src: './assets/images/vidanges.jpg  ',
       },
       {
         id: "39",
         quebec: "Sloche ",
         french: " Neige fondue",
-        english: "Melted snow"
+        english: "Melted snow",
+        src: './assets/images/39.jpeg  ',
       },
       {
         id: "40",
         quebec: "Souffleuse ",
         french: " C’est le chasse-neige",
-        english: " It's the snowplow"
+        english: " It's the snowplow",
+        src: './assets/images/40.jpeg  ',
       },
       {
         id: "41",
         quebec: "Traîne-sauvage ",
         french: " C’est une luge",
-        english: " It's a sled"
+        english: " It's a sled",
+        src: './assets/images/41.png  ',
       },
       {
         id: "42",
         quebec: "Y pleut des cordes ",
         french: " Il pleut beaucoup",
-        english: "It is raining hard"
+        english: "It is raining hard",
+        src: './assets/images/rain.jpg  ',
       },
       {
         id: "43",
         quebec: "Pleut des clous ",
         french: " Pleut beaucoup",
-        english: "rains a lot"
+        english: "rains a lot",
+        src: './assets/images/rain.jpg  ',
       },
       {
         id: "44",
         quebec: "À la prochaine ",
         french: " Au revoir",
-        english: "Bye"
+        english: "Bye",
+        src: './assets/images/bye.jpg  ',
       },
       {
         id: "45",
         quebec: "À la revoyure ",
         french: " Au revoir ou à bientôt",
-        english: "Goodbye or see you soon"
+        english: "Goodbye or see you soon",
+        src: './assets/images/bye.jpg  ',
       },
       {
         id: "46",
         quebec: "Bienvenu ",
         french: " Correspond à l’expression “je vous en prie”",
-        english: " Corresponds to the expression “please”"
+        english: " Corresponds to the expression “please”",
+        src: './assets/images/bienvenue.jpg  ',
       },
       {
         id: "47",
         quebec: "Bonjour ",
         french: " Bonne journée",
-        english: "Have a good day"
+        english: "Have a good day",
+        // src: './assets/images/vidanges.jpg  ',
       },
       {
         id: "48",
         quebec: "Ça fait plaisir ",
         french: " De rien",
-        english: " You're welcome"
+        english: " You're welcome",
+        src: './assets/images/bienvenue.jpg  ',
       },
       {
         id: "49",
         quebec: "Babines ",
         french: " Les lèvres",
-        english: "The lips"
+        english: "The lips",
+        src: './assets/images/49.jpg  ',
       },
       {
         id: "50",
         quebec: "Babouner ",
         french: " (ou faire la baboune) bouder",
-        english: " (or pout) sulk"
+        english: " (or pout) sulk",
+        src: './assets/images/50.jpg  ',
       },
       {
         id: "51",
         quebec: "Bédaine ",
         french: " Se dit d’un gros ventre",
-        english: "Said of a big belly"
+        english: "Said of a big belly",
+        src: './assets/images/51.jpg  ',
       },
       {
         id: "52",
         quebec: "Brailler ",
         french: " Signifie pleurer",
-        english: " Means to cry"
+        english: " Means to cry",
+        src: './assets/images/52.jpg  ',
       },
       {
         id: "53",
         quebec: "Capoter ",
         french: " Être très excité, content",
-        english: " To be very excited, happy"
+        english: " To be very excited, happy",
+        src: './assets/images/53.jpg  ',
       },
       {
         id: "54",
         quebec: "Foufounnes ",
         french: " Ce sont les fesses",
-        english: " These are the buttocks"
+        english: " These are the buttocks",
+        src: './assets/images/54.jpg  ',
       },
       {
         id: "55",
         quebec: "Frencher (se) ",
         french: " C’est s’embrasser sur la bouche, à la française à quoi",
-        english: " It's kissing on the mouth, in the French way to what"
+        english: " It's kissing on the mouth, in the French way to what",
+        src: './assets/images/frencher.jpg  ',
       },
       {
         id: "56",
         quebec: "Gosses ou les chnolles ",
         french: " Ce sont les testicules",
-        english: " These are the testicles"
+        english: " These are the testicles",
+        src: './assets/images/gosses.jpg  ',
       },
       {
         id: "57",
         quebec: "Craque ",
         french: " Fente des seins ou des fesses",
-        english: "Breast or buttocks cleft"
+        english: "Breast or buttocks cleft",
+        src: './assets/images/57.jpg  ',
       },
       {
         id: "58",
         quebec: "Donner un bec ",
         french: " l’une des plus connue, c’est le baiser",
-        english: " one of the best known is the kiss"
+        english: " one of the best known is the kiss",
+        src: './assets/images/58.jpg  ',
       },
       {
         id: "59",
         quebec: "Minoucher ",
         french: " Signifie caresser",
-        english: " Means to caress"
+        english: " Means to caress",
+        src: './assets/images/59.jpg  ',
       },
       {
         id: "60",
         quebec: "Agace-pissette",
         french: "  une aguicheuse",
-        english: "a teaser"
+        english: "a teaser",
+        // src: './assets/images/vidanges.jpg  ',
       },
       {
         id: "61",
         quebec: "Gros jos",
         french: "  gros seins",
-        english: "big breasts"
+        english: "big breasts",
+        src: './assets/images/57.jpg  ',
       },
       {
         id: "62",
         quebec: "Accomoder ",
         french: " Signifie rendre service à quelqu’un",
-        english: " means to serve someone"
+        english: " means to serve someone",
+        src: './assets/images/62.jpg  ',
       },
       {
         id: "63",
         quebec: "Achaler ",
         french: " Veut dire importuner, déranger ou agacer quelqu’un",
-        english: " Means to annoy, disturb or annoy someone"
+        english: " Means to annoy, disturb or annoy someone",
+        src: './assets/images/achaler.jpg  ',
       },
       {
         id: "64",
         quebec: "Arsoudre ",
         french: " Apparaître",
-        english: "Appear"
+        english: "Appear",
+        src: './assets/images/64.jpg  ',
       },
       {
         id: "65",
         quebec: "Astheure ",
         french: " Maintenant",
-        english: "Now"
+        english: "Now",
+        src: './assets/images/65.jpg  ',
       },
       {
         id: "66",
         quebec: "Aubaine (ou vente) ",
         french: " Ce sont les soldes",
-        english: " These are the sales"
+        english: " These are the sales",
+        src: './assets/images/66.jpg  ',
       },
       {
         id: "67",
         quebec: "Bibitte ",
         french: " Non non je vous arrête, c’est un insecte",
-        english: " No no I'm arresting you, it's an insect"
+        english: " No no I'm arresting you, it's an insect",
+        src: './assets/images/67.jpg  ',
       },
       {
         id: "68",
         quebec: "Bon yeu ",
         french: " Bon dieu",
-        english: "Good God"
+        english: "Good God",
+        src: './assets/images/68.jpg  ',
       },
       {
         id: "69",
         quebec: "Broche à foin ",
         french: " Quelque chose de mal organisé",
-        english: "Something unorganized"
+        english: "Something unorganized",
+        src: './assets/images/69.jpg  ',
       },
       {
         id: "70",
         quebec: "C’est tiguidou ",
         french: " C’est super",
-        english: " That's great"
+        english: " That's great",
+        src: './assets/images/good.jpg  ',
       },
       {
         id: "71",
         quebec: "Change ",
         french: " La monnaie",
-        english: " The currency"
+        english: " The currency",
+        src: './assets/images/dollar.jpg  ',
       },
       {
         id: "72",
         quebec: "Cenne (noire) ",
         french: " Une pièce d’un centime",
-        english: "A penny coin"
+        english: "A penny coin",
+        src: './assets/images/dollar.jpg  ',
       },
       {
         id: "73",
         quebec: "Chialer ",
         french: " Se plaindre",
-        english: " To complain"
+        english: " To complain",
+        src: './assets/images/73.jpg  ',
       },
       {
         id: "74",
         quebec: "Chicaner (se) ",
         french: " Veut dire se disputer",
-        english: " means to argue"
+        english: " means to argue",
+        src: './assets/images/74.jpg  ',
       },
       {
         id: "75",
         quebec: "Coquerelle ",
         french: " Le cafard",
-        english: " The cockroach"
+        english: " The cockroach",
+        src: './assets/images/75.jpg  ',
       },
       {
         id: "76",
         quebec: "Coupe (une) ",
         french: " Quelques",
-        english: " Some"
+        english: " Some",
+        // src: './assets/images/vidanges.jpg  ',
       },
       {
         id: "77",
         quebec: "Cruiser ",
         french: " C’est le fait de draguer",
-        english: " It's flirting"
+        english: " It's flirting",
+        src: './assets/images/77.jpg  ',
       },
       {
         id: "78",
         quebec: "Cute ",
         french: " Veut dire mignon",
-        english: " means cute"
+        english: " means cute",
+        src: './assets/images/78.jpg  ',
       },
       {
         id: "79",
         quebec: "Dispendieux ",
         french: " Signifie coûteux, cher",
-        english: "Means costly, expensive"
+        english: "Means costly, expensive",
+        src: './assets/images/79.jpg  ',
       },
       {
         id: "80",
         quebec: "Enfarger (s) ",
         french: " C’est le fait de s’emmêler les pinceaux",
-        english: " It is the fact of tangling the brushes"
+        english: " It is the fact of tangling the brushes",
+        src: './assets/images/80.jpg  ',
       },
       {
         id: "81",
         quebec: "À peu près ",
         french: " Environ",
-        english: "About"
+        english: "About",
+        // src: './assets/images/vidanges.jpg  ',
       },
       {
         id: "82",
         quebec: "Fête ",
         french: " ça correspond à l’anniversaire",
-        english: " it corresponds to the birthday"
+        english: " it corresponds to the birthday",
+        src: './assets/images/82.jpg  ',
       },
       {
         id: "83",
         quebec: "Fin ",
         french: " C’est quelqu’un d’aimable",
-        english: " He's a kind person"
+        english: " He's a kind person",
+        src: './assets/images/83.jpg  ',
       },
       {
         id: "84",
         quebec: "Flusher ",
         french: " Jeter",
-        english: "To throw"
+        english: "To throw",
+        src: './assets/images/84.jpg  ',
       },
       {
         id: "85",
         quebec: "Gang ",
         french: " rien à voir avec les malfaiteurs, c’est la bande, le groupe d’amis",
-        english: " nothing to do with the criminals, it's the band, the group of friends"
+        english: " nothing to do with the criminals, it's the band, the group of friends",
+        src: './assets/images/85.jpg  ',
       },
       {
         id: "86",
         quebec: "Garnotte ",
         french: " C’est un caillou",
-        english: " It's a pebble"
+        english: " It's a pebble",
+        src: './assets/images/86.jpg  ',
       },
       {
         id: "87",
         quebec: "Garrocher ",
         french: " C’est lancer quelque chose",
-        english: " It's to start something"
+        english: " It's to start something",
+        src: './assets/images/87.jpg  ',
       },
       {
         id: "88",
         quebec: "Jaser ",
         french: " Veut dire discuter, parler",
-        english: " means to discuss, to talk"
+        english: " means to discuss, to talk",
+        src: './assets/images/88.jpg  ',
       },
       {
         id: "89",
         quebec: "Joke ",
         french: " C’est une blague, vient directement de l’anglais",
-        english: " It's a joke, comes directly from English"
+        english: " It's a joke, comes directly from English",
+        src: './assets/images/89.jpg  ',
       },
       {
         id: "90",
         quebec: "Joual ",
         french: " C’est le parler populaire québécois",
-        english: " It's the popular speech of french"
+        english: " It's the popular speech of french",
+        // src: './assets/images/vidanges.jpg  ',
       },
       {
         id: "91",
         quebec: "Kekchose ",
         french: " Quelque chose",
-        english: "Something"
+        english: "Something",
+        // src: './assets/images/vidanges.jpg  ',
       },
       {
         id: "92",
         quebec: "Maringouin ",
         french: " Un moustique",
-        english: " A mosquito"
+        english: " A mosquito",
+        src: './assets/images/maringuouin.jpg  ',
       },
       {
         id: "93",
         quebec: "Merde ",
         french: " Bonne chance",
-        english: "Good luck"
+        english: "Good luck",
+        // src: './assets/images/vidanges.jpg  ',
       },
       {
         id: "94",
         quebec: "Niaiser ",
         french: " Duper, berner, charier",
-        english: " trick, deceive, spoof"
+        english: " trick, deceive, spoof",
+        // src: './assets/images/vidanges.jpg  ',
       },
       {
         id: "95",
         quebec: "Pantoute ",
         french: " Signifie pas du tout",
-        english: " Mean not at all"
+        english: " Mean not at all",
+        // src: './assets/images/vidanges.jpg  ',
       },
       {
         id: "96",
         quebec: "Pas mal ",
         french: " Cela veut dire assez",
-        english: " That means enough"
+        english: " That means enough",
+        // src: './assets/images/vidanges.jpg  ',
       },
       {
         id: "97",
         quebec: "Pas pire ",
         french: " Très bien",
-        english: " Very well"
+        english: " Very well",
+        // src: './assets/images/vidanges.jpg  ',
       },
       {
         id: "98",
         quebec: "Piasse (piastre) ",
         french: " C’est le Dollar",
-        english: " It's the dollar"
+        english: " It's the dollar",
+        // src: './assets/images/vidanges.jpg  ',
       },
       {
         id: "99",
         quebec: "Pitoune ",
         french: " Belle fille",
-        english: "Beautiful girl"
+        english: "Beautiful girl",
+        src: './assets/images/99.jpg  ',
       },
       {
         id: "100",
         quebec: "Placotter ",
         french: " C’est le fait de bavarder",
-        english: " It's talking"
+        english: " It's talking",
+        src: './assets/images/100.jpg  ',
       },
       {
         id: "101",

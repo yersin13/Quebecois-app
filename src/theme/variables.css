@@ -69,14 +69,14 @@
 
   
   /* --ion-toolbar-background: #001f97; */
-  --ion-toolbar-background: #rrggbbaa;
+  --ion-toolbar-background:#1e4ef5;
 
   --ion-tab-bar-background: #001f97;
 
   /* --ion-background-color:#001f97; */
   /* --ion-background-color:#007FFF; */
-  --ion-background-color:rgba(255, 255, 255, 0.938);
-  /* --ion-background-color:#b8d9f8; */
+  /* --ion-background-color:rgba(220, 226, 236, 0.938); */
+  --ion-background-color: #rrggbbaa;
   /* --ion-background-color:#b6bfe4; */
   /* --ion-text-color: #ffffff; */
   --ion-text-color: #ffffff;
@@ -100,15 +100,13 @@
   /* font-family: 'Montserrat', sans-serif; */
   /* font-family: 'Montserrat', sans-serif; */
 font-size: 20px;
-
+color:white;
 }
 
 .card-item{
   background-color: white;
 }
-.font-family{
-  /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
-}
+
 
 *{
   /* font-family: 'Amiri', serif; */
@@ -118,3 +116,12 @@ font-size: 20px;
   font-family: 'Quicksand', sans-serif;
   font-weight: 600;
 } */
+ion-content {
+  /* background-image: url('/src/background.jpg'); */
+  background-image: linear-gradient(to bottom, #1e4ef5, #1a42dd, #1436c5, #0b2aae, #001f97);
+  /* background-image: linear-gradient(to bottom, #1e4ef5, #204ff1, #214fed, #2350e9, #2550e5, #244cdd, #2247d5, #2043cd, #1a3abf, #1331b2, #0a28a4, #001f97); */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}

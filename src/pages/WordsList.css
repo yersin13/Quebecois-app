@@ -1,8 +1,10 @@
 .expressions-text{
-    color:#001f97;
+    /* color:#001f97; */
+    color:white;
+    font-size:40px;
 }
 .expressions-search{
-    color: #001f97;
+    color:white;
     /* background-color: #rrggbbaa; */
     /* color:white; */
 }

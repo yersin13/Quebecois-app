@@ -31,8 +31,9 @@ const Home: React.FC = () => {
       <IonContent className="ion-padding home-content background-image">
         {/* <h6>Search</h6> */}
         <div className='home-div-logo '>
-          <h1 className='home-text-logo  '>Learn Québécois  </h1>
-          <img className='home-logo' src="../assets/home-logo.png" alt="" />
+        <img className='home-logo' src="../assets/icon/icon.png" alt="" />
+          <h1 className='home-text-logo '>Learn Québécois  </h1>
+          
         </div>
         {/* <IonSearchbar className="expressions-search" value={searchText} onIonChange={e => setSearchText(e.detail.value!)}></IonSearchbar> */}
         <IonList className="home-list">

@@ -49,18 +49,20 @@ height:120px;
     /* align-items: center; */
     /* text-align: center; */
     align-content: center;
-    border-radius: 10px;
-    background-color:white;
+    /* border-radius: 10px; */
+    /* background-color:white; */
     padding-bottom: 10px;
 }
 
 .text-music{
-    color:#001f97;
+    color:white;
+    font-size:18px;
 }
 .text-music-item{
-    color:#001f97;
+    color:white;
     text-align: center;
     margin:0;
+    padding-top:15px
 }
 .div-text-music{
     padding-right: 10px;
@@ -79,12 +81,12 @@ height:120px;
     margin: 0;
 }
 .text-film{
-    color:#5d5f68;
+    color:white;
     /* margin-bottom: 10px; */
 }
 
 .item-films-corner{
-    background-color:#a7b6f321;
+    background-color:white;
     /* padding:10px; */
     margin:10px;
     border-radius:10px;

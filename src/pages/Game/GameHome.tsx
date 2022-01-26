@@ -24,8 +24,10 @@ const GameHome: React.FC = () => {
         </IonToolbar> */}
       </IonHeader>
       <IonContent className="ion-padding home-content">
-      <div className='home-div-logo '> 
-        <h1 className='home-text-logo'>Learn Québécois  </h1><img className='home-logo'  src="../assets/home-logo.png" alt="" />
+      <div className='home-div-logo '>
+        <img className='home-logo' src="../assets/home-logo.png" alt="" />
+          <h1 className='home-text-logo  '>Learn Québécois  </h1>
+          
         </div>
         <br />
         <IonList className="home-list">

@@ -27,7 +27,7 @@ const FoodCorner: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent>
-        <IonList className="music-list">\
+        <IonList className="music-list">
 <div className='div-films'>
   <h3 className='text-film '>Québécois cuisine</h3>
   <p className='text-film '>Québec's cuisine (or Québécois cuisine, or French Canadian cuisine) is a national cuisine in the Canadian province of Quebec descended from 16th-century French cuisine. Québec's cuisine began to develop in New France from the labour-intensive nature of colonial life, the seasonality of ingredients and the need to conserve resources. Québec's cuisine has been influenced by the province's history of fur trading and hunting, as well as Québec's winters, soil fertility, teachings from First Nations, British cuisine, American cuisine, historical trade relations and some immigrant cuisines.</p>

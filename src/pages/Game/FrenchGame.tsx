@@ -52,6 +52,7 @@ const FrenchGame: React.FC = () => {
   const [icon5, setIcon5] = useState(false);
   // questions.length
 
+  const[image, setImage]= useState(false)
 
   const [percentages, setPercentages] = useState(0);
   const handleAnswerOptionClick1 = (isCorrect: boolean, answer1: any) => {
@@ -199,7 +200,7 @@ const FrenchGame: React.FC = () => {
     setHaveAnswered(true)
 setKeepScore(0)
     setFinalScore(0)
-   
+    setImage(false)
     const nextQuestion = Math.floor(Math.random() * questionsFrench.length)
     setCurrentQuestion(nextQuestion);
   }
@@ -275,7 +276,10 @@ setIcon1(true)
     const total = 5
     const divide = finalScore
     setPercentages((100 * divide) / total)
+    if(finalScore==5){
+      setImage(true)
 
+    }
   }
   
 
@@ -321,19 +325,19 @@ setIcon1(true)
                     <div className='question-section'>
 
 
-                      <IonItem lines="none" >
-                        <h5 className='question-text question-title'>Good work</h5>
-                      </IonItem>
-
-                      <h3>{finalScore}/5</h3>
-                      <h3>{percentages}%</h3>
+                   
+ 
+                      {image? <img className='' src="../assets/win.png" alt="" />:  <img className='' src="../assets/fail.png" alt="" /> }
+                
+                      <h3 className='final-text' >{finalScore}/5</h3>
+                      <h3 className='final-text' >{percentages}%</h3>
 
                     </div>
 
                     <br />
 
                     <IonButton expand="full" shape='round' onClick={keepPlaying} >
-                      Keep Practicing
+                      Play Again!
                     </IonButton>
 
 
