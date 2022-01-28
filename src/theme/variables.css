@@ -118,8 +118,9 @@ color:white;
 } */
 ion-content {
   /* background-image: url('/src/background.jpg'); */
-  background-image: linear-gradient(to bottom, #1e4ef5, #1a42dd, #1436c5, #0b2aae, #001f97);
-  /* background-image: linear-gradient(to bottom, #1e4ef5, #204ff1, #214fed, #2350e9, #2550e5, #244cdd, #2247d5, #2043cd, #1a3abf, #1331b2, #0a28a4, #001f97); */
+  /* background-image: linear-gradient(to bottom, #1e4ef5, #1a42dd, #1436c5, #0b2aae, #001f97); */
+   background-image:linear-gradient(0deg, rgba(0,31,151,1) 0%, rgba(30,78,245,1) 100%);
+   /* background-image: linear-gradient(0deg, rgba(0,31,151,1) 12%, rgba(88,125,240,1) 100%); */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

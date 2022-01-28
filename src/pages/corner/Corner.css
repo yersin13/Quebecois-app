@@ -1,0 +1,138 @@
+.image-corner{
+width: 120px;
+height:120px;
+
+}
+
+.corner-card{
+    border-radius: 10px;
+   margin: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.corner-title{
+    padding: 2px;
+    /* margin: 0; */
+    color: white;
+    font: bold;
+    text-align: center;
+    /* font-size: 25px; */
+}
+
+
+.card-music{
+    background-color: #001f97;
+    /* padding-bottom: 10px; */
+    margin-bottom: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.music-list{
+    padding: 10px;
+}
+
+.film-video{
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+
+.div-films{
+    color: #05165c;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* text-align: center; */
+    align-content: center;
+    /* border-radius: 10px; */
+    /* background-color:white; */
+    padding-bottom: 10px;
+}
+
+.text-music{
+    color:white;
+    font-size:18px;
+}
+.text-music-item{
+    color:white;
+    text-align: center;
+    margin:0;
+    padding-top:15px
+}
+.div-text-music{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.iframe-music{
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.music-genre{
+    color:#ffffff;
+    /* color:white; */
+    /* text-align: center; */
+    padding: 0;
+    margin: 0;
+}
+.text-film{
+    color:white;
+    /* margin-bottom: 10px; */
+}
+
+
+
+.text-films-corner{
+    color:#001f97;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.fab-memes{
+background-color: #001f97;
+}
+
+.fav-meme-item{
+    position: absolute;
+    bottom: -10px;
+  right: -10px;
+  background-color: #001f97;
+  border-radius: 100px;
+  height: 45px;
+  width: 45px;
+}
+
+.div-header-meme{
+    position: relative;
+}
+
+.label-toast{
+    color: #001f97;
+}
+
+.film-image{
+
+}
+
+
+.card-films-corner{
+    background-color:rgb(255, 255, 255);
+    /* padding:10px; */
+    margin:10px;
+    border-radius:10px;
+    /* width: 30%; */
+   
+}
+
+
+.card-header-films{
+    padding: 0;
+
+}

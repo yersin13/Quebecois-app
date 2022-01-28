@@ -14,13 +14,13 @@ import { SlidesIntro } from './pages/SlidesIntro';
 import GameHome from './pages/Game/GameHome';
 import EnglishGame from './pages/Game/EnglishGame';
 import FrenchGame from './pages/Game/FrenchGame';
-import Corner from './corner/Corner';
-import CornerMusic from './corner/CornerMusic';
-import FilmsCorner from './corner/FilmsCorner';
-import Film from './corner/Film'
-import FoodCorner from './corner/FoodCorner';
-import Food from './corner/Food';
-import MemesCorner from './corner/MemesCorner';
+import Corner from './pages/corner/Corner';
+import CornerMusic from './pages/corner/CornerMusic';
+import FilmsCorner from './pages/corner/FilmsCorner';
+import Film from './pages/corner/Film'
+import FoodCorner from './pages/corner/FoodCorner';
+import Food from './pages/corner/Food';
+import MemesCorner from './pages/corner/MemesCorner';
 
 
 
