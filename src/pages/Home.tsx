@@ -1,4 +1,4 @@
-import { IonAvatar, IonButton, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCol, IonContent, IonGrid, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonPage, IonRow, IonSearchbar, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToolbar, useIonLoading } from '@ionic/react';
+import { IonAvatar, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCol, IonContent, IonGrid, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonMenu, IonPage, IonRow, IonSearchbar, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToolbar, useIonLoading } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import { entriesHome } from '../data-home';
 import { closeCircle } from 'ionicons/icons'
@@ -6,6 +6,7 @@ import './Home.css';
 import { home as homeIcon, settings as settingsIcon, planetOutline as planetIcon } from 'ionicons/icons'
 import { useEffect, useState } from 'react';
 import { entriesExpressions } from '../data-expressions';
+import { NavButtons } from './NavButtons';
 
 
 
@@ -24,17 +25,26 @@ const Home: React.FC = () => {
 
   return (
     <IonPage>
-
+   
+   
       <IonHeader className="home-header ion-no-border">
-
-      </IonHeader>
-      <IonContent className="ion-padding home-content background-image">
-        {/* <h6>Search</h6> */}
-        <div className='home-div-logo '>
+       
+      <IonToolbar>
+      <IonButtons className="menu" slot="end">
+            <NavButtons/>
+          </IonButtons>
+          <div className='home-div-logo '>
         <img className='home-logo' src="../assets/icon/icon.png" alt="" />
           <h1 className='home-text-logo '>Learn Québécois  </h1>
-          
+       
         </div>
+        </IonToolbar>
+        
+      </IonHeader>
+      <IonContent className="ion-padding home-content background-image">
+     
+        {/* <h6>Search</h6> */}
+       
         {/* <IonSearchbar className="expressions-search" value={searchText} onIonChange={e => setSearchText(e.detail.value!)}></IonSearchbar> */}
         <IonList className="home-list">
 

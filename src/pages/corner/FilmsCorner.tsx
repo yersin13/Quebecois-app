@@ -28,19 +28,20 @@ const FilmsCorner: React.FC = () => {
       </IonHeader>
       <IonContent>
         <IonList className="music-list">
-        <div className='div-films'>
-  <h3 className='text-film '>Cinema of Quebec</h3>
-  <p className='text-film '>The history of cinema in Quebec started on June 27, 1896 when the Frenchman Louis Minier inaugurated the first movie projection in North America in a Montreal theatre room. However, it would have to wait until the 1960s before a genuine Quebec cinema industry would emerge. Approximately 620 feature-length films have been produced, or partially produced by the Quebec film industry since 1943.</p>
+        <div className='div-films-corner'>
+  <h3 className='text-film-corner '>Cinema of Quebec</h3>
+  <p className='text-film-corner '>The history of cinema in Quebec started on June 27, 1896 when the Frenchman Louis Minier inaugurated the first movie projection in North America in a Montreal theatre room. However, it would have to wait until the 1960s before a genuine Quebec cinema industry would emerge. Approximately 620 feature-length films have been produced, or partially produced by the Quebec film industry since 1943.</p>
 </div>
    {films.map((entry)=>
   
  
     <IonCard button routerLink={`/corner-films/${entry.id}`}  className='card-films-corner'>
   <IonCardHeader className="card-header-films">
-  <img className='film-image' src={entry.img} alt="" />
-
-  </IonCardHeader>
+  
   <h3 className='text-films-corner'>{entry.name}</h3>
+  </IonCardHeader>
+  
+  <img className='film-image' src={entry.img} alt="" />
 </IonCard>
 
 

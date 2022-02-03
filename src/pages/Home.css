@@ -16,6 +16,12 @@ h3, h4 ,h1, h5, h6{
 
     
 }
+
+.menu{
+    position: absolute;
+    left: 10px;
+    top:32px;
+}
 .home-logo{
   height: 10%;
   width: 10%;
@@ -26,12 +32,12 @@ h3, h4 ,h1, h5, h6{
 }
 
 .home-div-logo{
-   margin-top:20px;
+   margin-top:10px;
     display: flex;
     align-items:center;
     justify-content: center;
     padding-top: 15px;
-    padding-bottom: 10px;
+    padding-bottom:5px;
 }
 .home-text-logo{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -42,8 +48,7 @@ h3, h4 ,h1, h5, h6{
     margin: 0;
     /* color: #001f97; */
     color:white;
-    /* color:white; */
-    /* font: bold; */
+ 
     text-align: center;
     text-align: center;
 }
@@ -161,4 +166,9 @@ border-radius: 10px;
 .card-random{
     background-color: #ffffff;
     border-radius: 10px;
+  }
+
+  .home-logo-text{
+      /* width: 80%; */
+      /* padding-top: 10px; */
   }

@@ -41,51 +41,25 @@ height:120px;
 
 
 .div-films{
-    color: #05165c;
+    color:#001f97;
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
-    /* text-align: center; */
-    align-content: center;
-    /* border-radius: 10px; */
-    /* background-color:white; */
+  
+    background-color:white;
     padding-bottom: 10px;
 }
 
-.text-music{
-    color:white;
-    font-size:18px;
-}
-.text-music-item{
-    color:white;
-    text-align: center;
-    margin:0;
-    padding-top:15px
-}
-.div-text-music{
-    padding-right: 10px;
-    padding-left: 10px;
-}
-.iframe-music{
-    border-radius: 10px;
-    margin-top: 10px;
-    margin-bottom: 15px;
-}
-.music-genre{
-    color:#ffffff;
-    /* color:white; */
-    /* text-align: center; */
-    padding: 0;
-    margin: 0;
-}
+
 .text-film{
-    color:white;
+    color:#001f97;
     /* margin-bottom: 10px; */
 }
 
-
+.div-films-corner{
+    padding: 10px;
+}
 
 .text-films-corner{
     color:#001f97;
@@ -111,6 +85,8 @@ background-color: #001f97;
 
 .div-header-meme{
     position: relative;
+    /* padding-bottom: 5px;  */
+    padding-top: 20px;
 }
 
 .label-toast{
@@ -136,3 +112,56 @@ background-color: #001f97;
     padding: 0;
 
 }
+
+.item-food-corner{
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+}
+.text-food-corner{
+    color: #001f97;
+}
+
+.div-music{
+    /* background-color: #ffffff; */
+    border-radius: 10x;
+    /* margin: 15px; */
+    margin: 10px;
+    
+}
+.text-music{
+    color:white;
+    /* font-size:18px; */
+ 
+}
+
+.div-text-music{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.iframe-music{
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+
+.div-food{
+    color:white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   background-color: white;
+    padding-bottom: 10px;
+    border-radius: 10x;
+}
+
+.div-food-corner{
+    padding: 15px;  
+}
+.item-memes-corner{
+    background-color: white;
+    margin: 10px;
+}
+

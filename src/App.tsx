@@ -21,15 +21,22 @@ import Film from './pages/corner/Film'
 import FoodCorner from './pages/corner/FoodCorner';
 import Food from './pages/corner/Food';
 import MemesCorner from './pages/corner/MemesCorner';
+import { Menu } from './pages/Menu';
+import Favorites from './pages/Favorites';
+
 
 
 
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
-      <IonRouterOutlet>
+    <Menu/>
+      <IonRouterOutlet id="main">
         <Route exact path="/home">
         <Home />
+        </Route>
+        <Route exact path="/favorites">
+        <Favorites />
         </Route>
         <Route exact path="/words-list">
         <WordsList />

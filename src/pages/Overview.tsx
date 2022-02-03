@@ -67,10 +67,7 @@ const Overview: React.FC = () => {
     <IonLabel className="label">Home</IonLabel>
   </IonTabButton>
   
-  {/* <IonTabButton tab="settings" href="/settings" >
-  <IonIcon className="icons" icon={settingsIcon} />
-    <IonLabel className="label">Settings</IonLabel>
-  </IonTabButton> */}
+  
 </IonTabBar>
     </IonPage>
   );

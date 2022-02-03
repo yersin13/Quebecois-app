@@ -39,14 +39,14 @@ const Food: React.FC = () => {
               return entry
           }).map((entry) =>
   
-      <div className='div-films'>
+      <div className='div-food'>
  
              
      
- <h3 className='text-film'>{entry.name}</h3>
+ <h3 className='text-food-corner'>{entry.name}</h3>
 
      
-     <p className='text-film '>{entry.recipe} </p>
+     <p className='text-food-corner '>{entry.recipe} </p>
 
      <img className='film-video'  src={entry.src} alt="" />  
 
