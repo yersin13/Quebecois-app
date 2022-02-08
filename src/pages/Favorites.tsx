@@ -4,9 +4,31 @@ import { entriesHome } from '../data-home';
 import { closeCircle } from 'ionicons/icons'
 import { home as homeIcon, settings as settingsIcon, planetOutline as planetIcon } from 'ionicons/icons'
 import './Overview.css';
+import { useEffect, useState } from 'react';
+
 
 const Favorites: React.FC = () => {
+  const [memo, setMemo] = useState<Array<String>>([]);
+const [noItem, setNoItem] = useState(false)
+
+
+  useEffect(() => {
+  
+    
+    const localStorageContent = localStorage.getItem('favWord')
+    if (localStorageContent === null) {
+      setNoItem(true)
+
+    } else if (localStorageContent) {
+
+      setMemo(JSON.parse(localStorageContent))
+      console.log(memo)
+    }
+
+ 
+  }, []);
   return (
+   
     <IonPage>
      <IonHeader>
      
@@ -19,12 +41,18 @@ const Favorites: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent>
+      {noItem? 
       <IonList className="overview-list">
           
-         
+         <p>no items</p>
         
-        </IonList>
+        </IonList>:
+           <IonList className="overview-list">
+          
+         <p>Items many</p>
         
+           </IonList>
+}
       </IonContent>
       <IonTabBar slot="bottom">
 <IonTabButton tab="profile"  href="/home" >

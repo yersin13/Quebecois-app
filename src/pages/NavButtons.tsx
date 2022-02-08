@@ -24,7 +24,7 @@ export const NavButtons = () => {
         <>
           <IonButton routerLink={"/home"}>Home </IonButton>
           <IonButton routerLink={"/page-1"}>One </IonButton>
-          <IonButton routerLink={"/page-2"}>Two</IonButton>
+          
         </>
       )}
     </div>

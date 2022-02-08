@@ -22,7 +22,10 @@ import FoodCorner from './pages/corner/FoodCorner';
 import Food from './pages/corner/Food';
 import MemesCorner from './pages/corner/MemesCorner';
 import { Menu } from './pages/Menu';
-import Favorites from './pages/Favorites';
+
+import FavExpressionsList from './pages/favorites/FavExpressionsList';
+import FavWords from './pages/favorites/FavWords';
+import FavCorner from './pages/favorites/FavCorner';
 
 
 
@@ -35,9 +38,19 @@ const App: React.FC = () => (
         <Route exact path="/home">
         <Home />
         </Route>
-        <Route exact path="/favorites">
-        <Favorites />
+
+
+        <Route exact path="/favExpressions">
+        <FavExpressionsList />
         </Route>
+        <Route exact path="/favWords">
+        <FavWords />
+        </Route>
+        <Route exact path="/favCorner">
+        <FavCorner/>
+        </Route>
+
+
         <Route exact path="/words-list">
         <WordsList />
         </Route>

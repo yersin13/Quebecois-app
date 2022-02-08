@@ -1,7 +1,7 @@
 import { IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonChip, IonCol, IonContent, IonFab, IonFabButton, IonGrid, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonPage, IonRow, IonSlide, IonSlides, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToast, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../../components/ExploreContainer';
 import { entriesHome } from '../../data-home';
-import { arrowForwardCircle, bookmarkOutline, closeCircle, headsetOutline, heartCircle, heartSharp, informationCircle } from 'ionicons/icons'
+import { addCircle, addCircleSharp, arrowForwardCircle, bookmarkOutline, closeCircle, headsetOutline, heartCircle, heartSharp, informationCircle } from 'ionicons/icons'
 import { home as homeIcon, settings as settingsIcon, planetOutline as planetIcon } from 'ionicons/icons'
 import './Corner.css';
 
@@ -22,106 +22,34 @@ const slideOpts = {
 
 const MemesCorner: React.FC = () => {
 
-const [finalId, setFinalId] = useState('')
-const [myArray, setMyArray]= useState<Array<string>>([]);
+
 const [memo, setMemo]=useState<Array<String>>([]);
 const [showToast1, setShowToast1]= useState(false)
 const [showToast2, setShowToast2]= useState(false)
-// let myArray: any[] = []
 
-
-
-
-// useEffect(() => {
-//   const localStorageContent = localStorage.getItem('favMemes');
- 
-
-
-
-// favMemes.push(finalId)
-
-// if(!finalId){
-//   console.log( 'nothing')
-// }else{
-
-  // if (localStorageContent === null){
-  //   let myArray: any[] = []
-  // }else{
-  //   let myArray = JSON.parse(localStorageContent);
-  // }
-  // myArray.push(finalId)
-  // localStorage.setItem('favMemes', JSON.stringify(myArray))
-//   setFinalId('')
-// }
-// console.log(myArray)
-// });
-// const [myArray, updateMyArray] = useState<Array<string>([]);
 
 const click = (user: { id: string; src: string; })=>{
-  const localStorageContent = localStorage.getItem('favMemes')
-//      if(localStorageContent===null){
-//       setMyArray( (arr: any) => [...arr, user.id]);
-//       localStorage.setItem('favMemes', JSON.stringify(myArray)) 
-// console.log('vacio')
-//      }else
+  const localStorageContent = localStorage.getItem('favCorner')
+
  if(localStorageContent?.match(user.id)){
   console.log('found')
   setShowToast2(true)
  } else{
   // setMyArray( (arr: any) => [...arr, user.id]);
   setShowToast1(true)
-   console.log (myArray)
+
    memo.push(user.id)
-   localStorage.setItem('favMemes', JSON.stringify(memo)) 
+   localStorage.setItem('favCorner', JSON.stringify(memo)) 
  }
 
-// if(localStorageContent===null){
-// console.log('vacio')
-// setMyArray( (arr: any) => [...arr, user.id]);
-// console.log(myArray)
-// }else
-//  if(localStorageContent.match(user.id)){
-//   console.log('found')
-//  } else{
-//   setMyArray( (arr: any) => [...arr, user.id]);
-//   localStorage.setItem('favMemes', JSON.stringify(myArray))
-//    console.log (myArray)
-//  }
 
-
-
-// if(localStorageContent=== null){
-//   setMyArray( (arr: any) => [...arr, user.id]);
-//   localStorage.setItem('favMemes', JSON.stringify(user.id))
-  
-// }else if(localStorageContent.match(user.id)){
-//  console.log('Already saved in storage')
-
-// }else{
-//   if(myArray.find(id => id === user.id)){
-//     console.log('found')
-//    } else{
-  
-//     setMyArray( (arr: any) => [...arr, user.id]);
-//      console.log (myArray)
-//      localStorage.setItem('favMemes', JSON.stringify(myArray))
-//      console.log('saved')
-//     }
-
-  
-//   console.log(myArray)
-
-// }
-
-
-  
   
 }
 
 
 useEffect(() => {
   // console.log(myArray)
-  const localStorageContent = localStorage.getItem('favMemes')
+  const localStorageContent = localStorage.getItem('favCorner')
   if(localStorageContent=== null){
    
    
@@ -168,7 +96,8 @@ useEffect(() => {
 
                   <IonFabButton key={entry.id} className="fav-meme-item" onClick={()=>{click(entry)} } >
 
-                    <IonIcon className="fav-meme-chip" icon={bookmarkOutline}  />
+                  <IonIcon  className="fav-chip" icon={bookmarkOutline} />
+                <IonIcon  className="fav-chip2" icon={addCircle} />
 
                   </IonFabButton>
 

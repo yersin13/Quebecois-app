@@ -1,11 +1,12 @@
-import { IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonCol, IonContent, IonGrid, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonPage, IonRow, IonSlide, IonSlides, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToolbar } from '@ionic/react';
+import { IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonCol, IonContent, IonFabButton, IonGrid, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonPage, IonRow, IonSlide, IonSlides, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToast, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../../components/ExploreContainer';
 import { entriesHome } from '../../data-home';
-import { closeCircle } from 'ionicons/icons'
+import { addCircle, bookmarkOutline, closeCircle } from 'ionicons/icons'
 import { home as homeIcon, settings as settingsIcon, planetOutline as planetIcon } from 'ionicons/icons'
 import './Corner.css';
 import { useParams } from 'react-router';
 import { food } from '../../data-food';
+import { useEffect, useState } from 'react';
 
 
 const slideOpts = {
@@ -19,6 +20,48 @@ interface RouteParams {
 
 
 const Food: React.FC = () => {
+ 
+  const [memo, setMemo] = useState<Array<String>>([]);
+  const [showToast1, setShowToast1] = useState(false)
+  const [showToast2, setShowToast2] = useState(false)
+
+
+  const click = (user: { id: string; src: string; }) => {
+    const localStorageContent = localStorage.getItem('favCorner')
+    
+    if (localStorageContent?.match(user.id)) {
+      console.log('found')
+      setShowToast2(true)
+    } else {
+     
+      setShowToast1(true)
+  
+      memo.push(user.id)
+      localStorage.setItem('favCorner', JSON.stringify(memo))
+    }
+
+
+
+
+  }
+
+
+  useEffect(() => {
+    // console.log(myArray)
+    const localStorageContent = localStorage.getItem('favCorner')
+    if (localStorageContent === null) {
+
+
+
+    } else if (localStorageContent) {
+
+      setMemo(JSON.parse(localStorageContent))
+      console.log(memo)
+    }
+
+
+  }, []);
+
   const { id } = useParams<RouteParams>();
   return (
     <IonPage>
@@ -34,25 +77,31 @@ const Food: React.FC = () => {
       </IonHeader>
       <IonContent>
         <IonList className="music-list">
-{food.filter((entry) => {
+          {food.filter((entry) => {
             if (entry.id === id)
               return entry
           }).map((entry) =>
-  
-      <div className='div-food'>
- 
-             
-     
- <h3 className='text-food-corner'>{entry.name}</h3>
 
-     
-     <p className='text-food-corner '>{entry.recipe} </p>
+            <div className='div-food'>
 
-     <img className='film-video'  src={entry.src} alt="" />  
+              <div className='position-item'>
+                <IonFabButton key={entry.id} className="fav-film-item" onClick={() => { click(entry) }} >
 
-</div>
+                  <IonIcon className="fav-chip-film" icon={bookmarkOutline} />
+                  <IonIcon className="fav-chip-film2" icon={addCircle} />
+                </IonFabButton>
+              </div>
+
+              <h3 className='text-food-corner'>{entry.name}</h3>
+
+
+              <p className='text-food-corner '>{entry.recipe} </p>
+
+              <img className='film-video' src={entry.src} alt="" />
+
+            </div>
           )}
-{/*   
+          {/*   
       <div className='div-films'>
  
              
@@ -92,9 +141,26 @@ The film was short-listed for the Best Foreign Language Film Oscar. </p>
 
 
 
-        
-        </IonList>
 
+        </IonList>
+        <IonToast
+
+          isOpen={showToast1}
+          onDidDismiss={() => { setShowToast1(false) }}
+          message="Food has been saved."
+          duration={400}
+          color="dark "
+
+        />
+        <IonToast
+
+          isOpen={showToast2}
+          onDidDismiss={() => { setShowToast2(false) }}
+          message="Already saved"
+          duration={400}
+          color="danger "
+
+        />
       </IonContent>
       <IonTabBar slot="bottom">
         <IonTabButton tab="profile" href="/home" >

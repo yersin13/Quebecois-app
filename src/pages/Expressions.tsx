@@ -1,7 +1,7 @@
-import { IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonContent, IonFooter, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonPage, IonSearchbar, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToolbar } from '@ionic/react';
+import { IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonContent, IonFabButton, IonFooter, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonPage, IonSearchbar, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToast, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import { entriesExpressions } from '../data-expressions';
-import { closeCircle } from 'ionicons/icons'
+import { addCircle, bookmarkOutline, closeCircle } from 'ionicons/icons'
 import { home as homeIcon, settings as settingsIcon, planetOutline as planetIcon } from 'ionicons/icons'
 import './Words.css';
 import { NativeAudio } from "@ionic-native/native-audio/ngx";
@@ -17,6 +17,44 @@ interface RouteParams {
 const Expressions: React.FC = () => {
 
   const { id } = useParams<RouteParams>();
+  const [memo, setMemo] = useState<Array<String>>([]);
+  const [showToast1, setShowToast1] = useState(false)
+  const [showToast2, setShowToast2] = useState(false)
+
+
+  const click = (user: {
+    id: string;
+  }) => {
+    const localStorageContent = localStorage.getItem('favExpressions')
+
+    if (localStorageContent?.match(user.id)) {
+      console.log('found')
+      setShowToast2(true)
+    } else {
+    
+      setShowToast1(true)
+
+      memo.push(user.id)
+      localStorage.setItem('favExpressions', JSON.stringify(memo))
+    }
+
+
+  }
+  useEffect(() => {
+  
+    const localStorageContent = localStorage.getItem('favExpressions')
+    if (localStorageContent === null) {
+
+
+
+    } else if (localStorageContent) {
+
+      setMemo(JSON.parse(localStorageContent))
+      console.log(memo)
+    }
+
+ 
+  }, []);
 
 
   return (
@@ -41,6 +79,15 @@ const Expressions: React.FC = () => {
             <IonCard className=" card-item">
 
               <IonCardContent>
+              <div className='position-item'>
+                  <IonFabButton key={entry.id} className="fav-word-item" onClick={() => { click(entry) }} >
+
+                    <IonIcon className="fav-chip" icon={bookmarkOutline} />
+                    <IonIcon className="fav-chip2" icon={addCircle} />
+                  </IonFabButton>
+                </div>
+                <br />
+                <br />
                 <div className="expression-list-item">
                   <img className="expression-icon" src="./assets/qcflag.png" alt="" />
                   <h1 className="expression-header text bold">{entry.quebec}</h1>
@@ -81,10 +128,28 @@ const Expressions: React.FC = () => {
           )}
 
         </IonList>
+        <IonToast
 
+isOpen={showToast1}
+onDidDismiss={() => { setShowToast1(false) }}
+message="Meme has been saved."
+duration={400}
+color="dark "
+
+/>
+<IonToast
+
+isOpen={showToast2}
+onDidDismiss={() => { setShowToast2(false) }}
+message="Already saved"
+duration={400}
+color="danger "
+
+/>
 
 
       </IonContent>
+      
       {/* <IonTabBar slot="bottom">
         <IonTabButton tab="profile" href="/home" >
           <IonIcon className="icons" icon={homeIcon} />

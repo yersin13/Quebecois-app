@@ -44,7 +44,7 @@ h3, h4 ,h1, h5, h6{
     /* font-weight:bold; */
     padding: 0;
     padding-left: 7px;
- font-size: 30px;
+ /* font-size: 30px; */
     margin: 0;
     /* color: #001f97; */
     color:white;
@@ -172,3 +172,55 @@ border-radius: 10px;
       /* width: 80%; */
       /* padding-top: 10px; */
   }
+
+  /* #ListBackdrop{
+    background-color: white !important;
+    position: fixed !important;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.8;
+    text-align: right;
+    justify-content:space-evenly;
+ }
+
+ .nav-item-home{
+     top: 20px;
+    
+    position: absolute;
+    width: 100%;
+    padding-right: 220px;
+    padding-bottom: 75px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: bold;
+ } */
+
+ .menu-item-home{
+font-size: 20px;
+ }
+ .position-item{
+    position: relative;
+ }
+
+ .fav-word-item{
+    position: absolute;
+    top: -5px;
+  right: -5px;
+  background-color: #001f97;
+  border-radius: 100px;
+  height: 45px;
+  width: 45px;
+  z-index: 100;
+}
+
+.fav-film-item{
+    position: absolute;
+    top: -5px;
+  right: -5px;
+  background-color: #001f97;
+  border-radius: 100px;
+  height: 45px;
+  width: 45px;
+  z-index: 100;
+}

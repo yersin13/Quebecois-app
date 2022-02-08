@@ -1,7 +1,7 @@
-import { IonAvatar, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCol, IonContent, IonGrid, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonMenu, IonPage, IonRow, IonSearchbar, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToolbar, useIonLoading } from '@ionic/react';
+import { IonAvatar, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCol, IonContent, IonFab, IonFabButton, IonFabList, IonGrid, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonMenu, IonPage, IonRow, IonSearchbar, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToolbar, useIonLoading } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import { entriesHome } from '../data-home';
-import { closeCircle } from 'ionicons/icons'
+import { closeCircle, logoFacebook, logoInstagram, logoTwitter, logoVimeo, share } from 'ionicons/icons'
 import './Home.css';
 import { home as homeIcon, settings as settingsIcon, planetOutline as planetIcon } from 'ionicons/icons'
 import { useEffect, useState } from 'react';
@@ -25,30 +25,52 @@ const Home: React.FC = () => {
 
   return (
     <IonPage>
-   
-   
+
+
       <IonHeader className="home-header ion-no-border">
+
+        <IonToolbar>
+         
+         
+         
        
-      <IonToolbar>
-      <IonButtons className="menu" slot="end">
-            <NavButtons/>
+          
+       <div className='home-div-logo '>
+            <img className='home-logo' src="../assets/icon/icon.png" alt="" />
+            <h1 className='home-text-logo '>Learn Québécois  </h1>
+           
+          </div>
+
+          <IonButtons className="menu" slot="start">
+            <NavButtons />
           </IonButtons>
-          <div className='home-div-logo '>
-        <img className='home-logo' src="../assets/icon/icon.png" alt="" />
-          <h1 className='home-text-logo '>Learn Québécois  </h1>
-       
-        </div>
         </IonToolbar>
-        
+       
+
       </IonHeader>
       <IonContent className="ion-padding home-content background-image">
+              {/* <IonFab vertical="top" horizontal="start" slot="fixed">
+          <IonFabButton color='danger' >
+            <IonIcon icon={share} />
+          </IonFabButton>
+          <IonFabList side="bottom" id='ListBackdrop' >
+            <IonButton color="danger" className="nav-item-home" ><IonIcon icon={logoVimeo} /> <p>hello</p></IonButton>
+         
+            <IonButton color="danger" className="nav-item-home"><IonIcon icon={logoFacebook} /> <p>hello</p></IonButton>
+          
+            <IonButton color="danger" className="nav-item-home"><IonIcon icon={logoInstagram} /> <p>hello</p></IonButton>
+        
+            <IonButton color="danger" className="nav-item-home"><IonIcon icon={logoTwitter} /> <p>hello</p></IonButton>
+          </IonFabList>
+        </IonFab> */}
+      
      
         {/* <h6>Search</h6> */}
-       
+
         {/* <IonSearchbar className="expressions-search" value={searchText} onIonChange={e => setSearchText(e.detail.value!)}></IonSearchbar> */}
         <IonList className="home-list">
 
-       
+
           <IonCard button routerLink="/overview" className="card "
             onClick={() => {
               present({
@@ -67,7 +89,7 @@ const Home: React.FC = () => {
             </IonCardHeader>
 
           </IonCard>
-          
+
           <IonCard button routerLink={`/expressions-list/${entriesExpressions[random].id}`} className="card-random "
             onClick={() => {
               present({
@@ -82,14 +104,14 @@ const Home: React.FC = () => {
                 <h5 className='home-random-title font-family'>
                   Random Québécois Phrase:
                 </h5>
-             
+
                 <p className='home-random-text font-family'>
-                <img className='sub-logo-expression'  src="../assets/qcflag.png" alt="" />
-                 {entriesExpressions[random].quebec}
+                  <img className='sub-logo-expression' src="../assets/qcflag.png" alt="" />
+                  {entriesExpressions[random].quebec}
                 </p>
                 <p className='home-random-text font-family'>
-                <img className='sub-logo-expression'  src="../assets/usa.png" alt="" />  
-                 {entriesExpressions[random].english}
+                  <img className='sub-logo-expression' src="../assets/usa.png" alt="" />
+                  {entriesExpressions[random].english}
                 </p>
               </IonCardTitle>
             </IonCardHeader>
