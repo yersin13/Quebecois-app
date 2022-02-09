@@ -48,9 +48,11 @@ const FavWords: React.FC = () => {
     pushData();
   });
 
+  const localStorageContent = localStorage.getItem('favWords')
+
   useEffect(() => {
     // console.log(myArray)
-    const localStorageContent = localStorage.getItem('favWords')
+   
     if(localStorageContent=== null){
    setNone(true)
     
@@ -64,7 +66,7 @@ const FavWords: React.FC = () => {
    
     }
  
-  },[]);
+  },[localStorageContent]);
   
 
 // let res = entriesExpressions.map(x => ({...x,is:memo.includes(x.id)}))
@@ -74,9 +76,6 @@ const FavWords: React.FC = () => {
 
 
 
-const res = entriesWords.filter(item => memo.includes(item.id));
-
-console.log(res);
 
   return (
     <IonPage>

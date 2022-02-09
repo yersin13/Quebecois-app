@@ -38,6 +38,7 @@ const Food: React.FC = () => {
   
       memo.push(user.id)
       localStorage.setItem('favCorner', JSON.stringify(memo))
+      
     }
 
 

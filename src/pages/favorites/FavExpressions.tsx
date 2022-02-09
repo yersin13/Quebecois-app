@@ -6,9 +6,11 @@ import { home as homeIcon, settings as settingsIcon, planetOutline as planetIcon
 
 import { useEffect, useState } from 'react';
 import { entriesExpressions } from '../../data-expressions';
+import { memes } from '../../data-memes';
+import { entriesWords } from '../../data-words';
+import ExpressionsList from '../ExpressionsList';
 
-
-const FavExpressionsList: React.FC = () => {
+const FavExpressions: React.FC = () => {
   const [present, dismiss] = useIonLoading();
   
   const [searchText, setSearchText] = useState('');
@@ -46,9 +48,11 @@ const FavExpressionsList: React.FC = () => {
     pushData();
   });
 
+  const localStorageContent = localStorage.getItem('favExpressions')
+
   useEffect(() => {
     // console.log(myArray)
-    const localStorageContent = localStorage.getItem('favExpressions')
+   
     if(localStorageContent=== null){
    setNone(true)
     
@@ -62,7 +66,7 @@ const FavExpressionsList: React.FC = () => {
    
     }
  
-  },[]);
+  },[localStorageContent]);
   
 
 // let res = entriesExpressions.map(x => ({...x,is:memo.includes(x.id)}))
@@ -72,9 +76,6 @@ const FavExpressionsList: React.FC = () => {
 
 
 
-const res = entriesExpressions.filter(item => memo.includes(item.id));
-
-console.log(res);
 
   return (
     <IonPage>
@@ -148,4 +149,4 @@ console.log(res);
   );
 };
 
-export default FavExpressionsList;
+export default FavExpressions;

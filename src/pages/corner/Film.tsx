@@ -43,6 +43,7 @@ const Film: React.FC = () => {
       console.log(myArray)
       memo.push(user.id)
       localStorage.setItem('favCorner', JSON.stringify(memo))
+      
     }
 
 

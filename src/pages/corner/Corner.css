@@ -144,6 +144,8 @@ background-color: #001f97;
 }
 .text-food-corner{
     color: #001f97;
+    text-align: center;
+    margin-top: 5px;
 }
 
 .div-music{
@@ -184,6 +186,13 @@ background-color: #001f97;
 .div-food-corner{
     padding: 15px;  
 }
+
+.food-img-corner{
+    height: 50%;
+    width: 100%;
+}
+
+
 .item-memes-corner{
     background-color: white;
     margin: 10px;

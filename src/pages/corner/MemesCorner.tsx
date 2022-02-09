@@ -40,6 +40,7 @@ const click = (user: { id: string; src: string; })=>{
 
    memo.push(user.id)
    localStorage.setItem('favCorner', JSON.stringify(memo)) 
+   
  }
 
 

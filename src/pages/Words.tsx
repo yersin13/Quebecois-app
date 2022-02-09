@@ -1,7 +1,7 @@
 import { IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonContent, IonFabButton, IonFooter, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonPage, IonSearchbar, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToast, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import { entriesWords } from '../data-words';
-import { addCircle, bookmarkOutline, chatbubblesOutline, closeCircle } from 'ionicons/icons'
+import { addCircle, bookmarkOutline, chatbubblesOutline, closeCircle, trash } from 'ionicons/icons'
 import { home as homeIcon, settings as settingsIcon, planetOutline as planetIcon } from 'ionicons/icons'
 import './Words.css';
 import { useEffect, useState } from 'react';
@@ -16,30 +16,37 @@ const Words: React.FC = () => {
 
   const [memo, setMemo] = useState<Array<String>>([]);
   const [showToast1, setShowToast1] = useState(false)
-  const [showToast2, setShowToast2] = useState(false)
+  const [showToastErase, setShowToastErase] = useState(false)
 
+
+  const [eraseBottom, setEraseBottom] = useState(false)
+
+  const localStorageContent = localStorage.getItem('favWords')
 
   const click = (user: {
     id: string;
   }) => {
-    const localStorageContent = localStorage.getItem('favWords')
+
 
     if (localStorageContent?.match(user.id)) {
       console.log('found')
-      setShowToast2(true)
+     
+      setEraseBottom(false)
     } else {
-    
+
       setShowToast1(true)
 
       memo.push(user.id)
       localStorage.setItem('favWords', JSON.stringify(memo))
+      setEraseBottom(false)
     }
 
-
   }
+
+
   useEffect(() => {
-  
-    const localStorageContent = localStorage.getItem('favWords')
+
+
     if (localStorageContent === null) {
 
 
@@ -48,10 +55,31 @@ const Words: React.FC = () => {
 
       setMemo(JSON.parse(localStorageContent))
       console.log(memo)
+      if (localStorageContent?.match(id)) {
+        setEraseBottom(true)
+      } else {
+        // setEraseBottom(false)
+      }
     }
 
- 
-  }, []);
+
+  }, [localStorageContent]);
+
+  const eraser = (user: {
+    id: string;
+  }) => {
+    if (localStorageContent === null) {
+
+    } else if (localStorageContent) {
+      let arr = JSON.parse(localStorageContent).filter((e: string) => e !== user.id); // will return ['A', 'C']) 
+      localStorage.setItem('favWords', JSON.stringify(arr))
+      setEraseBottom(false)
+      console.log(memo)
+      setShowToastErase(true)
+    }
+  }
+
+
 
   return (
     <IonPage>
@@ -76,11 +104,22 @@ const Words: React.FC = () => {
 
               <IonCardContent>
                 <div className='position-item'>
-                  <IonFabButton key={entry.id} className="fav-word-item" onClick={() => { click(entry) }} >
 
-                    <IonIcon className="fav-chip" icon={bookmarkOutline} />
-                    <IonIcon className="fav-chip2" icon={addCircle} />
-                  </IonFabButton>
+                  {eraseBottom ?
+
+                    <IonFabButton color="danger" key={entry.id} className="fav-word-item" onClick={() => { eraser(entry) }} >
+                      <IonIcon className="fav-chip" icon={bookmarkOutline} />
+                      <IonIcon className="fav-chip2" icon={trash} />
+
+                    </IonFabButton>
+                    :
+                    <IonFabButton key={entry.id} className="fav-word-item" onClick={() => { click(entry) }} >
+
+                      <IonIcon className="fav-chip" icon={bookmarkOutline} />
+                      <IonIcon className="fav-chip2" icon={addCircle} />
+                    </IonFabButton>
+                  }
+
                 </div>
                 <div className="expression-list-item">
                   <img className="expression-icon" src="./assets/qcflag.png" alt="" />
@@ -124,16 +163,17 @@ const Words: React.FC = () => {
 
             isOpen={showToast1}
             onDidDismiss={() => { setShowToast1(false) }}
-            message="Word has been saved."
+            message="Word has been saved in Fav"
             duration={400}
             color="dark "
 
           />
+        
           <IonToast
 
-            isOpen={showToast2}
-            onDidDismiss={() => { setShowToast2(false) }}
-            message="Already saved"
+            isOpen={showToastErase}
+            onDidDismiss={() => { setShowToastErase(false) }}
+            message="Word has been removed from fav"
             duration={400}
             color="danger "
 

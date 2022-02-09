@@ -25,6 +25,7 @@ const CornerMusic: React.FC = () => {
       //  console.log (myArray)
       memo.push(user.id)
       localStorage.setItem('favSongs', JSON.stringify(memo))
+      
     }
 
   }
