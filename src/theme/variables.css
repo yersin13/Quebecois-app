@@ -68,8 +68,9 @@
   --ion-item-background: #rrggbbaa;
 
   
-  /* --ion-toolbar-background: #001f97; */
-  --ion-toolbar-background:#1e4ef5;
+  --ion-toolbar-background: #001f97;
+  /* --ion-toolbar-background:#1e4ef5; */
+  /* --ion-toolbar-background:#0e2888; */
 
   --ion-tab-bar-background: #001f97;
 
@@ -117,9 +118,18 @@ color:white;
   font-weight: 600;
 } */
 ion-content {
-   background-color: rgba(30,78,245,1);
-  /* background-image: linear-gradient(to bottom, #1e4ef5, #1a42dd, #1436c5, #0b2aae, #001f97); */
-   /* background-image:linear-gradient(0deg, rgba(0,31,151,1) 0%, rgba(30,78,245,1) 100%); */
+   /* background-color: rgba(30,78,245,1); */
+
+
+   background-color: rgb(8, 0, 0);
+   
+   /* background-color: #001f97; */
+   /* background-color: rgb(228, 220, 220); */
+  /* background-image:  url("../back.jpg"); */
+   /* background-image: linear-gradient(to bottom, #9cfaf9, #00c9eb, #0096df, #0060c7, #001f97); */
+   
+   /* background-image: linear-gradient(to bottom, #051551, #04144b, #031344, #03113e, #040f38); */
+   
    /* background-image: linear-gradient(0deg, rgba(0,31,151,1) 12%, rgba(88,125,240,1) 100%); */
   background-position: center center;
   background-repeat: no-repeat;

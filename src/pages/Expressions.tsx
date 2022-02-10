@@ -1,7 +1,7 @@
 import { IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonContent, IonFabButton, IonFooter, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonPage, IonSearchbar, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToast, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import { entriesExpressions } from '../data-expressions';
-import { addCircle, bookmarkOutline, closeCircle, trash } from 'ionicons/icons'
+import { addCircle, bookmarkOutline, closeCircle, heart, trash } from 'ionicons/icons'
 import { home as homeIcon, settings as settingsIcon, planetOutline as planetIcon } from 'ionicons/icons'
 import './Words.css';
 import { NativeAudio } from "@ionic-native/native-audio/ngx";
@@ -107,15 +107,15 @@ const Expressions: React.FC = () => {
                 <div className='position-item'>
                   {eraseBottom ?
 
-                    <IonFabButton color="danger" key={entry.id} className="fav-word-item" onClick={() => { eraser(entry) }} >
-                      <IonIcon className="fav-chip" icon={bookmarkOutline} />
-                      <IonIcon className="fav-chip2" icon={trash} />
+                    <IonFabButton color="light"  key={entry.id} className="fav-word-item" onClick={() => { eraser(entry) }} >
+                      <IonIcon color="danger" className="fav-chip" icon={heart} />
+                      {/* <IonIcon className="fav-chip2" icon={trash} /> */}
 
                     </IonFabButton>
                     :
                     <IonFabButton key={entry.id} className="fav-word-item" onClick={() => { click(entry) }} >
 
-                      <IonIcon className="fav-chip" icon={bookmarkOutline} />
+                      <IonIcon className="fav-chip" icon={heart} />
                       <IonIcon className="fav-chip2" icon={addCircle} />
                     </IonFabButton>
                   }
@@ -168,7 +168,7 @@ const Expressions: React.FC = () => {
           onDidDismiss={() => { setShowToast1(false) }}
           message="Expression has been saved in Fav"
           duration={400}
-          color="dark "
+          color="warning "
 
         />
         <IonToast

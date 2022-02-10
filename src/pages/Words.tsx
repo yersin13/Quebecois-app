@@ -1,7 +1,7 @@
 import { IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonContent, IonFabButton, IonFooter, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonPage, IonSearchbar, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToast, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import { entriesWords } from '../data-words';
-import { addCircle, bookmarkOutline, chatbubblesOutline, closeCircle, trash } from 'ionicons/icons'
+import { addCircle, bookmarkOutline, chatbubblesOutline, closeCircle, headsetSharp, heart, heartDislike, heartOutline, star, starHalfSharp, starOutline, starSharp, trash } from 'ionicons/icons'
 import { home as homeIcon, settings as settingsIcon, planetOutline as planetIcon } from 'ionicons/icons'
 import './Words.css';
 import { useEffect, useState } from 'react';
@@ -65,6 +65,8 @@ const Words: React.FC = () => {
 
   }, [localStorageContent]);
 
+
+  
   const eraser = (user: {
     id: string;
   }) => {
@@ -89,7 +91,7 @@ const Words: React.FC = () => {
           <IonButtons slot="start">
             <IonBackButton />
           </IonButtons>
-
+     
 
         </IonToolbar>
       </IonHeader>
@@ -107,15 +109,15 @@ const Words: React.FC = () => {
 
                   {eraseBottom ?
 
-                    <IonFabButton color="danger" key={entry.id} className="fav-word-item" onClick={() => { eraser(entry) }} >
-                      <IonIcon className="fav-chip" icon={bookmarkOutline} />
-                      <IonIcon className="fav-chip2" icon={trash} />
+                    <IonFabButton color="light" key={entry.id} className="fav-word-item" onClick={() => { eraser(entry) }} >
+                      <IonIcon color="danger" className="fav-chip" icon={heart} />
+                      {/* <IonIcon className="fav-chip2" icon={trash} /> */}
 
                     </IonFabButton>
                     :
                     <IonFabButton key={entry.id} className="fav-word-item" onClick={() => { click(entry) }} >
 
-                      <IonIcon className="fav-chip" icon={bookmarkOutline} />
+                      <IonIcon className="fav-chip" icon={heart} />
                       <IonIcon className="fav-chip2" icon={addCircle} />
                     </IonFabButton>
                   }
@@ -165,7 +167,7 @@ const Words: React.FC = () => {
             onDidDismiss={() => { setShowToast1(false) }}
             message="Word has been saved in Fav"
             duration={400}
-            color="dark "
+            color="warning "
 
           />
         

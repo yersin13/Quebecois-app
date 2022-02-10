@@ -9,41 +9,62 @@ h3, h4 ,h1, h5, h6{
 .logo-toolbar{
   
     /* padding-left: ; */
-    align-content: center;
-    justify-self: center;
-    justify-content: center;
+    /* align-content: center; */
+    /* justify-self: center; */
+    /* justify-content: center; */
    height: fit-content;
 
     
 }
 
+.toolbar-home{
+    /* display: flex; */
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    
+}
+
+.home-list{
+    padding-top: 0;
+}
+
+
 .menu{
-    position: absolute;
+    /* position: absolute; */
     left: 10px;
     top:32px;
+    padding-right: 10px;
 }
 .home-logo{
-  height: 10%;
-  width: 10%;
+  height: 54%;
+  width: 14px;
   border-radius: 10px;
-  justify-content: center;
-  align-content: center;
-  
+  /* justify-content: center; */
+  /* align-content: center;
+  justify-content: space-between; */
 }
 
 .home-div-logo{
-   margin-top:10px;
+   /* margin-top:10px; */
     display: flex;
-    align-items:center;
-    justify-content: center;
-    padding-top: 15px;
-    padding-bottom:5px;
+    justify-content: space-between;
+    /* align-items:center; */
+    /* justify-content: center; */
+    padding-top: 5px;
+    /* padding-bottom:5px; */
+    width: 100%;
+}
+.box-logo{
+    display: flex;
+    flex-direction: row;
 }
 .home-text-logo{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
     /* font-weight:bold; */
     padding: 0;
-    padding-left: 7px;
+    
  /* font-size: 30px; */
     margin: 0;
     /* color: #001f97; */
@@ -51,6 +72,13 @@ h3, h4 ,h1, h5, h6{
  
     text-align: center;
     text-align: center;
+}
+
+.padding-menu-home{
+    padding-left: 27px;
+}
+.padding-menu-others{
+    padding-left: 10px;
 }
 
 .toolbar-div{
@@ -69,6 +97,7 @@ align-items:center;
     padding: 0;
     margin: 0;
     color: white;
+    /* color: #001f97; */
     font: bold;
     text-align: center;
     /* font-size: 25px; */
@@ -81,12 +110,7 @@ align-items:center;
      /* padding-left: 10px; */
      margin: 0;
    }
-.home-content{
-    /* align-content: space-between; */
-    /* background-color: black; */
-    /* border-radius:15px; */
-    /* padding: 10px; */
-}
+
 .home-item{
      padding: 10px;
      /* border-radius: 15px; */
@@ -124,17 +148,10 @@ align-items:center;
     font-size: 14px;
     opacity: 0.8;
     color: #001f97;
-    /* text-shadow: tomato; */
-    /* word-spacing: 0.05rem; */
+
 }
 
-/* .background-image{
-    background-image: url('/src/overview.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-} */
+
 
 .div-card-home{
     display: flex;

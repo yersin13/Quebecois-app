@@ -9,7 +9,7 @@ import { useEffect, useState } from 'react';
 
 const ExpressionsList: React.FC = () => {
   const [present, dismiss] = useIonLoading();
-  
+
   const [searchText, setSearchText] = useState('');
 
   const [data, setData] = useState<string[]>([]);
@@ -37,61 +37,64 @@ const ExpressionsList: React.FC = () => {
         setInfiniteDisabled(true);
       }
     }, 500);
-  }  
+  }
 
   useIonViewWillEnter(() => {
     pushData();
   });
   return (
     <IonPage>
-     <IonHeader>
-     
+      <IonHeader>
+
         <IonToolbar className="toolbar">
-        <IonButtons slot="start">
-            <IonBackButton/>
+          <IonButtons slot="start">
+            <IonBackButton />
           </IonButtons>
- 
-         
+          <div className='home-div-logo '>
+            <h4 className='home-text-logo padding-menu-others '><img className='home-logo' src="../assets/flor.png" alt="" /> Québécois Phrases </h4>
+          </div>
+
         </IonToolbar>
       </IonHeader>
       <IonContent>
-      <IonSearchbar className="expressions-search" value={searchText} onIonChange={e => setSearchText(e.detail.value!)}></IonSearchbar>
-      <IonList>
-        {/* <div className='div-sub-logo'> 
+        <IonSearchbar className="expressions-search" value={searchText} onIonChange={e => setSearchText(e.detail.value!)}></IonSearchbar>
+        <IonList>
+          {/* <div className='div-sub-logo'> 
       <img className='sub-logo'  src="../assets/usa.png" alt="" />
         <img className='sub-logo'  src="../assets/qcflag.png" alt="" />
         </div> */}
-      {entriesExpressions.filter((entry)=>{
-if (searchText == ""){
-  return entry
-} else if (entry.quebec.toLocaleLowerCase().includes(searchText.toLocaleLowerCase()))
-    return entry  }).map((entry)=>
-       <IonItem button 
-       onClick={() => {
-         present({
-           message: 'Loading...',
-           duration: 300
-         })
-       }}  routerLink={`/expressions-list/${entry.id}`} className="expressions-item">
-         <div>
-         {/* <IonLabel ><h6 className="expressions-text">
+          {entriesExpressions.filter((entry) => {
+            if (searchText == "") {
+              return entry
+            } else if (entry.quebec.toLocaleLowerCase().includes(searchText.toLocaleLowerCase()))
+              return entry
+          }).map((entry) =>
+            <IonItem button
+              onClick={() => {
+                present({
+                  message: 'Loading...',
+                  duration: 300
+                })
+              }} routerLink={`/expressions-list/${entry.id}`} className="expressions-item">
+              <div>
+                {/* <IonLabel ><h6 className="expressions-text">
            <img className='sub-logo-expression'  src="../assets/usa.png" alt="" />
            {entry.englishMeaning}</h6></IonLabel> */}
-       <IonLabel ><h2 className="expressions-text">
-          <img className='sub-logo-expression'  src="../assets/qcflag.png" alt="" />
-          {entry.number}.- {entry.quebec}</h2></IonLabel>
-         </div>
-      
-       {/* <IonThumbnail>
+                <IonLabel ><h2 className="expressions-text">
+                  <img className='sub-logo-expression' src="../assets/qcflag.png" alt="" />
+                  {entry.number}.- {entry.quebec}</h2></IonLabel>
+              </div>
+
+              {/* <IonThumbnail>
       <img className="expressions-img" src={entry.src} alt="" />
       </IonThumbnail> */}
-     
-     </IonItem>
+
+            </IonItem>
           )}
-      
-      </IonList>
-          
-      <IonInfiniteScroll
+
+        </IonList>
+
+        <IonInfiniteScroll
           onIonInfinite={loadData}
           threshold="100px"
           disabled={isInfiniteDisabled}
@@ -101,19 +104,19 @@ if (searchText == ""){
             loadingText="Loading more data..."
           ></IonInfiniteScrollContent>
         </IonInfiniteScroll>
-   
+
       </IonContent>
       <IonTabBar slot="bottom">
-<IonTabButton tab="profile"  href="/home" >
-    <IonIcon className="icons" icon={homeIcon} />
-    <IonLabel className="label">Home</IonLabel>
-  </IonTabButton>
-{/*   
+        <IonTabButton tab="profile" href="/home" >
+          <IonIcon className="icons" icon={homeIcon} />
+          <IonLabel className="label">Home</IonLabel>
+        </IonTabButton>
+        {/*   
   <IonTabButton tab="settings" href="/settings" >
   <IonIcon className="icons" icon={settingsIcon} />
     <IonLabel className="label">Settings</IonLabel>
   </IonTabButton> */}
-</IonTabBar>
+      </IonTabBar>
 
     </IonPage>
   );

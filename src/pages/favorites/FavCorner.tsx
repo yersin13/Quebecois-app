@@ -1,13 +1,15 @@
 import { IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonContent, IonFabButton, IonFooter, IonHeader, IonIcon, IonImg, IonInfiniteScroll, IonInfiniteScrollContent, IonItem, IonLabel, IonList, IonPage, IonSearchbar, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToolbar, useIonLoading, useIonViewWillEnter } from '@ionic/react';
 
-import { addCircle, bookmarkOutline, closeCircle, trash } from 'ionicons/icons'
+import { addCircle, bookmarkOutline, closeCircle, heart, trash } from 'ionicons/icons'
 import { home as homeIcon, settings as settingsIcon, planetOutline as planetIcon } from 'ionicons/icons'
 
 
 import { useEffect, useState } from 'react';
 import { entriesExpressions } from '../../data-expressions';
+import { films } from '../../data-films';
 import { food } from '../../data-food';
 import { memes } from '../../data-memes';
+import { music } from '../../data-music';
 import ExpressionsList from '../ExpressionsList';
 
 const FavCorner: React.FC = () => {
@@ -76,16 +78,16 @@ const FavCorner: React.FC = () => {
 
 
   const click = (user: { id: string; src: string; }) => {
-    if(localStorageContent=== null){
+    if (localStorageContent === null) {
 
-    } else if(localStorageContent){
+    } else if (localStorageContent) {
       let arr = JSON.parse(localStorageContent).filter((e: string) => e !== user.id); // will return ['A', 'C']) 
       localStorage.setItem('favCorner', JSON.stringify(arr))
-      window.location.reload() 
+      window.location.reload()
       console.log(memo)
     }
-   
-   
+
+
   }
 
 
@@ -98,66 +100,76 @@ const FavCorner: React.FC = () => {
           <IonButtons slot="start">
             <IonBackButton />
           </IonButtons>
-
+          <div className='home-div-logo '>
+            <h4 className='home-text-logo padding-menu-others '><img className='home-logo' src="../assets/flor.png" alt="" /> Favorite Corner </h4>
+          </div>
 
         </IonToolbar>
       </IonHeader>
       <IonContent>
         <IonSearchbar className="expressions-search" value={searchText} onIonChange={e => setSearchText(e.detail.value!)}></IonSearchbar>
         <IonList>
-        {food.filter(item => memo.includes(item.id)).map((entry) =>
 
-        <IonItem button routerLink={`/corner-food/${entry.id}`}  lines="none" className="item-food-corner">
-<h3 className='text-food-corner'>{entry.name}</h3>
+          <div className='div-text-music'>
+            <h3 className='text-music'>Food Québécois</h3>
+          </div>
 
-<IonThumbnail slot='end'>
-<img   src={entry.src} alt="" />
-</IonThumbnail>
-</IonItem> 
-            // <IonCard button routerLink={`/corner-food/${entry.id}`} className="item-memes-corner">
-            //   <IonCardHeader >
-            //     <div className="div-header-meme">
-            //       <h1>{entry.name}</h1>
-            //       <img src={entry.src} alt="" />
+          {food.filter(item => memo.includes(item.id)).map((entry) =>
 
-                  // <IonFabButton color="danger" key={entry.id} className="fav-meme-item" onClick={() => { click(entry) }} >
+            <IonItem button routerLink={`/corner-food/${entry.id}`} lines="none" className="item-food-corner">
+              <h3 className='text-food-corner'>{entry.name}</h3>
 
-                  //   <IonIcon className="fav-chip" icon={trash} />
-                    
+              <IonThumbnail slot='end'>
+                <img src={entry.src} alt="" />
+              </IonThumbnail>
+            </IonItem>
 
-                  // </IonFabButton>
+          )}
+<br />
+          <div className='div-text-music'>
+            <h3 className='text-music'>Films Québécois</h3>
+          </div>
+          {films.filter(item => memo.includes(item.id)).map((entry) =>
 
-                // </div>
+            <IonItem button routerLink={`/corner-films/${entry.id}`} lines="none" className="item-food-corner">
+              <h3 className='text-food-corner'>{entry.name}</h3>
 
+              <IonThumbnail slot='end'>
+                <img src={entry.img} alt="" />
+              </IonThumbnail>
+            </IonItem>
 
-              // </IonCardHeader>
-
-
-
-
-            // </IonCard>
           )}
 
+<br />
+          <div className='div-text-music'>
+            <h3 className='text-music'>Music Québécois</h3>
+          </div>
+          {music.filter(item => memo.includes(item.id)).map((entry) =>
+            <div className="div-music div-header-meme">
+              <iframe className='iframe-music' src={entry.src} width="100%" height="80" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" ></iframe>
+              <IonFabButton color="light" key={entry.id} className="fav-meme-item" onClick={() => { click(entry) }} >
+              <IonIcon color="danger" className="fav-chip" icon={heart} />
+              </IonFabButton>
+            </div>
+          )}
+
+<br />
+          <div className='div-text-music'>
+            <h3 className='text-music'>Memes Québécois</h3>
+          </div>
           {memes.filter(item => memo.includes(item.id)).map((entry) =>
             <IonCard className="item-memes-corner">
               <IonCardHeader >
                 <div className="div-header-meme">
                   <img src={entry.src} alt="" />
 
-                  <IonFabButton color="danger" key={entry.id} className="fav-meme-item" onClick={() => { click(entry) }} >
-
-                    <IonIcon className="fav-chip" icon={trash} />
-                    
-
+                  <IonFabButton color="light" key={entry.id} className="fav-meme-item" onClick={() => { click(entry) }} >
+                  <IonIcon color="danger" className="fav-chip" icon={heart} />
                   </IonFabButton>
 
                 </div>
-
-
               </IonCardHeader>
-
-
-
 
             </IonCard>
           )}

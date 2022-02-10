@@ -1,7 +1,7 @@
 import { IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonCol, IonContent, IonFabButton, IonGrid, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonPage, IonRow, IonSlide, IonSlides, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToast, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../../components/ExploreContainer';
 import { entriesHome } from '../../data-home';
-import { addCircle, bookmarkOutline, closeCircle } from 'ionicons/icons'
+import { addCircle, bookmarkOutline, closeCircle, heart } from 'ionicons/icons'
 import { home as homeIcon, settings as settingsIcon, planetOutline as planetIcon } from 'ionicons/icons'
 import './Corner.css';
 import { useParams } from 'react-router';
@@ -20,41 +20,41 @@ interface RouteParams {
 
 
 const Film: React.FC = () => {
+  const { id } = useParams<RouteParams>();
 
-  const [myArray, setMyArray] = useState<Array<string>>([]);
   const [memo, setMemo] = useState<Array<String>>([]);
   const [showToast1, setShowToast1] = useState(false)
-  const [showToast2, setShowToast2] = useState(false)
+  const [showToastErase, setShowToastErase] = useState(false)
 
 
-  const click = (user: { id: string; src: string; }) => {
-    const localStorageContent = localStorage.getItem('favCorner')
-    //      if(localStorageContent===null){
-    //       setMyArray( (arr: any) => [...arr, user.id]);
-    //       localStorage.setItem('favMemes', JSON.stringify(myArray)) 
-    // console.log('vacio')
-    //      }else
+  const [eraseBottom, setEraseBottom] = useState(false)
+
+  const localStorageContent = localStorage.getItem('favCorner')
+
+  const click = (user: {
+    id: string;
+  }) => {
+
+
     if (localStorageContent?.match(user.id)) {
       console.log('found')
-      setShowToast2(true)
+
+      setEraseBottom(false)
     } else {
-      // setMyArray( (arr: any) => [...arr, user.id]);
+
       setShowToast1(true)
-      console.log(myArray)
+
       memo.push(user.id)
       localStorage.setItem('favCorner', JSON.stringify(memo))
-      
+      setEraseBottom(false)
     }
-
-
-
 
   }
 
 
   useEffect(() => {
-    // console.log(myArray)
-    const localStorageContent = localStorage.getItem('favCorner')
+
+
     if (localStorageContent === null) {
 
 
@@ -63,13 +63,33 @@ const Film: React.FC = () => {
 
       setMemo(JSON.parse(localStorageContent))
       console.log(memo)
+      if (localStorageContent?.match(id)) {
+        setEraseBottom(true)
+      } else {
+        // setEraseBottom(false)
+      }
     }
 
 
-  }, []);
+  }, [localStorageContent]);
 
 
-  const { id } = useParams<RouteParams>();
+
+  const eraser = (user: {
+    id: string;
+  }) => {
+    if (localStorageContent === null) {
+
+    } else if (localStorageContent) {
+      let arr = JSON.parse(localStorageContent).filter((e: string) => e !== user.id); // will return ['A', 'C']) 
+      localStorage.setItem('favCorner', JSON.stringify(arr))
+      setEraseBottom(false)
+      console.log(memo)
+      setShowToastErase(true)
+    }
+  }
+
+
   return (
     <IonPage>
       <IonHeader>
@@ -91,12 +111,22 @@ const Film: React.FC = () => {
 
             <div className='div-films'>
 
-<div className='position-item'>
-                <IonFabButton key={entry.id} className="fav-film-item" onClick={() => { click(entry) }} >
+              <div className='position-item'>
+                {eraseBottom ?
 
-                  <IonIcon className="fav-chip-film" icon={bookmarkOutline} />
-                  <IonIcon className="fav-chip-film2" icon={addCircle} />
-                </IonFabButton>
+                  <IonFabButton color="light" key={entry.id} className="fav-word-item" onClick={() => { eraser(entry) }} >
+                    <IonIcon color="danger" className="fav-chip" icon={heart} />
+                    {/* <IonIcon className="fav-chip2" icon={trash} /> */}
+
+                  </IonFabButton>
+                  :
+                  <IonFabButton key={entry.id} className="fav-word-item" onClick={() => { click(entry) }} >
+
+                    <IonIcon className="fav-chip" icon={heart} />
+                    <IonIcon className="fav-chip2" icon={addCircle} />
+                  </IonFabButton>
+                }
+
               </div>
 
               <br />
@@ -106,7 +136,7 @@ const Film: React.FC = () => {
               <p className='text-film '>{entry.sinopsys} </p>
 
               <iframe className='film-video' width="100%" height="300px" src={entry.src} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-             
+
             </div>
           )}
 
@@ -121,14 +151,14 @@ const Film: React.FC = () => {
           onDidDismiss={() => { setShowToast1(false) }}
           message="Film has been saved."
           duration={400}
-          color="dark "
+          color="warning "
 
         />
         <IonToast
 
-          isOpen={showToast2}
-          onDidDismiss={() => { setShowToast2(false) }}
-          message="Already saved"
+          isOpen={showToastErase}
+          onDidDismiss={() => { setShowToastErase(false) }}
+          message="Film has been removed from fav"
           duration={400}
           color="danger "
 

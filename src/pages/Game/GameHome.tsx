@@ -1,4 +1,4 @@
-import { IonAvatar, IonButton, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonCol, IonContent, IonGrid, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonPage, IonRow, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToolbar, useIonLoading } from '@ionic/react';
+import { IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonCol, IonContent, IonGrid, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonPage, IonRow, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToolbar, useIonLoading } from '@ionic/react';
 import ExploreContainer from '../../components/ExploreContainer';
 import { entriesHome } from '../../data-home';
 import { closeCircle } from 'ionicons/icons'
@@ -6,30 +6,29 @@ import { closeCircle } from 'ionicons/icons'
 import { home as homeIcon, settings as settingsIcon, planetOutline as planetIcon } from 'ionicons/icons'
 
 import './Game.css';
+import { NavButtons } from '../NavButtons';
 
 const GameHome: React.FC = () => {
   const [present, dismiss] = useIonLoading();
   return (
     <IonPage>
       <IonHeader>
-        {/* <IonToolbar className="toolbar">
-        <div className="toolbar-div">
-          
-
-          <img className='logo-toolbar' src="../assets/title.png" alt="" />
-        
-      
-          </div>
-
-        </IonToolbar> */}
+      <IonToolbar className="toolbar-home">
+      <IonButtons slot="start">
+            <IonBackButton/>
+          </IonButtons>
+         <div className='home-div-logo '>
+       
+              <h4 className='home-text-logo padding-menu-others'><img className='home-logo' src="../assets/flor.png" alt="" /> Québécois Trivia </h4>
+              {/* <IonButtons className="menu"  slot="right">
+              <NavButtons />
+            </IonButtons> */}
+            </div>
+   
+          </IonToolbar>
       </IonHeader>
       <IonContent className="ion-padding home-content">
-      <div className='home-div-logo '>
-        <img className='home-logo' src="../assets/home-logo.png" alt="" />
-          <h1 className='home-text-logo  '>Learn Québécois  </h1>
-          
-        </div>
-        <br />
+      
         <IonList className="home-list">
         {/* <IonGrid>
             <IonRow>

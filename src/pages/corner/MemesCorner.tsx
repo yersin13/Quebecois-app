@@ -1,7 +1,7 @@
 import { IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonChip, IonCol, IonContent, IonFab, IonFabButton, IonGrid, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonPage, IonRow, IonSlide, IonSlides, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToast, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../../components/ExploreContainer';
 import { entriesHome } from '../../data-home';
-import { addCircle, addCircleSharp, arrowForwardCircle, bookmarkOutline, closeCircle, headsetOutline, heartCircle, heartSharp, informationCircle } from 'ionicons/icons'
+import { addCircle, addCircleSharp, arrowForwardCircle, bookmarkOutline, closeCircle, headsetOutline, heart, heartCircle, heartSharp, informationCircle } from 'ionicons/icons'
 import { home as homeIcon, settings as settingsIcon, planetOutline as planetIcon } from 'ionicons/icons'
 import './Corner.css';
 
@@ -97,8 +97,8 @@ useEffect(() => {
 
                   <IonFabButton key={entry.id} className="fav-meme-item" onClick={()=>{click(entry)} } >
 
-                  <IonIcon  className="fav-chip" icon={bookmarkOutline} />
-                <IonIcon  className="fav-chip2" icon={addCircle} />
+                  <IonIcon  className="fav-chip" icon={heart} />
+                {/* <IonIcon  className="fav-chip2" icon={addCircle} /> */}
 
                   </IonFabButton>
 
@@ -127,7 +127,7 @@ useEffect(() => {
           onDidDismiss={() => {setShowToast1(false)}}
           message="Meme has been saved."
           duration={400}
-          color="dark "
+          color="warning "
          
         />
         <IonToast

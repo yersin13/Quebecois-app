@@ -50,7 +50,12 @@ const WordsList: React.FC = () => {
         <IonButtons slot="start">
             <IonBackButton/>
           </IonButtons>
+          <div className='home-div-logo '>
+      
+            
+      <h4 className='home-text-logo padding-menu-others '><img className='home-logo' src="../assets/flor.png" alt="" /> Québécois Words  </h4>
  
+    </div>
          
         </IonToolbar>
       </IonHeader>

@@ -29,45 +29,24 @@ const Home: React.FC = () => {
 
       <IonHeader className="home-header ion-no-border">
 
-        <IonToolbar>
+        <IonToolbar className="toolbar-home">
          
-         
-         
-       
-          
        <div className='home-div-logo '>
-            <img className='home-logo' src="../assets/icon/icon.png" alt="" />
-            <h1 className='home-text-logo '>Learn Québécois  </h1>
-           
-          </div>
-
-          <IonButtons className="menu" slot="start">
+      
+            
+            <h4 className='home-text-logo padding-menu-home '><img className='home-logo' src="../assets/flor.png" alt="" /> Learn Québécois  </h4>
+            <IonButtons className="menu"  slot="right">
             <NavButtons />
           </IonButtons>
+          </div>
+
+        
         </IonToolbar>
        
 
       </IonHeader>
-      <IonContent className="ion-padding home-content background-image">
-              {/* <IonFab vertical="top" horizontal="start" slot="fixed">
-          <IonFabButton color='danger' >
-            <IonIcon icon={share} />
-          </IonFabButton>
-          <IonFabList side="bottom" id='ListBackdrop' >
-            <IonButton color="danger" className="nav-item-home" ><IonIcon icon={logoVimeo} /> <p>hello</p></IonButton>
-         
-            <IonButton color="danger" className="nav-item-home"><IonIcon icon={logoFacebook} /> <p>hello</p></IonButton>
-          
-            <IonButton color="danger" className="nav-item-home"><IonIcon icon={logoInstagram} /> <p>hello</p></IonButton>
-        
-            <IonButton color="danger" className="nav-item-home"><IonIcon icon={logoTwitter} /> <p>hello</p></IonButton>
-          </IonFabList>
-        </IonFab> */}
-      
-     
-        {/* <h6>Search</h6> */}
-
-        {/* <IonSearchbar className="expressions-search" value={searchText} onIonChange={e => setSearchText(e.detail.value!)}></IonSearchbar> */}
+      <IonContent className="ion-padding  background-image">
+           
         <IonList className="home-list">
 
 

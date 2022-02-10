@@ -10,22 +10,28 @@ import {
   IonLabel,
   IonIcon,
   IonFabButton,
+  IonButtons,
 } from "@ionic/react";
-import { addCircle, bookmarkOutline, chatboxOutline, chatbubbleOutline, chatbubbles, chatbubblesOutline, rocket, rocketOutline } from "ionicons/icons";
+import { addCircle, bookmarkOutline, bookOutline, chatboxOutline, chatbubbleOutline, chatbubbles, chatbubblesOutline, earthOutline, heart, heartOutline, rocket, rocketOutline } from "ionicons/icons";
 import React from "react";
+import { NavButtons } from "./NavButtons";
 
 export const Menu = () => {
   return (
-    <IonMenu side="start" contentId="main">
+    <IonMenu side="end" contentId="main">
       <IonHeader>
-        <IonToolbar color="primary">
-        <div className='home-div-logo '>
-            <img className='home-logo' src="../assets/icon/icon.png" alt="" />
-            <h1 className='home-text-logo '>Learn Québécois  </h1>
-           
-          </div>
-
-        </IonToolbar>
+      <IonToolbar className="toolbar-home">
+         
+         <div className='home-div-logo '>
+       
+              <h4 className='home-text-logo padding-menu-others '><img className='home-logo' src="../assets/flor.png" alt="" /> Menu </h4>
+              <IonButtons className="menu"  slot="right">
+              <NavButtons />
+            </IonButtons>
+            </div>
+   
+          </IonToolbar>
+         
       </IonHeader>
       <IonContent>
         <IonList>
@@ -34,39 +40,29 @@ export const Menu = () => {
           </IonMenuToggle>
           <IonMenuToggle auto-hide="false">
             <IonItem button className="menu-item-home" lines="none" routerLink={"/favWords"} routerDirection="none">
-              <IonLabel>Favorite Words</IonLabel> 
+              <IonLabel><h4>Favorite Words</h4></IonLabel> 
               
-              <IonFabButton>
-                <IonIcon color="secondary" className="fav-meme-chip" icon={bookmarkOutline}  />
+              
+                <IonIcon color="secondary" className="fav-meme-chip" icon={bookOutline}  />
             
-                </IonFabButton> 
                 </IonItem>
             <IonItem button className="menu-item-home" lines="none" routerLink={"/favExpressions"} routerDirection="none">
-              <IonLabel>Favorite Phrases</IonLabel> 
+              <IonLabel><h4>  Favorite Phrases</h4></IonLabel> 
               
-              <IonFabButton>
-                <IonIcon color="success" className="fav-meme-chip" icon={bookmarkOutline}  />
+              <IonIcon color="secondary" className="fav-meme-chip" icon={chatbubblesOutline}  />
             
-                </IonFabButton> 
                 </IonItem>
             <IonItem button className="menu-item-home" lines="none" routerLink={"/favCorner"} routerDirection="none">
-              <IonLabel>Favorite Corner</IonLabel> 
+              <IonLabel><h4>  Favorite Corner</h4></IonLabel> 
               
-              <IonFabButton>
-                <IonIcon color="danger" className="fav-meme-chip" icon={bookmarkOutline}  />
+              <IonIcon color="secondary" className="fav-meme-chip" icon={earthOutline}  />
             
-                </IonFabButton> 
                 </IonItem>
             <IonItem button className="menu-item-home" lines="none" routerLink={"/page-2"} routerDirection="none">
-              <IonLabel>About Us</IonLabel> 
+              <IonLabel><h4>  About Us</h4></IonLabel> 
               
-              <IonFabButton>
-           
-                <IonIcon color="warning" className="fav-meme-chip" icon={rocketOutline}  />
-              
-               
+              <IonIcon color="secondary" className="fav-meme-chip" icon={rocketOutline}  />
             
-                </IonFabButton> 
                 </IonItem>
           </IonMenuToggle>
         </IonList>
