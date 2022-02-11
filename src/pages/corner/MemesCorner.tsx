@@ -27,9 +27,9 @@ const [memo, setMemo]=useState<Array<String>>([]);
 const [showToast1, setShowToast1]= useState(false)
 const [showToast2, setShowToast2]= useState(false)
 
-
+const localStorageContent = localStorage.getItem('favCorner')
 const click = (user: { id: string; src: string; })=>{
-  const localStorageContent = localStorage.getItem('favCorner')
+  
 
  if(localStorageContent?.match(user.id)){
   console.log('found')
@@ -50,7 +50,7 @@ const click = (user: { id: string; src: string; })=>{
 
 useEffect(() => {
   // console.log(myArray)
-  const localStorageContent = localStorage.getItem('favCorner')
+ 
   if(localStorageContent=== null){
    
    
@@ -64,8 +64,12 @@ useEffect(() => {
   // if(localStorageContent){
   //   localStorage.setItem('favMemes', JSON.stringify(myArray)) 
   // }
-  
-},[]);
+
+},[localStorageContent]);
+
+// memes.filter(item => memo.includes(item.id))
+
+
 
 
 
@@ -95,12 +99,28 @@ useEffect(() => {
                 <div className="div-header-meme">
                   <img src={entry.src} alt="" />
 
+
+                  {localStorageContent?.match(entry.id)? 
+                  
+                 
+                    <IonIcon color="danger" className="fav-chip" icon={heart} />
+                  
+
+                  :
                   <IonFabButton key={entry.id} className="fav-meme-item" onClick={()=>{click(entry)} } >
 
-                  <IonIcon  className="fav-chip" icon={heart} />
-                {/* <IonIcon  className="fav-chip2" icon={addCircle} /> */}
+                  <IonIcon color="danger" className="fav-chip" icon={heart} />
+                    <IonIcon className="fav-chip2" icon={addCircle} />
 
-                  </IonFabButton>
+                  </IonFabButton>}
+
+
+                  {/* <IonFabButton key={entry.id} className="fav-meme-item" onClick={()=>{click(entry)} } >
+
+                  <IonIcon className="fav-chip" icon={heart} />
+                    <IonIcon className="fav-chip2" icon={addCircle} />
+
+                  </IonFabButton> */}
 
                 </div>
 

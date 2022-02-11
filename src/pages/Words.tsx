@@ -58,7 +58,7 @@ const Words: React.FC = () => {
       if (localStorageContent?.match(id)) {
         setEraseBottom(true)
       } else {
-        // setEraseBottom(false)
+        setEraseBottom(false)
       }
     }
 
@@ -141,7 +141,7 @@ const Words: React.FC = () => {
                   <h2 className="text">English:</h2>
                 </div>
 
-                <p className="text">{entry.englishMeaning}</p>
+                {/* <p className="text">{entry.englishMeaning}</p> */}
                 <ul className="expression-list-item">
                   <h3 className="expression-header text bold">- {entry.english}</h3>
                 </ul>
@@ -151,7 +151,7 @@ const Words: React.FC = () => {
                   <h2 className="text">French:</h2>
                 </div>
 
-                <p className="text" >{entry.frenchMeaning}</p>
+                {/* <p className="text" >{entry.frenchMeaning}</p> */}
                 <ul className="expression-list-item">
                   <h3 className="expression-header text bold">- {entry.french}</h3>
                 </ul>

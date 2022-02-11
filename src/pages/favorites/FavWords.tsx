@@ -1,6 +1,6 @@
 import { IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonContent, IonFooter, IonHeader, IonIcon, IonImg, IonInfiniteScroll, IonInfiniteScrollContent, IonItem, IonLabel, IonList, IonPage, IonSearchbar, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToolbar, useIonLoading, useIonViewWillEnter } from '@ionic/react';
 
-import { closeCircle } from 'ionicons/icons'
+import { closeCircle, heart } from 'ionicons/icons'
 import { home as homeIcon, settings as settingsIcon, planetOutline as planetIcon } from 'ionicons/icons'
 
 
@@ -17,7 +17,7 @@ const FavWords: React.FC = () => {
 
   const [data, setData] = useState<string[]>([]);
   const [isInfiniteDisabled, setInfiniteDisabled] = useState(false);
-  const [none, setNone] = useState(false);
+ 
   const [memo, setMemo]=useState<Array<String>>([]);
 
   const pushData = () => {
@@ -52,9 +52,9 @@ const FavWords: React.FC = () => {
 
   useEffect(() => {
     // console.log(myArray)
-   
+   const localStorageContent = localStorage.getItem('favWords')
     if(localStorageContent=== null){
-   setNone(true)
+  
     
     //  console.log(localStorageContent)
     
@@ -68,11 +68,6 @@ const FavWords: React.FC = () => {
  
   },[localStorageContent]);
   
-
-// let res = entriesExpressions.map(x => ({...x,is:memo.includes(x.id)}))
-
-// console.log(res)
-
 
 
 
@@ -95,11 +90,11 @@ const FavWords: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent>
-      <IonSearchbar className="expressions-search" value={searchText} onIonChange={e => setSearchText(e.detail.value!)}></IonSearchbar>
+        <br />
+    
       <IonList>
      
-      {none? <p>Nothing to see here</p>:
-      
+      {  
       entriesWords.filter(item => memo.includes(item.id)).map((entry)=>
       <IonItem button 
       onClick={() => {
@@ -109,18 +104,14 @@ const FavWords: React.FC = () => {
         })
       }}  routerLink={`/Words-list/${entry.id}`} className="expressions-item">
         <div>
-        {/* <IonLabel ><h6 className="expressions-text">
-          <img className='sub-logo-expression'  src="../assets/usa.png" alt="" />
-          {entry.englishMeaning}</h6></IonLabel> */}
+        
       <IonLabel ><h2 className="expressions-text">
          <img className='sub-logo-expression'  src="../assets/qcflag.png" alt="" />
-         {entry.number}.- {entry.quebec}</h2></IonLabel>
+     
+         {entry.number}.- {entry.quebec}    <IonIcon color="danger" className="fav" icon={heart} /></h2></IonLabel>
         </div>
      
-      {/* <IonThumbnail>
-     <img className="expressions-img" src={entry.src} alt="" />
-     </IonThumbnail> */}
-    
+
     </IonItem>
           )}
       

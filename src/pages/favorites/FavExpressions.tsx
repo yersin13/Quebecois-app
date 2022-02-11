@@ -1,6 +1,6 @@
 import { IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonContent, IonFooter, IonHeader, IonIcon, IonImg, IonInfiniteScroll, IonInfiniteScrollContent, IonItem, IonLabel, IonList, IonPage, IonSearchbar, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToolbar, useIonLoading, useIonViewWillEnter } from '@ionic/react';
 
-import { closeCircle } from 'ionicons/icons'
+import { closeCircle, heart } from 'ionicons/icons'
 import { home as homeIcon, settings as settingsIcon, planetOutline as planetIcon } from 'ionicons/icons'
 
 
@@ -17,7 +17,7 @@ const FavExpressions: React.FC = () => {
 
   const [data, setData] = useState<string[]>([]);
   const [isInfiniteDisabled, setInfiniteDisabled] = useState(false);
-  const [none, setNone] = useState(false);
+
   const [memo, setMemo]=useState<Array<String>>([]);
 
   const pushData = () => {
@@ -54,8 +54,7 @@ const FavExpressions: React.FC = () => {
     // console.log(myArray)
    
     if(localStorageContent=== null){
-   setNone(true)
-    
+   
     //  console.log(localStorageContent)
     
     }else if(localStorageContent){
@@ -92,10 +91,11 @@ const FavExpressions: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent>
-      <IonSearchbar className="expressions-search" value={searchText} onIonChange={e => setSearchText(e.detail.value!)}></IonSearchbar>
+        <br />
+      {/* <IonSearchbar className="expressions-search" value={searchText} onIonChange={e => setSearchText(e.detail.value!)}></IonSearchbar> */}
       <IonList>
      
-      {none? <p>Nothing to see here</p>:
+      {
       
       entriesExpressions.filter(item => memo.includes(item.id)).map((entry)=>
       <IonItem button 
@@ -111,7 +111,8 @@ const FavExpressions: React.FC = () => {
           {entry.englishMeaning}</h6></IonLabel> */}
       <IonLabel ><h2 className="expressions-text">
          <img className='sub-logo-expression'  src="../assets/qcflag.png" alt="" />
-         {entry.number}.- {entry.quebec}</h2></IonLabel>
+         {entry.number}.- 
+         {entry.quebec}   <IonIcon color="danger" className="fav" icon={heart} /></h2></IonLabel>
         </div>
      
       {/* <IonThumbnail>

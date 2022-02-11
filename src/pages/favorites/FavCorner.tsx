@@ -1,6 +1,6 @@
 import { IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonContent, IonFabButton, IonFooter, IonHeader, IonIcon, IonImg, IonInfiniteScroll, IonInfiniteScrollContent, IonItem, IonLabel, IonList, IonPage, IonSearchbar, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToolbar, useIonLoading, useIonViewWillEnter } from '@ionic/react';
 
-import { addCircle, bookmarkOutline, closeCircle, heart, trash } from 'ionicons/icons'
+import { addCircle, bookmarkOutline, closeCircle, heart, trash, trashOutline } from 'ionicons/icons'
 import { home as homeIcon, settings as settingsIcon, planetOutline as planetIcon } from 'ionicons/icons'
 
 
@@ -111,7 +111,7 @@ const FavCorner: React.FC = () => {
         <IonList>
 
           <div className='div-text-music'>
-            <h3 className='text-music'>Food Québécois</h3>
+            <h3 className='text-music'>Favorite Food</h3>
           </div>
 
           {food.filter(item => memo.includes(item.id)).map((entry) =>
@@ -127,7 +127,7 @@ const FavCorner: React.FC = () => {
           )}
 <br />
           <div className='div-text-music'>
-            <h3 className='text-music'>Films Québécois</h3>
+            <h3 className='text-music'>Favorite Films</h3>
           </div>
           {films.filter(item => memo.includes(item.id)).map((entry) =>
 
@@ -143,20 +143,21 @@ const FavCorner: React.FC = () => {
 
 <br />
           <div className='div-text-music'>
-            <h3 className='text-music'>Music Québécois</h3>
+            <h3 className='text-music'>Favorite Music</h3>
           </div>
           {music.filter(item => memo.includes(item.id)).map((entry) =>
             <div className="div-music div-header-meme">
               <iframe className='iframe-music' src={entry.src} width="100%" height="80" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" ></iframe>
               <IonFabButton color="light" key={entry.id} className="fav-meme-item" onClick={() => { click(entry) }} >
               <IonIcon color="danger" className="fav-chip" icon={heart} />
+              {/* <IonIcon className="fav-chip2" icon={trashOutline} /> */}
               </IonFabButton>
             </div>
           )}
 
 <br />
           <div className='div-text-music'>
-            <h3 className='text-music'>Memes Québécois</h3>
+            <h3 className='text-music'>Favorite Memes</h3>
           </div>
           {memes.filter(item => memo.includes(item.id)).map((entry) =>
             <IonCard className="item-memes-corner">
@@ -166,6 +167,7 @@ const FavCorner: React.FC = () => {
 
                   <IonFabButton color="light" key={entry.id} className="fav-meme-item" onClick={() => { click(entry) }} >
                   <IonIcon color="danger" className="fav-chip" icon={heart} />
+                  {/* <IonIcon className="fav-chip2" icon={trashOutline} /> */}
                   </IonFabButton>
 
                 </div>

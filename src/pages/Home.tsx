@@ -30,23 +30,23 @@ const Home: React.FC = () => {
       <IonHeader className="home-header ion-no-border">
 
         <IonToolbar className="toolbar-home">
-         
-       <div className='home-div-logo '>
-      
-            
+
+          <div className='home-div-logo '>
+
+
             <h4 className='home-text-logo padding-menu-home '><img className='home-logo' src="../assets/flor.png" alt="" /> Learn Québécois  </h4>
-            <IonButtons className="menu"  slot="right">
-            <NavButtons />
-          </IonButtons>
+            <IonButtons className="menu" slot="right">
+              <NavButtons />
+            </IonButtons>
           </div>
 
-        
+
         </IonToolbar>
-       
+
 
       </IonHeader>
       <IonContent className="ion-padding  background-image">
-           
+
         <IonList className="home-list">
 
 
@@ -138,12 +138,12 @@ const Home: React.FC = () => {
 
           <IonGrid>
             <IonRow>
-              <IonCol size="12">
+              <IonCol size="6">
 
                 <IonCard button routerLink="/game-home" className="card home-card" >
 
                   <IonCardHeader>
-                    <img className="image-home" src="/assets/4a.png" alt="" />
+                    <img className="image-home" src="/assets/4.png" alt="" />
                     <IonCardTitle>
 
                       <h4 className='home-title font'>
@@ -157,31 +157,54 @@ const Home: React.FC = () => {
                 </IonCard>
 
               </IonCol>
+              <IonCol size="6">
+                <IonCard button routerLink="/corner" className="card home-card "
+                  onClick={() => {
+                    present({
+                      message: 'Loading...',
+                      duration: 300
+                    })
+                  }}
+                >
 
+                 
+                  <IonCardHeader>
+                  <img src="/assets/5.png" alt="" />
+                    <IonCardTitle>
+
+                      <h4 className='home-title font'>
+                        Québécois Corner
+                      </h4>
+                    </IonCardTitle>
+                  </IonCardHeader>
+
+                </IonCard>
+              </IonCol>
 
             </IonRow>
           </IonGrid>
+          <IonCard button routerLink="/corner" className="card  "
+                  onClick={() => {
+                    present({
+                      message: 'Loading...',
+                      duration: 300
+                    })
+                  }}
+                >
 
-          <IonCard button routerLink="/corner" className="card "
-            onClick={() => {
-              present({
-                message: 'Loading...',
-                duration: 300
-              })
-            }}
-          >
+                 
+                  <IonCardHeader>
+                  <img src="/assets/1.png" alt="" />
+                    <IonCardTitle>
 
-            <img src="/assets/5a.png" alt="" />
-            <IonCardHeader>
-              <IonCardTitle>
+                      <h4 className='home-title font'>
+                      Québécois Lessons
+                      </h4>
+                    </IonCardTitle>
+                  </IonCardHeader>
 
-                <h4 className='home-title font'>
-                  Québécois Corner
-                </h4>
-              </IonCardTitle>
-            </IonCardHeader>
+                </IonCard>
 
-          </IonCard>
         </IonList>
 
 

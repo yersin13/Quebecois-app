@@ -61,7 +61,7 @@ const Expressions: React.FC = () => {
       if (localStorageContent?.match(id)) {
         setEraseBottom(true)
       } else {
-        // setEraseBottom(false)
+        setEraseBottom(false)
       }
     }
 

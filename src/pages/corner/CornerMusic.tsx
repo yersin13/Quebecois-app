@@ -1,7 +1,7 @@
 import { IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonCol, IonContent, IonFabButton, IonGrid, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonPage, IonRow, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToast, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../../components/ExploreContainer';
 import { entriesHome } from '../../data-home';
-import { addCircleOutline, addCircleSharp, addOutline, bookmarkOutline, closeCircle, heart } from 'ionicons/icons'
+import { addCircle, addCircleOutline, addCircleSharp, addOutline, bookmarkOutline, closeCircle, heart } from 'ionicons/icons'
 import { home as homeIcon, settings as settingsIcon, planetOutline as planetIcon } from 'ionicons/icons'
 import './Corner.css';
 import { music } from '../../data-music'
@@ -12,9 +12,12 @@ const CornerMusic: React.FC = () => {
   const [memo, setMemo] = useState<Array<String>>([]);
   const [showToast1, setShowToast1] = useState(false)
   const [showToast2, setShowToast2] = useState(false)
-  const click = (user: { id: string; src: string; }) => {
-    const localStorageContent = localStorage.getItem('favCorner')
 
+
+  const localStorageContent = localStorage.getItem('favCorner')
+
+  const click = (user: { id: string; src: string; }) => {
+    
 
     if (localStorageContent?.match(user.id)) {
       console.log('found')
@@ -33,7 +36,7 @@ const CornerMusic: React.FC = () => {
 
   useEffect(() => {
     // console.log(myArray)
-    const localStorageContent = localStorage.getItem('favCorner')
+    
     if (localStorageContent === null) {
 
 
@@ -72,9 +75,19 @@ const CornerMusic: React.FC = () => {
           {music.map((entry) =>
             <div className="div-music div-header-meme">
               <iframe className='iframe-music' src={entry.src} width="100%" height="80" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" ></iframe>
-              <IonFabButton key={entry.id} className="fav-meme-item" onClick={() => { click(entry) }} >
-                <IonIcon className="fav-chip" icon={heart} />
-              </IonFabButton>
+              {localStorageContent?.match(entry.id)? 
+                  
+                 
+                  <IonIcon color="danger" className="fav-chip" icon={heart} />
+                
+
+                :
+                <IonFabButton key={entry.id} className="fav-meme-item" onClick={()=>{click(entry)} } >
+
+                <IonIcon color="danger"  className="fav-chip" icon={heart} />
+                  <IonIcon  className="fav-chip2" icon={addCircle} />
+
+                </IonFabButton>}
             </div>
 
           )}

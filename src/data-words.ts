@@ -383,14 +383,6 @@ export const entriesWords =[
         englishMeaning: ' If you are asked to take out "les vidanges", we are not talking about your car!',
         src: './assets/images/vidanges.jpg  ',
     },
-    {
-        id: "word38",
-        number: "38",
-        quebec: "Glace ",
-        french: " Patinoire",
-        english: "Rink",
-        // src: './assets/images/vidanges.jpg  ',
-      },
       {
         id: "word39",
         number: "39",
@@ -1877,5 +1869,13 @@ export const entriesWords =[
         quebec: "Un bon yabe ",
         french: " Un bon diable",
         english: "a good devil"
-      }
+      },
+      {
+        id: "word225",
+        number: "225",
+        quebec: "Glace ",
+        french: " Patinoire",
+        english: "Rink",
+        // src: './assets/images/vidanges.jpg  ',
+      },
 ]

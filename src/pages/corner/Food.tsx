@@ -1,7 +1,7 @@
 import { IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonCol, IonContent, IonFabButton, IonGrid, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonPage, IonRow, IonSlide, IonSlides, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToast, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../../components/ExploreContainer';
 import { entriesHome } from '../../data-home';
-import { addCircle, bookmarkOutline, closeCircle, heart } from 'ionicons/icons'
+import { addCircle, bookmarkOutline, close, closeCircle, closeCircleOutline, heart, trash, trashBin, trashBinOutline, trashOutline } from 'ionicons/icons'
 import { home as homeIcon, settings as settingsIcon, planetOutline as planetIcon } from 'ionicons/icons'
 import './Corner.css';
 import { useParams } from 'react-router';
@@ -113,13 +113,13 @@ const Food: React.FC = () => {
 
                   <IonFabButton color="light" key={entry.id} className="fav-word-item" onClick={() => { eraser(entry) }} >
                     <IonIcon color="danger" className="fav-chip" icon={heart} />
-                    {/* <IonIcon className="fav-chip2" icon={trash} /> */}
+                    {/* <IonIcon className="fav-chip2" icon={trashOutline} /> */}
 
                   </IonFabButton>
                   :
                   <IonFabButton key={entry.id} className="fav-word-item" onClick={() => { click(entry) }} >
 
-                    <IonIcon className="fav-chip" icon={heart} />
+                    <IonIcon color="danger"  className="fav-chip" icon={heart} />
                     <IonIcon className="fav-chip2" icon={addCircle} />
                   </IonFabButton>
                 }
