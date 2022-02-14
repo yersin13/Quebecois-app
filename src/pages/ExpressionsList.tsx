@@ -48,7 +48,7 @@ const ExpressionsList: React.FC = () => {
 
         <IonToolbar className="toolbar">
           <IonButtons slot="start">
-            <IonBackButton />
+            <IonBackButton color='light' />
           </IonButtons>
           <div className='home-div-logo '>
             <h4 className='home-text-logo padding-menu-others '><img className='home-logo' src="../assets/flor.png" alt="" /> Québécois Phrases </h4>

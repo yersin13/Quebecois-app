@@ -60,7 +60,7 @@ const CornerMusic: React.FC = () => {
 
         <IonToolbar className="toolbar">
           <IonButtons slot="start">
-            <IonBackButton />
+            <IonBackButton color='light' />
           </IonButtons>
 
 

@@ -32,7 +32,7 @@ const Food: React.FC = () => {
 
     if (localStorageContent?.match(user.id)) {
       console.log('found')
-      setEraseBottom(false)
+      setEraseBottom(true)
     } else {
 
       setShowToast1(true)
@@ -93,7 +93,7 @@ const Food: React.FC = () => {
 
         <IonToolbar className="toolbar">
           <IonButtons slot="start">
-            <IonBackButton />
+            <IonBackButton color='light' />
           </IonButtons>
 
 

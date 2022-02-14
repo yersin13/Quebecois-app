@@ -30,15 +30,15 @@ const Words: React.FC = () => {
 
     if (localStorageContent?.match(user.id)) {
       console.log('found')
-     
-      setEraseBottom(false)
+
+      setEraseBottom(true)
     } else {
 
       setShowToast1(true)
 
       memo.push(user.id)
       localStorage.setItem('favWords', JSON.stringify(memo))
-      setEraseBottom(false)
+      setEraseBottom(true)
     }
 
   }
@@ -49,12 +49,12 @@ const Words: React.FC = () => {
 
     if (localStorageContent === null) {
 
-
+      setEraseBottom(false)
 
     } else if (localStorageContent) {
 
       setMemo(JSON.parse(localStorageContent))
-      console.log(memo)
+      // console.log(memo)
       if (localStorageContent?.match(id)) {
         setEraseBottom(true)
       } else {
@@ -65,8 +65,6 @@ const Words: React.FC = () => {
 
   }, [localStorageContent]);
 
-
-  
   const eraser = (user: {
     id: string;
   }) => {
@@ -76,22 +74,19 @@ const Words: React.FC = () => {
       let arr = JSON.parse(localStorageContent).filter((e: string) => e !== user.id); // will return ['A', 'C']) 
       localStorage.setItem('favWords', JSON.stringify(arr))
       setEraseBottom(false)
-      console.log(memo)
+      // console.log(memo)
       setShowToastErase(true)
     }
   }
-
-
-
   return (
     <IonPage>
       <IonHeader>
 
         <IonToolbar className="toolbar">
           <IonButtons slot="start">
-            <IonBackButton />
+            <IonBackButton color='light' />
           </IonButtons>
-     
+
 
         </IonToolbar>
       </IonHeader>
@@ -102,10 +97,10 @@ const Words: React.FC = () => {
             if (entry.id === id)
               return entry
           }).map((entry) =>
-            <IonCard className="card-item ">
+            <IonCard className="card-item white ">
 
               <IonCardContent>
-                <div className='position-item'>
+                <div className='position-item' >
 
                   {eraseBottom ?
 
@@ -123,7 +118,7 @@ const Words: React.FC = () => {
                   }
 
                 </div>
-                <div className="expression-list-item">
+                <div className="expression-list-item ">
                   <img className="expression-icon" src="./assets/qcflag.png" alt="" />
 
                   <h1 className="expression-header text bold">{entry.quebec}</h1>
@@ -170,7 +165,7 @@ const Words: React.FC = () => {
             color="warning "
 
           />
-        
+
           <IonToast
 
             isOpen={showToastErase}

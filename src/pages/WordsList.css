@@ -1,13 +1,17 @@
 .expressions-text{
     /* color:#001f97; */
-    color:white;
+    /* color:white; */
     font-size:40px;
 }
 .expressions-search{
-    color:white;
+    /* color:white; */
     /* background-color: #rrggbbaa; */
     /* color:white; */
 }
+
+/* .expressions-item{
+    
+} */
 
 .expressions-img{
     border-radius: 10px;

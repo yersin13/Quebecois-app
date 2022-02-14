@@ -39,14 +39,14 @@ const Film: React.FC = () => {
     if (localStorageContent?.match(user.id)) {
       console.log('found')
 
-      setEraseBottom(false)
+      setEraseBottom(true)
     } else {
 
       setShowToast1(true)
 
       memo.push(user.id)
       localStorage.setItem('favCorner', JSON.stringify(memo))
-      setEraseBottom(false)
+      setEraseBottom(true)
     }
 
   }
@@ -96,7 +96,7 @@ const Film: React.FC = () => {
 
         <IonToolbar className="toolbar">
           <IonButtons slot="start">
-            <IonBackButton />
+            <IonBackButton color='light' />
           </IonButtons>
 
 

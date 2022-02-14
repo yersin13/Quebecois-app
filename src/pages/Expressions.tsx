@@ -34,14 +34,14 @@ const Expressions: React.FC = () => {
     if (localStorageContent?.match(user.id)) {
       console.log('found')
 
-      setEraseBottom(false)
+      setEraseBottom(true)
     } else {
 
       setShowToast1(true)
 
       memo.push(user.id)
       localStorage.setItem('favExpressions', JSON.stringify(memo))
-      setEraseBottom(false)
+      setEraseBottom(true)
     }
 
   }
@@ -88,7 +88,7 @@ const Expressions: React.FC = () => {
 
         <IonToolbar className="toolbar">
           <IonButtons slot="start">
-            <IonBackButton />
+            <IonBackButton color='light' />
           </IonButtons>
 
 
@@ -101,7 +101,7 @@ const Expressions: React.FC = () => {
             if (entry.id === id)
               return entry
           }).map((entry) =>
-            <IonCard className=" card-item">
+            <IonCard className=" card-item white">
 
               <IonCardContent>
                 <div className='position-item'>

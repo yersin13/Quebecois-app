@@ -34,7 +34,7 @@ const [noItem, setNoItem] = useState(false)
      
         <IonToolbar className="toolbar">
         <IonButtons slot="start">
-            <IonBackButton/>
+            <IonBackButton color='light'/>
           </IonButtons>
       
          

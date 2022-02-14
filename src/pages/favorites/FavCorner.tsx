@@ -98,7 +98,7 @@ const FavCorner: React.FC = () => {
 
         <IonToolbar className="toolbar">
           <IonButtons slot="start">
-            <IonBackButton />
+            <IonBackButton color='light' />
           </IonButtons>
           <div className='home-div-logo '>
             <h4 className='home-text-logo padding-menu-others '><img className='home-logo' src="../assets/flor.png" alt="" /> Favorite Corner </h4>
@@ -107,7 +107,7 @@ const FavCorner: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent>
-        <IonSearchbar className="expressions-search" value={searchText} onIonChange={e => setSearchText(e.detail.value!)}></IonSearchbar>
+        
         <IonList>
 
           <div className='div-text-music'>

@@ -19,7 +19,7 @@ export const NavButtons = () => {
   return (
     <div>
       {mQuery && !mQuery.matches ? (
-        <IonMenuButton />
+        <IonMenuButton color='light' className="nav-button" />
       ) : (
         <>
           <IonButton routerLink={"/home"}>Home </IonButton>

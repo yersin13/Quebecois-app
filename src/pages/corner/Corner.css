@@ -41,7 +41,7 @@ height:120px;
 
 
 .div-films{
-    color:#001f97;
+    /* color:#001f97; */
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -156,7 +156,7 @@ background-color: #001f97;
     
 }
 .text-music{
-    color:white;
+    /* color:white; */
     /* font-size:18px; */
  
 }

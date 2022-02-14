@@ -15,7 +15,7 @@ const GameHome: React.FC = () => {
       <IonHeader>
       <IonToolbar className="toolbar-home">
       <IonButtons slot="start">
-            <IonBackButton/>
+            <IonBackButton color='light'/>
           </IonButtons>
          <div className='home-div-logo '>
        

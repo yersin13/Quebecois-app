@@ -306,7 +306,7 @@ setIcon1(true)
 
         <IonToolbar className="toolbar">
           <IonButtons slot="start">
-            <IonBackButton />
+            <IonBackButton color='light' />
           </IonButtons>
 
 
@@ -351,7 +351,7 @@ setIcon1(true)
             ) : (
               <>
               
-                <IonCard className="card-item">
+                <IonCard className="card-item white">
 
               
                   <div className='question-section'>

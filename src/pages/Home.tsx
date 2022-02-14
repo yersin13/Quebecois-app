@@ -20,9 +20,6 @@ const Home: React.FC = () => {
   const random = Math.floor(Math.random() * (entriesExpressions.length))
 
 
-
-
-
   return (
     <IonPage>
 

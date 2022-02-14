@@ -12,7 +12,7 @@ const Overview: React.FC = () => {
      
         <IonToolbar className="toolbar">
         <IonButtons slot="start">
-            <IonBackButton/>
+            <IonBackButton color='light'/>
           </IonButtons>
       
          
@@ -21,7 +21,7 @@ const Overview: React.FC = () => {
       <IonContent>
       <IonList className="overview-list">
           
-            <IonCard className="card-item">
+            <IonCard className="card-item white">
 
               
       
