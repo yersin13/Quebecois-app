@@ -1,4 +1,4 @@
-import { IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonCol, IonContent, IonFabButton, IonGrid, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonPage, IonRow, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToast, IonToolbar } from '@ionic/react';
+import { IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonCol, IonContent, IonFabButton, IonGrid, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonPage, IonRow, IonSpinner, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToast, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../../components/ExploreContainer';
 import { entriesHome } from '../../data-home';
 import { addCircle, addCircleOutline, addCircleSharp, addOutline, bookmarkOutline, closeCircle, heart } from 'ionicons/icons'
@@ -12,12 +12,12 @@ const CornerMusic: React.FC = () => {
   const [memo, setMemo] = useState<Array<String>>([]);
   const [showToast1, setShowToast1] = useState(false)
   const [showToast2, setShowToast2] = useState(false)
-
+  const [data, setData] = useState(false);
 
   const localStorageContent = localStorage.getItem('favCorner')
 
   const click = (user: { id: string; src: string; }) => {
-    
+
 
     if (localStorageContent?.match(user.id)) {
       console.log('found')
@@ -32,11 +32,15 @@ const CornerMusic: React.FC = () => {
     }
 
   }
-
+  useEffect(() => {
+    setTimeout(() => {
+      setData(true);
+    }, 3000);
+  }, [])
 
   useEffect(() => {
     // console.log(myArray)
-    
+
     if (localStorageContent === null) {
 
 
@@ -74,18 +78,26 @@ const CornerMusic: React.FC = () => {
           </div>
           {music.map((entry) =>
             <div className="div-music div-header-meme">
-              <iframe className='iframe-music' src={entry.src} width="100%" height="80" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" ></iframe>
-              {localStorageContent?.match(entry.id)? 
-                  
-                 
-                  <IonIcon color="danger" className="fav-chip" icon={heart} />
-                
+              {
+                data ?
+                  <iframe className='iframe-music' src={entry.src} width="100%" height="80" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" ></iframe>
+                  :
+                  <IonItem className="loading-spinner-item-music" lines='none'>
+                    <IonSpinner color="light" className="spinner" name="lines" />
+                  </IonItem>
+              }
+
+              {localStorageContent?.match(entry.id) ?
+
+
+                <IonIcon color="danger" className="fav-chip" icon={heart} />
+
 
                 :
-                <IonFabButton key={entry.id} className="fav-meme-item" onClick={()=>{click(entry)} } >
+                <IonFabButton key={entry.id} className="fav-meme-item" onClick={() => { click(entry) }} >
 
-                <IonIcon color="danger"  className="fav-chip" icon={heart} />
-                  <IonIcon  className="fav-chip2" icon={addCircle} />
+                  <IonIcon color="danger" className="fav-chip" icon={heart} />
+                  <IonIcon className="fav-chip2" icon={addCircle} />
 
                 </IonFabButton>}
             </div>

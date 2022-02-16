@@ -98,7 +98,14 @@ const Home: React.FC = () => {
             <IonRow>
               <IonCol size="6">
 
-                <IonCard button routerLink="/words-list" className="card home-card" >
+                <IonCard button
+                onClick={() => {
+                  present({
+                    message: 'Loading...',
+                    duration: 300
+                  })
+                }}
+                routerLink="/words-list" className="card home-card" >
 
                   <IonCardHeader>
                     <img className="image-home" src="/assets/2.png" alt="" />
@@ -115,7 +122,14 @@ const Home: React.FC = () => {
                 </IonCard>
               </IonCol>
               <IonCol size="6">
-                <IonCard button routerLink="/expressions-list" className="card home-card">
+                <IonCard button
+                onClick={() => {
+                  present({
+                    message: 'Loading...',
+                    duration: 300
+                  })
+                }}
+                routerLink="/expressions-list" className="card home-card">
 
                   <IonCardHeader>
                     <img className="image-home" src="/assets/3.png" alt="" />
@@ -137,7 +151,14 @@ const Home: React.FC = () => {
             <IonRow>
               <IonCol size="6">
 
-                <IonCard button routerLink="/game-home" className="card home-card" >
+                <IonCard button
+                onClick={() => {
+                  present({
+                    message: 'Loading...',
+                    duration: 300
+                  })
+                }}
+                routerLink="/game-home" className="card home-card" >
 
                   <IonCardHeader>
                     <img className="image-home" src="/assets/4.png" alt="" />

@@ -147,7 +147,11 @@ background-color: #001f97;
     text-align: center;
     margin-top: 5px;
 }
-
+.text-food-corner-fav{
+    color: #001f97;
+    /* text-align: center; */
+    margin-top: 5px;
+}
 .div-music{
     /* background-color: #ffffff; */
     border-radius: 10x;

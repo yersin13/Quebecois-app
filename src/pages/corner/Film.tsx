@@ -1,6 +1,5 @@
-import { IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonCol, IonContent, IonFabButton, IonGrid, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonPage, IonRow, IonSlide, IonSlides, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToast, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../../components/ExploreContainer';
-import { entriesHome } from '../../data-home';
+import { IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonCol, IonContent, IonFabButton, IonGrid, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonPage, IonRow, IonSkeletonText, IonSlide, IonSlides, IonSpinner, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToast, IonToolbar } from '@ionic/react';
+
 import { addCircle, bookmarkOutline, closeCircle, heart, remove, removeCircle, removeCircleOutline, trashOutline } from 'ionicons/icons'
 import { home as homeIcon, settings as settingsIcon, planetOutline as planetIcon } from 'ionicons/icons'
 import './Corner.css';
@@ -25,6 +24,7 @@ const Film: React.FC = () => {
   const [memo, setMemo] = useState<Array<String>>([]);
   const [showToast1, setShowToast1] = useState(false)
   const [showToastErase, setShowToastErase] = useState(false)
+  const [data, setData]= useState(false);
 
 
   const [eraseBottom, setEraseBottom] = useState(false)
@@ -51,6 +51,11 @@ const Film: React.FC = () => {
 
   }
 
+  useEffect(()=>{
+    setTimeout(() => {
+      setData(true);
+    }, 4000);
+  },[])
 
   useEffect(() => {
 
@@ -104,6 +109,9 @@ const Film: React.FC = () => {
       </IonHeader>
       <IonContent>
         <IonList className="music-list">
+    
+
+
           {films.filter((entry) => {
             if (entry.id === id)
               return entry
@@ -134,8 +142,17 @@ const Film: React.FC = () => {
 
 
               <p className='text-film '>{entry.sinopsys} </p>
+              {
+                data? 
+                <iframe className='film-video' width="100%" height="300px" src={entry.src} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+              :
+              <IonItem className="loading-spinner-item" lines='none'>
+               <IonSpinner color="light"  className="spinner" name="lines" />
+            </IonItem>
+              
+              }
 
-              <iframe className='film-video' width="100%" height="300px" src={entry.src} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+             
 
             </div>
           )}

@@ -13,6 +13,7 @@ import {
   IonButtons,
   IonToggle,
   IonButton,
+  IonCard,
 } from "@ionic/react";
 import { addCircle, bookmarkOutline, bookOutline, chatboxOutline, chatbubbleOutline, chatbubbles, chatbubblesOutline, earthOutline, heart, heartOutline, moon, rocket, rocketOutline, sunny } from "ionicons/icons";
 import React, { useEffect, useState } from "react";
@@ -130,26 +131,32 @@ export const Menu = () => {
           <br />
           <br />
           <br />
-          
+
 
           {showButton ?
-            <IonItem lines="none">
+            <IonCard onClick={toggleDark}>
+              <IonItem lines="none">
 
-              <IonLabel>Dark Mode</IonLabel>
-              <IonButton onClick={toggleDark}>
-                <IonIcon icon={moon} />
-              </IonButton>
-            </IonItem>
+                <IonLabel>Dark Mode</IonLabel>
+                {/* <IonButton className="theme-button" > */}
+                  <IonIcon color="primary" icon={moon} />
+                {/* </IonButton> */}
+              </IonItem>
+            </IonCard>
+
 
 
             :
-            <IonItem lines="none">
+            <IonCard onClick={toggleLight}>
+              <IonItem lines="none">
 
-              <IonLabel>Light Mode</IonLabel>
-              <IonButton onClick={toggleLight} >
-                <IonIcon icon={sunny} />
-              </IonButton>
-            </IonItem>
+                <IonLabel>Light Mode</IonLabel>
+                {/* <IonButton  > */}
+                  <IonIcon color="light" icon={sunny} />
+                {/* </IonButton> */}
+              </IonItem>
+            </IonCard>
+
           }
 
         </IonList>

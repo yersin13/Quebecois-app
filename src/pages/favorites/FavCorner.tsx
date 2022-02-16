@@ -78,9 +78,11 @@ const FavCorner: React.FC = () => {
 
 
   const click = (user: { id: string; src: string; }) => {
+   
     if (localStorageContent === null) {
 
     } else if (localStorageContent) {
+ 
       let arr = JSON.parse(localStorageContent).filter((e: string) => e !== user.id); // will return ['A', 'C']) 
       localStorage.setItem('favCorner', JSON.stringify(arr))
       window.location.reload()
@@ -115,14 +117,21 @@ const FavCorner: React.FC = () => {
           </div>
 
           {food.filter(item => memo.includes(item.id)).map((entry) =>
-
-            <IonItem button routerLink={`/corner-food/${entry.id}`} lines="none" className="item-food-corner">
-              <h3 className='text-food-corner'>{entry.name}</h3>
+<IonCard  onClick={() => {
+         present({
+           message: 'Loading...',
+           duration: 300
+         })
+       }}  routerLink={`/corner-food/${entry.id}`}>
+<IonItem lines="none" className="item-food-corner">
+              <h3 className='text-food-corner-fav'>{entry.name}</h3>
 
               <IonThumbnail slot='end'>
                 <img src={entry.src} alt="" />
               </IonThumbnail>
             </IonItem>
+</IonCard>
+            
 
           )}
 <br />
@@ -130,14 +139,21 @@ const FavCorner: React.FC = () => {
             <h3 className='text-music'>Favorite Films</h3>
           </div>
           {films.filter(item => memo.includes(item.id)).map((entry) =>
-
-            <IonItem button routerLink={`/corner-films/${entry.id}`} lines="none" className="item-food-corner">
-              <h3 className='text-food-corner'>{entry.name}</h3>
+<IonCard  onClick={() => {
+         present({
+           message: 'Loading...',
+           duration: 300
+         })
+       }}  routerLink={`/corner-films/${entry.id}`} >
+<IonItem  lines="none" className="item-food-corner">
+              <h3 className='text-food-corner-fav'>{entry.name}</h3>
 
               <IonThumbnail slot='end'>
                 <img src={entry.img} alt="" />
               </IonThumbnail>
             </IonItem>
+</IonCard>
+           
 
           )}
 
@@ -148,7 +164,7 @@ const FavCorner: React.FC = () => {
           {music.filter(item => memo.includes(item.id)).map((entry) =>
             <div className="div-music div-header-meme">
               <iframe className='iframe-music' src={entry.src} width="100%" height="80" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" ></iframe>
-              <IonFabButton color="light" key={entry.id} className="fav-meme-item" onClick={() => { click(entry) }} >
+              <IonFabButton  color="light" key={entry.id} className="fav-meme-item" onClick={() => { click(entry) }} >
               <IonIcon color="danger" className="fav-chip" icon={heart} />
               {/* <IonIcon className="fav-chip2" icon={trashOutline} /> */}
               </IonFabButton>
