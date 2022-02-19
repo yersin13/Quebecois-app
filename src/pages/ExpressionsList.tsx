@@ -15,6 +15,9 @@ const ExpressionsList: React.FC = () => {
   const [data, setData] = useState<string[]>([]);
   const [isInfiniteDisabled, setInfiniteDisabled] = useState(false);
 
+
+
+  
   const pushData = () => {
     const max = data.length + 20;
     const min = max - 20;
@@ -42,6 +45,13 @@ const ExpressionsList: React.FC = () => {
   useIonViewWillEnter(() => {
     pushData();
   });
+
+
+  let categories = [
+    {categorie:"food"},
+    {categorie:"house"}
+  ]
+ 
   return (
     <IonPage>
       <IonHeader>
@@ -59,10 +69,7 @@ const ExpressionsList: React.FC = () => {
       <IonContent>
         <IonSearchbar className="expressions-search" value={searchText} onIonChange={e => setSearchText(e.detail.value!)}></IonSearchbar>
         <IonList>
-          {/* <div className='div-sub-logo'> 
-      <img className='sub-logo'  src="../assets/usa.png" alt="" />
-        <img className='sub-logo'  src="../assets/qcflag.png" alt="" />
-        </div> */}
+        
           {entriesExpressions.filter((entry) => {
             if (searchText == "") {
               return entry
@@ -77,21 +84,17 @@ const ExpressionsList: React.FC = () => {
                 })
               }} routerLink={`/expressions-list/${entry.id}`} className="expressions-item">
               <div>
-                {/* <IonLabel ><h6 className="expressions-text">
-           <img className='sub-logo-expression'  src="../assets/usa.png" alt="" />
-           {entry.englishMeaning}</h6></IonLabel> */}
+              
                 <IonLabel ><h2 className="expressions-text">
                   <img className='sub-logo-expression' src="../assets/qcflag.png" alt="" />
                   {entry.number}.- {entry.quebec}</h2></IonLabel>
               </div>
 
-              {/* <IonThumbnail>
-      <img className="expressions-img" src={entry.src} alt="" />
-      </IonThumbnail> */}
-
             </IonItem>
           )}
-
+        
+           
+   
         </IonList>
 
         <IonInfiniteScroll

@@ -8,7 +8,8 @@ export const entriesExpressions =[
         english: 'Be patient, wait for the right time to do something. ',
         example:'"Ugh, mon chum c\'est en retard encore il toujours attendre que le curé se mouche" ',
         src: "./assets/audios/p1.mp3"  ,
-        img:"./assets/images-expressions/p1.webp"
+        img:"./assets/images-expressions/p1.webp",
+        category: " "
     },
     {
         id: 'phrase2',
@@ -18,7 +19,8 @@ export const entriesExpressions =[
         english: ' Wearing pants that are too short ("cave" means "basement" in this context). ',
         example:'" Regarde ton fils, il a de l’eau dans la cave, il ferait mieux d’aller magasiner !" ',
         src: './assets/audios/p2.mp3 ',
-        img:"./assets/images-expressions/p2.webp"
+        img:"./assets/images-expressions/p2.webp",
+        category: "clothes"
     },
     {
         id: 'phrase3',
@@ -29,7 +31,8 @@ export const entriesExpressions =[
         example:'"J’ai tellement de travaille à faire. Je crois que je vais avoir besoin d’aide, j’ai la broue dans le toupet." ',
         src: ' ./assets/audios/p3.mp3',
         img:"./assets/images-expressions/p3.webp"
-        
+        ,
+        category: "feelings"
     },
     {
         id: 'phrase4',
@@ -39,7 +42,8 @@ export const entriesExpressions =[
         english: ' Have your fly open. ',
         example:' " Bob le savait pas, mais il avait la fly à l\'air tout le long de son exposé!"',
         src: ' ./assets/audios/p4.mp3',
-        img:"./assets/images-expressions/p4.webp"
+        img:"./assets/images-expressions/p4.webp",
+        category: "clothes"
     },
     {
         id: 'phrase5',
@@ -49,7 +53,8 @@ export const entriesExpressions =[
         english: 'To be cheeky, to have poise, daring, nerve. ',
         example:'"Ben? Tu aurais dû le voir aller à La Porte Rouge. Il plottait tout ce qui bougeait. Il a vraiment du front tout le tour de la tête. C\'est mon héros." ',
         src: ' ./assets/audios/p5.mp3',
-        img:"./assets/images-expressions/p5.webp"
+        img:"./assets/images-expressions/p5.webp",
+        category: "feelings"
     },
     {
         id: 'phrase6',
@@ -59,7 +64,8 @@ export const entriesExpressions =[
         english: 'Have a strong libido. ',
         example:'"Elle m’en a fait baver la rousse, au lit on partait facilement pour la gloire, j’ai de la mine dans le crayon, je lui en ai fait baver aussi, à l’époque je ne me contrôlais pas toujours, […]." ',
         src: ' ./assets/audios/p6.mp3',
-        img:"./assets/images-expressions/p6.webp"
+        img:"./assets/images-expressions/p6.webp",
+        category: "sex"
     },
     {
         id: 'phrase7',
@@ -69,7 +75,8 @@ export const entriesExpressions =[
         english: 'A funny Quebec expression that qualifies a person who grieves. ', 
         example:'"Ma voisine passe son temps à chiquer la guenille." ',
         src: ' ./assets/audios/p7.mp3',
-        img:"./assets/images-expressions/p7.webp"
+        img:"./assets/images-expressions/p7.webp",
+        category: "daily"
     },
     {
         id: 'phrase8',
@@ -79,7 +86,8 @@ export const entriesExpressions =[
         english: 'Means "to be pregnant", it\'s a very poetic way of talking about pregnancy. ',
         example:'"Elle a un pain dans le four et pas d\'homme." ',
         src: ' ./assets/audios/p8.mp3',
-        img:"./assets/images-expressions/p8.webp"
+        img:"./assets/images-expressions/p8.webp",
+        category: "house"
     },
     {
         id: 'phrase9',
@@ -90,7 +98,8 @@ export const entriesExpressions =[
         example:'"J’ai passé seize heures à attendre à l’aéroport. Je commençais sérieusement à avoir mon voyage." ',
         src: ' ./assets/audios/p9.mp3',
         img:"./assets/images-expressions/p9.webp"
-       
+       ,
+        category: "feelings"
     },
     {
         id: 'phrase10',
@@ -100,7 +109,8 @@ export const entriesExpressions =[
         english: 'When all we see of a person or an animal is the whites of their eyes, without visible pupils. ',
         example:'"Le cuistot, épuisé par le manque de sommeil, avait les yeux dans la graisse de bines devant ses fourneaux." ',
         src: ' ./assets/audios/p10.mp3',
-        img:"./assets/images-expressions/p10.webp"
+        img:"./assets/images-expressions/p10.webp",
+        category: "daily"
     },
     {
         id: 'phrase11',
@@ -110,7 +120,8 @@ export const entriesExpressions =[
         english: 'Do something on time. ',
         example:' "baiser le cul du diable quand il est frette"',
         src: ' ./assets/audios/p11.mp3',
-        img:"./assets/images-expressions/p11.webp"
+        img:"./assets/images-expressions/p11.webp",
+        category: "daily"
      },
     {
         id: 'phrase12',
@@ -120,7 +131,8 @@ export const entriesExpressions =[
         english: 'There is no hope. ',
         example:'"Avec le but que vient d\'accorder Carey Price, ça vient de s\'éteindre pour le CH!" ',
         src: ' ./assets/audios/p12.mp3',
-        img:"./assets/images-expressions/p12.webp"
+        img:"./assets/images-expressions/p12.webp",
+        category: "daily"
     },
     {
         id: 'phrase13',
@@ -130,7 +142,8 @@ export const entriesExpressions =[
         english: ' Vomiting (loudly) after a drunken night. From the English verb "to call", to call - it seems that Quebec hunters used to attract moose by imitating its call when in heat.',
         example:'"Louis ? Il est en train de caller l’orignal." ',
         src: ' ./assets/audios/p13.mp3',
-        img:"./assets/images-expressions/p13.webp"
+        img:"./assets/images-expressions/p13.webp",
+        category: "daily"
     },
     {
         id: 'phrase14',
@@ -140,7 +153,8 @@ export const entriesExpressions =[
         english: 'Stop being overly enthusiastic, scandalized or panicked by an idea or a situation. ',
         example:'"Calme-toi le pompon, tu vois bien qu’on n’y est pour rien !" ',
         src: ' ./assets/audios/p14.mp3',
-        img:"./assets/images-expressions/p14.webp"
+        img:"./assets/images-expressions/p14.webp",
+        category: "feelings"
     },
     {
         id: 'phrase15',
@@ -150,7 +164,8 @@ export const entriesExpressions =[
         english: 'Fight as best you can against sleep. ',
         example:'" Michel cognait des clous devant la télé." ',
         src: ' ./assets/audios/p15.mp3',
-        img:"./assets/images-expressions/p15.webp"
+        img:"./assets/images-expressions/p15.webp",
+        category: "daily"
     },
     {
         id: 'phrase16',
@@ -160,7 +175,8 @@ export const entriesExpressions =[
         english: 'Go on an adventure. ',
         example:'"Hey, Gérard tu viens avec moi courir la galipote?" ',
         src: ' ./assets/audios/p16.mp3',
-        img:"./assets/images-expressions/p16.webp"
+        img:"./assets/images-expressions/p16.webp",
+        category: "daily"
     },
     {
         id: 'phrase17',
@@ -170,7 +186,8 @@ export const entriesExpressions =[
         english: 'Fire someone, or let them know they will be soon ',
         example:'" J\'y ai donné son 4%, merci, bonsoir!" ',
         src: ' ./assets/audios/p17.mp3',
-        img:"./assets/images-expressions/p17.webp"
+        img:"./assets/images-expressions/p17.webp",
+        category: "work"
     },
     {
         id: 'phrase18',
@@ -180,7 +197,8 @@ export const entriesExpressions =[
         english: 'Fast, able to adapt quickly. ',
         example:'"Il est vite sur ses patins!" ',
         src: ' ./assets/audios/p18.mp3',
-        img:"./assets/images-expressions/p18.webp"
+        img:"./assets/images-expressions/p18.webp",
+        category: "work"
     },
     {
         id: 'phrase19',
@@ -190,7 +208,8 @@ export const entriesExpressions =[
         english: 'Stop a vehicle for the purpose of being transported free of charge. ',
         example:'"Le routard fait du pouce." ',
         src: ' ./assets/audios/p19.mp3',
-        img:"./assets/images-expressions/p19.webp"
+        img:"./assets/images-expressions/p19.webp",
+        category: "daily"
     },
     {
         id: 'phrase20',
@@ -200,7 +219,8 @@ export const entriesExpressions =[
         english: 'Make noise, noise. It is used, among other things, to refer to a noisy agitation, a collective uproar. ',
         example:'" Je vous apprendrai, tas dé canaille, à faire du train " ',
         src: ' ./assets/audios/p20.mp3',
-        img:"./assets/images-expressions/p20.webp"
+        img:"./assets/images-expressions/p20.webp",
+        category: "work"
     },
     {
         id: 'phrase21',
@@ -210,7 +230,8 @@ export const entriesExpressions =[
         english: 'Sound like a fool. ',
         example:'"Tu crois que je te crois ? Coudonc, me prends-tu pour une valise ?" ',
         src: ' ./assets/audios/p21.mp3',
-        img:"./assets/images-expressions/p21.webp"
+        img:"./assets/images-expressions/p21.webp",
+        category: "daily"
     },
     {
         id: 'phrase22',
@@ -220,7 +241,8 @@ export const entriesExpressions =[
         english: 'Make a sustained effort, try everything ',
         example:'"Je me suis fendu le cul pour t\'envoyer à l\'école privée pis toi tu t\'inscris en phisolophie!" ',
         src: ' ./assets/audios/p22.mp3',
-        img:"./assets/images-expressions/p22.webp"
+        img:"./assets/images-expressions/p22.webp",
+        category: "daily"
     },
     {
         id: 'phrase23',
@@ -230,7 +252,8 @@ export const entriesExpressions =[
         english: 'Hesitant before making a decision, fear of forging ahead, hesitantly proceeding ',
         example:'"Niaise pas avec la puck" ',
         src: ' ./assets/audios/p23.mp3',
-        img:"./assets/images-expressions/p23.png"
+        img:"./assets/images-expressions/p23.png",
+        category: "daily"
     },
     {
         id: 'phrase24',
@@ -240,7 +263,8 @@ export const entriesExpressions =[
         english: ' Dont give up.',
         example:'"Enwouaille, t\'as presque fini, lâche pas la patate!" ',
         src: ' ./assets/audios/p24.mp3',
-        img:"./assets/images-expressions/p24.jpeg"
+        img:"./assets/images-expressions/p24.jpeg",
+        category: "daily"
     },
     {
         id: 'phrase25',
@@ -250,7 +274,8 @@ export const entriesExpressions =[
         english: 'Drinking or eating to excess ',
         example:' "J’ai hâte de me paqueter la fraise durant mon prochain voyage au Mexique."',
         src: ' ./assets/audios/p25.mp3',
-        img:"./assets/images-expressions/p25.webp"
+        img:"./assets/images-expressions/p25.webp",
+        category: "food"
     },
     {
         id: 'phrase26',
@@ -260,8 +285,9 @@ export const entriesExpressions =[
         english: 'Talk about something you hardly know or don\'t know at all. ',
         example:'"Cet homme parlait de physique quantique alors qu’il est vendeur d’automobiles, il parle à travers son chapeau." ',
         src: ' ./assets/audios/p26.mp3',
-        img:"./assets/images-expressions/p26.webp"
-        },
+        img:"./assets/images-expressions/p26.webp",
+        category: "work"    
+    },
     {
         id: 'phrase27',
         number: '27',
@@ -270,8 +296,8 @@ export const entriesExpressions =[
         english: 'Having a bad night and / or not getting much sleep. ',
         example:' "Tu n’as pas bonne mine – J’ai passé la nuit sur la corde à linge."',
         src: ' ./assets/audios/p27.mp3',
-        img:"./assets/images-expressions/p27.jpeg"
-        
+        img:"./assets/images-expressions/p27.jpeg",
+        category: "daily"
     },
     {
         id: 'phrase28',
@@ -281,8 +307,9 @@ export const entriesExpressions =[
         english: 'To break, to stop working because of the cold. ',
         example:'"Ma pompe a pété au frette." ',
         src: ' ./assets/audios/p28.mp3',
-        img:"./assets/images-expressions/p28.webp"
-        },
+        img:"./assets/images-expressions/p28.webp",
+        category: "weather"    
+    },
     {
         id: 'phrase29',
         number: '29',
@@ -291,7 +318,8 @@ export const entriesExpressions =[
         english: 'Show off, brag, try to impose. ',
         example:'"Arrête donc de péter de la broue !" ',
         src: ' ./assets/audios/p29.mp3',
-        img:"./assets/images-expressions/p29.webp"
+        img:"./assets/images-expressions/p29.webp",
+        category: "work"
     },
     {
         id: 'phrase30',
@@ -301,7 +329,8 @@ export const entriesExpressions =[
         english: 'Do nothing or waste your time. ',
         example:' ',
         src: ' ./assets/audios/p30.mp3',
-        img:"./assets/images-expressions/p30.webp"
+        img:"./assets/images-expressions/p30.webp",
+        category: "work"
     },
     {
         id: 'phrase31',
@@ -311,7 +340,8 @@ export const entriesExpressions =[
         english: 'To fall in love ; to become in love. ',
         example:'"Or, comme l’amour est une maladie, on doit dire tomber amoureux, & tomber en amour, comme tomber en apoplexie." ',
         src: ' ./assets/audios/p31.mp3',
-        img:"./assets/images-expressions/p31.webp"
+        img:"./assets/images-expressions/p31.webp",
+        category: "feelings"
     },
     {
         id: 'phrase32',
@@ -321,7 +351,8 @@ export const entriesExpressions =[
         english: ' Big snowflakes.',
         example:'" Neiger en peau de lièvre (Québec) : neiger à gros flocons." ',
         src: ' ./assets/audios/p32.mp3',
-        img:"./assets/images-expressions/p32.jpeg"
+        img:"./assets/images-expressions/p32.jpeg",
+        category: "weather"
     },
     {
         id: 'phrase33',
@@ -331,7 +362,8 @@ export const entriesExpressions =[
         english: 'Used to denote a person who does nothing, who twiddles his thumbs. ',
         example:'" Merci pour ton aide, j’ai préparé le dîner pendant que tu étais assis sur ton steak." ',
         src: ' ./assets/audios/p33.mp3',
-        img:"./assets/images-expressions/p33.webp"
+        img:"./assets/images-expressions/p33.webp",
+        category: "work"
     },
     {
         id: 'phrase34',
@@ -341,7 +373,8 @@ export const entriesExpressions =[
         english: 'smell of perspiration. ',
         example:'"Chéri tu sens le swing, tu voudrais pas aller prendre une douche ?" ',
         src: ' ./assets/audios/p34.mp3',
-        img:"./assets/images-expressions/p34.webp"
+        img:"./assets/images-expressions/p34.webp",
+        category: "feelings"
     },
     {
         id: 'phrase35',
@@ -351,7 +384,8 @@ export const entriesExpressions =[
         english: 'Said of someone who is forced to smile. Designates by extension a false-ass behavior ', 
         example:'"T’as pas un peu fini de te sécher les dents devant le patron ?" ',
         src: ' ./assets/audios/p35.mp3',
-        img:"./assets/images-expressions/p35.webp"
+        img:"./assets/images-expressions/p35.webp",
+        category: "work"
     },
     {
         id: 'phrase36',
@@ -361,7 +395,8 @@ export const entriesExpressions =[
         english: 'Use to invite someone to sit down. Date from a distant time when people had little means and logs for siege. ', 
         example:'" Allez, Roger, tire-toi une bûche !" ',
         src: ' ./assets/audios/p36.mp3',
-        img:"./assets/images-expressions/p36.png"
+        img:"./assets/images-expressions/p36.png",
+        category: "daily"
     },
     {
         id: 'phrase37',
@@ -371,7 +406,8 @@ export const entriesExpressions =[
         english: ' This Quebec expression is synonymous with honking.', 
         example:'"Il doit y avoir un embouteillage, ils sont tous en train de toutter de la haine." ',
         src: ' ./assets/audios/p37.mp3',
-        img:"./assets/images-expressions/p37.webp"
+        img:"./assets/images-expressions/p37.webp",
+        category: "transport"
     },
     {
         id: 'phrase38',
@@ -381,7 +417,8 @@ export const entriesExpressions =[
         english: 'Give up, throw in the towel. ', 
         example:'" Il a tenté le concours du plus gros mangeur de poutine mais il a dû accrocher ses patins." ',
         src: ' ./assets/audios/p38.mp3',
-        img:"./assets/images-expressions/p38.jpeg"
+        img:"./assets/images-expressions/p38.jpeg",
+        category: "feelings"
     },
     {
         id: 'phrase39',
@@ -391,7 +428,8 @@ export const entriesExpressions =[
         english: 'In Quebec, a tuque is a cap. This Quebec expression therefore means "to hang on", "to be ready". ', 
         example:'"Attache ta tuque, ça va décoiffer ! "',
         src: ' ./assets/audios/p39.mp3',
-        img:"./assets/images-expressions/p39.jpeg"
+        img:"./assets/images-expressions/p39.jpeg",
+        category: "daily"
     },
     {
         id: 'phrase40',
@@ -401,7 +439,8 @@ export const entriesExpressions =[
         english: 'Said to himself of someone very tall. ', 
         example:'" Quel échalas celui-là, il a eu des coups de pied dans l’cul !" ',
         src: ' ./assets/audios/p40.mp3',
-        img:"./assets/images-expressions/p40.webp"
+        img:"./assets/images-expressions/p40.webp",
+        category: "clothes"
     },
     {
         id: 'phrase41',
@@ -411,7 +450,8 @@ export const entriesExpressions =[
         english: 'someone badly dressed. ', 
         example: '" Non mais regarde comment tu es accoutré, tu as l’air de la chienne à Jacques !"',
         src: ' ./assets/audios/p41.mp3',
-        img:"./assets/images-expressions/p41.webp"
+        img:"./assets/images-expressions/p41.webp",
+        category: "clothes"
     },
     {
         id: 'phrase42',
@@ -421,7 +461,8 @@ export const entriesExpressions =[
         english: 'To be clumsy, to have two left hands. A Quebec expression that speaks for itself! ', 
         example:'"Clémentine est une catastrophe, elle a les mains pleines de pouces." ',
         src: ' ./assets/audios/p42.mp3',
-        img:"./assets/images-expressions/p42.webp"
+        img:"./assets/images-expressions/p42.webp",
+        category: "daily"
     },
     {
         id: "phrase43",
@@ -430,7 +471,8 @@ export const entriesExpressions =[
         french: " Avoir peur",
         english: "To fear",
         src:'./assets/audios/43.mp3 ',
-    },
+      category: "feelings"
+      },
       {
         id: "phrase44",
         number: "44",
@@ -438,7 +480,8 @@ export const entriesExpressions =[
         french: " Bouger tout le temps",
         english: "Move all the time",
         src:'./assets/audios/44.mp3 ',
-    },
+        category: "feelings"
+      },
       {
         id: "phrase45",
         number: "45",
@@ -446,7 +489,8 @@ export const entriesExpressions =[
         french: " Arrête de te plaindre",
         english: "Stop complaining",
         src:'./assets/audios/45.mp3 ',
-    },
+        category: "feelings"
+      },
       {
         id: "phrase46",
         number: "46",
@@ -454,7 +498,8 @@ export const entriesExpressions =[
         french: " Avoir l’air triste",
         english: "look sad",
         src:'./assets/audios/46.mp3 ',
-    },
+        category: "feelings"
+      },
       {
         id: "phrase47",
         number: "47",
@@ -462,7 +507,8 @@ export const entriesExpressions =[
         french: " Avoir la goutte au nez ou le nez qui coule",
         english: " Having a runny or runny nose",
         src:'./assets/audios/47.mp3 ',
-    },
+        category: "feelings"
+      },
       {
         id: "phrase48",
         number: "48",
@@ -470,7 +516,8 @@ export const entriesExpressions =[
         french: " Sourire largement",
         english: "smile broadly",
         src:'./assets/audios/48.mp3 ',
-    },
+        category: "feelings"
+      },
       {
         id: "phrase49",
         number: "49",
@@ -478,7 +525,8 @@ export const entriesExpressions =[
         french: " Avoir la diarrhée",
         english: "have diarrhea",
         src:'./assets/audios/49.mp3 ',
-    },
+        category: "feelings"
+      },
       {
         id: "phrase50",
         number: "50",
@@ -486,7 +534,8 @@ export const entriesExpressions =[
         french: " S’énerver",
         english: " get angry",
         src:'./assets/audios/50.mp3 ',
-    },
+        category: "feelings"
+      },
       {
         id: "phrase51",
         number: "51",
@@ -494,7 +543,8 @@ export const entriesExpressions =[
         french: " Etre triste, mélancolique",
         english: "To be sad, melancholy",
         src:'./assets/audios/51.mp3 ',
-    },
+        category: "feelings"
+      },
       {
         id: "phrase52",
         number: "52",
@@ -502,7 +552,8 @@ export const entriesExpressions =[
         french: " Etre triste",
         english: "To be sad",
         src:'./assets/audios/52.mp3 ',
-    },
+        category: "feelings"
+      },
       {
         id: "phrase53",
         number: "53",
@@ -510,7 +561,8 @@ export const entriesExpressions =[
         french: " Etre fâché, désagréable",
         english: "to be angry, disagreeable",
         src:'./assets/audios/53.mp3 ',
-    },
+        category: "feelings"
+      },
       {
         id: "phrase54",
         number: "54",
@@ -518,7 +570,8 @@ export const entriesExpressions =[
         french: " Avoir très peur",
         english: "Be very scared",
         src:'./assets/audios/54.mp3 ',
-    },
+        category: "feelings"
+      },
       {
         id: "phrase55",
         number: "55",
@@ -526,7 +579,8 @@ export const entriesExpressions =[
         french: " Ne pas être habile de ses mains",
         english: " Not being good with your hands",
         src:'./assets/audios/55.mp3 ',
-    },
+        category: "feelings"
+      },
       {
         id: "phrase56",
         number: "56",
@@ -534,7 +588,8 @@ export const entriesExpressions =[
         french: " En vouloir à quelqu’un, avoir de la rancune",
         english: " resent someone, hold a grudge",
         src:'./assets/audios/56.mp3 ',
-    },
+        category: "feelings"
+      },
       {
         id: "phrase57",
         number: "57",
@@ -542,7 +597,8 @@ export const entriesExpressions =[
         french: " Être de mauvaise humeur",
         english: "To be in a bad mood",
         src:'./assets/audios/57.mp3 ',
-    },
+        category: "feelings"
+      },
       {
         id: "phrase58",
         number: "58",
@@ -550,7 +606,8 @@ export const entriesExpressions =[
         french: " Ne pas articuler ou ne rien comprendre quand on parle",
         english: "Not articulating or not understanding anything when speaking",
         src:'./assets/audios/58.mp3 ',
-    },
+        category: "feelings"
+      },
       {
         id: "phrase59",
         number: "59",
@@ -558,7 +615,8 @@ export const entriesExpressions =[
         french: " Se faire prendre pour une personne stupide",
         english: "To be taken for a stupid person",
         src:'./assets/audios/59.mp3 ',
-    },
+        category: "feelings"
+      },
       {
         id: "phrase60",
         number: "60",
@@ -566,7 +624,8 @@ export const entriesExpressions =[
         french: " ne pas être capable de prendre de décisions",
         english: " not being able to make decisions",
         src:'./assets/audios/60.mp3 ',
-    },
+        category: "feelings"
+      },
       {
         id: "phrase61",
         number: "61",
@@ -574,7 +633,8 @@ export const entriesExpressions =[
         french: " Avoir une envie urgente d’aller aux toilettes",
         english: " Having an urge to go to the toilet",
         src:'./assets/audios/61.mp3 ',
-    },
+        category: "feelings"
+      },
       {
         id: "phrase62",
         number: "62",
@@ -582,7 +642,8 @@ export const entriesExpressions =[
         french: " Faire à la main",
         english: "make by hand",
         src:'./assets/audios/62.mp3 ',
-    },
+        category: "feelings"
+      },
       {
         id: "phrase63",
         number: "63",
@@ -590,7 +651,8 @@ export const entriesExpressions =[
         french: " En un rien de temps",
         english: " In no time",
         src:'./assets/audios/63.mp3 ',
-    },
+        category: "feelings"
+      },
       {
         id: "phrase64",
         number: "64",
@@ -598,7 +660,8 @@ export const entriesExpressions =[
         french: " Être content",
         english: "Be happy",
         src:'./assets/audios/64.mp3 ',
-    },
+        category: "feelings"
+      },
       {
         id: "phrase65",
         number: "65",
@@ -606,7 +669,8 @@ export const entriesExpressions =[
         french: "  elle veut avoir une relation sexuelle",
         english: "she wants to have sex",
         src:'./assets/audios/65.mp3 ',
-    },
+          category: "sex"
+      },
       {
         id: "phrase66",
         number: "66",
@@ -614,7 +678,8 @@ export const entriesExpressions =[
         french: "  avoir une relation sexuelle",
         english: "have sex",
         src:'./assets/audios/66.mp3 ',
-    },
+          category: "sex"
+      },
       {
         id: "phrase67",
         number: "67",
@@ -622,7 +687,8 @@ export const entriesExpressions =[
         french: "  ça dit ce que ça veut dire que les hommes avec un petit pénis compense par l’achat d’une grosse voiture",
         english: "it says what it means that men with a small penis compensate by buying a big car",
         src:'./assets/audios/67.mp3 ',
-    },
+          category: "sex"
+      },
       {
         id: "phrase68",
         number: "68",
@@ -630,7 +696,8 @@ export const entriesExpressions =[
         french: " Dis tout de suite ce que tu as à dire",
         english: "Say right now what you have to say",
         src:'./assets/audios/68.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase69",
         number: "69",
@@ -638,7 +705,8 @@ export const entriesExpressions =[
         french: " à un moment donné",
         english: "at one point",
         src:'./assets/audios/69.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase70",
         number: "70",
@@ -646,7 +714,8 @@ export const entriesExpressions =[
         french: " La situation est au mieux",
         english: "The situation is at its best",
         src:'./assets/audios/70.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase71",
         number: "71",
@@ -654,7 +723,8 @@ export const entriesExpressions =[
         french: " Correspond à ce que l’on surnomme une allumeuse dans l’hexagone",
         english: " Corresponds to what is nickquebecd a tease in France",
         src:'./assets/audios/71.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase72",
         number: "72",
@@ -662,7 +732,8 @@ export const entriesExpressions =[
         french: " Aller au cinéma",
         english: "Go to the cinema",
         src:'./assets/audios/72.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase73",
         number: "73",
@@ -670,7 +741,8 @@ export const entriesExpressions =[
         french: " Aller aux toilettes",
         english: "Go to the toilet",
         src:'./assets/audios/73.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase74",
         number: "74",
@@ -678,7 +750,8 @@ export const entriesExpressions =[
         french: "  abuser d’une situation avantageuse",
         english: "abuse a position of advantage",
         src:'./assets/audios/74.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase75",
         number: "75",
@@ -686,7 +759,8 @@ export const entriesExpressions =[
         french: " Avoir beaucoup d’argent",
         english: "To have lots of money",
         src:'./assets/audios/75.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase76",
         number: "76",
@@ -694,7 +768,8 @@ export const entriesExpressions =[
         french: " Avoir de l’argent, être riche",
         english: "To have money, to be rich",
         src:'./assets/audios/76.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase77",
         number: "77",
@@ -702,7 +777,8 @@ export const entriesExpressions =[
         french: " Personne qui a l’air stupide",
         english: "person who looks stupid",
         src:'./assets/audios/77.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase78",
         number: "78",
@@ -710,7 +786,8 @@ export const entriesExpressions =[
         french: " Personne qui a mal à la tête",
         english: "person with headache",
         src:'./assets/audios/78.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase79",
         number: "79",
@@ -718,7 +795,8 @@ export const entriesExpressions =[
         french: " Avoir l’air triste",
         english: "look sad",
         src:'./assets/audios/79.mp3 ',
-    },
+          category: "feelings"
+      },
       {
         id: "phrase80",
         number: "80",
@@ -726,7 +804,8 @@ export const entriesExpressions =[
         french: " Exagérer une situation",
         english: "Exaggerate a situation",
         src:'./assets/audios/80.mp3 ',
-    },
+          category: "feelings"
+      },
       {
         id: "phrase81",
         number: "81",
@@ -734,7 +813,8 @@ export const entriesExpressions =[
         french: " Draguer une personne",
         english: "Pick up a person",
         src:'./assets/audios/81.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase82",
         number: "82",
@@ -742,7 +822,8 @@ export const entriesExpressions =[
         french: " Dire qu’une fille est belle",
         english: "say a girl is beautiful",
         src:'./assets/audios/82.mp3 ',
-    },
+          category: "sex"
+      },
       {
         id: "phrase83",
         number: "83",
@@ -750,7 +831,8 @@ export const entriesExpressions =[
         french: " Partir",
         english: "To leave",
         src:'./assets/audios/83.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase84",
         number: "84",
@@ -758,7 +840,8 @@ export const entriesExpressions =[
         french: " Être épuisé ou être plus capable",
         english: "Being exhausted or being more capable",
         src:'./assets/audios/84.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase85",
         number: "85",
@@ -766,7 +849,8 @@ export const entriesExpressions =[
         french: " Etre très joli(e)",
         english: "To be very pretty",
         src:'./assets/audios/85.mp3 ',
-    },
+          category: "feelings"
+      },
       {
         id: "phrase86",
         number: "86",
@@ -774,7 +858,8 @@ export const entriesExpressions =[
         french: " Être ivre",
         english: "To get drunk",
         src:'./assets/audios/86.mp3 ',
-    },
+          category: "feelings"
+      },
       {
         id: "phrase87",
         number: "87",
@@ -782,7 +867,8 @@ export const entriesExpressions =[
         french: " Être peureux",
         english: "to be fearful",
         src:'./assets/audios/87.mp3 ',
-    },
+          category: "feelings"
+      },
       {
         id: "phrase88",
         number: "88",
@@ -790,7 +876,8 @@ export const entriesExpressions =[
         french: " Etre faché",
         english: "To be angry",
         src:'./assets/audios/88.mp3 ',
-    },
+          category: "feelings"
+      },
       {
         id: "phrase89",
         number: "89",
@@ -798,7 +885,8 @@ export const entriesExpressions =[
         french: " Les bras m’en tombent",
         english: "My arms fall away",
         src:'./assets/audios/89.mp3 ',
-    },
+          category: "feelings"
+      },
       {
         id: "phrase90",
         number: "90",
@@ -806,7 +894,8 @@ export const entriesExpressions =[
         french: " Un rot",
         english: "A burp",
         src:'./assets/audios/90.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase91",
         number: "91",
@@ -814,7 +903,8 @@ export const entriesExpressions =[
         french: " faire la tête ou faire la gueule",
         english: "sulk or sulk",
         src:'./assets/audios/91.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase92",
         number: "92",
@@ -822,7 +912,8 @@ export const entriesExpressions =[
         french: " Faire le gamin",
         english: "play the kid",
         src:'./assets/audios/92.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase93",
         number: "93",
@@ -830,7 +921,8 @@ export const entriesExpressions =[
         french: " se taire",
         english: " to shut up",
         src:'./assets/audios/93.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase94",
         number: "94",
@@ -838,7 +930,8 @@ export const entriesExpressions =[
         french: " C’est le Week-end",
         english: " It's the weekend",
         src:'./assets/audios/94.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase95",
         number: "95",
@@ -846,7 +939,8 @@ export const entriesExpressions =[
         french: " Liquide fort",
         english: "strong liquid",
         src:'./assets/audios/95.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase96",
         number: "96",
@@ -854,7 +948,8 @@ export const entriesExpressions =[
         french: " Avoir plus d’expérience que la personne",
         english: "Have more experience than the person",
         src:'./assets/audios/96.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase97",
         number: "97",
@@ -862,7 +957,8 @@ export const entriesExpressions =[
         french: " J’en ai beaucoup",
         english: "I have a lot",
         src:'./assets/audios/97.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase98",
         number: "98",
@@ -870,7 +966,8 @@ export const entriesExpressions =[
         french: " J’en ai marre",
         english: "I've had it up to here",
         src:'./assets/audios/98.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase99",
         number: "99",
@@ -878,7 +975,8 @@ export const entriesExpressions =[
         french: " Impressionner",
         english: "Impress",
         src:'./assets/audios/99.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase100",
         number: "100",
@@ -886,7 +984,8 @@ export const entriesExpressions =[
         french: " Le chèque est partit à la poste",
         english: "The check went to the post office",
         src:'./assets/audios/100.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase101",
         number: "101",
@@ -894,7 +993,8 @@ export const entriesExpressions =[
         french: " Que le diable l’emporte",
         english: "The devil take it",
         src:'./assets/audios/101.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase102",
         number: "102",
@@ -902,7 +1002,8 @@ export const entriesExpressions =[
         french: " Allez trop vite pour faire une action",
         english: "Go too fast to do an action",
         src:'./assets/audios/102.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase103",
         number: "103",
@@ -910,7 +1011,8 @@ export const entriesExpressions =[
         french: " harmonica",
         english: " harmonica",
         src:'./assets/audios/103.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase104",
         number: "104",
@@ -918,7 +1020,8 @@ export const entriesExpressions =[
         french: " trempé",
         english: " soaked",
         src:'./assets/audios/104.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase105",
         number: "105",
@@ -926,7 +1029,8 @@ export const entriesExpressions =[
         french: " Ne pas avoir froid aux yeux, être sans gêne",
         english: "Do not be cold-eyed, be without embarrassment",
         src:'./assets/audios/105.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase106",
         number: "106",
@@ -934,7 +1038,8 @@ export const entriesExpressions =[
         french: " sera peu reconnaissant",
         english: " will be ungrateful",
         src:'./assets/audios/106.mp3 ',
-    },
+          category: "feelings"
+      },
       {
         id: "phrase107",
         number: "107",
@@ -942,7 +1047,8 @@ export const entriesExpressions =[
         french: " pas de dispute",
         english: "no argument",
         src:'./assets/audios/107.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase108",
         number: "108",
@@ -950,7 +1056,8 @@ export const entriesExpressions =[
         french: " Manquer son coup",
         english: "miss his shot",
         src:'./assets/audios/108.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase109",
         number: "109",
@@ -958,7 +1065,8 @@ export const entriesExpressions =[
         french: " ne pas s’énerver",
         english: " don't get upset",
         src:'./assets/audios/109.mp3 ',
-    },
+          category: "feelings"
+      },
       {
         id: "phrase110",
         number: "110",
@@ -966,7 +1074,8 @@ export const entriesExpressions =[
         french: " être en grande forme",
         english: " be in great shape",
         src:'./assets/audios/110.mp3 ',
-    },
+          category: "sex"
+      },
       {
         id: "phrase111",
         number: "111",
@@ -974,7 +1083,8 @@ export const entriesExpressions =[
         french: " s’énerver sans raison",
         english: "get angry for no reason",
         src:'./assets/audios/111.mp3 ',
-    },
+          category: "feelings"
+      },
       {
         id: "phrase112",
         number: "112",
@@ -982,7 +1092,8 @@ export const entriesExpressions =[
         french: " Petit vilain",
         english: "little naughty",
         src:'./assets/audios/112.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase113",
         number: "113",
@@ -990,7 +1101,8 @@ export const entriesExpressions =[
         french: " mourir tout doucement",
         english: " die slowly",
         src:'./assets/audios/113.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase114",
         number: "114",
@@ -998,7 +1110,8 @@ export const entriesExpressions =[
         french: " Etre complètement dépassé",
         english: "To be completely overwhelmed",
         src:'./assets/audios/114.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase115",
         number: "115",
@@ -1006,7 +1119,8 @@ export const entriesExpressions =[
         french: " Passer un coup de fil",
         english: "Make a phone call",
         src:'./assets/audios/115.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase116",
         number: "116",
@@ -1014,7 +1128,8 @@ export const entriesExpressions =[
         french: " voir trop grand",
         english: " think too big",
         src:'./assets/audios/116.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase117",
         number: "117",
@@ -1022,7 +1137,8 @@ export const entriesExpressions =[
         french: " difficile à trouver",
         english: " hard to find",
         src:'./assets/audios/117.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase118",
         number: "118",
@@ -1030,7 +1146,8 @@ export const entriesExpressions =[
         french: " ne rien faire, perdre son temps",
         english: " do nothing, waste your time",
         src:'./assets/audios/118.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase119",
         number: "119",
@@ -1038,7 +1155,8 @@ export const entriesExpressions =[
         french: " on lui a fait croire des choses",
         english: " he was made to believe things",
         src:'./assets/audios/119.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase120",
         number: "120",
@@ -1046,7 +1164,8 @@ export const entriesExpressions =[
         french: " se faire engueuler vivement",
         english: " get yelled at",
         src:'./assets/audios/120.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase121",
         number: "121",
@@ -1054,7 +1173,8 @@ export const entriesExpressions =[
         french: " se coucher très tôt",
         english: " go to bed very early",
         src:'./assets/audios/121.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase122",
         number: "122",
@@ -1062,7 +1182,8 @@ export const entriesExpressions =[
         french: " Tu es prit avec moi",
         english: "You are taken with me",
         src:'./assets/audios/122.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase123",
         number: "123",
@@ -1070,7 +1191,8 @@ export const entriesExpressions =[
         french: " ne pas aller droit au but",
         english: " not going straight to the point",
         src:'./assets/audios/123.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase124",
         number: "124",
@@ -1078,7 +1200,8 @@ export const entriesExpressions =[
         french: " être très fatigué",
         english: " to be very tired",
         src:'./assets/audios/124.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase125",
         number: "125",
@@ -1086,7 +1209,8 @@ export const entriesExpressions =[
         french: " Tu te moques de moi",
         english: "Are you kidding me",
         src:'./assets/audios/125.mp3 ',
-    },
+          category: "feelings"
+      },
       {
         id: "phrase126",
         number: "126",
@@ -1094,7 +1218,8 @@ export const entriesExpressions =[
         french: " Faire une blague",
         english: "To make a joke",
         src:'./assets/audios/126.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase127",
         number: "127",
@@ -1102,7 +1227,8 @@ export const entriesExpressions =[
         french: " est ce que tu veux",
         english: " do you want",
         src:'./assets/audios/127.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase128",
         number: "128",
@@ -1110,7 +1236,8 @@ export const entriesExpressions =[
         french: " opportunité facile à prendre",
         english: " easy to take opportunity",
         src:'./assets/audios/128.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase129",
         number: "129",
@@ -1118,7 +1245,8 @@ export const entriesExpressions =[
         french: " désirer une relation sexuelle",
         english: " want a sexual relationship",
         src:'./assets/audios/129.mp3 ',
-    },
+          category: "sex"
+      },
       {
         id: "phrase130",
         number: "130",
@@ -1126,7 +1254,8 @@ export const entriesExpressions =[
         french: " va-t-en !",
         english: " go away !",
         src:'./assets/audios/130.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase131",
         number: "131",
@@ -1134,7 +1263,8 @@ export const entriesExpressions =[
         french: " Il fait chaud",
         english: "It's hot",
         src:'./assets/audios/131.mp3 ',
-    },
+          category: "weather"
+      },
       {
         id: "phrase132",
         number: "132",
@@ -1142,7 +1272,8 @@ export const entriesExpressions =[
         french: " Il va avoir des problèmes ou de la difficulté",
         english: "He is going to have problems or difficulty",
         src:'./assets/audios/132.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase133",
         number: "133",
@@ -1150,7 +1281,8 @@ export const entriesExpressions =[
         french: " une foule",
         english: " a crowd",
         src:'./assets/audios/133.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase134",
         number: "134",
@@ -1158,7 +1290,8 @@ export const entriesExpressions =[
         french: " il n’y a pas matière à s’énerver",
         english: " there is nothing to be upset about",
         src:'./assets/audios/134.mp3 ',
-    },
+          category: "daily"
+      },
       {
         id: "phrase135",
         number: "135",
@@ -1166,7 +1299,8 @@ export const entriesExpressions =[
         french: " C’est un appel interurbain",
         english: " It's a long distance call",
         src:'./assets/audios/135.mp3 ',
-    },
+          category: "house"
+      },
       {
         id: "phrase136",
         number: "136",
@@ -1174,7 +1308,8 @@ export const entriesExpressions =[
         french: " Ma tante et mon oncle",
         english: " my aunt and uncle",
         src:'./assets/audios/136.mp3 ',
-    },
+          category: "house"
+      },
       {
         id: "phrase137",
         number: "137",
@@ -1182,7 +1317,8 @@ export const entriesExpressions =[
         french: " papier toilette",
         english: "toilet paper",
         src:'./assets/audios/137.mp3 ',
-    },
+          category: "house"
+      },
       {
         id: "phrase138",
         number: "138",
@@ -1190,7 +1326,8 @@ export const entriesExpressions =[
         french: " recevoir des gens à la maison sans cérémonie",
         english: "receive people at home without ceremony",
         src:'./assets/audios/138.mp3 ',
-    },
+          category: "house"
+      },
       {
         id: "phrase139",
         number: "139",
@@ -1198,7 +1335,8 @@ export const entriesExpressions =[
         french: " Une harmonica",
         english: "A harmonica",
         src:'./assets/audios/139.mp3 ',
-    },
+          category: "house"
+      },
       {
         id: "phrase140",
         number: "140",
@@ -1206,7 +1344,8 @@ export const entriesExpressions =[
         french: " trouver le partenaire qui nous convient",
         english: " find the right partner",
         src:'./assets/audios/140.mp3 ',
-    },
+          category: "house"
+      },
       {
         id: "phrase141",
         number: "141",
@@ -1214,7 +1353,8 @@ export const entriesExpressions =[
         french: " prendre soin des enfants",
         english: " take care of children",
         src:'./assets/audios/141.mp3 ',
-    },
+          category: "house"
+      },
       {
         id: "phrase142",
         number: "142",
@@ -1222,7 +1362,8 @@ export const entriesExpressions =[
         french: " Démissionner",
         english: "To resign",
         src:'./assets/audios/142.mp3 ',
-    },
+          category: "work"
+      },
       {
         id: "phrase143",
         number: "143",
@@ -1230,7 +1371,8 @@ export const entriesExpressions =[
         french: " Passé pour une personne intelligente",
         english: "Passed for an intelligent person",
         src:'./assets/audios/143.mp3 ',
-    },
+          category: "work"
+      },
       {
         id: "phrase144",
         number: "144",
@@ -1238,7 +1380,8 @@ export const entriesExpressions =[
         french: " C’est une carte de visite",
         english: " It's a business card",
         src:'./assets/audios/144.mp3 ',
-    },
+          category: "work"
+      },
       {
         id: "phrase145",
         number: "145",
@@ -1246,7 +1389,8 @@ export const entriesExpressions =[
         french: " Avoir beaucoup de chose / travail à faire",
         english: "Have a lot of stuff/work to do",
         src:'./assets/audios/145.mp3 ',
-    },
+          category: "work"
+      },
       {
         id: "phrase146",
         number: "146",
@@ -1254,7 +1398,8 @@ export const entriesExpressions =[
         french: " C’est un licenciement",
         english: " It's a dismissal",
         src:'./assets/audios/146.mp3 ',
-    },
+          category: "work"
+      },
       {
         id: "phrase147",
         number: "147",
@@ -1262,7 +1407,8 @@ export const entriesExpressions =[
         french: " Cantine",
         english: "Canteen",
         src:'./assets/audios/147.mp3 ',
-    },
+        category: "work"
+      },
       {
         id: "phrase148",
         number: "148",
@@ -1270,7 +1416,8 @@ export const entriesExpressions =[
         french: " Le secrétaire général d’un ministre",
         english: " The general secretary of a minister",
         src:'./assets/audios/148.mp3 ',
-    },
+        category: "work"
+      },
       {
         id: "phrase149",
         number: "149",
@@ -1278,7 +1425,8 @@ export const entriesExpressions =[
         french: " Faire le plein, mettre de l’essence dans sa voiture",
         english: " Fill up, put gas in your car",
         src:'./assets/audios/149.mp3 ',
-    },
+        category: "transport"
+      },
       {
         id: "phrase150",
         number: "150",
@@ -1286,7 +1434,8 @@ export const entriesExpressions =[
         french: " Bon voyage",
         english: "Have a good trip",
         src:'./assets/audios/150.mp3 ',
-    },
+        category: "transport"
+      },
       {
         id: "phrase151",
         number: "151",
@@ -1294,7 +1443,8 @@ export const entriesExpressions =[
         french: " Un frein à main",
         english: "A handbrake",
         src:'./assets/audios/151.mp3 ',
-    },
+        category: "transport"
+      },
       {
         id: "phrase152",
         number: "152",
@@ -1302,7 +1452,8 @@ export const entriesExpressions =[
         french: " passer sur le feu rouge de circulation",
         english: " pass on the red traffic light",
         src:'./assets/audios/152.mp3 ',
-    },
+        category: "transport"
+      },
       {
         id: "phrase153",
         number: "153",
@@ -1310,7 +1461,8 @@ export const entriesExpressions =[
         french: " Démarrer la voiture",
         english: " Start the car",
         src:'./assets/audios/153.mp3 ',
-    },
+        category: "transport"
+      },
       {
         id: "phrase154",
         number: "154",
@@ -1318,7 +1470,8 @@ export const entriesExpressions =[
         french: " Ce sont les rollers",
         english: " These are the rollerblades",
         src:'./assets/audios/154.mp3 ',
-    },
+        category: "transport"
+      },
       {
         id: "phrase155",
         number: "155",
@@ -1326,7 +1479,8 @@ export const entriesExpressions =[
         french: " passer un test alcool quand on est en voiture ou moto",
         english: " pass an alcohol test when you are in a car or motorbike",
         src:'./assets/audios/155.mp3 ',
-    },
+        category: "transport"
+      },
       {
         id: "phrase156",
         number: "156",
@@ -1334,7 +1488,8 @@ export const entriesExpressions =[
         french: " relâcher l’accélérateur",
         english: " release the accelerator",
         src:'./assets/audios/156.mp3 ',
-    },
+        category: "transport"
+      },
       {
         id: "phrase157",
         number: "157",
@@ -1342,7 +1497,8 @@ export const entriesExpressions =[
         french: " C’est un demi-tour",
         english: " It's a half-turn",
         src:'./assets/audios/157.mp3 ',
-    },
+        category: "transport"
+      },
       {
         id: "phrase158",
         number: "158",
@@ -1350,7 +1506,8 @@ export const entriesExpressions =[
         french: " changer de direction rapidement",
         english: " change direction quickly",
         src:'./assets/audios/158.mp3 ',
-    },
+        category: "transport"
+      },
       {
         id: "phrase159",
         number: "159",
@@ -1358,7 +1515,8 @@ export const entriesExpressions =[
         french: " vieille auto mal en point",
         english: " old car in bad shape",
         src:'./assets/audios/159.mp3 ',
-    },
+        category: "transport"
+      },
       {
         id: "phrase160",
         number: "160",
@@ -1366,7 +1524,8 @@ export const entriesExpressions =[
         french: " Avoir un pantalon trop court",
         english: " Have pants that are too short",
         src:'./assets/audios/160.mp3 ',
-    },
+        category: "clothes"
+      },
       {
         id: "phrase161",
         number: "161",
@@ -1374,7 +1533,8 @@ export const entriesExpressions =[
         french: " Se couvrir",
         english: "To cover",
         src:'./assets/audios/161.mp3 ',
-    },
+        category: "clothes"
+      },
       {
         id: "phrase162",
         number: "162",
@@ -1382,7 +1542,8 @@ export const entriesExpressions =[
         french: " Avoir la braguette ouverte",
         english: " Have the fly open",
         src:'./assets/audios/162.mp3 ',
-    },
+        category: "clothes"
+      },
       {
         id: "phrase163",
         number: "163",
@@ -1390,7 +1551,8 @@ export const entriesExpressions =[
         french: " Avoir une apparence déplaisante ou misérable",
         english: "Having an unpleasant or miserable appearance",
         src:'./assets/audios/163.mp3 ',
-    },
+        category: "clothes"
+      },
       {
         id: "phrase164",
         number: "164",
@@ -1398,7 +1560,8 @@ export const entriesExpressions =[
         french: " Être chic",
         english: " be classy",
         src:'./assets/audios/164.mp3 ',
-    },
+        category: "clothes"
+      },
       {
         id: "phrase165",
         number: "165",
@@ -1406,7 +1569,8 @@ export const entriesExpressions =[
         french: " s’habiller de beaux vêtements",
         english: " dress in nice clothes",
         src:'./assets/audios/165.mp3 ',
-    },
+        category: "clothes"
+      },
       {
         id: "phrase166",
         number: "166",
@@ -1414,7 +1578,8 @@ export const entriesExpressions =[
         french: " ta fermeture éclair est ouverte",
         english: " your zipper is open",
         src:'./assets/audios/166.mp3 ',
-    },
+        category: "clothes"
+      },
       {
         id: "phrase167",
         number: "167",
@@ -1422,7 +1587,8 @@ export const entriesExpressions =[
         french: " C’est très bon",
         english: " It's very good",
         src:'./assets/audios/167.mp3 ',
-    },
+        category: "food"
+      },
       {
         id: "phrase168",
         number: "168",
@@ -1430,7 +1596,8 @@ export const entriesExpressions =[
         french: " C’est la traduction littérale du hot-dog",
         english: " This is the literal translation of hot dog",
         src:'./assets/audios/168.mp3 ',
-    },
+        category: "food"
+      },
       {
         id: "phrase169",
         number: "169",
@@ -1438,7 +1605,8 @@ export const entriesExpressions =[
         french: " Ce sont des frites",
         english: " These are fries",
         src:'./assets/audios/169.mp3 ',
-    },
+        category: "food"
+      },
       {
         id: "phrase170",
         number: "170",
@@ -1446,7 +1614,8 @@ export const entriesExpressions =[
         french: " C’est une purée de pommes de terre",
         english: " It's mashed potatoes",
         src:'./assets/audios/170.mp3 ',
-    },
+        category: "food"
+      },
       {
         id: "phrase171",
         number: "171",
@@ -1454,7 +1623,8 @@ export const entriesExpressions =[
         french: " C’est notre bon vieux  hachis Parmentier mais avec du maïs",
         english: " It's our good old shepherd's pie but with corn",
         src:'./assets/audios/171.mp3 ',
-    },
+        category: "food"
+      },
       {
         id: "phrase172",
         number: "172",
@@ -1462,7 +1632,8 @@ export const entriesExpressions =[
         french: " manger quelque chose de sucré",
         english: " eat something sweet",
         src:'./assets/audios/172.mp3 ',
-    },
+        category: "food"
+      },
       {
         id: "phrase173",
         number: "173",
@@ -1470,7 +1641,8 @@ export const entriesExpressions =[
         french: " manger à satiété",
         english: " eat to satiety",
         src:'./assets/audios/173.mp3 ',
-    },
+        category: "food"
+      },
       {
         id: "phrase174",
         number: "174",
@@ -1478,7 +1650,8 @@ export const entriesExpressions =[
         french: " C’est un sandwich allongé",
         english: " It's an elongated sandwich",
         src:'./assets/audios/174.mp3 ',
-    },
+        category: "food"
+      },
       {
         id: "phrase175",
         number: "175",
@@ -1486,7 +1659,8 @@ export const entriesExpressions =[
         french: " C’est le sirop de sève qui forme un caramel",
         english: " It is the sap syrup that forms a caramel",
         src:'./assets/audios/175.mp3 ',
-    },
+        category: "food"
+      },
       {
         id: "phrase176",
         number: "176",
@@ -1494,7 +1668,8 @@ export const entriesExpressions =[
         french: " Quelqu’un qui parle beaucoup mais agit peu",
         english: "Someone who talks a lot but does little",
         src:'./assets/audios/176.mp3 ',
-    },
+        category: "curse"
+      },
       {
         id: "phrase177",
         number: "177",
@@ -1502,7 +1677,8 @@ export const entriesExpressions =[
         french: " Un radin",
         english: "A cheapskate",
         src:'./assets/audios/177.mp3 ',
-    },
+        category: "curse"
+      },
       {
         id: "phrase178",
         number: "178",
@@ -1510,7 +1686,8 @@ export const entriesExpressions =[
         french: " Se la couler douce",
         english: "To take it easy",
         src:'./assets/audios/178.mp3 ',
-    },
+        category: "curse"
+      },
       {
         id: "phrase179",
         number: "179",
@@ -1518,7 +1695,8 @@ export const entriesExpressions =[
         french: " ca ne m’intéresse pas",
         english: " it does not interest me",
         src:'./assets/audios/179.mp3 ',
-    },
+        category: "curse"
+      },
       {
         id: "phrase180",
         number: "180",
@@ -1526,7 +1704,8 @@ export const entriesExpressions =[
         french: " péter",
         english: " to fart",
         src:'./assets/audios/180.mp3 ',
-    },
+        category: "curse"
+      },
       {
         id: "phrase181",
         number: "181",
@@ -1534,7 +1713,8 @@ export const entriesExpressions =[
         french: " Personne de stupide",
         english: "stupid person",
         src:'./assets/audios/181.mp3 ',
-    },
+        category: "curse"
+      },
       {
         id: "phrase182",
         number: "182",
@@ -1542,7 +1722,8 @@ export const entriesExpressions =[
         french: " Fâche-toi pas",
         english: "Don't be angry",
         src:'./assets/audios/182.mp3 ',
-    },
+        category: "curse"
+      },
       {
         id: "phrase183",
         number: "183",
@@ -1550,7 +1731,8 @@ export const entriesExpressions =[
         french: " s’ennerver",
         english: " get angry",
         src:'./assets/audios/183.mp3 ',
-    },
+        category: "curse"
+      },
       {
         id: "phrase184",
         number: "184",
@@ -1558,7 +1740,8 @@ export const entriesExpressions =[
         french: " être snob",
         english: " be a snob",
         src:'./assets/audios/184.mp3 ',
-    },
+        category: "curse"
+      },
       {
         id: "phrase185",
         number: "185",
@@ -1566,7 +1749,8 @@ export const entriesExpressions =[
         french: " Rien faire",
         english: "Do nothing",
         src:'./assets/audios/185.mp3 ',
-    },
+        category: "curse"
+      },
       {
         id: "phrase186",
         number: "186",
@@ -1574,7 +1758,8 @@ export const entriesExpressions =[
         french: " Personne qui n’est pas intelligente",
         english: "person who is not intelligent",
         src:'./assets/audios/186.mp3 ',
-    },
+        category: "curse"
+      },
       {
         id: "phrase187",
         number: "187",
@@ -1582,7 +1767,8 @@ export const entriesExpressions =[
         french: " s’énerver",
         english: " get angry",
         src:'./assets/audios/187.mp3 ',
-    },
+        category: "curse"
+      },
       {
         id: "phrase188",
         number: "188",
@@ -1590,7 +1776,8 @@ export const entriesExpressions =[
         french: " un visage qui ne nous revient pas",
         english: " a face that does not come back to us",
         src:'./assets/audios/188.mp3 ',
-    },
+        category: "curse"
+      },
       {
         id: "phrase189",
         number: "189",
@@ -1598,7 +1785,161 @@ export const entriesExpressions =[
         french: " personne bizarre",
         english: " weird person",
         src:'./assets/audios/189.mp3 ',
-      }
-
+        category: "curse"
+      },
+      {
+        id: "phrase190",
+        number: "190",
+        quebec: "Faire une belle paire",
+        french: "Aller bien ensemble ",
+        english: "go well together ",
+        src: '',
+        category: "sex"
+      },
+      {
+        id: "phrase191",
+        number: "191",
+        quebec: "Faire son coming-out",
+        french: "Avouer son homosexualit ",
+        english: "Admit your homosexuality ",
+        src: '',
+        category: "sex"
+      },
+      {
+        id: "phrase192",
+        number: "192",
+        quebec: "Fuck-friend",
+        french: "Ami avec lequel on entretient une relation essentiellement sexuelle",
+        english: "Friend with whom one has a predominantly sexual relationship ",
+        src: '',
+        category: "sex"
+      },
+      {
+        id: "phrase193",
+        number: "193",
+        quebec: "Sauter la clôture",
+        french: "Avoir une aventure extraconjugale",
+        english: "Having an extramarital affair ",
+        src: '',
+        category: "sex"
+      },
+      {
+        id: "phrase194",
+        number: "194",
+        quebec: "Trouver chaussure à son pied",
+        french: "Trouver le partenaire qui nous convient",
+        english: "Find the partner that suits us ",
+        src: '',
+        category: "sex"
+      },
+      {
+        id: "phrase195",
+        number: "195",
+        quebec: "Être brûlé",
+        french: "Être fatigué, exténué",
+        english: "To be tired, exhausted ",
+        src: '',
+        category: "feelings"
+      },
+      {
+        id: "phrase196",
+        number: "196",
+        quebec: "Être dans l’eau chaude",
+        french: "Se retrouver dans une situation compromettante. ",
+        english: "Finding yourself in a compromising situation. ",
+        src: '',
+        category: "feelings"
+      },
+      {
+        id: "phrase197",
+        number: "197",
+        quebec: "Faire un fou de soi",
+        french: "Se ridiculiser",
+        english: "To make a fool of oneself ",
+        src: '',
+        category: "feelings"
+      },
+      {
+        id: "phrase198",
+        number: "198",
+        quebec: "Manger ses bas",
+        french: "Être en état de stress intense",
+        english: "Being under intense stress ",
+        src: '',
+        category: "feelings"
+      },
+      {
+        id: "phrase199",
+        number: "199",
+        quebec: "Ne pas aimer la face de quelqu’un",
+        french: "Trouver quelqu’un antipathique ",
+        english: "Find someone unfriendly ",
+        src: '',
+        category: "feelings"
+      },
+      {
+        id: "phrase200",
+        number: "200",
+        quebec: "Pleurer comme une madeleine",
+        french: "Pleurer abondamment, sans arrêt",
+        english: "Cry profusely, non-stop ",
+        src: '',
+        category: "feelings"
+      },
+      {
+        id: "phrase201",
+        number: "201",
+        quebec: "Respirer par le nez",
+        french: "Se calmer ",
+        english: "To calm down ",
+        src: '',
+        category: "feelings"
+      },
+      {
+        id: "phrase202",
+        number: "202",
+        quebec: "Son chien est mort",
+        french: "Sa situation est désespérée, sans issue",
+        english: "His situation is hopeless, hopeless ",
+        src: '',
+        category: "feelings"
+      },
+      {
+        id: "phrase203",
+        number: "203",
+        quebec: "Être haut sur pattes ",
+        french: "Avoir les jambes élancées",
+        english: "Have slender legs ",
+        src: '',
+        category: "clothes"
+      },
+      {
+        id: "phrase204",
+        number: "204",
+        quebec: "Être taillée au couteau",
+        french: "Se dit d’une femme qui est bien proportionnée, qui est svelte",
+        english: "Said of a woman who is well proportioned, who is slender ",
+        src: '',
+        category: "clothes"
+      },
+      {
+        id: "phrase205",
+        number: "205",
+        quebec: "Se promener en bedaine",
+        french: "Torse nu pour un homme",
+        english: "Shirtless for a man ",
+        src: '',
+        category: "clothes"
+      },
+      {
+        id: "phrase206",
+        number: "206",
+        quebec: "Se promener nu-bas ",
+        french: "Se promener en chaussettes",
+        english: "walking around in socks ",
+        src: '',
+        category: "clothes"
+      },
+     
 ]
 

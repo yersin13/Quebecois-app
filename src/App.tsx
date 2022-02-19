@@ -87,9 +87,11 @@ const App: React.FC = () => (
         <Route exact path="/expressions-list">
         <ExpressionsList />
         </Route>
+       
         <Route exact path="/expressions-list/:id">
         <Expressions />
         </Route>
+        
         <Route exact path="/game-home">
         <GameHome />
         </Route>
