@@ -111,8 +111,14 @@ const FavExpressions: React.FC = () => {
           {entry.englishMeaning}</h6></IonLabel> */}
       <IonLabel ><h2 className="expressions-text">
          <img className='sub-logo-expression'  src="../assets/qcflag.png" alt="" />
-         {entry.number}.- 
-         {entry.quebec}   <IonIcon color="danger" className="fav" icon={heart} /></h2></IonLabel>
+        
+         {entry.quebec}   <IonIcon color="danger" className="fav" icon={heart} /></h2>
+         </IonLabel>
+         <IonLabel ><h2 className="expressions-text">
+         <img className='sub-logo-expression'  src="../assets/usa.png" alt="" />
+         
+         {entry.english}   <IonIcon color="danger" className="fav" icon={heart} /></h2>
+         </IonLabel>
         </div>
      
       {/* <IonThumbnail>

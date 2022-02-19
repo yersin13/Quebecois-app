@@ -11,6 +11,7 @@ export const entriesWords =[
         exampleFrench: 'Papa, arrête de m\'achaler.',
         exampleEnglish: 'Daddy, stop bugging me.',
         src: './assets/images/achaler.jpg ',
+        category:"feelings"
     },
     {
         id: 'word2',
@@ -21,6 +22,7 @@ export const entriesWords =[
         frenchMeaning: 'Ce mot provient du terme algonquien "ababich" qui signifie corde et correspond à un type de corde traditionnelle fabriquée par les peuples autochtones amérindiens à partir de lanières de cuir de wapiti ou de cerf.',
         englishMeaning: 'This word comes from the Algonquian term "ababich" which means rope and corresponds to a type of traditional rope made by Native American Indian peoples from elk or deer leather thongs.',
         src: './assets/images/babiche.jpg',
+        category:"weather"
     },
     {
         id: 'word3',
@@ -31,6 +33,7 @@ export const entriesWords =[
         frenchMeaning: ' Ce mot québécois est un anglicisme qui provient directement du mot anglais "bean". ',
         englishMeaning: ' This Quebec word is an Anglicism which comes directly from the English word "bean"  ',
         src: ' ./assets/images/binne.jpg',
+        category:"food"
     },
     {
         id: 'word4',
@@ -41,6 +44,7 @@ export const entriesWords =[
         frenchMeaning: ' Ce mot provient directement de la traduction française de l\'expression "You are welcome" utilisée par les anglophones dans ce contexte spécifique. ',
         englishMeaning: 'This word comes directly from the French translation of the expression "You are welcome" used by English speakers in this specific context.   ',
         src: ' ./assets/images/bienvenue.jpg ',
+        category:"greetings"
     },
     {
         id: 'word5',
@@ -51,6 +55,7 @@ export const entriesWords =[
         frenchMeaning: 'L\'origine de ce mot québécois est très mystérieux. L\'hypothèse la plus vraisemblable est qu\'il viendrait du verbe anglais "to bob" qui signifie "danser, s\'agiter, se balancer", auquel les Québécois auraient ajouter le suffixe "ette" pour créer ce mot.  ',
         englishMeaning: ' The origin of this Quebec word is very mysterious. The most likely hypothesis is that it would come from the English verb "to bob" which means "to dance, to agitate, to swing", to which Quebecers would have added the suffix "ette" to create this word.  ',
         src: ' ./assets/images/bobettes.jpg',
+        category:"clothes"
     },
 
     {
@@ -62,6 +67,7 @@ export const entriesWords =[
         frenchMeaning: 'Ce mot provient d\'une traduction littérale puis fancisée du mot anglais "mailbox". Le mot "mail" s\'étant petit à petit transformé en "malle" avec la parlure québécoise.  ',
         englishMeaning: ' This word comes from a literal and then fancized translation of the English word "mailbox". The word "mail" having gradually transformed into a "malle" with the Quebec parlance.  ',
         src: './assets/images/mailbox.jpg ',
+        category:"daily"
     },
     {
         id: 'word7',
@@ -72,6 +78,7 @@ export const entriesWords =[
         frenchMeaning: 'Ce mot vient du verbe "boucaner" qui signifie exposer de la viande ou du poisson à la fumée pour les conserver en les faisant sécher.  ',
         englishMeaning: ' This word comes from the verb "boucaner" which means to expose meat or fish to smoke in order to preserve them by drying them. ',
         src: './assets/images/boucane.jpeg',
+        category:"food"
     },
     {
         id: 'word8',
@@ -82,6 +89,7 @@ export const entriesWords =[
         frenchMeaning: ' "Caribou" viendrait du mot indien "xalibu", qui signifie "celui qui se sert de ses sabots comme d\'une pelle". En effet, le caribou gratte la neige avec ses pattes pour trouver de la nourriture dessous. ',
         englishMeaning: '"Caribou" would come from the Indian word "xalibu", which means "the one who uses his hooves as a shovel". Indeed, the caribou scratch the snow with its paws to find food underneath.  ',
         src: './assets/images/caribou.jpg  ',
+        category:"daily"
     },
     {
         id: 'word9',
@@ -92,6 +100,7 @@ export const entriesWords =[
         frenchMeaning: 'Contrairement à ce que l\'on pourrait croire, ce terme ne provient pas de l\'anglais "car" mais fait référence à une voiture romaine à deux roues attelée à des chevaux, de la même racine que "charrue", "chariot" ou encore "charrette".',
         englishMeaning: 'Contrary to what one might think, this term does not come from the English "car" but refers to a Roman car with two wheels hitched to horses, from the same root as "plow", "chariot" or still "cart". ',
         src: './assets/images/char.jpg ',
+        category:"transport"
     },
     {
         id: 'word10',
@@ -102,6 +111,7 @@ export const entriesWords =[
         frenchMeaning: ' Ce mot québécois vient certainement du mot "chantepleure" qui était une sorte d’entonnoir avec un long tuyau percé de trous pour faire couler les liquides dans un tonneau ou une cuve. ',
         englishMeaning: '  This Quebec word certainly comes from the word "chantepleure" which was a sort of funnel with a long pipe pierced with holes to allow liquids to flow into a barrel or tank.',
         src: './assets/images/champlure.jpg ',
+        category:"food"
     },
     {
         id: 'word11',
@@ -112,6 +122,7 @@ export const entriesWords =[
         frenchMeaning: ' Les Québécois continuent à utiliser ce mot pour parler d\'un récipient dans lequel on fait chauffer de l\'eau ou un aliment. ',
         englishMeaning: 'Quebeckers continue to use this word to refer to a container in which water or food is heated.  ',
         src: ' ./assets/images/chaudron.jpg',
+        category:"food"
     },
     {
         id: 'word12',
@@ -122,6 +133,7 @@ export const entriesWords =[
         frenchMeaning: 'Une traduction littérale de cet aliment typiquement nord-américain.  ',
         englishMeaning: 'A literal translation of this uniquely North American food.  ',
         src: ' ./assets/images/chienchaud.jpg ',
+        category:"food"
     },
     {
         id: 'word13',
@@ -132,6 +144,7 @@ export const entriesWords =[
         frenchMeaning: ' Ce terme est un anglicisme qui vient du même mot anglais "chum". ',
         englishMeaning: 'This term is an Anglicism which comes from the same English word "chum".  ',
         src: ' ./assets/images/chum.jpg',
+        category:"house"
     },
     {
         id: 'word14',
@@ -142,6 +155,7 @@ export const entriesWords =[
         frenchMeaning: 'Ce terme est un mot-valise d\'origine purement québecoise composé des mots "clavier" et "bavardage".  ',
         englishMeaning: ' This term is a word purely from Quebec composed of the words "keyboard" and "chatter". ',
         src: './assets/images/clavardage.jpg  ',
+        category:"daily"
     },
     {
         id: 'word15',
@@ -152,6 +166,7 @@ export const entriesWords =[
         frenchMeaning: 'Ce terme désigne la bande de béton d\'environ 10 cm de large bordant les rues donc "à côté" de la route.  ',
         englishMeaning: ' This term refers to the approximately 10 cm wide concrete strip bordering the streets and therefore "next to" the road. ',
         src: ' ./assets/images/cotteur.jpg ',
+        category:"daily"
     },
     {
         id: 'word16',
@@ -162,6 +177,7 @@ export const entriesWords =[
         frenchMeaning: 'Ce mot provient du verbe "débarbouiller".  ',
         englishMeaning: ' This word comes from the verb "to wash off". ',
         src: './assets/images/wash.jpg ',
+        category:"clothes"
     },
     {
         id: 'word17',
@@ -172,6 +188,7 @@ export const entriesWords =[
         frenchMeaning: 'Ce terme est utilisé pour parler d\'un petit magasin offrant toute sorte d\'articles de nécessité et ouvert plus tard que les autres. Il peut donc "dépanner" tout au long de la journée.  ',
         englishMeaning: 'This term is used to refer to a small store offering all kinds of necessities and open later than others. He can therefore "dépanner" throughout the day.  ',
         src: ' ./assets/images/depanneur.jpg ',
+        category:"daily"
     },
     {
         id: 'word18',
@@ -182,6 +199,7 @@ export const entriesWords =[
         frenchMeaning: ' Ce terme provient d\'une confusion avec les premières chaussures de tennis en toile. ',
         englishMeaning: 'This term originates from a confusion with the first canvas tennis shoes.  ',
         src: ' ./assets/images/tennis.jpg ',
+        category:"clothes"
     },
     {
         id: 'word19',
@@ -192,16 +210,18 @@ export const entriesWords =[
         frenchMeaning: ' Au-delà de la signification ordinaire, les Québécois utilisent ce mot pour tout document qui indique un prix (service, marchandise, etc). ',
         englishMeaning: 'Beyond the ordinary meaning, Quebecers use this word for any document that indicates a price (service, merchandise, etc.).  ',
         src: './assets/images/facture.jpg  ',
+        category:"food"
     },
     {
         id: 'word20',
         number: '20',
         quebec: 'Fortiller',
         french: 'Gigoter ',
-        english: '  ',
+        english: 'Fortiller',
         frenchMeaning: 'Ce mot serait le résultat d\'un croisement entre les verbes frétiller et tortiller.  ',
         englishMeaning: ' This word would be the result of a cross between the verbs wriggle and squirm. ',
         src: ' ./assets/images/fortiller.jpg ',
+        category:"daily"
     },
     // {
     //     id: 'word21',
@@ -222,6 +242,7 @@ export const entriesWords =[
         frenchMeaning: ' Ce verbe provient du verbe anglais "to french kiss". ',
         englishMeaning: ' This verb comes from the English verb "to french kiss". ',
         src: ' ./assets/images/frencher.jpg',
+        category:"sex"
     },
     {
         id: 'word23',
@@ -232,6 +253,7 @@ export const entriesWords =[
         frenchMeaning: ' L\'origine de ce mot est probablement le vieux français "freid", qui est ensuite devenu "froid". Il se réfère généralement à la température extérieure. ',
         englishMeaning: ' The origin of this word is probably the old French "freid", which later became "cold". It generally refers to the outside temperature. ',
         src: './assets/images/frette.jpg  ',
+        category:"weather"
     },
     {
         id: 'word24',
@@ -242,6 +264,7 @@ export const entriesWords =[
         frenchMeaning: 'Ce verbe est la version francisée du verbe anglo-américain "to gas up" qui signifie faire le plein d\'essence. Verbe provenant lui-même du mot \'gas\' que les Américains utilisent pour "essence".  ',
         englishMeaning: ' This verb is the French version of the Anglo-American verb "to gas up" which means to fill up with gasoline. Verb itself derived from the word \'gas\' that Americans use for "gasoline". ',
         src: './assets/images/gazer.jpg  ',
+        category:"transport"
     },
     {
         id: 'word25',
@@ -252,6 +275,7 @@ export const entriesWords =[
         frenchMeaning: 'vulgaire, synonyme de testicule. Utiliser comme verbe, comme dans tu me gosses, il signifieque tu m\'énerves.  ',
         englishMeaning: 'Vulgar, synonyms of the testicle. To use as a verb, it means that you annoy me.',
         src: ' ./assets/images/gosses.jpg ',
+        category:"sex"
     },
     {
         id: 'word26',
@@ -262,6 +286,7 @@ export const entriesWords =[
         frenchMeaning: 'L\'éthylotest mesure le taux d\'éthanol (ou alcool éthylique) dans le sang. Bref, il mesure si une personne est en état d\'ivresse. Pourquoi se compliquer la vie ?!  ',
         englishMeaning: 'The breathalyzer measures the level of ethanol (or ethyl alcohol) in the blood. In short, it measures whether a person is drunk.  ',
         src: ' ./assets/images/alcohol.jpg ',
+        category:"daily"
     },
     {
         id: 'word27',
@@ -272,6 +297,7 @@ export const entriesWords =[
         frenchMeaning: 'La jambette est un terme souvent relatif au sport pour parler d\'un jeu de "jambes" destiné à déstabiliser l\'adversaire.  ',
         englishMeaning: ' The jambette is a term often relating to sport to speak of a game of "legs" intended to destabilize the opponent. ',
         src: ' ./assets/images/jambette.jpg',
+        category:"daily"
     },
     {
         id: 'word28',
@@ -282,6 +308,7 @@ export const entriesWords =[
         frenchMeaning: ' Ce terme est une traduction directe du mot anglais "washer". ',
         englishMeaning: ' This term is a direct translation of the English word "washer" ',
         src: ' ./assets/images/laveuse.jpg ',
+        category:"house"
     },
     {
         id: 'word29',
@@ -292,6 +319,7 @@ export const entriesWords =[
         frenchMeaning: 'Pour les Québécois, le terme "linge" sert plutôt à parler de tissus utilisés pour la maison.  ',
         englishMeaning: 'For Quebecers, the term "linen" is more used to talk about fabrics used for the home.  ',
         src: ' ./assets/images/linge.jpg ',
+        category:"clothes"
     },
     {
         id: 'word30',
@@ -302,6 +330,7 @@ export const entriesWords =[
         frenchMeaning: ' des boissons gazeuses sucrées.',
         englishMeaning: 'sugary soft drinks.  ',
         src: './assets/images/liqueur.jpg ',
+        category:"food"
     },
     {
         id: 'word31',
@@ -312,6 +341,7 @@ export const entriesWords =[
         frenchMeaning: ' Ce terme provient du substantif "magasin" et il est construit de la même façon que le mot anglais "shopping" sur la base du verbe "to shop". ',
         englishMeaning: ' This term comes from the noun "store" and it is constructed in the same way as the English word "shopping" on the basis of the verb "to shop". ',
         src: ' ./assets/images/magasinage.jpg ',
+        category:"daily"
     },
     {
         id: 'word32',
@@ -322,6 +352,7 @@ export const entriesWords =[
         frenchMeaning: 'Les colons français ont emprunté le terme "maringuouin" à la langue tupi, d\'un peuple indigène du Brésil, au 16ème siècle. Il est toujours utilisé par les Québécois même si le mot "moustique" gagne du terrain.  ',
         englishMeaning: ' French settlers borrowed the term "maringuouin" from the Tupi language, from an indigenous people of Brazil, in the 16th century. It is still used by Quebecers even if the word "mosquito" is gaining ground. ',
         src: './assets/images/maringuouin.jpg ',
+        category:"daily"
     },
     {
         id: 'word33',
@@ -332,6 +363,7 @@ export const entriesWords =[
         frenchMeaning: ' Ce mot provient directement du mot anglais "peanut". Comme en anglais et en français, le mot "pinotte" au pluriel signifie de faible valeur. ',
         englishMeaning: ' This word comes directly from the English word "peanut". As in English and French, the word "pinotte" in the plural means low value. ',
         src: ' ./assets/images/pinotte.jpg ',
+        category:"daily"
     },
     {
         id: 'word34',
@@ -342,6 +374,7 @@ export const entriesWords =[
         frenchMeaning: 'Ce terme est un anglicisme provenant du mot anglais "rubber" qui signifie "caoutchouc".  ',
         englishMeaning: ' This term is an Anglicism coming from the English word "rubber" which means "caoutchouc". ',
         src: './assets/images/robeur.jpg  ',
+        category:"transport"
     },
     {
         id: 'word35',
@@ -352,6 +385,7 @@ export const entriesWords =[
         frenchMeaning: 'Puisque les marmottent sifflent pour prévenir la colonie d\'un danger.  ',
         englishMeaning: 'Since groundhogs hiss to warn the colony of danger.  ',
         src: './assets/images/marmot.jpg',
+        category:"daily"
     },
     {
         id: 'word36',
@@ -362,6 +396,7 @@ export const entriesWords =[
         frenchMeaning: '"Tabarnak" est la contraction du mot "tabernacle". Comme la plupart des jurons québécois, il est blasphématoire. On l\'utilise comme le mot "putain" en français de France. Il exprime donc des sentiments forts comme la frustration, la colère, l\'énervement ou même la surprise.  ',
         englishMeaning: ' "Tabarnak" is the contraction of the word "tabernacle". Like most Quebec swear words, it is blasphemous. It is used as the word "whore" in French from France. He therefore expresses strong feelings such as frustration, anger, nervousness or even surprise. ',
         src: ' ./assets/images/tabarnak.jpg ',
+        category:"curse"
     },
     {
         id: 'word37',
@@ -372,6 +407,7 @@ export const entriesWords =[
         frenchMeaning: ' Ce terme est une pure création québécoise à l\'origine obscure. La théorie la plus plausible est celle d\'une variante de l\'expression écossaise "tickety-boo" qui signifie "aller lentement, mais sûrement". ',
         englishMeaning: ' This term is a pure Quebec creation of obscure origin. The most plausible theory is that of a variation of the Scottish expression "tickety-boo" which means "to go slowly, but surely". ',
         src: ' ./assets/images/tiguidou.jpg ',
+        category:"feelings"
     },
     {
         id: 'word38',
@@ -382,6 +418,7 @@ export const entriesWords =[
         frenchMeaning: 'Si l\'on vous demande de sortir les vidanges, on ne parle pas de votre voiture ! ',
         englishMeaning: ' If you are asked to take out "les vidanges", we are not talking about your car!',
         src: './assets/images/vidanges.jpg  ',
+        category:"daily"
     },
       {
         id: "word39",
@@ -390,6 +427,7 @@ export const entriesWords =[
         french: " Neige fondue",
         english: "Melted snow",
         src: './assets/images/39.jpeg  ',
+        category:"weather"
       },
       {
         id: "word40",
@@ -398,6 +436,7 @@ export const entriesWords =[
         french: " C’est le chasse-neige",
         english: " It's the snowplow",
         src: './assets/images/40.jpeg  ',
+        category:"weather"
       },
       {
         id: "word41",
@@ -406,6 +445,7 @@ export const entriesWords =[
         french: " C’est une luge",
         english: " It's a sled",
         src: './assets/images/41.png  ',
+        category:"weather"
       },
       {
         id: "word42",
@@ -414,6 +454,7 @@ export const entriesWords =[
         french: " Il pleut beaucoup",
         english: "It is raining hard",
         src: './assets/images/rain.jpg  ',
+        category:"weather"
       },
       {
         id: "word43",
@@ -422,6 +463,7 @@ export const entriesWords =[
         french: " Pleut beaucoup",
         english: "rains a lot",
         src: './assets/images/rain.jpg  ',
+        category:"weather"
       },
       {
         id: "word44",
@@ -430,6 +472,7 @@ export const entriesWords =[
         french: " Au revoir",
         english: "Bye",
         src: './assets/images/bye.jpg  ',
+        category:"greetings"
       },
       {
         id: "word45",
@@ -438,6 +481,7 @@ export const entriesWords =[
         french: " Au revoir ou à bientôt",
         english: "Goodbye or see you soon",
         src: './assets/images/bye.jpg  ',
+        category:"greetings"
       },
       {
         id: "word46",
@@ -446,6 +490,7 @@ export const entriesWords =[
         french: " Correspond à l’expression “je vous en prie”",
         english: " Corresponds to the expression “please”",
         src: './assets/images/bienvenue.jpg  ',
+        category:"greetings"
       },
       {
         id: "word47",
@@ -454,6 +499,7 @@ export const entriesWords =[
         french: " Bonne journée",
         english: "Have a good day",
         // src: './assets/images/vidanges.jpg  ',
+        category:"greetings"
       },
       {
         id: "word48",
@@ -462,6 +508,7 @@ export const entriesWords =[
         french: " De rien",
         english: " You're welcome",
         src: './assets/images/bienvenue.jpg  ',
+        category:"greetings"
       },
       {
         id: "word49",
@@ -470,6 +517,7 @@ export const entriesWords =[
         french: " Les lèvres",
         english: "The lips",
         src: './assets/images/49.jpg  ',
+        category:"sex"
       },
       {
         id: "word50",
@@ -478,6 +526,7 @@ export const entriesWords =[
         french: " (ou faire la baboune) bouder",
         english: " (or pout) sulk",
         src: './assets/images/50.jpg  ',
+        category:"sex"
       },
       {
         id: "word51",
@@ -486,6 +535,7 @@ export const entriesWords =[
         french: " Se dit d’un gros ventre",
         english: "Said of a big belly",
         src: './assets/images/51.jpg  ',
+        category:"daily"
       },
       {
         id: "word52",
@@ -494,6 +544,7 @@ export const entriesWords =[
         french: " Signifie pleurer",
         english: " Means to cry",
         src: './assets/images/52.jpg  ',
+        category:"feelings"
       },
       {
         id: "word53",
@@ -502,6 +553,7 @@ export const entriesWords =[
         french: " Être très excité, content",
         english: " To be very excited, happy",
         src: './assets/images/53.jpg  ',
+        category:"feelings"
       },
       {
         id: "word54",
@@ -510,6 +562,7 @@ export const entriesWords =[
         french: " Ce sont les fesses",
         english: " These are the buttocks",
         src: './assets/images/54.jpg  ',
+        category:"sex"
       },
       {
         id: "word55",
@@ -518,6 +571,7 @@ export const entriesWords =[
         french: " C’est s’embrasser sur la bouche, à la française à quoi",
         english: " It's kissing on the mouth, in the French way to what",
         src: './assets/images/frencher.jpg  ',
+        category:"sex"
       },
       {
         id: "word56",
@@ -526,6 +580,7 @@ export const entriesWords =[
         french: " Ce sont les testicules",
         english: " These are the testicles",
         src: './assets/images/gosses.jpg  ',
+        category:"sex"
       },
       {
         id: "word57",
@@ -534,6 +589,7 @@ export const entriesWords =[
         french: " Fente des seins ou des fesses",
         english: "Breast or buttocks cleft",
         src: './assets/images/57.jpg  ',
+        category:"sex"
       },
       {
         id: "word58",
@@ -542,6 +598,7 @@ export const entriesWords =[
         french: " l’une des plus connue, c’est le baiser",
         english: " one of the best known is the kiss",
         src: './assets/images/58.jpg  ',
+        category:"sex"
       },
       {
         id: "word59",
@@ -550,6 +607,7 @@ export const entriesWords =[
         french: " Signifie caresser",
         english: " Means to caress",
         src: './assets/images/59.jpg  ',
+        category:"sex"
       },
       {
         id: "word60",
@@ -558,6 +616,7 @@ export const entriesWords =[
         french: "  une aguicheuse",
         english: "a teaser",
         // src: './assets/images/vidanges.jpg  ',
+        category:"sex"
       },
       {
         id: "word61",
@@ -566,6 +625,7 @@ export const entriesWords =[
         french: "  gros seins",
         english: "big breasts",
         src: './assets/images/57.jpg  ',
+        category:"sex"
       },
       {
         id: "word62",
@@ -574,6 +634,7 @@ export const entriesWords =[
         french: " Signifie rendre service à quelqu’un",
         english: " means to serve someone",
         src: './assets/images/62.jpg  ',
+        category:"daily"
       },
       {
         id: "word63",
@@ -582,6 +643,7 @@ export const entriesWords =[
         french: " Veut dire importuner, déranger ou agacer quelqu’un",
         english: " Means to annoy, disturb or annoy someone",
         src: './assets/images/achaler.jpg  ',
+        category:"feelings"
       },
       {
         id: "word64",
@@ -590,6 +652,7 @@ export const entriesWords =[
         french: " Apparaître",
         english: "Appear",
         src: './assets/images/64.jpg  ',
+        category:"daily"
       },
       {
         id: "word65",
@@ -598,6 +661,7 @@ export const entriesWords =[
         french: " Maintenant",
         english: "Now",
         src: './assets/images/65.jpg  ',
+        category:"daily"
       },
       {
         id: "word66",
@@ -606,6 +670,7 @@ export const entriesWords =[
         french: " Ce sont les soldes",
         english: " These are the sales",
         src: './assets/images/66.jpg  ',
+        category:"daily"
       },
       {
         id: "word67",
@@ -614,6 +679,7 @@ export const entriesWords =[
         french: " Non non je vous arrête, c’est un insecte",
         english: " No no I'm arresting you, it's an insect",
         src: './assets/images/67.jpg  ',
+        category:"daily"
       },
       {
         id: "word68",
@@ -622,6 +688,7 @@ export const entriesWords =[
         french: " Bon dieu",
         english: "Good God",
         src: './assets/images/68.jpg  ',
+        category:"feelings"
       },
       {
         id: "word69",
@@ -630,6 +697,7 @@ export const entriesWords =[
         french: " Quelque chose de mal organisé",
         english: "Something unorganized",
         src: './assets/images/69.jpg  ',
+        category:"daily"
       },
       {
         id: "word70",
@@ -638,6 +706,7 @@ export const entriesWords =[
         french: " C’est super",
         english: " That's great",
         src: './assets/images/good.jpg  ',
+        category:"feelings"
       },
       {
         id: "word71",
@@ -646,6 +715,7 @@ export const entriesWords =[
         french: " La monnaie",
         english: " The currency",
         src: './assets/images/dollar.jpg  ',
+        category:"daily"
       },
       {
         id: "word72",
@@ -654,6 +724,7 @@ export const entriesWords =[
         french: " Une pièce d’un centime",
         english: "A penny coin",
         src: './assets/images/dollar.jpg  ',
+        category:"daily"
       },
       {
         id: "word73",
@@ -662,6 +733,7 @@ export const entriesWords =[
         french: " Se plaindre",
         english: " To complain",
         src: './assets/images/73.jpg  ',
+        category:"feelings"
       },
       {
         id: "word74",
@@ -670,6 +742,7 @@ export const entriesWords =[
         french: " Veut dire se disputer",
         english: " means to argue",
         src: './assets/images/74.jpg  ',
+        category:"feelings"
       },
       {
         id: "word75",
@@ -678,6 +751,7 @@ export const entriesWords =[
         french: " Le cafard",
         english: " The cockroach",
         src: './assets/images/75.jpg  ',
+        category:"daily"
       },
       {
         id: "word76",
@@ -686,6 +760,7 @@ export const entriesWords =[
         french: " Quelques",
         english: " Some",
         // src: './assets/images/vidanges.jpg  ',
+        category:"daily"
       },
       {
         id: "word77",
@@ -694,6 +769,8 @@ export const entriesWords =[
         french: " C’est le fait de draguer",
         english: " It's flirting",
         src: './assets/images/77.jpg  ',
+        category:"sex"
+        
       },
       {
         id: "word78",
@@ -702,6 +779,7 @@ export const entriesWords =[
         french: " Veut dire mignon",
         english: " means cute",
         src: './assets/images/78.jpg  ',
+        category:"daily"
       },
       {
         id: "word79",
@@ -710,6 +788,7 @@ export const entriesWords =[
         french: " Signifie coûteux, cher",
         english: "Means costly, expensive",
         src: './assets/images/79.jpg  ',
+        category:"daily"
       },
       {
         id: "word80",
@@ -718,6 +797,7 @@ export const entriesWords =[
         french: " C’est le fait de s’emmêler les pinceaux",
         english: " It is the fact of tangling the brushes",
         src: './assets/images/80.jpg  ',
+        category:"daily"
       },
       {
         id: "word81",
@@ -726,6 +806,7 @@ export const entriesWords =[
         french: " Environ",
         english: "About",
         // src: './assets/images/vidanges.jpg  ',
+        category:"daily"
       },
       {
         id: "word82",
@@ -734,6 +815,7 @@ export const entriesWords =[
         french: " ça correspond à l’anniversaire",
         english: " it corresponds to the birthday",
         src: './assets/images/82.jpg  ',
+        category:"greetings"
       },
       {
         id: "word83",
@@ -742,6 +824,7 @@ export const entriesWords =[
         french: " C’est quelqu’un d’aimable",
         english: " He's a kind person",
         src: './assets/images/83.jpg  ',
+        category:"feelings"
       },
       {
         id: "word84",
@@ -750,6 +833,7 @@ export const entriesWords =[
         french: " Jeter",
         english: "To throw",
         src: './assets/images/84.jpg  ',
+        category:"daily"
       },
       {
         id: "word85",
@@ -758,6 +842,7 @@ export const entriesWords =[
         french: " rien à voir avec les malfaiteurs, c’est la bande, le groupe d’amis",
         english: " nothing to do with the criminals, it's the band, the group of friends",
         src: './assets/images/85.jpg  ',
+        category:"house"
       },
       {
         id: "word86",
@@ -766,6 +851,7 @@ export const entriesWords =[
         french: " C’est un caillou",
         english: " It's a pebble",
         src: './assets/images/86.jpg  ',
+        category:"daily"
       },
       {
         id: "word87",
@@ -774,6 +860,7 @@ export const entriesWords =[
         french: " C’est lancer quelque chose",
         english: " It's to start something",
         src: './assets/images/87.jpg  ',
+        category:"daily"
       },
       {
         id: "word88",
@@ -782,6 +869,7 @@ export const entriesWords =[
         french: " Veut dire discuter, parler",
         english: " means to discuss, to talk",
         src: './assets/images/88.jpg  ',
+        category:"feelings"
       },
       {
         id: "word89",
@@ -790,6 +878,7 @@ export const entriesWords =[
         french: " C’est une blague, vient directement de l’anglais",
         english: " It's a joke, comes directly from English",
         src: './assets/images/89.jpg  ',
+        category:"feelings"
       },
       {
         id: "word90",
@@ -798,6 +887,7 @@ export const entriesWords =[
         french: " C’est le parler populaire québécois",
         english: " It's the popular speech of french",
         // src: './assets/images/vidanges.jpg  ',
+        category:"daily"
       },
       {
         id: "word91",
@@ -806,6 +896,7 @@ export const entriesWords =[
         french: " Quelque chose",
         english: "Something",
         // src: './assets/images/vidanges.jpg  ',
+        category:"daily"
       },
       {
         id: "word92",
@@ -814,6 +905,7 @@ export const entriesWords =[
         french: " Un moustique",
         english: " A mosquito",
         src: './assets/images/maringuouin.jpg  ',
+        category:"daily"
       },
       {
         id: "word93",
@@ -822,6 +914,7 @@ export const entriesWords =[
         french: " Bonne chance",
         english: "Good luck",
         // src: './assets/images/vidanges.jpg  ',
+        category:"curse"
       },
       {
         id: "word94",
@@ -830,6 +923,7 @@ export const entriesWords =[
         french: " Duper, berner, charier",
         english: " trick, deceive, spoof",
         // src: './assets/images/vidanges.jpg  ',
+        category:"daily"
       },
       {
         id: "word95",
@@ -838,6 +932,7 @@ export const entriesWords =[
         french: " Signifie pas du tout",
         english: " Mean not at all",
         // src: './assets/images/vidanges.jpg  ',
+        category:"daily"
       },
       {
         id: "word96",
@@ -846,6 +941,7 @@ export const entriesWords =[
         french: " Cela veut dire assez",
         english: " That means enough",
         // src: './assets/images/vidanges.jpg  ',
+        category:"daily"
       },
       {
         id: "word97",
@@ -854,6 +950,7 @@ export const entriesWords =[
         french: " Très bien",
         english: " Very well",
         // src: './assets/images/vidanges.jpg  ',
+        category:"daily"
       },
       {
         id: "word98",
@@ -862,6 +959,7 @@ export const entriesWords =[
         french: " C’est le Dollar",
         english: " It's the dollar",
         // src: './assets/images/vidanges.jpg  ',
+        category:"daily"
       },
       {
         id: "word99",
@@ -870,6 +968,7 @@ export const entriesWords =[
         french: " Belle fille",
         english: "Beautiful girl",
         src: './assets/images/99.jpg  ',
+        category:"sex"
       },
       {
         id: "word100",
@@ -878,6 +977,7 @@ export const entriesWords =[
         french: " C’est le fait de bavarder",
         english: " It's talking",
         src: './assets/images/100.jpg  ',
+        category:"feelings"
       },
       {
         id: "word101",
@@ -886,6 +986,7 @@ export const entriesWords =[
         french: " C’est ennuyeux",
         english: " It's boring",
         src: './assets/images/101.jpg  ',
+        category:"feelings"
       },
       {
         id: "word102",
@@ -894,6 +995,7 @@ export const entriesWords =[
         french: " Cela signifie prendre, ou  avoir du succès avec les filles",
         english: " It means to take, or to have success with the girls",
         src: './assets/images/102.jpg  ',
+        category:"sex"
       },
       {
         id: "word103",
@@ -902,6 +1004,7 @@ export const entriesWords =[
         french: " En ce moment",
         english: " Right now",
         src: './assets/images/103.jpg  ',
+        category:"daily"
       },
       {
         id: "word104",
@@ -910,6 +1013,7 @@ export const entriesWords =[
         french: " C’est une marmotte",
         english: " It's a groundhog",
         src: './assets/images/104.jpg  ',
+        category:"daily"
       },
       {
         id: "word105",
@@ -918,6 +1022,7 @@ export const entriesWords =[
         french: " S’entêter",
         english: "be stubborn",
         src: './assets/images/105.jpg  ',
+        category:"feelings"
       },
       {
         id: "word106",
@@ -926,6 +1031,7 @@ export const entriesWords =[
         french: " Veut dire en solde, en promotion",
         english: "Means on sale, on promotion",
         src: './assets/images/106.jpg  ',
+        category:"daily"
       },
       {
         id: "word107",
@@ -934,6 +1040,7 @@ export const entriesWords =[
         french: " Signifie apercevoir",
         english: "Means to glimpse",
         src: './assets/images/107.jpg  ',
+        category:"daily"
       },
       {
         id: "word108",
@@ -942,6 +1049,7 @@ export const entriesWords =[
         french: " tu sais",
         english: "you know",
         src: './assets/images/108.jpg  ',
+        category:"daily"
       },
       {
         id: "word109",
@@ -950,6 +1058,7 @@ export const entriesWords =[
         french: " Veut dire difficile",
         english: " means difficult",
         src: './assets/images/109.jpg  ',
+        category:"daily"
       },
       {
         id: "word110",
@@ -958,6 +1067,7 @@ export const entriesWords =[
         french: " La chanson",
         english: " The song",
         src: './assets/images/110.jpg  ',
+        category:"daily"
       },
       {
         id: "word111",
@@ -966,6 +1076,7 @@ export const entriesWords =[
         french: " Se dit d’une femme qui fait de l’embonpoint",
         english: " Said of a woman who is overweight",
         // src: './assets/images/100.jpg  ',
+        category:"daily"
       },
       {
         id: "word112",
@@ -974,6 +1085,7 @@ export const entriesWords =[
         french: " Signifie prendre du plaisir, aimer beaucoup",
         english: " Means to enjoy, to love a lot",
         src: './assets/images/112.jpg  ',
+        category:"feelings"
       },
       {
         id: "word113",
@@ -982,6 +1094,7 @@ export const entriesWords =[
         french: " Veut dire le problème",
         english: " means the problem",
         src: './assets/images/113.jpg  ',
+        category:"daily"
       },
       {
         id: "word114",
@@ -990,6 +1103,7 @@ export const entriesWords =[
         french: " Signifie cogner, donner des coups",
         english: " Means to knock, kick",
         src: './assets/images/114.jpg  ',
+        category:"feelings"
       },
       {
         id: "word115",
@@ -998,6 +1112,7 @@ export const entriesWords =[
         french: " Rester à ne rien faire (de productif)",
         english: " Do nothing (productive)",
         src: './assets/images/115.jpg  ',
+        category:"work"
       },
       {
         id: "word116",
@@ -1006,6 +1121,7 @@ export const entriesWords =[
         french: " Signifie tourner en rond, perdre son temps",
         english: " Means going around in circles, wasting your time",
         src: './assets/images/115.jpg  ',
+        category:"work"
       },
       {
         id: "word117",
@@ -1014,6 +1130,7 @@ export const entriesWords =[
         french: " Veut dire essayer sans succès",
         english: " Means to try without success",
         src: './assets/images/117.jpg  ',
+        category:"work"
       },
       {
         id: "word118",
@@ -1022,6 +1139,7 @@ export const entriesWords =[
         french: " C’est la musique",
         english: " It's the music",
         src: './assets/images/110.jpg  ',
+        category:"daily"
       },
       {
         id: "word119",
@@ -1030,6 +1148,7 @@ export const entriesWords =[
         french: " Représente le fait d’être en concubinage",
         english: " Represents the fact of being in concubinage",
         // src: './assets/images/100.jpg  ',
+        category:"sex"
       },
       {
         id: "word120",
@@ -1038,6 +1157,7 @@ export const entriesWords =[
         french: " C’est un ballon",
         english: " It's a ball",
         src: './assets/images/120.jpg  ',
+        category:"daily"
       },
       {
         id: "word121",
@@ -1046,6 +1166,7 @@ export const entriesWords =[
         french: " Aspirateur",
         english: "Vacuum",
         src: './assets/images/121.jpg  ',
+        category:"house"
       },
       {
         id: "word122",
@@ -1054,6 +1175,7 @@ export const entriesWords =[
         french: " C’est un briquet",
         english: " It's a lighter",
         src: './assets/images/122.jpg  ',
+        category:"house"
       },
       {
         id: "word123",
@@ -1062,6 +1184,7 @@ export const entriesWords =[
         french: " C’est la pile que l’on met dans un appareil",
         english: " It's the battery that you put in a device",
         src: './assets/images/123.jpg  ',
+        category:"daily"
       },
       {
         id: "word124",
@@ -1070,6 +1193,7 @@ export const entriesWords =[
         french: " C’est un objet sans valeur",
         english: " It's a worthless item.",
         src: './assets/images/124.jpg  ',
+        category:"daily"
       },
       {
         id: "word125",
@@ -1078,6 +1202,7 @@ export const entriesWords =[
         french: " Ce sont les toilettes",
         english: " These are the toilets",
         src: './assets/images/125.jpg  ',
+        category:"house"
       },
       {
         id: "word126",
@@ -1086,6 +1211,7 @@ export const entriesWords =[
         french: " Correspond à la petite amie, petite copine",
         english: " Matches girlfriend, girlfriend",
         src: './assets/images/126.jpg  ',
+        category:"house"
       },
       {
         id: "word127",
@@ -1094,6 +1220,7 @@ export const entriesWords =[
         french: " C’est la boîte aux lettres",
         english: " This is the mailbox",
         src: './assets/images/127.jpg  ',
+        category:"daily"
       },
       {
         id: "word128",
@@ -1102,6 +1229,7 @@ export const entriesWords =[
         french: " La cuvette des toilettes",
         english: " The toilet bowl",
         src: './assets/images/125.jpg  ',
+        category:"house"
       },
       {
         id: "word129",
@@ -1110,6 +1238,7 @@ export const entriesWords =[
         french: " Se dit de la fumée",
         english: " Said of the smoke",
         // src: './assets/images/100.jpg  ',
+        category:"food"
       },
       {
         id: "word130",
@@ -1118,6 +1247,7 @@ export const entriesWords =[
         french: " L’aide sociale",
         english: "Social assistance",
         // src: './assets/images/100.jpg  ',
+        category:"daily"
       },
       {
         id: "word131",
@@ -1126,6 +1256,7 @@ export const entriesWords =[
         french: " C’est la poussette pour bébé",
         english: "This is the baby stroller",
         src: './assets/images/131.jpg  ',
+        category:"house"
       },
       {
         id: "word132",
@@ -1134,6 +1265,7 @@ export const entriesWords =[
         french: " Fauché",
         english: " Broke",
         src: './assets/images/132.jpg  ',
+        category:"daily"
       },
       {
         id: "word133",
@@ -1142,6 +1274,7 @@ export const entriesWords =[
         french: " Un seau",
         english: "Bucket",
         src: './assets/images/133.jpg  ',
+        category:"food"
       },
       {
         id: "word134",
@@ -1150,6 +1283,7 @@ export const entriesWords =[
         french: " un ami. Veut dire aussi petit-ami quand dit par une fille",
         english: " a friend. Also means boyfriend when said by a girl",
         src: './assets/images/134.jpg  ',
+        category:"house"
       },
       {
         id: "word135",
@@ -1158,6 +1292,7 @@ export const entriesWords =[
         french: " Dépliant publicitaire",
         english: "Flyer",
         src: './assets/images/135.jpg  ',
+        category:"daily"
       },
       {
         id: "word136",
@@ -1166,6 +1301,7 @@ export const entriesWords =[
         french: " Une pile ou un tas de bois",
         english: " A pile or heap of wood",
         src: './assets/images/136.jpg  ',
+        category:"daily"
       },
       {
         id: "word137",
@@ -1174,6 +1310,7 @@ export const entriesWords =[
         french: " Ce sont les enfants",
         english: " These are the children",
         src: './assets/images/137.jpg  ',
+        category:"house"
       },
       {
         id: "word138",
@@ -1182,6 +1319,7 @@ export const entriesWords =[
         french: " C’est une machine à laver le linge",
         english: " It's a washing machine",
         src: './assets/images/138.jpg  ',
+        category:"house"
       },
       {
         id: "word139",
@@ -1190,6 +1328,7 @@ export const entriesWords =[
         french: " Faire ses achats, ses courses",
         english: " Shopping, shopping",
         src: './assets/images/139.jpg  ',
+        category:"daily"
       },
       {
         id: "word140",
@@ -1198,6 +1337,7 @@ export const entriesWords =[
         french: " Poster une lettre un courrier",
         english: " Post a letter a mail",
         src: './assets/images/127.jpg  ',
+        category:"daily"
       },
       {
         id: "word141",
@@ -1206,6 +1346,7 @@ export const entriesWords =[
         french: " Une serviette en papier",
         english: "A paper towel",
         src: './assets/images/141.jpg  ',
+        category:"food"
       },
       {
         id: "word142",
@@ -1214,6 +1355,7 @@ export const entriesWords =[
         french: " Aîné",
         english: " Elder",
         src: './assets/images/142.jpg  ',
+        category:"house"
       },
       {
         id: "word143",
@@ -1222,6 +1364,7 @@ export const entriesWords =[
         french: " Veut dire zapper avec la télécommande",
         english: " Means zapping with the remote",
         src: './assets/images/143.jpg  ',
+        category:"daily"
       },
       {
         id: "word144",
@@ -1230,6 +1373,7 @@ export const entriesWords =[
         french: " C’est un sèche-linge",
         english: " It's a clothes dryer",
         src: './assets/images/144.jpg  ',
+        category:"house"
       },
       {
         id: "word145",
@@ -1238,6 +1382,7 @@ export const entriesWords =[
         french: " Ce sont les poubelles",
         english: " These are the trash cans",
         src: './assets/images/145.jpg  ',
+        category:"daily"
       },
       {
         id: "word146",
@@ -1246,6 +1391,7 @@ export const entriesWords =[
         french: " C’est un film",
         english: " It's a film",
         src: './assets/images/146.jpg  ',
+        category:"daily"
       },
       {
         id: "word147",
@@ -1254,6 +1400,7 @@ export const entriesWords =[
         french: " C’est un expert dans les assurances",
         english: " He is an insurance expert.",
         // src: './assets/images/100.jpg  ',
+        category:"daily"
       },
       {
         id: "word148",
@@ -1262,6 +1409,7 @@ export const entriesWords =[
         french: " C’est un tableau d’affichage avec punaise",
         english: "It's a pin board",
         src: './assets/images/148.jpg  ',
+        category:"daily"
       },
       {
         id: "word149",
@@ -1270,6 +1418,7 @@ export const entriesWords =[
         french: " Donner son accord, son approbation",
         english: " Giving consent, approval",
         // src: './assets/images/100.jpg  ',
+        category:"daily"
       },
       {
         id: "word150",
@@ -1278,6 +1427,7 @@ export const entriesWords =[
         french: " Cela signifie marchander quelque chose",
         english: " It means to haggle over something",
         // src: './assets/images/100.jpg  ',
+        category:"daily"
       },
       {
         id: "word151",
@@ -1286,6 +1436,7 @@ export const entriesWords =[
         french: " Se comporter comme si on était le patron",
         english: " Act like you're the boss",
         src: './assets/images/151.jpg  ',
+        category:"work"
       },
       {
         id: "word152",
@@ -1294,6 +1445,7 @@ export const entriesWords =[
         french: " Bâcler",
         english: "rush",
         src: './assets/images/152.jpg  ',
+        category:"feelings"
       },
       {
         id: "word153",
@@ -1302,6 +1454,7 @@ export const entriesWords =[
         french: " Vient de l’anglais cancel signifiant annuler",
         english: " Comes from the English cancel meaning to cancel",
         // src: './assets/images/100.jpg  ',
+        category:"work"
       },
       {
         id: "word154",
@@ -1310,6 +1463,7 @@ export const entriesWords =[
         french: " C’est le lycée, le collège",
         english: " It's high school, college",
         src: './assets/images/154.jpg  ',
+        category:"work"
       },
       {
         id: "word155",
@@ -1318,6 +1472,7 @@ export const entriesWords =[
         french: " C’est l’action de facturer",
         english: " It is the act of invoicing",
         src: './assets/images/155.jpg  ',
+        category:"daily"
       },
       {
         id: "word156",
@@ -1326,6 +1481,7 @@ export const entriesWords =[
         french: " C’est un sponsor",
         english: " He's a sponsor",
         // src: './assets/images/100.jpg  ',
+        category:"work"
       },
       {
         id: "word157",
@@ -1334,6 +1490,7 @@ export const entriesWords =[
         french: " Dossier",
         english: " Case",
         // src: './assets/images/100.jpg  ',
+        category:"work"
       },
       {
         id: "word158",
@@ -1342,6 +1499,7 @@ export const entriesWords =[
         french: " Brancher",
         english: "Connect",
         // src: './assets/images/100.jpg  ',
+        category:"work"
       },
       {
         id: "word159",
@@ -1350,6 +1508,7 @@ export const entriesWords =[
         french: " Veut dire le lauréat",
         english: " means the winner",
         src: './assets/images/159.jpg  ',
+        category:"work"
       },
       {
         id: "word160",
@@ -1358,6 +1517,7 @@ export const entriesWords =[
         french: " Ce sont les droits d’auteur",
         english: " It's copyright",
         // src: './assets/images/100.jpg  ',
+        category:"work"
       },
       {
         id: "word161",
@@ -1366,6 +1526,7 @@ export const entriesWords =[
         french: " Dérivé de l’anglais signifiant planifier",
         english: " Derived from English meaning to plan",
         src: './assets/images/161.jpg  ',
+        category:"work"
       },
       {
         id: "word162",
@@ -1374,6 +1535,7 @@ export const entriesWords =[
         french: " C’est le pourboire",
         english: " It's the tip",
         src: './assets/images/162.jpg  ',
+        category:"work"
       },
       {
         id: "word163",
@@ -1382,6 +1544,7 @@ export const entriesWords =[
         french: " C’est fermer à clé sa porte ou sa voiture",
         english: " It's locking your door or your car",
         src: './assets/images/163.jpg  ',
+        category:"transport"
       },
       {
         id: "word164",
@@ -1390,6 +1553,7 @@ export const entriesWords =[
         french: " Se dit d’une ancienne voiture en mauvais état",
         english: " Said of an old car in poor condition",
         src: './assets/images/164.jpg  ',
+        category:"transport"
       },
       {
         id: "word165",
@@ -1398,6 +1562,7 @@ export const entriesWords =[
         french: " C’est un vélo, une bicyclette",
         english: " It's a bicycle, a bicycle",
         src: './assets/images/165.jpg  ',
+        category:"transport"
       },
       {
         id: "word166",
@@ -1406,6 +1571,7 @@ export const entriesWords =[
         french: " C’est une automobile, une voiture",
         english: " It's an automobile, a car",
         src: './assets/images/166.jpg  ',
+        category:"transport"
       },
       {
         id: "word167",
@@ -1414,6 +1580,7 @@ export const entriesWords =[
         french: " Veut dire conduire une voiture",
         english: " Means driving a car",
         src: './assets/images/163.jpg  ',
+        category:"transport"
       },
       {
         id: "word168",
@@ -1422,6 +1589,7 @@ export const entriesWords =[
         french: " Une voiture pourrie",
         english: "A rotten car",
         src: './assets/images/164.jpg  ',
+        category:"transport"
       },
       {
         id: "word169",
@@ -1430,6 +1598,7 @@ export const entriesWords =[
         french: " Accélérer",
         english: "Accelerate",
         src: './assets/images/169.jpg  ',
+        category:"transport"
       },
       {
         id: "word170",
@@ -1438,6 +1607,7 @@ export const entriesWords =[
         french: " C’est le clignotant des voitures",
         english: "It's the flashing lights of cars",
         // src: './assets/images/100.jpg  ',
+        category:"transport"
       },
       {
         id: "word171",
@@ -1446,6 +1616,7 @@ export const entriesWords =[
         french: " C’est l’essence que l’on met dans nos voitures ou chars pour ceux qui ont suivi",
         english: " It is the gasoline that we put in our cars or tanks for those who followed",
         // src: './assets/images/100.jpg  ',
+        category:"transport"
       },
       {
         id: "word172",
@@ -1454,6 +1625,7 @@ export const entriesWords =[
         french: " C’est la frontière américaine",
         english: " This is the US border",
         // src: './assets/images/100.jpg  ',
+        category:"transport"
       },
       {
         id: "word173",
@@ -1462,6 +1634,7 @@ export const entriesWords =[
         french: " Parcmètre",
         english: " Meter",
         // src: './assets/images/100.jpg  ',
+        category:"transport"
       },
       {
         id: "word174",
@@ -1470,6 +1643,7 @@ export const entriesWords =[
         french: " C’est une contravention",
         english: " It's a violation",
         // src: './assets/images/100.jpg  ',
+        category:"transport"
       },
       {
         id: "word175",
@@ -1478,6 +1652,7 @@ export const entriesWords =[
         french: " C’est le coffre d’une voiture",
         english: " It's the trunk of a car",
         // src: './assets/images/100.jpg  ',
+        category:"transport"
       },
       {
         id: "word176",
@@ -1486,6 +1661,7 @@ export const entriesWords =[
         french: " Se dit d’une personne qui fait la fête autrement dit un fêtard",
         english: " Said of a person who celebrates, in other words a party animal",
         src: './assets/images/176.jpg  ',
+        category:"daily"
       },
       {
         id: "word177",
@@ -1494,6 +1670,7 @@ export const entriesWords =[
         french: " Signifie un coiffeur",
         english: " Means a hairdresser",
         src: './assets/images/177.jpg  ',
+        category:"clothes"
       },
       {
         id: "word178",
@@ -1502,6 +1679,7 @@ export const entriesWords =[
         french: " Des lunettes",
         english: " Glasses",
         src: './assets/images/178.jpg  ',
+        category:"clothes"
       },
       {
         id: "word179",
@@ -1510,6 +1688,7 @@ export const entriesWords =[
         french: " Ce sont nos bonnes vieilles chaussettes",
         english: " These are our good old socks",
         src: './assets/images/179.jpg  ',
+        category:"clothes"
       },
       {
         id: "word180",
@@ -1518,6 +1697,7 @@ export const entriesWords =[
         french: " Une chemise",
         english: "A shirt",
         src: './assets/images/180.jpg  ',
+        category:"clothes"
       },
       {
         id: "word181",
@@ -1526,6 +1706,7 @@ export const entriesWords =[
         french: " Ce sont les culottes ou les sous-vêtements",
         english: " These are the panties or the underwear",
         src: './assets/images/181.jpg  ',
+        category:"clothes"
       },
       {
         id: "word182",
@@ -1534,6 +1715,7 @@ export const entriesWords =[
         french: " C’est un soutien-gorge",
         english: " It's a bra",
         src: './assets/images/182.jpg  ',
+        category:"clothes"
       },
       {
         id: "word183",
@@ -1542,6 +1724,7 @@ export const entriesWords =[
         french: " Ca correspond",
         english: "It matches",
         // src: './assets/images/100.jpg  ',
+        category:"clothes"
       },
       {
         id: "word184",
@@ -1550,6 +1733,7 @@ export const entriesWords =[
         french: " Rien à voir avec la voiture, c’est un manteau",
         english: " Nothing to do with the car, it's a coat",
         src: './assets/images/184.jpg  ',
+        category:"clothes"
       },
       {
         id: "word185",
@@ -1558,6 +1742,7 @@ export const entriesWords =[
         french: " Les pantoufles donc à ne pas confondre avec bas",
         english: " Slippers therefore not to be confused with stockings",
         src: './assets/images/185.jpg  ',
+        category:"clothes"
       },
       {
         id: "word186",
@@ -1566,6 +1751,7 @@ export const entriesWords =[
         french: " C’est un gant de toilette",
         english: " It's a washcloth",
         src: './assets/images/186.jpg  ',
+        category:"clothes"
       },
       {
         id: "word187",
@@ -1574,6 +1760,7 @@ export const entriesWords =[
         french: " Se dit de quelque chose d’original",
         english: " Said of something original",
         // src: './assets/images/100.jpg  ',
+        category:"daily"
       },
       {
         id: "word188",
@@ -1582,6 +1769,7 @@ export const entriesWords =[
         french: " C’est une moufle",
         english: " It's a mitten",
         src: './assets/images/188.jpg  ',
+        category:"clothes"
       },
       {
         id: "word189",
@@ -1590,6 +1778,7 @@ export const entriesWords =[
         french: " Une perruque",
         english: "A wig",
         src: './assets/images/189.jpg  ',
+        category:"clothes"
       },
       {
         id: "word190",
@@ -1598,6 +1787,7 @@ export const entriesWords =[
         french: " Se dit d’une coiffure",
         english: " Said of a hairstyle",
         src: './assets/images/189.jpg  ',
+        category:"clothes"
       },
       {
         id: "word191",
@@ -1606,6 +1796,7 @@ export const entriesWords =[
         french: " C’est un bonnet de laine tricotée",
         english: " It's a knitted wool hat",
         src: './assets/images/191.jpg  ',
+        category:"clothes"
       },
       {
         id: "word192",
@@ -1614,6 +1805,7 @@ export const entriesWords =[
         french: " C’est une mesure de tissu (36 pouces 91,44 cm)",
         english: " This is a fabric measurement (36 inches 91.44 cm)",
         // src: './assets/images/100.jpg  ',
+        category:"clothes"
       },
       {
         id: "word193",
@@ -1622,6 +1814,7 @@ export const entriesWords =[
         french: " C’est fermer une fermeture éclair",
         english: " It's closing a zipper",
         // src: './assets/images/100.jpg  ',
+        category:"clothes"
       },
       {
         id: "word194",
@@ -1630,6 +1823,7 @@ export const entriesWords =[
         french: " Se dit d’une bière tiède",
         english: " Said of a lukewarm beer",
         // src: './assets/images/100.jpg  ',
+        category:"food"
       },
       {
         id: "word195",
@@ -1638,6 +1832,7 @@ export const entriesWords =[
         french: " Le maïs",
         english: " The corn",
         src: './assets/images/195.jpg  ',
+        category:"food"
       },
       {
         id: "word196",
@@ -1646,6 +1841,7 @@ export const entriesWords =[
         french: " Ce sont les myrtilles",
         english: " These are the blueberries",
         src: './assets/images/196.jpg  ',
+        category:"food"
       },
       {
         id: "word197",
@@ -1654,6 +1850,7 @@ export const entriesWords =[
         french: " Boisson",
         english: "Drink",
         src: './assets/images/197.jpg  ',
+        category:"food"
       },
       {
         id: "word198",
@@ -1662,6 +1859,7 @@ export const entriesWords =[
         french: " Bière",
         english: "Beer",
         src: './assets/images/198.jpg  ',
+        category:"food"
       },
       {
         id: "word199",
@@ -1670,6 +1868,7 @@ export const entriesWords =[
         french: " Boite de conserve ou canette",
         english: "Can or can",
         src: './assets/images/199.jpg  ',
+        category:"food"
       },
       {
         id: "word200",
@@ -1678,6 +1877,7 @@ export const entriesWords =[
         french: " Coca-cola",
         english: " Coca Cola",
         src: './assets/images/200.jpg  ',
+        category:"food"
       },
       {
         id: "word201",
@@ -1686,6 +1886,7 @@ export const entriesWords =[
         french: " C’est l’épicerie de quartier ouverte le soir",
         english: " It's the neighborhood grocery store open in the evening",
         src: './assets/images/201.jpg  ',
+        category:"food"
       },
       {
         id: "word202",
@@ -1694,6 +1895,7 @@ export const entriesWords =[
         french: " C’est un chewing-gum",
         english: " It's a chewing gum",
         src: './assets/images/202.jpg  ',
+        category:"food"
       },
       {
         id: "word203",
@@ -1702,6 +1904,7 @@ export const entriesWords =[
         french: " Ce sont les boissons gazeuse, la limonade",
         english: " It's soft drinks, lemonade",
         src: './assets/images/203.jpg  ',
+        category:"food"
       },
       {
         id: "word204",
@@ -1710,6 +1913,7 @@ export const entriesWords =[
         french: " C’est l’arachide",
         english: " It's the peanut",
         src: './assets/images/204.jpg  ',
+        category:"food"
       },
       {
         id: "word205",
@@ -1718,6 +1922,7 @@ export const entriesWords =[
         french: " Dire du mal de quelqu’un",
         english: " speak ill of someone",
         // src: './assets/images/100.jpg  ',
+        category:"curse"
       },
       {
         id: "word206",
@@ -1726,6 +1931,7 @@ export const entriesWords =[
         french: " Un fou",
         english: " A mad person",
         src: './assets/images/206.jpg  ',
+        category:"curse"
       },
       {
         id: "word207",
@@ -1734,6 +1940,7 @@ export const entriesWords =[
         french: " Se dit de quelqu’un de malhonnête",
         english: " Said of someone who is dishonest",
         // src: './assets/images/100.jpg  ',
+        category:"curse"
       },
       {
         id: "word208",
@@ -1742,6 +1949,7 @@ export const entriesWords =[
         french: " se dit de quelqu’un qui est niais, idiot",
         english: "said of someone who is silly, stupid",
         // src: './assets/images/100.jpg  ',
+        category:"curse"
       },
       {
         id: "word209",
@@ -1750,6 +1958,7 @@ export const entriesWords =[
         french: " Se dit d’un macho",
         english: " Said of a macho",
         // src: './assets/images/100.jpg  ',
+        category:"feelings"
       },
       {
         id: "word210",
@@ -1758,6 +1967,7 @@ export const entriesWords =[
         french: " Une pétasse",
         english: "A bitch",
         // src: './assets/images/100.jpg  ',
+        category:"curse"
       },
       {
         id: "word211",
@@ -1766,6 +1976,7 @@ export const entriesWords =[
         french: " Ringard, Kitch",
         english: "Nerdy, kitsch",
         // src: './assets/images/100.jpg  ',
+        category:"curse"
       },
       {
         id: "word212",
@@ -1774,6 +1985,7 @@ export const entriesWords =[
         french: " C’est un imbécile, idiot",
         english: " He's a fool, fool",
         // src: './assets/images/100.jpg  ',
+        category:"curse"
       },
       {
         id: "word213",
@@ -1782,6 +1994,7 @@ export const entriesWords =[
         french: " c’est un abruti",
         english: " he's a jerk",
         // src: './assets/images/100.jpg  ',
+        category:"curse"
       },
       {
         id: "word214",
@@ -1790,6 +2003,7 @@ export const entriesWords =[
         french: " Ce sont des jurons, plus précisément M… ou p….!",
         english: " These are swear words, more precisely M… or p….!",
         // src: './assets/images/100.jpg  ',
+        category:"curse"
       },
       {
         id: "word215",
@@ -1798,6 +2012,7 @@ export const entriesWords =[
         french: " Est un clochard",
         english: " Is a tramp",
         // src: './assets/images/100.jpg  ',
+        category:"curse"
       },
       {
         id: "word216",
@@ -1806,6 +2021,7 @@ export const entriesWords =[
         french: " Signifie jurer, blasphémer",
         english: " Means to swear, to blaspheme",
         // src: './assets/images/100.jpg  ',
+        category:"curse"
       },
       {
         id: "word217",
@@ -1814,6 +2030,7 @@ export const entriesWords =[
         french: " C’est le blasphème",
         english: "It's blasphemy",
         // src: './assets/images/100.jpg  ',
+        category:"curse"
       },
       {
         id: "word218",
@@ -1822,6 +2039,7 @@ export const entriesWords =[
         french: " Se dit de quelqu’un ou de quelque chose qui est énervant",
         english: "Said of someone or something that is annoying",
         // src: './assets/images/100.jpg  ',
+        category:"curse"
       },
       {
         id: "word219",
@@ -1830,6 +2048,7 @@ export const entriesWords =[
         french: " C’est un fayot",
         english: "It's a bean",
         // src: './assets/images/100.jpg  ',
+        category:"curse"
       },
       {
         id: "word220",
@@ -1838,6 +2057,7 @@ export const entriesWords =[
         french: " C’est un morveux",
         english: " He's a brat",
         // src: './assets/images/100.jpg  ',
+        category:"curse"
       },
       {
         id: "word221",
@@ -1846,6 +2066,7 @@ export const entriesWords =[
         french: " C’est un nigaud,  un  imbécile",
         english: " He's a simpleton, a fool",
         // src: './assets/images/100.jpg  ',
+        category:"curse"
       },
       {
         id: "word222",
@@ -1854,6 +2075,7 @@ export const entriesWords =[
         french: " Veut dire la gueule",
         english: " Means the mouth",
         // src: './assets/images/100.jpg  ',
+        category:"curse"
       },
       {
         id: "word223",
@@ -1862,13 +2084,15 @@ export const entriesWords =[
         french: " C’est un crétin, un idiot",
         english: " He's a moron, an idiot",
         // src: './assets/images/100.jpg  ',
+        category:"curse"
       },
       {
         id: "word224",
       number: "224",
         quebec: "Un bon yabe ",
         french: " Un bon diable",
-        english: "a good devil"
+        english: "a good devil",
+        category:"curse"
       },
       {
         id: "word225",
@@ -1877,5 +2101,6 @@ export const entriesWords =[
         french: " Patinoire",
         english: "Rink",
         // src: './assets/images/vidanges.jpg  ',
+        category:"curse"
       },
 ]

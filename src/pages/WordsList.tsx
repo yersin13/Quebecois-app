@@ -1,4 +1,4 @@
-import { IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonContent, IonFooter, IonHeader, IonIcon, IonImg, IonInfiniteScroll, IonInfiniteScrollContent, IonItem, IonLabel, IonList, IonPage, IonSearchbar, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToolbar, useIonLoading, useIonViewWillEnter } from '@ionic/react';
+import { IonAccordion, IonAccordionGroup, IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonContent, IonFooter, IonHeader, IonIcon, IonImg, IonInfiniteScroll, IonInfiniteScrollContent, IonItem, IonLabel, IonList, IonPage, IonSearchbar, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToolbar, useIonLoading, useIonViewWillEnter } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import { entriesWords } from '../data-words';
 import { closeCircle } from 'ionicons/icons'
@@ -62,11 +62,8 @@ const WordsList: React.FC = () => {
       <IonContent>
       <IonSearchbar className="expressions-search" value={searchText} onIonChange={e => setSearchText(e.detail.value!)}></IonSearchbar>
       <IonList>
-      {/* <div className='div-sub-logo'> 
-      <img className='sub-logo'  src="../assets/usa.png" alt="" />
-        <img className='sub-logo'  src="../assets/qcflag.png" alt="" />
-        </div> */}
-      {entriesWords.filter((entry)=>{
+    
+      {/* {entriesWords.filter((entry)=>{
 if (searchText == ""){
   return entry
 } else if (entry.quebec.toLocaleLowerCase().includes(searchText.toLocaleLowerCase()))
@@ -78,19 +75,262 @@ if (searchText == ""){
            duration: 300
          })
        }}  routerLink={`/words-list/${entry.id}`} className="expressions-item">
-          {/* <IonLabel ><h2 className="expressions-text">
-          <img className='sub-logo-expression'  src="../assets/usa.png" alt="" />
-            {entry.english}</h2></IonLabel> */}
+        
           <p></p>
        <IonLabel ><h1 className="expressions-text">
        <img className='sub-logo-expression'  src="../assets/qcflag.png" alt="" />
        {entry.number}.- {entry.quebec}</h1></IonLabel>
-       {/* <IonThumbnail>
-      <img className="expressions-img" src={entry.src} alt="" />
-      </IonThumbnail> */}
-     
+
      </IonItem>
+          )} */}
+
+<IonAccordionGroup>
+<IonAccordion value="weather">
+            <IonItem slot="header">
+              <IonLabel>Weather</IonLabel>
+            </IonItem>
+      
+            <IonList slot="content">
+            {entriesWords.filter((entry) => {
+            if (entry.category === "weather")
+              return entry
+          }).map((entry) =>
+            <IonItem button
+              onClick={() => {
+                present({
+                  message: 'Loading...',
+                  duration: 300
+                })
+              }} routerLink={`/expressions-list/${entry.id}`} className="expressions-item">
+              <div>
+              
+                <IonLabel ><h2 className="expressions-text">
+                  {/* <img className='sub-logo-expression' src="../assets/usa.png" alt="" /> */}
+                   {entry.english}</h2><p className="expressions-text">
+                  {/* <img className='sub-logo-expression' src="../assets/qcflag.png" alt="" /> */}
+                   {entry.quebec}</p></IonLabel>
+              </div>
+          
+            </IonItem>
+            
           )}
+            </IonList>
+          </IonAccordion>
+          <IonAccordion value="food">
+            <IonItem slot="header">
+              <IonLabel>Food</IonLabel>
+            </IonItem>
+      
+            <IonList slot="content">
+            {entriesWords.filter((entry) => {
+            if (entry.category === "food")
+              return entry
+          }).map((entry) =>
+            <IonItem button
+              onClick={() => {
+                present({
+                  message: 'Loading...',
+                  duration: 300
+                })
+              }} routerLink={`/expressions-list/${entry.id}`} className="expressions-item">
+              <div>
+              
+                <IonLabel ><h2 className="expressions-text">
+                  {/* <img className='sub-logo-expression' src="../assets/usa.png" alt="" /> */}
+                   {entry.english}</h2><p className="expressions-text">
+                  {/* <img className='sub-logo-expression' src="../assets/qcflag.png" alt="" /> */}
+                   {entry.quebec}</p></IonLabel>
+              </div>
+          
+            </IonItem>
+            
+          )}
+            </IonList>
+          </IonAccordion>
+          <IonAccordion value="house">
+            <IonItem slot="header">
+              <IonLabel>House</IonLabel>
+            </IonItem>
+      
+            <IonList slot="content">
+            {entriesWords.filter((entry) => {
+            if (entry.category === "house")
+              return entry
+          }).map((entry) =>
+            <IonItem button
+              onClick={() => {
+                present({
+                  message: 'Loading...',
+                  duration: 300
+                })
+              }} routerLink={`/expressions-list/${entry.id}`} className="expressions-item">
+                  <div>
+              
+              <IonLabel ><h2 className="expressions-text">
+                {/* <img className='sub-logo-expression' src="../assets/usa.png" alt="" /> */}
+                 {entry.english}</h2><p className="expressions-text">
+                {/* <img className='sub-logo-expression' src="../assets/qcflag.png" alt="" /> */}
+                 {entry.quebec}</p></IonLabel>
+            </div>
+
+            </IonItem>
+          )}
+            </IonList>
+          </IonAccordion>
+          <IonAccordion value="feelings">
+            <IonItem slot="header">
+              <IonLabel>Feelings</IonLabel>
+            </IonItem>
+      
+            <IonList slot="content">
+            {entriesWords.filter((entry) => {
+            if (entry.category === "feelings")
+              return entry
+          }).map((entry) =>
+            <IonItem button
+              onClick={() => {
+                present({
+                  message: 'Loading...',
+                  duration: 300
+                })
+              }} routerLink={`/expressions-list/${entry.id}`} className="expressions-item">
+                  <div>
+              
+              <IonLabel ><h2 className="expressions-text">
+                {/* <img className='sub-logo-expression' src="../assets/usa.png" alt="" /> */}
+                 {entry.english}</h2><p className="expressions-text">
+                {/* <img className='sub-logo-expression' src="../assets/qcflag.png" alt="" /> */}
+                 {entry.quebec}</p></IonLabel>
+            </div>
+
+            </IonItem>
+          )}
+            </IonList>
+          </IonAccordion>
+
+          <IonAccordion value="daily">
+            <IonItem slot="header">
+              <IonLabel>Daily</IonLabel>
+            </IonItem>
+      
+            <IonList slot="content">
+            {entriesWords.filter((entry) => {
+            if (entry.category === "daily")
+              return entry
+          }).map((entry) =>
+            <IonItem button
+              onClick={() => {
+                present({
+                  message: 'Loading...',
+                  duration: 300
+                })
+              }} routerLink={`/expressions-list/${entry.id}`} className="expressions-item">
+                  <div>
+              
+              <IonLabel ><h2 className="expressions-text">
+                {/* <img className='sub-logo-expression' src="../assets/usa.png" alt="" /> */}
+                 {entry.english}</h2><p className="expressions-text">
+                {/* <img className='sub-logo-expression' src="../assets/qcflag.png" alt="" /> */}
+                 {entry.quebec}</p></IonLabel>
+            </div>
+
+            </IonItem>
+          )}
+            </IonList>
+          </IonAccordion>
+          <IonAccordion value="work">
+            <IonItem slot="header">
+              <IonLabel>Work</IonLabel>
+            </IonItem>
+      
+            <IonList slot="content">
+            {entriesWords.filter((entry) => {
+            if (entry.category === "work")
+              return entry
+          }).map((entry) =>
+            <IonItem button
+              onClick={() => {
+                present({
+                  message: 'Loading...',
+                  duration: 300
+                })
+              }} routerLink={`/expressions-list/${entry.id}`} className="expressions-item">
+                  <div>
+              
+              <IonLabel ><h2 className="expressions-text">
+                {/* <img className='sub-logo-expression' src="../assets/usa.png" alt="" /> */}
+                 {entry.english}</h2><p className="expressions-text">
+                {/* <img className='sub-logo-expression' src="../assets/qcflag.png" alt="" /> */}
+                 {entry.quebec}</p></IonLabel>
+            </div>
+
+            </IonItem>
+          )}
+            </IonList>
+          </IonAccordion>
+
+          <IonAccordion value="curse">
+            <IonItem slot="header">
+              <IonLabel>Curse</IonLabel>
+            </IonItem>
+      
+            <IonList slot="content">
+            {entriesWords.filter((entry) => {
+            if (entry.category === "curse")
+              return entry
+          }).map((entry) =>
+            <IonItem button
+              onClick={() => {
+                present({
+                  message: 'Loading...',
+                  duration: 300
+                })
+              }} routerLink={`/expressions-list/${entry.id}`} className="expressions-item">
+                   <div>
+              
+              <IonLabel ><h2 className="expressions-text">
+                {/* <img className='sub-logo-expression' src="../assets/usa.png" alt="" /> */}
+                 {entry.english}</h2><p className="expressions-text">
+                {/* <img className='sub-logo-expression' src="../assets/qcflag.png" alt="" /> */}
+                 {entry.quebec}</p></IonLabel>
+            </div>
+
+            </IonItem>
+          )}
+            </IonList>
+          </IonAccordion>
+          <IonAccordion value="sex">
+            <IonItem slot="header">
+              <IonLabel>Sex</IonLabel>
+            </IonItem>
+      
+            <IonList slot="content">
+            {entriesWords.filter((entry) => {
+            if (entry.category === "sex")
+              return entry
+          }).map((entry) =>
+            <IonItem button
+              onClick={() => {
+                present({
+                  message: 'Loading...',
+                  duration: 300
+                })
+              }} routerLink={`/expressions-list/${entry.id}`} className="expressions-item">
+                  <div>
+              
+              <IonLabel ><h2 className="expressions-text">
+                {/* <img className='sub-logo-expression' src="../assets/usa.png" alt="" /> */}
+                 {entry.english}</h2><p className="expressions-text">
+                {/* <img className='sub-logo-expression' src="../assets/qcflag.png" alt="" /> */}
+                 {entry.quebec}</p></IonLabel>
+            </div>
+
+            </IonItem>
+          )}
+            </IonList>
+          </IonAccordion>
+          </IonAccordionGroup>
+           
       
       </IonList>
           

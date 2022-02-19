@@ -9,7 +9,7 @@ export const entriesExpressions =[
         example:'"Ugh, mon chum c\'est en retard encore il toujours attendre que le curé se mouche" ',
         src: "./assets/audios/p1.mp3"  ,
         img:"./assets/images-expressions/p1.webp",
-        category: " "
+        category: "daily"
     },
     {
         id: 'phrase2',

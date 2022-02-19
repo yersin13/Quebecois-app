@@ -28,7 +28,13 @@ import FavWords from './pages/favorites/FavWords';
 import FavCorner from './pages/favorites/FavCorner';
 import FavExpressions from './pages/favorites/FavExpressions';
 
+import { setupIonicReact } from '@ionic/react';
 
+
+
+setupIonicReact({
+  mode: 'md'
+});
 
 
 const App: React.FC = () => (
