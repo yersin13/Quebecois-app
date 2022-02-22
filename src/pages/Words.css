@@ -6,23 +6,34 @@
   height:250px;
   object-fit: cover;
   /* overflow: hidden; */
-border-radius: 5px;
+/* border-radius: 5px; */
 border-color:#001f97;
 
 }
 
 .text{
     color:#001f97 ;
+    
 }
 .expression-list-item{
     display: flex;
     
-vertical-align: middle;
+width: 100%;
+
+
+}
+
+.expression-header{
+    /* text-align: center; */
+    /* font-size: 40px; */
+    height: auto;
+    width: auto;
+    
+    
 }
 .bold{
-    font-weight:900;
-    font-style: italic;
     
+    font-weight: bolder;
 }
 
 .expression-icon{
@@ -35,3 +46,49 @@ vertical-align: middle;
     font-style: italic;
     font-weight: bold;
 }
+
+.word-logo{
+    /* position: absolute; */
+    /* top: 5px;
+  right: 5px; */
+  /* background-color: #001f97; */
+  /* border-radius: 100px; */
+  /* height: 45px;
+  width: 45px; */
+  color: white;
+  padding: 0;
+  margin: 0;
+  z-index: 100;
+  /* align-items: center; */
+  /* display: flex; */
+  text-align: end;
+  width: 100%;
+}
+
+.item-save{
+    background-color: #001f97;
+    /* border-radius: 10px; */
+    /* width: 70%; */
+    justify-content: end;
+ 
+    /* width: 100%; */
+    height: 27px;
+    width: 100%;
+
+}
+.chip-logo{
+    display: flex;
+    padding-right: 10px;
+    padding-top: 2px;
+    width: 100%;
+ /* text-align: end;    */
+}
+
+.fab-logo{
+    height: 54%;
+    /* width: 14px; */
+    /* border-radius: 10px; */
+    /* justify-content: center; */
+    /* align-content: center;
+    justify-content: space-between; */
+  }

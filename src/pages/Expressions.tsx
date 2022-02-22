@@ -122,10 +122,7 @@ const Expressions: React.FC = () => {
                 </div>
                 <br />
                 <br />
-                <div className="expression-list-item">
-                  <img className="expression-icon" src="./assets/qcflag.png" alt="" />
-                  <h1 className="expression-header text bold">{entry.quebec}</h1>
-                </div>
+               
                 <br />
 
                 <audio controls >
@@ -135,7 +132,10 @@ const Expressions: React.FC = () => {
                 <br />
                 <br />
                 <img src={entry.img ? entry.img : "./assets/qcflag.png"} alt="" />
-
+                <div className="expression-list-item">
+                  <img className="expression-icon" src="./assets/qcflag.png" alt="" />
+                  <h1 className="expression-header text bold">{entry.quebec}</h1>
+                </div>
                 <p className="text example" >{entry.example}</p>
                 <br />
 

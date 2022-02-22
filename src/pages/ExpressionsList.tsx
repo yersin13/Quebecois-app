@@ -307,6 +307,67 @@ const ExpressionsList: React.FC = () => {
           )}
             </IonList>
           </IonAccordion>
+          <IonAccordion value="weather">
+            <IonItem slot="header">
+              <IonLabel>Weather</IonLabel>
+            </IonItem>
+      
+            <IonList slot="content">
+            {entriesExpressions.filter((entry) => {
+            if (entry.category === "weather")
+              return entry
+          }).map((entry) =>
+            <IonItem button
+              onClick={() => {
+                present({
+                  message: 'Loading...',
+                  duration: 300
+                })
+              }} routerLink={`/expressions-list/${entry.id}`} className="expressions-item">
+                  <div>
+              
+              <IonLabel ><h2 className="expressions-text">
+                {/* <img className='sub-logo-expression' src="../assets/usa.png" alt="" /> */}
+                 {entry.english}</h2><p className="expressions-text">
+                {/* <img className='sub-logo-expression' src="../assets/qcflag.png" alt="" /> */}
+                 {entry.quebec}</p></IonLabel>
+            </div>
+
+            </IonItem>
+          )}
+            </IonList>
+          </IonAccordion>
+
+          <IonAccordion value="clothes">
+            <IonItem slot="header">
+              <IonLabel>Clothes</IonLabel>
+            </IonItem>
+      
+            <IonList slot="content">
+            {entriesExpressions.filter((entry) => {
+            if (entry.category === "clothes")
+              return entry
+          }).map((entry) =>
+            <IonItem button
+              onClick={() => {
+                present({
+                  message: 'Loading...',
+                  duration: 300
+                })
+              }} routerLink={`/expressions-list/${entry.id}`} className="expressions-item">
+                  <div>
+              
+              <IonLabel ><h2 className="expressions-text">
+                {/* <img className='sub-logo-expression' src="../assets/usa.png" alt="" /> */}
+                 {entry.english}</h2><p className="expressions-text">
+                {/* <img className='sub-logo-expression' src="../assets/qcflag.png" alt="" /> */}
+                 {entry.quebec}</p></IonLabel>
+            </div>
+
+            </IonItem>
+          )}
+            </IonList>
+          </IonAccordion>
           </IonAccordionGroup>
            
    
