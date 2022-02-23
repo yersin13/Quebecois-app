@@ -1,13 +1,40 @@
-import { IonAccordion, IonAccordionGroup, IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonContent, IonFooter, IonHeader, IonIcon, IonImg, IonInfiniteScroll, IonInfiniteScrollContent, IonItem, IonLabel, IonList, IonPage, IonSearchbar, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToolbar, useIonLoading, useIonViewWillEnter } from '@ionic/react';
+import { IonAccordion, IonAccordionGroup, IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonContent, IonFab, IonFabButton, IonFooter, IonHeader, IonIcon, IonImg, IonInfiniteScroll, IonInfiniteScrollContent, IonItem, IonLabel, IonList, IonPage, IonSearchbar, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToolbar, useIonLoading, useIonViewWillEnter } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import { entriesWords } from '../data-words';
-import { arrowForward, closeCircle } from 'ionicons/icons'
+import { arrowForward, arrowUp, closeCircle } from 'ionicons/icons'
 import { home as homeIcon, settings as settingsIcon, planetOutline as planetIcon } from 'ionicons/icons'
 import './WordsList.css';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+
 
 const WordsList: React.FC = () => {
+
+
+
+  const [colorMain, setColorMain] = useState(false)
+  const [colorDrop, setColorDrop] = useState(false)
+  const localStorageContent = localStorage.getItem('theme')
+  
+  useEffect(()=>{
+    if (localStorageContent?.match("dark")) {
+     
+      setColorMain(true)
+      setColorDrop(true)
+  
+    } else if (localStorageContent?.match("light")) {
+      setColorMain(false)
+      setColorDrop(false)
+   
+      
+    }
+  })  
+
+  
+  const contentRef = useRef<HTMLIonContentElement | null>(null);
+  const scrollToTop= () => {
+      contentRef.current && contentRef.current.scrollToTop();
+  };
   const [present, dismiss] = useIonLoading();
 
   const [searchText, setSearchText] = useState('');
@@ -59,8 +86,8 @@ const WordsList: React.FC = () => {
 
         </IonToolbar>
       </IonHeader>
-      <IonContent>
-        <IonSearchbar className="expressions-search" value={searchText} onIonChange={e => setSearchText(e.detail.value!)}></IonSearchbar>
+      <IonContent ref={contentRef} scrollEvents={true}>
+        {/* <IonSearchbar className="expressions-search" value={searchText} onIonChange={e => setSearchText(e.detail.value!)}></IonSearchbar> */}
         <IonList>
 
           {/* {entriesWords.filter((entry)=>{
@@ -86,11 +113,11 @@ if (searchText == ""){
 
           <IonAccordionGroup>
             <IonAccordion value="greetings">
-              <IonItem slot="header">
+              <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"}  slot="header">
                 <IonLabel>Greetings</IonLabel>
               </IonItem>
 
-              <IonList slot="content">
+              <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}   slot="content">
                 {entriesWords.filter((entry) => {
                   if (entry.category === "greetings")
                     return entry
@@ -119,11 +146,11 @@ if (searchText == ""){
               </IonList>
             </IonAccordion>
             <IonAccordion value="weather">
-              <IonItem slot="header">
+              <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"}   slot="header">
                 <IonLabel>Weather</IonLabel>
               </IonItem>
 
-              <IonList slot="content">
+              <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
                 {entriesWords.filter((entry) => {
                   if (entry.category === "weather")
                     return entry
@@ -152,11 +179,11 @@ if (searchText == ""){
               </IonList>
             </IonAccordion>
             <IonAccordion value="food">
-              <IonItem slot="header">
+              <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"}   slot="header">
                 <IonLabel>Food</IonLabel>
               </IonItem>
 
-              <IonList slot="content">
+              <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
                 {entriesWords.filter((entry) => {
                   if (entry.category === "food")
                     return entry
@@ -185,11 +212,11 @@ if (searchText == ""){
               </IonList>
             </IonAccordion>
             <IonAccordion value="house">
-              <IonItem slot="header">
+              <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"}   slot="header">
                 <IonLabel>House</IonLabel>
               </IonItem>
 
-              <IonList slot="content">
+              <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
                 {entriesWords.filter((entry) => {
                   if (entry.category === "house")
                     return entry
@@ -217,11 +244,11 @@ if (searchText == ""){
               </IonList>
             </IonAccordion>
             <IonAccordion value="clothes">
-              <IonItem slot="header">
+              <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"}   slot="header">
                 <IonLabel>Clothes</IonLabel>
               </IonItem>
 
-              <IonList slot="content">
+              <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
                 {entriesWords.filter((entry) => {
                   if (entry.category === "clothes")
                     return entry
@@ -249,11 +276,11 @@ if (searchText == ""){
               </IonList>
             </IonAccordion>
             <IonAccordion value="feelings">
-              <IonItem slot="header">
+              <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"}   slot="header">
                 <IonLabel>Feelings</IonLabel>
               </IonItem>
 
-              <IonList slot="content">
+              <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
                 {entriesWords.filter((entry) => {
                   if (entry.category === "feelings")
                     return entry
@@ -282,11 +309,11 @@ if (searchText == ""){
             </IonAccordion>
 
             <IonAccordion value="daily">
-              <IonItem slot="header">
+              <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"}   slot="header">
                 <IonLabel>Daily</IonLabel>
               </IonItem>
 
-              <IonList slot="content">
+              <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
                 {entriesWords.filter((entry) => {
                   if (entry.category === "daily")
                     return entry
@@ -314,11 +341,11 @@ if (searchText == ""){
               </IonList>
             </IonAccordion>
             <IonAccordion value="work">
-              <IonItem slot="header">
+              <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"}   slot="header">
                 <IonLabel>Work</IonLabel>
               </IonItem>
 
-              <IonList slot="content">
+              <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
                 {entriesWords.filter((entry) => {
                   if (entry.category === "work")
                     return entry
@@ -347,11 +374,11 @@ if (searchText == ""){
             </IonAccordion>
 
             <IonAccordion value="curse">
-              <IonItem slot="header">
+              <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"}   slot="header">
                 <IonLabel>Curse</IonLabel>
               </IonItem>
 
-              <IonList slot="content">
+              <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
                 {entriesWords.filter((entry) => {
                   if (entry.category === "curse")
                     return entry
@@ -379,11 +406,11 @@ if (searchText == ""){
               </IonList>
             </IonAccordion>
             <IonAccordion value="sex">
-              <IonItem slot="header">
+              <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"}   slot="header">
                 <IonLabel>Sex</IonLabel>
               </IonItem>
 
-              <IonList slot="content">
+              <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
                 {entriesWords.filter((entry) => {
                   if (entry.category === "sex")
                     return entry
@@ -425,6 +452,12 @@ if (searchText == ""){
             loadingText="Loading more data..."
           ></IonInfiniteScrollContent>
         </IonInfiniteScroll>
+        
+        <IonFab horizontal="end" vertical="bottom" slot="fixed">
+          <IonFabButton onClick={()=>scrollToTop()}>
+<IonIcon icon={arrowUp} />
+          </IonFabButton>
+        </IonFab>
       </IonContent>
       <IonTabBar slot="bottom">
         <IonTabButton tab="profile" href="/home" >

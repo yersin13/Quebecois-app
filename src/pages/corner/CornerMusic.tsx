@@ -1,7 +1,7 @@
 import { IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonCol, IonContent, IonFabButton, IonGrid, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonPage, IonRow, IonSpinner, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToast, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../../components/ExploreContainer';
 import { entriesHome } from '../../data-home';
-import { addCircle, addCircleOutline, addCircleSharp, addOutline, bookmarkOutline, closeCircle, heart } from 'ionicons/icons'
+import { addCircle, addCircleOutline, addCircleSharp, addOutline, bookmarkOutline, closeCircle, heart, logoYoutube } from 'ionicons/icons'
 import { home as homeIcon, settings as settingsIcon, planetOutline as planetIcon } from 'ionicons/icons'
 import './Corner.css';
 import { music } from '../../data-music'
@@ -78,16 +78,31 @@ const CornerMusic: React.FC = () => {
           </div>
           {music.map((entry) =>
             <div className="div-music div-header-meme">
-              {
+               <IonItem key={entry.name}>
+              <IonThumbnail slot="start">
+                <img src={entry.img}/>
+              </IonThumbnail>
+              <IonLabel>
+                <h2>{entry.name}</h2>
+                <p>{entry.genre}</p>
+                
+              </IonLabel>
+              <IonThumbnail>
+                <IonButton routerLink={entry.youtube}>
+              <IonIcon   icon={logoYoutube}/>
+                </IonButton>
+              </IonThumbnail>
+            </IonItem>
+              {/* {
                 data ?
                   <iframe className='iframe-music' src={entry.src} width="100%" height="80" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" ></iframe>
                   :
                   <IonItem className="loading-spinner-item-music" lines='none'>
                     <IonSpinner color="light" className="spinner" name="lines" />
                   </IonItem>
-              }
+              } */}
 
-              {localStorageContent?.match(entry.id) ?
+              {/* {localStorageContent?.match(entry.id) ?
 
 
                 <IonIcon color="danger" className="fav-chip" icon={heart} />
@@ -99,7 +114,7 @@ const CornerMusic: React.FC = () => {
                   <IonIcon color="danger" className="fav-chip" icon={heart} />
                   <IonIcon className="fav-chip2" icon={addCircle} />
 
-                </IonFabButton>}
+                </IonFabButton>} */}
             </div>
 
           )}

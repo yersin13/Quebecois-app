@@ -36,3 +36,24 @@
 .blue{
     color: #001f97;
 }
+
+.drop-item-dark{
+ 
+    background-color: rgb(5, 11, 66);
+  
+}
+.drop-main-item-dark{
+    /* background-color: rgb(35, 24, 83); */
+    background-color: #0224af;
+}
+
+.drop-item-light{
+ 
+   
+    background-color: #ffffff;
+}
+.drop-main-item-light{
+    /* background-color: rgb(35, 24, 83); */
+    background-color: #001f97;
+    color:white;
+}

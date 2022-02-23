@@ -498,7 +498,7 @@ export const entriesWords =[
         quebec: "Bonjour ",
         french: " Bonne journée",
         english: "Have a good day",
-        // src: './assets/images/vidanges.jpg  ',
+        src: './assets/icon.png ',
         category:"greetings"
       },
       {
@@ -615,7 +615,7 @@ export const entriesWords =[
         quebec: "Agace-pissette",
         french: "  une aguicheuse",
         english: "a teaser",
-        // src: './assets/images/vidanges.jpg  ',
+        src: './assets/icon.png ',
         category:"sex"
       },
       {
@@ -759,7 +759,7 @@ export const entriesWords =[
         quebec: "Coupe (une) ",
         french: " Quelques",
         english: " Some",
-        // src: './assets/images/vidanges.jpg  ',
+        src: './assets/icon.png ',
         category:"daily"
       },
       {
@@ -805,7 +805,7 @@ export const entriesWords =[
         quebec: "À peu près ",
         french: " Environ",
         english: "About",
-        // src: './assets/images/vidanges.jpg  ',
+        src: './assets/icon.png ',
         category:"daily"
       },
       {
@@ -886,7 +886,7 @@ export const entriesWords =[
         quebec: "Joual ",
         french: " C’est le parler populaire québécois",
         english: " It's the popular speech of french",
-        // src: './assets/images/vidanges.jpg  ',
+        src: './assets/icon.png ',
         category:"daily"
       },
       {
@@ -895,7 +895,7 @@ export const entriesWords =[
         quebec: "Kekchose ",
         french: " Quelque chose",
         english: "Something",
-        // src: './assets/images/vidanges.jpg  ',
+        src: './assets/icon.png ',
         category:"daily"
       },
       {
@@ -913,7 +913,7 @@ export const entriesWords =[
         quebec: "Merde ",
         french: " Bonne chance",
         english: "Good luck",
-        // src: './assets/images/vidanges.jpg  ',
+        src: './assets/icon.png ',
         category:"curse"
       },
       {
@@ -922,7 +922,7 @@ export const entriesWords =[
         quebec: "Niaiser ",
         french: " Duper, berner, charier",
         english: " trick, deceive, spoof",
-        // src: './assets/images/vidanges.jpg  ',
+        src: './assets/images/vidanges.jpg  ',
         category:"daily"
       },
       {
@@ -931,7 +931,7 @@ export const entriesWords =[
         quebec: "Pantoute ",
         french: " Signifie pas du tout",
         english: " Mean not at all",
-        // src: './assets/images/vidanges.jpg  ',
+        src: './assets/icon.png ',
         category:"daily"
       },
       {
@@ -940,7 +940,7 @@ export const entriesWords =[
         quebec: "Pas mal ",
         french: " Cela veut dire assez",
         english: " That means enough",
-        // src: './assets/images/vidanges.jpg  ',
+        src: './assets/images/vidanges.jpg  ',
         category:"daily"
       },
       {
@@ -949,7 +949,7 @@ export const entriesWords =[
         quebec: "Pas pire ",
         french: " Très bien",
         english: " Very well",
-        // src: './assets/images/vidanges.jpg  ',
+        src: './assets/icon.png ',
         category:"daily"
       },
       {
@@ -958,7 +958,7 @@ export const entriesWords =[
         quebec: "Piasse (piastre) ",
         french: " C’est le Dollar",
         english: " It's the dollar",
-        // src: './assets/images/vidanges.jpg  ',
+        src: './assets/icon.png ',
         category:"daily"
       },
       {
@@ -2100,7 +2100,7 @@ export const entriesWords =[
         quebec: "Glace ",
         french: " Patinoire",
         english: "Rink",
-        // src: './assets/images/vidanges.jpg  ',
+        src: './assets/icon.png ',
         category:"curse"
       },
 ]

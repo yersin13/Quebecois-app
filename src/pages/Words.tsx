@@ -6,10 +6,12 @@ import { home as homeIcon, settings as settingsIcon, planetOutline as planetIcon
 import './Words.css';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useParams } from 'react-router';
-import * as htmlToImage from 'html-to-image';
+// import * as htmlToImage from 'html-to-image';
+
 
 interface RouteParams {
   id: string;
+
 }
 
 const Words: React.FC = () => {
@@ -22,34 +24,33 @@ const Words: React.FC = () => {
 
 
 
-
   const [eraseBottom, setEraseBottom] = useState(false)
 
   const localStorageContent = localStorage.getItem('favWords')
   const ref = useRef<HTMLDivElement>(null)
 
-  const onButtonClick = useCallback(() => {
-    if (ref.current === null) {
-      return
-    }
+  // const onButtonClick = useCallback(() => {
+  //   if (ref.current === null) {
+  //     return
+  //   }
 
-    htmlToImage.toPng(ref.current, { cacheBust: true, })
-      .then((dataUrl) => {
-        const link = document.createElement('a')
-        link.download = 'learnquebecois.png'
-        link.href = dataUrl
-        link.click()
-        setShowToastDown(true)
-        console.log(dataUrl)
-        
+  //   htmlToImage.toPng(ref.current, { cacheBust: true, })
+  //     .then((dataUrl) => {
+  //       const link = document.createElement('a')
+  //       link.download = 'learnquebecois.png'
+  //       link.href = dataUrl
+  //       link.click()
+  //       setShowToastDown(true)
+      
      
-      })
-      .catch((err) => {
-        console.log(err)
-      })
-  }, [ref])
+  //     })
+  //     .catch((err) => {
+  //       console.log(err)
+  //     })
+  // }, [ref])
 
-
+const im = "./assets/usa.png"
+const tex ="hello"
 
 
 
@@ -72,6 +73,8 @@ const Words: React.FC = () => {
     }
 
   }
+
+
 
 
   useEffect(() => {
@@ -144,11 +147,11 @@ const Words: React.FC = () => {
 
                   <img className="expression-img" src={entry.src ? entry.src : "./assets/qcflag.png"} alt="" />
 
-                  <div className='item-save'  >
-                    <div className='chip-logo '>
-                      <h4 className='word-logo'><img className='home-logo' src="../assets/flor.png" alt="" />  Learn Québécois App  </h4>
+                    <div className='item-save'  >
+                      <div className='chip-logo '>
+                        <h4 className='word-logo'><img className='home-logo' src="../assets/flor.png" alt="" />  Learn Québécois App  </h4>
+                      </div>
                     </div>
-                  </div>
 
                   <br />
                   <div className="expression-list-item ">
@@ -182,50 +185,47 @@ const Words: React.FC = () => {
 
 
             </div>
-
-
+           
           )}
 
 
-          <IonFab horizontal="end" vertical="top" >
-            <IonFabButton>
-              <IonIcon icon={chevronDownCircleOutline}></IonIcon>
-              {/* <img className='fab-logo' src="../assets/flor.png" alt="" /> */}
-            </IonFabButton>
-            <IonFabList>
+
               {entriesWords.filter((entry) => {
                 if (entry.id === id)
                   return entry
               }).map((entry) =>
                 <>
                   {eraseBottom ?
-
+                    <IonFab horizontal="end" vertical="top" >
                     <IonFabButton color="light" key={entry.id} className="" onClick={() => { eraser(entry) }} >
                    <IonIcon color="danger" icon={heart} />
                       {/* <IonIcon className="fav-chip2" icon={trash} /> */}
 
                     </IonFabButton>
+                    </IonFab>
                     :
+                    <IonFab horizontal="end" vertical="top" >
                     <IonFabButton key={entry.id} onClick={() => { click(entry) }} >
 
-                      <IonIcon color="primary" className="fav-chip" icon={heart} />
-                      {/* <IonIcon  color='dark' className="fav-chip2" icon={addCircle} /> */}
+                      <IonIcon color="light" className="fav-chip" icon={heart} />
+                      <IonIcon  color='light' className="fav-chip2" icon={addCircle} />
                     </IonFabButton>
+                    </IonFab>
                   }
 
 
                 </>
 
               )}
+
+
               {/* <IonFabButton color="light">
               <IonIcon icon={star}></IonIcon>
             </IonFabButton> */}
-              <IonFabButton onClick={onButtonClick}>
+              {/* <IonFabButton onClick={onButtonClick}>
                 <IonIcon color="primary" className="fav-chip" icon={downloadOutline} />
-              </IonFabButton>
-            </IonFabList>
-          </IonFab>
-
+              </IonFabButton> */}
+           
           <IonToast
 
             isOpen={showToast1}
@@ -235,15 +235,7 @@ const Words: React.FC = () => {
             color="warning "
 
           />
-          <IonToast
-
-            isOpen={showToastDow}
-            onDidDismiss={() => { setShowToastDown(false) }}
-            message="Word has been downloaded in Fav"
-            duration={500}
-            color="primary "
-
-          />
+         
 
 
           <IonToast

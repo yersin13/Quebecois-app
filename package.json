@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
+    "@awesome-cordova-plugins/social-sharing": "^5.39.1",
     "@capacitor/android": "^3.3.2",
     "@capacitor/app": "^1.0.6",
     "@capacitor/core": "3.3.1",
@@ -25,6 +26,7 @@
     "@types/react-router-dom": "^5.1.7",
     "axios": "^0.24.0",
     "cordova-plugin-nativeaudio": "^3.0.9",
+    "cordova-plugin-x-socialsharing": "^6.0.3",
     "html-to-image": "^1.9.0",
     "ionicons": "^5.4.0",
     "react": "^17.0.2",

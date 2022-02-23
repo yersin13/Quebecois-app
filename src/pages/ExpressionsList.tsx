@@ -1,13 +1,36 @@
-import { IonAccordion, IonAccordionGroup, IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonContent, IonFooter, IonHeader, IonIcon, IonImg, IonInfiniteScroll, IonInfiniteScrollContent, IonItem, IonLabel, IonList, IonPage, IonSearchbar, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToolbar, useIonLoading, useIonViewWillEnter } from '@ionic/react';
+import { IonAccordion, IonAccordionGroup, IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonContent, IonFab, IonFabButton, IonFooter, IonHeader, IonIcon, IonImg, IonInfiniteScroll, IonInfiniteScrollContent, IonItem, IonLabel, IonList, IonPage, IonSearchbar, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToolbar, useIonLoading, useIonViewWillEnter } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import { entriesExpressions } from '../data-expressions';
-import { chevronForward, closeCircle, gameController } from 'ionicons/icons'
+import { arrowUp, chevronForward, closeCircle, gameController } from 'ionicons/icons'
 import { home as homeIcon, settings as settingsIcon, planetOutline as planetIcon } from 'ionicons/icons'
 import './WordsList.css';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const ExpressionsList: React.FC = () => {
+  const [colorMain, setColorMain] = useState(false)
+  const [colorDrop, setColorDrop] = useState(false)
+  const localStorageContent = localStorage.getItem('theme')
+  
+  useEffect(()=>{
+    if (localStorageContent?.match("dark")) {
+     
+      setColorMain(true)
+      setColorDrop(true)
+  
+    } else if (localStorageContent?.match("light")) {
+      setColorMain(false)
+      setColorDrop(false)
+   
+      
+    }
+  })  
+
+  const contentRef = useRef<HTMLIonContentElement | null>(null);
+  const scrollToTop= () => {
+      contentRef.current && contentRef.current.scrollToTop();
+  };
+
   const [present, dismiss] = useIonLoading();
 
   const [searchText, setSearchText] = useState('');
@@ -66,7 +89,7 @@ const ExpressionsList: React.FC = () => {
 
         </IonToolbar>
       </IonHeader>
-      <IonContent>
+      <IonContent ref={contentRef} scrollEvents={true}>
          {/* <IonSearchbar className="expressions-search" value={searchText} onIonChange={e => setSearchText(e.detail.value!)}></IonSearchbar> */}
         <IonList>
         
@@ -95,11 +118,11 @@ const ExpressionsList: React.FC = () => {
           
           <IonAccordionGroup>
           <IonAccordion value="colors">
-            <IonItem slot="header">
+            <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"} slot="header">
               <IonLabel>food</IonLabel>
             </IonItem>
       
-            <IonList slot="content">
+            <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
             {entriesExpressions.filter((entry) => {
             if (entry.category === "food")
               return entry
@@ -126,11 +149,11 @@ const ExpressionsList: React.FC = () => {
             </IonList>
           </IonAccordion>
           <IonAccordion value="house">
-            <IonItem slot="header">
+            <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"} slot="header">
               <IonLabel>house</IonLabel>
             </IonItem>
       
-            <IonList slot="content">
+            <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
             {entriesExpressions.filter((entry) => {
             if (entry.category === "house")
               return entry
@@ -156,11 +179,11 @@ const ExpressionsList: React.FC = () => {
             </IonList>
           </IonAccordion>
           <IonAccordion value="feelings">
-            <IonItem slot="header">
+            <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"} slot="header">
               <IonLabel>feelings</IonLabel>
             </IonItem>
       
-            <IonList slot="content">
+            <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
             {entriesExpressions.filter((entry) => {
             if (entry.category === "feelings")
               return entry
@@ -187,11 +210,11 @@ const ExpressionsList: React.FC = () => {
           </IonAccordion>
 
           <IonAccordion value="daily">
-            <IonItem slot="header">
+            <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"} slot="header">
               <IonLabel>Daily</IonLabel>
             </IonItem>
       
-            <IonList slot="content">
+            <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
             {entriesExpressions.filter((entry) => {
             if (entry.category === "daily")
               return entry
@@ -217,11 +240,11 @@ const ExpressionsList: React.FC = () => {
             </IonList>
           </IonAccordion>
           <IonAccordion value="work">
-            <IonItem slot="header">
+            <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"} slot="header">
               <IonLabel>Work</IonLabel>
             </IonItem>
       
-            <IonList slot="content">
+            <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
             {entriesExpressions.filter((entry) => {
             if (entry.category === "work")
               return entry
@@ -248,11 +271,11 @@ const ExpressionsList: React.FC = () => {
           </IonAccordion>
 
           <IonAccordion value="curse">
-            <IonItem slot="header">
+            <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"} slot="header">
               <IonLabel>Curse</IonLabel>
             </IonItem>
       
-            <IonList slot="content">
+            <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
             {entriesExpressions.filter((entry) => {
             if (entry.category === "curse")
               return entry
@@ -278,11 +301,11 @@ const ExpressionsList: React.FC = () => {
             </IonList>
           </IonAccordion>
           <IonAccordion value="sex">
-            <IonItem slot="header">
+            <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"} slot="header">
               <IonLabel>Sex</IonLabel>
             </IonItem>
       
-            <IonList slot="content">
+            <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
             {entriesExpressions.filter((entry) => {
             if (entry.category === "sex")
               return entry
@@ -308,11 +331,11 @@ const ExpressionsList: React.FC = () => {
             </IonList>
           </IonAccordion>
           <IonAccordion value="weather">
-            <IonItem slot="header">
+            <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"} slot="header">
               <IonLabel>Weather</IonLabel>
             </IonItem>
       
-            <IonList slot="content">
+            <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
             {entriesExpressions.filter((entry) => {
             if (entry.category === "weather")
               return entry
@@ -339,11 +362,11 @@ const ExpressionsList: React.FC = () => {
           </IonAccordion>
 
           <IonAccordion value="clothes">
-            <IonItem slot="header">
+            <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"} slot="header">
               <IonLabel>Clothes</IonLabel>
             </IonItem>
       
-            <IonList slot="content">
+            <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
             {entriesExpressions.filter((entry) => {
             if (entry.category === "clothes")
               return entry
@@ -383,7 +406,12 @@ const ExpressionsList: React.FC = () => {
             loadingText="Loading more data..."
           ></IonInfiniteScrollContent>
         </IonInfiniteScroll>
-
+        <IonFab horizontal="end" vertical="bottom" slot="fixed">
+          <IonFabButton onClick={()=>scrollToTop()}>
+<IonIcon icon={arrowUp} />
+          </IonFabButton>
+        </IonFab>
+        
       </IonContent>
       <IonTabBar slot="bottom">
         <IonTabButton tab="profile" href="/home" >

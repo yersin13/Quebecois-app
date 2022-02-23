@@ -1,11 +1,11 @@
-import { IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonContent, IonFabButton, IonFooter, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonPage, IonSearchbar, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToast, IonToolbar } from '@ionic/react';
+import { IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonContent, IonFab, IonFabButton, IonFooter, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonPage, IonSearchbar, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToast, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import { entriesExpressions } from '../data-expressions';
 import { addCircle, bookmarkOutline, closeCircle, heart, trash } from 'ionicons/icons'
 import { home as homeIcon, settings as settingsIcon, planetOutline as planetIcon } from 'ionicons/icons'
 import './Words.css';
 import { NativeAudio } from "@ionic-native/native-audio/ngx";
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useParams } from 'react-router';
 
 interface RouteParams {
@@ -15,6 +15,8 @@ interface RouteParams {
 
 
 const Expressions: React.FC = () => {
+
+ 
   const { id } = useParams<RouteParams>();
 
   const [memo, setMemo] = useState<Array<String>>([]);
@@ -94,7 +96,7 @@ const Expressions: React.FC = () => {
 
         </IonToolbar>
       </IonHeader>
-      <IonContent>
+      <IonContent >
 
         <IonList>
           {entriesExpressions.filter((entry) => {
@@ -103,39 +105,31 @@ const Expressions: React.FC = () => {
           }).map((entry) =>
             <IonCard className=" card-item white">
 
-              <IonCardContent>
-                <div className='position-item'>
-                  {eraseBottom ?
-
-                    <IonFabButton color="light"  key={entry.id} className="fav-word-item" onClick={() => { eraser(entry) }} >
-                      <IonIcon color="danger" className="fav-chip" icon={heart} />
-                      {/* <IonIcon className="fav-chip2" icon={trash} /> */}
-
-                    </IonFabButton>
-                    :
-                    <IonFabButton key={entry.id} className="fav-word-item" onClick={() => { click(entry) }} >
-
-                      <IonIcon className="fav-chip" icon={heart} />
-                      <IonIcon className="fav-chip2" icon={addCircle} />
-                    </IonFabButton>
-                  }
-                </div>
-                <br />
-                <br />
+              <IonCardContent >
+              
                
-                <br />
+               
+              
 
-                <audio controls >
-                  {entry.src ? <source src={entry.src}></source> : "no"}
-                </audio>
+               
 
-                <br />
-                <br />
-                <img src={entry.img ? entry.img : "./assets/qcflag.png"} alt="" />
+               
+                <img className="expression-img" src={entry.img ? entry.img : "./assets/qcflag.png"} alt="" />
+                <div className='item-save'  >
+                    <div className='chip-logo '>
+                      <h4 className='word-logo'><img className='home-logo' src="../assets/flor.png" alt="" />  Learn Québécois App  </h4>
+                    </div>
+                  </div>
+                  <br />
+               
                 <div className="expression-list-item">
                   <img className="expression-icon" src="./assets/qcflag.png" alt="" />
                   <h1 className="expression-header text bold">{entry.quebec}</h1>
                 </div>
+                <br />
+                <audio controls >
+                  {entry.src ? <source src={entry.src}></source> : "no"}
+                </audio>
                 <p className="text example" >{entry.example}</p>
                 <br />
 
@@ -156,11 +150,33 @@ const Expressions: React.FC = () => {
 
                 <p className="text" >{entry.french}</p>
 
-
+              
               </IonCardContent>
             </IonCard>
           )}
+ {entriesExpressions.filter((entry) => {
+            if (entry.id === id)
+              return entry
+          }).map((entry) =>
+          <>
+{eraseBottom ?
+  <IonFab horizontal="end" vertical="top" >
+<IonFabButton color="light"  key={entry.id} className="" onClick={() => { eraser(entry) }} >
+  <IonIcon color="danger" className="fav-chip" icon={heart} />
+  {/* <IonIcon className="fav-chip2" icon={trash} /> */}
 
+</IonFabButton>
+</IonFab>
+:
+<IonFab horizontal="end" vertical="top" >
+<IonFabButton key={entry.id} className="" onClick={() => { click(entry) }} >
+
+  <IonIcon className="fav-chip" icon={heart} />
+  <IonIcon className="fav-chip2" icon={addCircle} />
+</IonFabButton>
+</IonFab>
+}
+</>)}
         </IonList>
         <IonToast
 
@@ -184,17 +200,17 @@ const Expressions: React.FC = () => {
 
       </IonContent>
 
-      {/* <IonTabBar slot="bottom">
+      <IonTabBar slot="bottom">
         <IonTabButton tab="profile" href="/home" >
           <IonIcon className="icons" icon={homeIcon} />
           <IonLabel className="label">Home</IonLabel>
-        </IonTabButton> */}
+        </IonTabButton>
 
       {/* <IonTabButton tab="settings" href="/settings" >
           <IonIcon className="icons" icon={settingsIcon} />
           <IonLabel className="label">Settings</IonLabel>
         </IonTabButton> */}
-      {/* </IonTabBar> */}
+      </IonTabBar>
 
     </IonPage>
   );
