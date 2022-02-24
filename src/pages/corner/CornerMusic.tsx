@@ -1,11 +1,12 @@
 import { IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonCol, IonContent, IonFabButton, IonGrid, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonPage, IonRow, IonSpinner, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToast, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../../components/ExploreContainer';
 import { entriesHome } from '../../data-home';
-import { addCircle, addCircleOutline, addCircleSharp, addOutline, bookmarkOutline, closeCircle, heart, logoYoutube } from 'ionicons/icons'
+import { addCircle, addCircleOutline, addCircleSharp, addOutline, arrowDownSharp, bookmarkOutline, closeCircle, heart, logoYoutube } from 'ionicons/icons'
 import { home as homeIcon, settings as settingsIcon, planetOutline as planetIcon } from 'ionicons/icons'
 import './Corner.css';
 import { music } from '../../data-music'
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const CornerMusic: React.FC = () => {
 
@@ -32,6 +33,11 @@ const CornerMusic: React.FC = () => {
     }
 
   }
+  const handleClick = () => {
+    window.open("http://twitter.com/saigowthamr");
+  };
+
+
   useEffect(() => {
     setTimeout(() => {
       setData(true);
@@ -84,15 +90,22 @@ const CornerMusic: React.FC = () => {
               </IonThumbnail>
               <IonLabel>
                 <h2>{entry.name}</h2>
-                <p>{entry.genre}</p>
+                <p>Song: {entry.song} </p>
+                <p>Genre: {entry.genre}</p>
                 
               </IonLabel>
               <IonThumbnail>
-                <IonButton routerLink={entry.youtube}>
-              <IonIcon   icon={logoYoutube}/>
+                <IonLabel color='danger'>Go <IonIcon icon={arrowDownSharp}/> </IonLabel>
+                <IonButton  color='light' onClick={() => {
+    window.open(`${entry.youtube}`)
+  }}>
+             
+                
+              <IonIcon  color='danger'  icon={logoYoutube}/>
                 </IonButton>
               </IonThumbnail>
             </IonItem>
+            {/* <button onClick={handleClick}>Twitter</button> */}
               {/* {
                 data ?
                   <iframe className='iframe-music' src={entry.src} width="100%" height="80" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" ></iframe>

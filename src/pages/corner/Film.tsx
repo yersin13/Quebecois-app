@@ -1,6 +1,6 @@
 import { IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonCol, IonContent, IonFabButton, IonGrid, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonPage, IonRow, IonSkeletonText, IonSlide, IonSlides, IonSpinner, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToast, IonToolbar } from '@ionic/react';
 
-import { addCircle, bookmarkOutline, closeCircle, heart, remove, removeCircle, removeCircleOutline, trashOutline } from 'ionicons/icons'
+import { addCircle, bookmarkOutline, closeCircle, heart, logoYoutube, remove, removeCircle, removeCircleOutline, trashOutline } from 'ionicons/icons'
 import { home as homeIcon, settings as settingsIcon, planetOutline as planetIcon } from 'ionicons/icons'
 import './Corner.css';
 import { useParams } from 'react-router';
@@ -51,11 +51,11 @@ const Film: React.FC = () => {
 
   }
 
-  useEffect(()=>{
-    setTimeout(() => {
-      setData(true);
-    }, 4000);
-  },[])
+  // useEffect(()=>{
+  //   setTimeout(() => {
+  //     setData(true);
+  //   }, 4000);
+  // },[])
 
   useEffect(() => {
 
@@ -142,7 +142,17 @@ const Film: React.FC = () => {
 
 
               <p className='text-film '>{entry.sinopsys} </p>
-              {
+
+
+<IonButton color='light' >
+<IonLabel color='danger'>Trailer in youtube:&nbsp;  </IonLabel>     <IonIcon  color='danger'  icon={logoYoutube}/>
+ </IonButton>
+
+         
+              <img className='film-image' src={entry.img} alt="" />
+
+
+              {/* {
                 data? 
                 <iframe className='film-video' width="100%" height="300px" src={entry.src} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
               :
@@ -150,7 +160,7 @@ const Film: React.FC = () => {
                <IonSpinner color="light"  className="spinner" name="lines" />
             </IonItem>
               
-              }
+              } */}
 
              
 

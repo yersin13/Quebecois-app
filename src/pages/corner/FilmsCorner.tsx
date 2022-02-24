@@ -1,7 +1,7 @@
 import { IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonCol, IonContent, IonFabButton, IonGrid, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonPage, IonRow, IonSlide, IonSlides, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToast, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../../components/ExploreContainer';
 import { entriesHome } from '../../data-home';
-import { addCircle, bookmarkOutline, closeCircle } from 'ionicons/icons'
+import { addCircle, bookmarkOutline, closeCircle, logoYoutube } from 'ionicons/icons'
 import { home as homeIcon, settings as settingsIcon, planetOutline as planetIcon } from 'ionicons/icons'
 import './Corner.css';
 
@@ -42,18 +42,28 @@ const FilmsCorner: React.FC = () => {
    {films.map((entry)=>
   
  
-    <IonCard button routerLink={`/corner-films/${entry.id}`}  className='card-films-corner'>
-  <IonCardHeader className="card-header-films">
+//     <IonCard button routerLink={`/corner-films/${entry.id}`}  className='card-films-corner'>
+//   <IonCardHeader className="card-header-films">
  
   
-  <h3 className='text-films-corner'>{entry.name}</h3>
-  </IonCardHeader>
+//   <h3 className='text-films-corner'>{entry.name}</h3>
+//   </IonCardHeader>
   
+//   <img className='film-image' src={entry.img} alt="" />
+  
+// </IonCard>
+
+<IonItem button routerLink={`/corner-films/${entry.id}`} >
+<h6 className=''>{entry.name}</h6>
+  <IonThumbnail slot='end'>
   <img className='film-image' src={entry.img} alt="" />
-  
-</IonCard>
-
-
+  </IonThumbnail>
+  {/* <IonThumbnail slot='end'>
+                <IonButton color='light' >
+              <IonIcon  color='danger'  icon={logoYoutube}/>
+                </IonButton>
+              </IonThumbnail> */}
+</IonItem>
 
 
 

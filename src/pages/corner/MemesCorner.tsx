@@ -109,7 +109,7 @@ useEffect(() => {
                   :
                   <IonFabButton key={entry.id} className="fav-meme-item" onClick={()=>{click(entry)} } >
 
-                  <IonIcon color="danger" className="fav-chip" icon={heart} />
+                  <IonIcon color="light" className="fav-chip" icon={heart} />
                     <IonIcon className="fav-chip2" icon={addCircle} />
 
                   </IonFabButton>}
