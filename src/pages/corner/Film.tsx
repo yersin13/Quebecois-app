@@ -120,11 +120,12 @@ const Film: React.FC = () => {
             <div className='div-films'>
 
               <div className='position-item'>
-                {eraseBottom ?
+
+                {/* {eraseBottom ?
 
                   <IonFabButton color="light" key={entry.id} className="fav-word-item" onClick={() => { eraser(entry) }} >
                     <IonIcon color="danger" className="fav-chip" icon={heart} />
-                    {/* <IonIcon   className="fav-chip2" icon={trashOutline} /> */}
+              
 
                   </IonFabButton>
                   :
@@ -133,7 +134,7 @@ const Film: React.FC = () => {
                     <IonIcon color="light"  className="fav-chip" icon={heart} />
                     <IonIcon className="fav-chip2" icon={addCircle} />
                   </IonFabButton>
-                }
+                } */}
 
               </div>
 

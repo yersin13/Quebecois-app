@@ -100,7 +100,7 @@ useEffect(() => {
                   <img src={entry.src} alt="" />
 
 
-                  {localStorageContent?.match(entry.id)? 
+                  {/* {localStorageContent?.match(entry.id)? 
                   
                  
                     <IonIcon color="danger" className="fav-chip" icon={heart} />
@@ -112,7 +112,7 @@ useEffect(() => {
                   <IonIcon color="light" className="fav-chip" icon={heart} />
                     <IonIcon className="fav-chip2" icon={addCircle} />
 
-                  </IonFabButton>}
+                  </IonFabButton>} */}
 
 
                   {/* <IonFabButton key={entry.id} className="fav-meme-item" onClick={()=>{click(entry)} } >

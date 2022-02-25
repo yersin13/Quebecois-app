@@ -28,47 +28,47 @@ const Food: React.FC = () => {
 
   const localStorageContent = localStorage.getItem('favCorner')
 
-  const click = (user: { id: string; src: string; }) => {
+  // const click = (user: { id: string; src: string; }) => {
 
-    if (localStorageContent?.match(user.id)) {
-      console.log('found')
-      setEraseBottom(true)
-    } else {
+  //   if (localStorageContent?.match(user.id)) {
+  //     console.log('found')
+  //     setEraseBottom(true)
+  //   } else {
 
-      setShowToast1(true)
+  //     setShowToast1(true)
 
-      memo.push(user.id)
-      localStorage.setItem('favCorner', JSON.stringify(memo))
-      setEraseBottom(false)
-    }
-
-
-
-
-  }
+  //     memo.push(user.id)
+  //     localStorage.setItem('favCorner', JSON.stringify(memo))
+  //     setEraseBottom(false)
+  //   }
 
 
 
-  useEffect(() => {
 
-
-    if (localStorageContent === null) {
+  // }
 
 
 
-    } else if (localStorageContent) {
-
-      setMemo(JSON.parse(localStorageContent))
-      console.log(memo)
-      if (localStorageContent?.match(id)) {
-        setEraseBottom(true)
-      } else {
-        // setEraseBottom(false)
-      }
-    }
+  // useEffect(() => {
 
 
-  }, [localStorageContent]);
+  //   if (localStorageContent === null) {
+
+
+
+  //   } else if (localStorageContent) {
+
+  //     setMemo(JSON.parse(localStorageContent))
+  //     console.log(memo)
+  //     if (localStorageContent?.match(id)) {
+  //       setEraseBottom(true)
+  //     } else {
+       
+  //     }
+  //   }
+
+
+  // }, [localStorageContent]);
 
 
 
@@ -109,20 +109,20 @@ const Food: React.FC = () => {
             <div className='div-food'>
 
               <div className='position-item'>
-                {eraseBottom ?
+                {/* {eraseBottom ?
 
                   <IonFabButton color="light" key={entry.id} className="fav-word-item" onClick={() => { eraser(entry) }} >
                     <IonIcon color="danger" className="fav-chip" icon={heart} />
-                    {/* <IonIcon className="fav-chip2" icon={trashOutline} /> */}
+                   
 
                   </IonFabButton>
                   :
                   <IonFabButton key={entry.id} className="fav-word-item" onClick={() => { click(entry) }} >
 
-                    <IonIcon color="danger"  className="fav-chip" icon={heart} />
+                    <IonIcon color="light"  className="fav-chip" icon={heart} />
                     <IonIcon className="fav-chip2" icon={addCircle} />
                   </IonFabButton>
-                }
+                } */}
               </div>
 
               <h3 className='text-food-corner'>{entry.name}</h3>

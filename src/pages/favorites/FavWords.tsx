@@ -1,7 +1,7 @@
 import { IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonContent, IonFooter, IonHeader, IonIcon, IonImg, IonInfiniteScroll, IonInfiniteScrollContent, IonItem, IonLabel, IonList, IonPage, IonSearchbar, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToolbar, useIonLoading, useIonViewWillEnter } from '@ionic/react';
 
 import { closeCircle, heart } from 'ionicons/icons'
-import { home as homeIcon, settings as settingsIcon, planetOutline as planetIcon } from 'ionicons/icons'
+import { home as homeIcon, settings as settingsIcon, planetOutline as planetIcon ,arrowForward} from 'ionicons/icons'
 
 
 import { useEffect, useState } from 'react';
@@ -96,23 +96,26 @@ const FavWords: React.FC = () => {
      
       {  
       entriesWords.filter(item => memo.includes(item.id)).map((entry)=>
-      <IonItem button 
-      onClick={() => {
-        present({
-          message: 'Loading...',
-          duration: 300
-        })
-      }}  routerLink={`/Words-list/${entry.id}`} className="expressions-item">
-        <div>
-        
-      <IonLabel ><h2 className="expressions-text">
-         <img className='sub-logo-expression'  src="../assets/qcflag.png" alt="" />
-     
-         {entry.number}.- {entry.quebec}    <IonIcon color="danger" className="fav" icon={heart} /></h2></IonLabel>
-        </div>
-     
+      <IonItem button
+                    onClick={() => {
+                      present({
+                        message: 'Loading...',
+                        duration: 300
+                      })
+                    }} routerLink={`/words-list/${entry.id}`} className="expressions-item">
+                    <div>
 
-    </IonItem>
+                      <IonLabel ><h2 className="expressions-text">
+                        {/* <img className='sub-logo-expression' src="../assets/usa.png" alt="" /> */}
+                        {entry.english}</h2><p className="expressions-text">
+                          {/* <img className='sub-logo-expression' src="../assets/qcflag.png" alt="" /> */}
+                          {entry.quebec}</p></IonLabel>
+                    </div>
+                    <IonThumbnail slot='end'>
+                      {/* <IonIcon icon={arrowForward} /> */}
+                      <img className="" src={entry.src ? entry.src : "./assets/qcflag.png"} alt="" />
+                    </IonThumbnail>
+                  </IonItem>
           )}
       
       </IonList>

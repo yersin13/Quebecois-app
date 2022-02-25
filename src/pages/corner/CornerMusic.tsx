@@ -1,4 +1,4 @@
-import { IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonCol, IonContent, IonFabButton, IonGrid, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonPage, IonRow, IonSpinner, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToast, IonToolbar } from '@ionic/react';
+import { IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonCol, IonContent, IonFab, IonFabButton, IonGrid, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonPage, IonRow, IonSpinner, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToast, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../../components/ExploreContainer';
 import { entriesHome } from '../../data-home';
 import { addCircle, addCircleOutline, addCircleSharp, addOutline, arrowDownSharp, bookmarkOutline, closeCircle, heart, logoYoutube } from 'ionicons/icons'
@@ -83,7 +83,8 @@ const CornerMusic: React.FC = () => {
             <p className='text-music'>Being a modern cosmopolitan society, today, all types of music can be found in Quebec. From folk music to hip hop, music has always played an important role in Quebercers culture. From La Bolduc in the 1920s–1930s to the contemporary artists, the music in Quebec has produced multiple songwriters, pop singers, crooners and music groups.</p>
           </div>
           {music.map((entry) =>
-            <div className="div-music div-header-meme">
+            // <div className="div-music div-header-meme">
+            <>
                <IonItem key={entry.name}>
               <IonThumbnail slot="start">
                 <img src={entry.img}/>
@@ -104,31 +105,28 @@ const CornerMusic: React.FC = () => {
               <IonIcon  color='danger'  icon={logoYoutube}/>
                 </IonButton>
               </IonThumbnail>
-            </IonItem>
-            {/* <button onClick={handleClick}>Twitter</button> */}
-              {/* {
-                data ?
-                  <iframe className='iframe-music' src={entry.src} width="100%" height="80" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" ></iframe>
-                  :
-                  <IonItem className="loading-spinner-item-music" lines='none'>
-                    <IonSpinner color="light" className="spinner" name="lines" />
-                  </IonItem>
-              } */}
-
               {/* {localStorageContent?.match(entry.id) ?
 
 
-                <IonIcon color="danger" className="fav-chip" icon={heart} />
+             
 
+                <></>
 
                 :
-                <IonFabButton key={entry.id} className="fav-meme-item" onClick={() => { click(entry) }} >
 
-                  <IonIcon color="danger" className="fav-chip" icon={heart} />
+                  <IonFabButton key={entry.id} className="" onClick={() => { click(entry) }} >
+
+                  <IonIcon color="light" className="fav-chip" icon={heart} />
                   <IonIcon className="fav-chip2" icon={addCircle} />
 
-                </IonFabButton>} */}
-            </div>
+                </IonFabButton>
+                
+       
+                
+                } */}
+            </IonItem>
+         
+            </>
 
           )}
 

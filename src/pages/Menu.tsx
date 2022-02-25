@@ -108,7 +108,7 @@ export const Menu = () => {
 
 
             </IonItem>
-            <IonItem button className="menu-item-home" lines="none" routerLink={"/favCorner"} routerDirection="none">
+            {/* <IonItem button className="menu-item-home" lines="none" routerLink={"/favCorner"} routerDirection="none">
               <IonLabel><h4>  Favorite Corner</h4></IonLabel>
 
               <IonButton>
@@ -116,7 +116,7 @@ export const Menu = () => {
               </IonButton>
 
 
-            </IonItem>
+            </IonItem> */}
             <IonItem button className="menu-item-home" lines="none" routerLink={"/page-2"} routerDirection="none">
               <IonLabel><h4>  About Us</h4></IonLabel>
 

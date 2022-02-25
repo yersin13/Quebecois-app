@@ -25,7 +25,7 @@ import { Menu } from './pages/Menu';
 
 
 import FavWords from './pages/favorites/FavWords';
-import FavCorner from './pages/favorites/FavCorner';
+
 import FavExpressions from './pages/favorites/FavExpressions';
 
 import { setupIonicReact } from '@ionic/react';
@@ -53,10 +53,7 @@ const App: React.FC = () => (
         <Route exact path="/favWords">
         <FavWords />
         </Route>
-        <Route exact path="/favCorner">
-        <FavCorner/>
-        </Route>
-
+     
 
         <Route exact path="/words-list">
         <WordsList />
