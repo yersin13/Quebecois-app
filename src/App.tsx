@@ -29,6 +29,9 @@ import FavWords from './pages/favorites/FavWords';
 import FavExpressions from './pages/favorites/FavExpressions';
 
 import { setupIonicReact } from '@ionic/react';
+import Cultural from './pages/corner/CornerCultural';
+import CornerMuseum from './pages/corner/CornerMuseums';
+import CornerMuseums from './pages/corner/CornerMuseums';
 
 
 
@@ -77,6 +80,14 @@ const App: React.FC = () => (
 
         <Route exact path="/corner-films">
         <FilmsCorner />
+        </Route>
+
+        <Route exact path="/corner-cultural">
+        <Cultural />
+        </Route>
+
+        <Route exact path="/corner-museums">
+        <CornerMuseums />
         </Route>
 
         <Route exact path="/corner-memes">

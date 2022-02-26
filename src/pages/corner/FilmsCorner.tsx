@@ -53,11 +53,13 @@ const FilmsCorner: React.FC = () => {
   
 // </IonCard>
 
-<IonItem  >
+<IonItem className='films-item'  >
   <IonLabel>
   <h2 className=''>{entry.name}</h2>
   <p>{entry.genre}</p>
+  {/* <p className='text-film '>{entry.sinopsys} </p>   */}
   </IonLabel>
+ 
 
   <IonThumbnail slot='start'>
   <img className='film-image' src={entry.img} alt="" />

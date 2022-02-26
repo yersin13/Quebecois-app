@@ -204,3 +204,21 @@ background-color: #001f97;
 
 
 
+.films-item{
+    /* height: 150px; */
+}
+.label-cultural{
+    padding-left: 10px;
+    /* font-size: px; */
+}
+
+.text-cultural{
+    color: #001f97;
+}
+
+.div-cultural{
+    background-color: white;
+margin-bottom: 10px;
+/* border-radius: 10px; */
+padding: 10px;
+}

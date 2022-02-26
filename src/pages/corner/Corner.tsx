@@ -86,37 +86,38 @@ const Corner: React.FC = () => {
                 </IonCard>
               </IonCol>
             </IonRow>
-            {/* <IonRow>
+            <IonRow>
 
 
               <IonCol size="6">
 
-                <IonCard button routerLink="/words-list" className="card corner-card " >
-
-
-                  <img className="image-corner" src="/assets/14.png" alt="" />
-
-                  <h4 className='corner-title font'>
-                    Places Quebecois
-                  </h4>
-
-                </IonCard>
-              </IonCol>
-            </IonRow> */}
-            {/* <IonRow>
-              <IonCol size="6">
-
-                <IonCard button routerLink="/words-list" className="card corner-card " >
+                <IonCard button routerLink="/corner-cultural" className="card corner-card " >
 
 
                   <img className="image-corner" src="/assets/10.png" alt="" />
 
                   <h4 className='corner-title font'>
-                    Culture Quebecois
+                    Cultural events in Quebec
                   </h4>
 
                 </IonCard>
               </IonCol>
+              <IonCol size="6">
+
+                <IonCard button routerLink="/corner-museums" className="card corner-card " >
+
+
+                  <img className="image-corner" src="/assets/14.png" alt="" />
+
+                  <h4 className='corner-title font'>
+                    Museums Quebecois
+                  </h4>
+
+                </IonCard>
+              </IonCol>
+            </IonRow>
+            {/* <IonRow>
+
               <IonCol size="6">
 
                 <IonCard button routerLink="/words-list" className="card corner-card " >

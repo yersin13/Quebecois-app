@@ -1,7 +1,7 @@
 import { IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonCol, IonContent, IonFabButton, IonGrid, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonPage, IonRow, IonSlide, IonSlides, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToast, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../../components/ExploreContainer';
 import { entriesHome } from '../../data-home';
-import { addCircle, bookmarkOutline, close, closeCircle, closeCircleOutline, heart, trash, trashBin, trashBinOutline, trashOutline } from 'ionicons/icons'
+import { addCircle, arrowDown, bookmarkOutline, close, closeCircle, closeCircleOutline, heart, logoYoutube, trash, trashBin, trashBinOutline, trashOutline } from 'ionicons/icons'
 import { home as homeIcon, settings as settingsIcon, planetOutline as planetIcon } from 'ionicons/icons'
 import './Corner.css';
 import { useParams } from 'react-router';
@@ -108,30 +108,19 @@ const Food: React.FC = () => {
 
             <div className='div-food'>
 
-              <div className='position-item'>
-                {/* {eraseBottom ?
-
-                  <IonFabButton color="light" key={entry.id} className="fav-word-item" onClick={() => { eraser(entry) }} >
-                    <IonIcon color="danger" className="fav-chip" icon={heart} />
-                   
-
-                  </IonFabButton>
-                  :
-                  <IonFabButton key={entry.id} className="fav-word-item" onClick={() => { click(entry) }} >
-
-                    <IonIcon color="light"  className="fav-chip" icon={heart} />
-                    <IonIcon className="fav-chip2" icon={addCircle} />
-                  </IonFabButton>
-                } */}
-              </div>
-
+            
               <h3 className='text-food-corner'>{entry.name}</h3>
 
 
               <p className='text-food-corner '>{entry.recipe} </p>
-
+              <IonLabel color='primary'>Check the recipe in YT <IonIcon icon={arrowDown}/></IonLabel>
+    <IonButton color='light' onClick={() => {
+    window.open(`${entry.youtube}`)
+  }}>
+    <IonLabel color='danger'>{entry.name} &nbsp; <IonIcon icon={logoYoutube}/> </IonLabel>    
+             </IonButton>
               <img className='film-video' src={entry.src} alt="" />
-
+          
             </div>
           )}
           {/*   

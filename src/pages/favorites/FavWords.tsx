@@ -112,8 +112,8 @@ const FavWords: React.FC = () => {
                           {entry.quebec}</p></IonLabel>
                     </div>
                     <IonThumbnail slot='end'>
-                      {/* <IonIcon icon={arrowForward} /> */}
-                      <img className="" src={entry.src ? entry.src : "./assets/qcflag.png"} alt="" />
+                      <IonIcon icon={arrowForward} />
+                      {/* <img className="" src={entry.src ? entry.src : "./assets/qcflag.png"} alt="" /> */}
                     </IonThumbnail>
                   </IonItem>
           )}
