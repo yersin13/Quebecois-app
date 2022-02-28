@@ -111,11 +111,17 @@ if (searchText == ""){
      </IonItem>
           )} */}
 
+          <br />
+
           <IonAccordionGroup>
             <IonAccordion value="greetings">
               <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"}  slot="header">
                 <IonLabel>Greetings</IonLabel>
+                <IonThumbnail>
+                <img className='' src="../assets/images-main/greetings.png" alt="" />
+                </IonThumbnail>
               </IonItem>
+              
 
               <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}   slot="content">
                 {entriesWords.filter((entry) => {
@@ -148,6 +154,9 @@ if (searchText == ""){
             <IonAccordion value="weather">
               <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"}   slot="header">
                 <IonLabel>Weather</IonLabel>
+                <IonThumbnail>
+                <img className='' src="../assets/images-main/weather.png" alt="" />
+                </IonThumbnail>
               </IonItem>
 
               <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
@@ -180,7 +189,10 @@ if (searchText == ""){
             </IonAccordion>
             <IonAccordion value="food">
               <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"}   slot="header">
-                <IonLabel>Food</IonLabel>
+                <IonLabel>Food & Kitchen</IonLabel>
+                <IonThumbnail>
+                <img className='' src="../assets/images-main/food.png" alt="" />
+                </IonThumbnail>
               </IonItem>
 
               <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
@@ -213,7 +225,10 @@ if (searchText == ""){
             </IonAccordion>
             <IonAccordion value="house">
               <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"}   slot="header">
-                <IonLabel>House</IonLabel>
+                <IonLabel>House & Family</IonLabel>
+                <IonThumbnail>
+                <img className='' src="../assets/images-main/house.png" alt="" />
+                </IonThumbnail>
               </IonItem>
 
               <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
@@ -245,7 +260,10 @@ if (searchText == ""){
             </IonAccordion>
             <IonAccordion value="clothes">
               <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"}   slot="header">
-                <IonLabel>Clothes</IonLabel>
+                <IonLabel>Clothes & Appearance</IonLabel>
+                <IonThumbnail>
+                <img className='' src="../assets/images-main/clothes.png" alt="" />
+                </IonThumbnail>
               </IonItem>
 
               <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
@@ -277,7 +295,10 @@ if (searchText == ""){
             </IonAccordion>
             <IonAccordion value="feelings">
               <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"}   slot="header">
-                <IonLabel>Feelings</IonLabel>
+                <IonLabel>Feelings & Emotions</IonLabel>
+                <IonThumbnail>
+                <img className='' src="../assets/images-main/feelings.png" alt="" />
+                </IonThumbnail>
               </IonItem>
 
               <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
@@ -310,7 +331,10 @@ if (searchText == ""){
 
             <IonAccordion value="daily">
               <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"}   slot="header">
-                <IonLabel>Daily</IonLabel>
+                <IonLabel>Daily Basics</IonLabel>
+                <IonThumbnail>
+                <img className='' src="../assets/images-main/daily.png" alt="" />
+                </IonThumbnail>
               </IonItem>
 
               <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
@@ -342,7 +366,10 @@ if (searchText == ""){
             </IonAccordion>
             <IonAccordion value="work">
               <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"}   slot="header">
-                <IonLabel>Work</IonLabel>
+                <IonLabel>Work & School</IonLabel>
+                <IonThumbnail>
+                <img className='' src="../assets/images-main/work.png" alt="" />
+                </IonThumbnail>
               </IonItem>
 
               <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
@@ -375,7 +402,10 @@ if (searchText == ""){
 
             <IonAccordion value="curse">
               <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"}   slot="header">
-                <IonLabel>Curse</IonLabel>
+                <IonLabel>Bad Words</IonLabel>
+                <IonThumbnail>
+                <img className='' src="../assets/images-main/curse.png" alt="" />
+                </IonThumbnail>
               </IonItem>
 
               <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
@@ -407,7 +437,10 @@ if (searchText == ""){
             </IonAccordion>
             <IonAccordion value="sex">
               <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"}   slot="header">
-                <IonLabel>Sex</IonLabel>
+                <IonLabel>Love & Sex</IonLabel>
+                <IonThumbnail>
+                <img className='' src="../assets/images-main/sex.png" alt="" />
+                </IonThumbnail>
               </IonItem>
 
               <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">

@@ -90,36 +90,20 @@ const ExpressionsList: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent ref={contentRef} scrollEvents={true}>
-         {/* <IonSearchbar className="expressions-search" value={searchText} onIonChange={e => setSearchText(e.detail.value!)}></IonSearchbar> */}
+       
         <IonList>
         
-          {/* {entriesExpressions.filter((entry) => {
-            if (searchText == "") {
-              return entry
-            } else if (entry.quebec.toLocaleLowerCase().includes(searchText.toLocaleLowerCase()))
-              return entry
-          }).map((entry) =>
-            <IonItem button
-              onClick={() => {
-                present({
-                  message: 'Loading...',
-                  duration: 300
-                })
-              }} routerLink={`/expressions-list/${entry.id}`} className="expressions-item">
-              <div>
-              
-                <IonLabel ><h2 className="expressions-text">
-                  <img className='sub-logo-expression' src="../assets/qcflag.png" alt="" />
-                  {entry.number}.- {entry.quebec}</h2></IonLabel>
-              </div>
-
-            </IonItem>
-          )} */}
-          
+    
           <IonAccordionGroup>
+          
           <IonAccordion value="colors">
             <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"} slot="header">
-              <IonLabel>food</IonLabel>
+              <IonLabel>Food & Kitchen</IonLabel>
+             
+                <IonThumbnail>
+                <img className='' src="../assets/images-main/food.png" alt="" />
+                </IonThumbnail>
+              
             </IonItem>
       
             <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
@@ -150,7 +134,10 @@ const ExpressionsList: React.FC = () => {
           </IonAccordion>
           <IonAccordion value="house">
             <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"} slot="header">
-              <IonLabel>house</IonLabel>
+              <IonLabel>House & Family</IonLabel>
+              <IonThumbnail>
+                <img className='' src="../assets/images-main/house.png" alt="" />
+                </IonThumbnail>
             </IonItem>
       
             <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
@@ -180,7 +167,10 @@ const ExpressionsList: React.FC = () => {
           </IonAccordion>
           <IonAccordion value="feelings">
             <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"} slot="header">
-              <IonLabel>feelings</IonLabel>
+              <IonLabel>Feelings & Emotions</IonLabel>
+              <IonThumbnail>
+                <img className='' src="../assets/images-main/feelings.png" alt="" />
+                </IonThumbnail>
             </IonItem>
       
             <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
@@ -211,7 +201,10 @@ const ExpressionsList: React.FC = () => {
 
           <IonAccordion value="daily">
             <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"} slot="header">
-              <IonLabel>Daily</IonLabel>
+              <IonLabel>Daily Basics</IonLabel>
+              <IonThumbnail>
+                <img className='' src="../assets/images-main/daily.png" alt="" />
+                </IonThumbnail>
             </IonItem>
       
             <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
@@ -241,7 +234,10 @@ const ExpressionsList: React.FC = () => {
           </IonAccordion>
           <IonAccordion value="work">
             <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"} slot="header">
-              <IonLabel>Work</IonLabel>
+              <IonLabel>Work & School</IonLabel>
+              <IonThumbnail>
+                <img className='' src="../assets/images-main/work.png" alt="" />
+                </IonThumbnail>
             </IonItem>
       
             <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
@@ -272,7 +268,10 @@ const ExpressionsList: React.FC = () => {
 
           <IonAccordion value="curse">
             <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"} slot="header">
-              <IonLabel>Curse</IonLabel>
+              <IonLabel>Bad Words</IonLabel>
+              <IonThumbnail>
+                <img className='' src="../assets/images-main/curse.png" alt="" />
+                </IonThumbnail>
             </IonItem>
       
             <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
@@ -302,7 +301,10 @@ const ExpressionsList: React.FC = () => {
           </IonAccordion>
           <IonAccordion value="sex">
             <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"} slot="header">
-              <IonLabel>Sex</IonLabel>
+              <IonLabel>Love & Sex</IonLabel>
+              <IonThumbnail>
+                <img className='' src="../assets/images-main/sex.png" alt="" />
+                </IonThumbnail>
             </IonItem>
       
             <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
@@ -333,6 +335,9 @@ const ExpressionsList: React.FC = () => {
           <IonAccordion value="weather">
             <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"} slot="header">
               <IonLabel>Weather</IonLabel>
+              <IonThumbnail>
+                <img className='' src="../assets/images-main/weather.png" alt="" />
+                </IonThumbnail>
             </IonItem>
       
             <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
@@ -363,7 +368,10 @@ const ExpressionsList: React.FC = () => {
 
           <IonAccordion value="clothes">
             <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"} slot="header">
-              <IonLabel>Clothes</IonLabel>
+              <IonLabel>Clothes & Appearance</IonLabel>
+              <IonThumbnail>
+                <img className='' src="../assets/images-main/clothes.png" alt="" />
+                </IonThumbnail>
             </IonItem>
       
             <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
