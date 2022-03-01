@@ -92,3 +92,18 @@ width: 100%;
     /* align-content: center;
     justify-content: space-between; */
   }
+
+  .card-dark{
+    background-color: #000000;
+    color: white;
+
+  }
+
+  .card-white{
+      background-color: white;
+  }
+
+  .text-dark{
+      color:white;
+  }
+

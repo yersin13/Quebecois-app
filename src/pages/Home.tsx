@@ -201,7 +201,7 @@ const Home: React.FC = () => {
 
             </IonRow>
           </IonGrid>
-          <IonCard button routerLink="/corner" className="card  "
+          <IonCard button routerLink="/lessons/" className="card  "
                   onClick={() => {
                     present({
                       message: 'Loading...',

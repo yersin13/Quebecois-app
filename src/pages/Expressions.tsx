@@ -15,7 +15,21 @@ interface RouteParams {
 
 
 const Expressions: React.FC = () => {
-
+  const [color, setColor] = useState(false)
+  const theme = localStorage.getItem('theme')
+  
+  useEffect(()=>{
+    if (theme?.match("dark")) {
+     
+      setColor(true)
+  
+    } else if (theme?.match("light")) {
+      
+      setColor(false)
+   
+      
+    }
+  })  
  
   const { id } = useParams<RouteParams>();
 
@@ -103,7 +117,7 @@ const Expressions: React.FC = () => {
             if (entry.id === id)
               return entry
           }).map((entry) =>
-            <IonCard className=" card-item white">
+            <IonCard className={color? 'card-dark ': "card-white "}>
 
               <IonCardContent >
               
@@ -124,31 +138,31 @@ const Expressions: React.FC = () => {
                
                 <div className="expression-list-item">
                   <img className="expression-icon" src="./assets/qcflag.png" alt="" />
-                  <h1 className="expression-header text bold">{entry.quebec}</h1>
+                  <h1 className={color? "text-dark": "expression-header text bold"}>{entry.quebec}</h1>
                 </div>
                 <br />
                 <audio controls >
                   {entry.src ? <source src={entry.src}></source> : "no"}
                 </audio>
-                <p className="text example" >{entry.example}</p>
+                <p className={color? "text-dark": "expression-header text bold example"} >{entry.example}</p>
                 <br />
 
 
                 <div className="expression-list-item">
                   <img className="expression-icon" src="./assets/usa.png" alt="" />
-                  <h2 className="text">English:</h2>
+                  <h2 className={color? "text-dark": "expression-header text bold"}>English:</h2>
                 </div>
 
-                <p className="text">{entry.english}</p>
+                <p className={color? "text-dark": "expression-header text bold"}>{entry.english}</p>
 
                 <br />
 
                 <div className="expression-list-item">
                   <img className="expression-icon" src="./assets/france.png" alt="" />
-                  <h2 className="text">French:</h2>
+                  <h2 className={color? "text-dark": "expression-header text bold"}>French:</h2>
                 </div>
 
-                <p className="text" >{entry.french}</p>
+                <p className={color? "text-dark": "expression-header text bold"} >{entry.french}</p>
 
               
               </IonCardContent>

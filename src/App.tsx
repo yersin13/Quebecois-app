@@ -32,6 +32,9 @@ import { setupIonicReact } from '@ionic/react';
 import Cultural from './pages/corner/CornerCultural';
 import CornerMuseum from './pages/corner/CornerMuseums';
 import CornerMuseums from './pages/corner/CornerMuseums';
+import Lessons from './pages/lessons/Lessons';
+import FactsQ from './pages/lessons/FactsQ';
+import Fact from './pages/lessons/Fact';
 
 
 
@@ -45,6 +48,15 @@ const App: React.FC = () => (
     <IonReactRouter>
     <Menu/>
       <IonRouterOutlet id="main">
+      <Route exact path="/facts/:id">
+        <Fact />
+        </Route>
+      <Route exact path="/facts/">
+        <FactsQ />
+        </Route>
+      <Route exact path="/lessons/">
+        <Lessons />
+        </Route>
         <Route exact path="/home">
         <Home />
         </Route>
@@ -94,6 +106,7 @@ const App: React.FC = () => (
         <MemesCorner />
         </Route>
         
+
     <Route exact path="/corner-films/:id">
         <Film />
         </Route>

@@ -14,7 +14,25 @@ interface RouteParams {
 
 }
 
+
+
 const Words: React.FC = () => {
+
+  const [color, setColor] = useState(false)
+const theme = localStorage.getItem('theme')
+
+useEffect(()=>{
+  if (theme?.match("dark")) {
+   
+    setColor(true)
+
+  } else if (theme?.match("light")) {
+    
+    setColor(false)
+ 
+    
+  }
+})  
   const { id } = useParams<RouteParams>();
 
   const [memo, setMemo] = useState<Array<String>>([]);
@@ -26,6 +44,9 @@ const Words: React.FC = () => {
 
   const [eraseBottom, setEraseBottom] = useState(false)
 
+
+
+  
   const localStorageContent = localStorage.getItem('favWords')
   const ref = useRef<HTMLDivElement>(null)
 
@@ -133,16 +154,11 @@ const tex ="hello"
           }).map((entry) =>
 
             <div className='shared-div' ref={ref}>
-              <IonCard className="card-item white ">
+              <IonCard className={color? 'card-dark ': "card-white "} >
 
-                <IonCardContent>
+                <IonCardContent  >
 
-                  <div className='position-item' >
-
-
-
-                  </div>
-
+             
                   <br />
 
                   <img className="expression-img" src={entry.src ? entry.src : "./assets/qcflag.png"} alt="" />
@@ -157,7 +173,7 @@ const tex ="hello"
                   <div className="expression-list-item ">
                     <img className="expression-icon" src="./assets/qcflag.png" alt="" />
 
-                    <h1 className="expression-header text bold">{entry.quebec}</h1>
+                    <h1 className={color? "text-dark": "expression-header text bold"}>{entry.quebec}</h1>
                   </div>
                   <br />
 
@@ -165,7 +181,7 @@ const tex ="hello"
 
                   <div className="expression-list-item">
                     <img className="expression-icon" src="./assets/usa.png" alt="" />
-                    <h2 className="text">English:  <h3 className="expression-header text bold">- {entry.english}</h3></h2>
+                    <h2 className={color? "text-dark": "expression-header text bold"}>English:  <h3 className={color? "text-dark": "expression-header text bold"}>- {entry.english}</h3></h2>
                   </div>
 
 
@@ -173,7 +189,7 @@ const tex ="hello"
 
                   <div className="expression-list-item">
                     <img className="expression-icon" src="./assets/france.png" alt="" />
-                    <h2 className="text">French:  <h3 className="expression-header text bold">- {entry.french}</h3></h2>
+                    <h2 className={color? "text-dark": "expression-header text bold"}>French:  <h3 className={color? "text-dark": "expression-header text bold"}>- {entry.french}</h3></h2>
                   </div>
 
 
