@@ -258,3 +258,7 @@ font-size: 20px;
   background: var(--ion-color-step-850, #27323e);
   color: var(--ion-item-background, rgb(71, 3, 3));
 }
+
+.font-random{
+    color: white;
+}

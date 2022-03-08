@@ -7,6 +7,7 @@ import { home as homeIcon, settings as settingsIcon, planetOutline as planetIcon
 import { useEffect, useState } from 'react';
 import { entriesExpressions } from '../data-expressions';
 import { NavButtons } from './NavButtons';
+import { facts } from '../data-lessons';
 
 
 
@@ -47,7 +48,7 @@ const Home: React.FC = () => {
         <IonList className="home-list">
 
 
-          <IonCard button routerLink="/overview" className="card "
+          {/* <IonCard button routerLink="/overview" className="card "
             onClick={() => {
               present({
                 message: 'Loading...',
@@ -64,9 +65,9 @@ const Home: React.FC = () => {
               </IonCardTitle>
             </IonCardHeader>
 
-          </IonCard>
+          </IonCard> */}
 
-          <IonCard button routerLink={`/expressions-list/${entriesExpressions[random].id}`} className="card-random "
+          <IonCard button routerLink={`/expressions-list/${entriesExpressions[random].id}`} className="card-random card"
             onClick={() => {
               present({
                 message: 'Loading...',
@@ -77,15 +78,15 @@ const Home: React.FC = () => {
             <IonCardHeader>
               <IonCardTitle>
 
-                <h5 className='home-random-title font-family'>
+                <h5 className='home-random-title font-family font-random'>
                   Random Québécois Phrase:
                 </h5>
 
-                <p className='home-random-text font-family'>
+                <p className='home-random-text font-family font-random'>
                   <img className='sub-logo-expression' src="../assets/qcflag.png" alt="" />
                   {entriesExpressions[random].quebec}
                 </p>
-                <p className='home-random-text font-family'>
+                <p className='home-random-text font-family font-random'>
                   <img className='sub-logo-expression' src="../assets/usa.png" alt="" />
                   {entriesExpressions[random].english}
                 </p>

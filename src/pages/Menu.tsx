@@ -108,15 +108,16 @@ export const Menu = () => {
 
 
             </IonItem>
-            {/* <IonItem button className="menu-item-home" lines="none" routerLink={"/favCorner"} routerDirection="none">
-              <IonLabel><h4>  Favorite Corner</h4></IonLabel>
+            
+            <IonItem button className="menu-item-home" lines="none" routerLink={"/overview"} routerDirection="none">
+              <IonLabel><h4>       Québécois Overview</h4></IonLabel>
 
               <IonButton>
                 <IonIcon color="light" className="fav-meme-chip" icon={earthOutline} />
               </IonButton>
 
 
-            </IonItem> */}
+            </IonItem>
             <IonItem button className="menu-item-home" lines="none" routerLink={"/page-2"} routerDirection="none">
               <IonLabel><h4>  About Us</h4></IonLabel>
 

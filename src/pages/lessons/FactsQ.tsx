@@ -62,7 +62,7 @@ const FactsQ: React.FC = () => {
             <IonBackButton color='light' />
           </IonButtons>
           <div className='home-div-logo '>
-            <h4 className='home-text-logo padding-menu-others '><img className='home-logo' src="../assets/flor.png" alt="" /> facts Québécois</h4>
+            <h4 className='home-text-logo padding-menu-others '><img className='home-logo' src="../assets/flor.png" alt="" /> Facts Québécois</h4>
           </div>
 
         </IonToolbar>
@@ -70,6 +70,7 @@ const FactsQ: React.FC = () => {
       <IonContent>
 
         <IonList>
+          <br />
           {facts.map((entry) =>
             <IonItem button
               onClick={() => {
@@ -77,13 +78,25 @@ const FactsQ: React.FC = () => {
                   message: 'Loading...',
                   duration: 300
                 })
-              }} routerLink={`/facts/${entry.id}`} className="expressions-item">
-              <h1>{entry.name}</h1>
+              }} routerLink={`/facts/${entry.id}`} className="expressions-item card fact-card">
+              <h1 className='font  fact-title'>{entry.name}</h1>
               <IonThumbnail slot='end'>
                 <img src={entry.img} alt="" />
               </IonThumbnail>
             </IonItem>
 
+/* <IonCard className="card fact-card" routerLink={`/facts/${entry.id}`}>
+<h4 className='home-title font  fact-title'>
+{entry.name}
+</h4>
+<img src={entry.img} alt="" className='fact-img'/>
+
+
+
+
+
+
+</IonCard> */
 
           )}
 

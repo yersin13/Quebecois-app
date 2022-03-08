@@ -80,9 +80,15 @@ useEffect(() => {
       <IonHeader>
 
         <IonToolbar className="toolbar">
-          <IonButtons slot="start">
+        <IonButtons slot="start">
             <IonBackButton color='light' />
           </IonButtons>
+          <div className='home-div-logo '>
+
+
+            <h4 className='home-text-logo padding-menu-others '><img className='home-logo' src="../assets/flor.png" alt="" /> Memes Québécois</h4>
+
+          </div>
 
 
         </IonToolbar>
@@ -90,7 +96,7 @@ useEffect(() => {
       <IonContent>
         <IonList className="music-list">
           <div className='div-films-corner'>
-            <h3 className='text-film-corner '>Memes Quebecois</h3>
+            <h3 className='text-film-corner '>Memes Québécois</h3>
 
           </div>
           {memes.map((entry) =>

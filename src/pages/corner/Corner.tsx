@@ -36,7 +36,7 @@ const Corner: React.FC = () => {
                   <img className="image-corner" src="/assets/9.png" alt="" />
 
                   <h4 className='corner-title font'>
-                    Music Quebecois
+                    Music Québécois
                   </h4>
 
                 </IonCard>
@@ -49,7 +49,7 @@ const Corner: React.FC = () => {
                   <img className="image-corner" src="/assets/11.png" alt="" />
 
                   <h4 className='corner-title font'>
-                    Films Quebecois
+                    Films Québécois
                   </h4>
 
                 </IonCard>
@@ -64,7 +64,7 @@ const Corner: React.FC = () => {
                   <img className="image-corner" src="/assets/13.png" alt="" />
 
                   <h4 className='corner-title font'>
-                    Québécois cuisine
+                   Cuisine Québécois
                   </h4>
 
                 </IonCard>
@@ -80,7 +80,7 @@ const Corner: React.FC = () => {
                   <img className="image-corner" src="/assets/12.png" alt="" />
 
                   <h4 className='corner-title font'>
-                    Memes Quebecois
+                    Memes Québécois
                   </h4>
 
                 </IonCard>
@@ -102,7 +102,7 @@ const Corner: React.FC = () => {
 
                 </IonCard>
               </IonCol>
-              <IonCol size="6">
+              {/* <IonCol size="6">
 
                 <IonCard button routerLink="/corner-museums" className="card corner-card " >
 
@@ -114,7 +114,7 @@ const Corner: React.FC = () => {
                   </h4>
 
                 </IonCard>
-              </IonCol>
+              </IonCol> */}
             </IonRow>
             {/* <IonRow>
 

@@ -27,14 +27,14 @@ const Overview: React.FC = () => {
       
          <IonCardHeader>
            <IonCardTitle>
-             <h3  className="overview-title ">   Quebec French Overview</h3>
+             <h3  className="overview-title ">   Québécois Overview</h3>
              <img className="overview-img" src="./assets/overview.jpg"  />
              
            </IonCardTitle>
          </IonCardHeader>
             <IonCardContent >
             <p className="overview-content-text">
-            Quebec French (French: français québécois [fʁɑ̃sɛ kebekwa]; also known as Québécois French or Québécois) is the predominant variety of French spoken in Canada, in its formal and informal registers. It is the dominant language of the province of Quebec, used in everyday communication, in education, the media, and government.
+            Quebec French (French: français québécois also known as Québécois French or Québécois) is the predominant variety of French spoken in Canada, in its formal and informal registers. It is the dominant language of the province of Quebec, used in everyday communication, in education, the media, and government.
             </p>
             <br />
             <p className="overview-content-text">

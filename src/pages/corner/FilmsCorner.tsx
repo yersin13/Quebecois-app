@@ -26,17 +26,21 @@ const FilmsCorner: React.FC = () => {
       <IonHeader>
 
         <IonToolbar className="toolbar">
-          <IonButtons slot="start">
-            <IonBackButton />
+        <IonButtons slot="start">
+            <IonBackButton color='light' />
           </IonButtons>
+          <div className='home-div-logo '>
 
 
+            <h4 className='home-text-logo padding-menu-others '><img className='home-logo' src="../assets/flor.png" alt="" /> Films Québécois</h4>
+
+          </div>
         </IonToolbar>
       </IonHeader>
       <IonContent>
         <IonList className="music-list">
         <div className='div-films-corner'>
-  <h3 className='text-film-corner '>Cinema of Quebec</h3>
+  <h3 className='text-film-corner '>Films Québécois</h3>
   <p className='text-film-corner '>The history of cinema in Quebec started on June 27, 1896 when the Frenchman Louis Minier inaugurated the first movie projection in North America in a Montreal theatre room. However, it would have to wait until the 1960s before a genuine Quebec cinema industry would emerge. Approximately 620 feature-length films have been produced, or partially produced by the Quebec film industry since 1943.</p>
 </div>
    {films.map((entry)=>
