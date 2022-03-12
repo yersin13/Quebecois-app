@@ -77,19 +77,9 @@ export const facts =[
         src: 'https://carnaval.qc.ca/en/',
         img:'./assets/images-main/facts/city.jpg'
     },
+   
     {
         id: 'facts8',
-        name: 'The top 10 family names in Québec',
-        p1: "",
-        p2: "",
-        p3: "",
-        ex1:"",
-        ex2:"",
-        src: 'https://carnaval.qc.ca/en/',
-        img:'./assets/images-main/facts/last.jpg'
-    },
-    {
-        id: 'facts9',
         name: 'La vente-trottoir',
         p1: "Merchants often take advantage of the beautiful days of spring, summer and fall to sell their merchandise at reduced prices on the street.",
         p2: "During these special days, the street is closed to car traffic. People can shop on the street or eat street food or relax on the terraces. Sometimes there are also performances with music, dance, etc.",
@@ -99,4 +89,117 @@ export const facts =[
         src: 'https://carnaval.qc.ca/en/',
         img:'./assets/images-main/facts/street.jpg'
     },
+    {
+        id: 'facts9',
+        name: 'Top 10 family names in Québec',
+        p1: "",
+        p2: "",
+        p3: "",
+        ex1:"",
+        ex2:"",
+        src: 'https://carnaval.qc.ca/en/',
+        img:'./assets/images-main/facts/last.jpg'
+    },
+]
+
+
+
+export const lesson1 =[
+    {
+        id: 'restaurant1',
+        name: 'La vente-trottoir',
+        p1: "This is a common greeting in a restaurant in Montreal, is a way to let you know that you can talk in French or English, and they will be able to understand you.",
+        quebec1: "",
+        english1: "",
+        quebec2: "",
+        english2: "",
+        quebec3: "",
+        english3: "",
+        quebec4: "",
+        english4: "",
+        src1: './assets/audios/176.mp3',
+        src2: './assets/audios/177.mp3',
+        img:'./assets/images-main/lesson1/restaurant1.jpg'
+    },
+    {
+        id: 'restaurant2',
+        name: 'La vente-trottoir',
+        p1: "Some restaurants are free service, and you have to order your food and take it to your table.",
+        quebec1: "C'est pour ici ou pour emporter?",
+        english1: "Is it for here or to go?",
+        quebec2: "pour ici ",
+        english2: "Means that you want to eat at the restaurant.",
+        quebec3: "pour emporter",
+        english3: "Means that you want to take the food to go.",
+        quebec4: "",
+        english4: "",
+        src1: './assets/audios/176.mp3',
+        src2: './assets/audios/177.mp3',
+        img:'./assets/images-main/lesson1/restaurant2.jpg'
+    },
+    {
+        id: 'restaurant3',
+        name: 'La vente-trottoir',
+        p1: "This is to know how many people is coming to eat with you.",
+        quebec1: "C'est pour combien de personnes?",
+        english1: "How many people will there be?",
+        quebec2: "On va être 2 personnes, s'il vous plaît.",
+        english2: "It is for two persons, please.",
+        quebec3: "",
+        english3: "",
+        quebec4: "",
+        english4: "",
+        src1: './assets/audios/176.mp3',
+        src2: './assets/audios/177.mp3',
+        img:'./assets/images-main/lesson1/restaurant3.jpg'
+    },
+    {
+        id: 'restaurant4',
+        name: 'La vente-trottoir',
+        p1: "From here you can ask wherever you want to drink, but one of the tricky options is asking just for water.",
+        quebec1: "Quelque chose à boire?",
+        english1: "Something to drink?",
+        quebec2: "Juste de l'eau, s'il vous plaît.",
+        english2: "Just water, please.",
+        quebec3: "Breuvages",
+        english3: "The drinks",
+        quebec4: "Liqueur",
+        english4: "soft drinks (coke, Pepsi, etc.)",
+        src1: './assets/audios/176.mp3',
+        src2: './assets/audios/177.mp3',
+        img:'./assets/images-main/lesson1/restaurant4.jpg'
+    },
+    {
+        id: 'restaurant5',
+        name: 'La vente-trottoir',
+        p1: "From here you can choose which ever type you want, but if you just want simple water you can say:",
+        quebec1: "Plate ou pétillante?",
+        english1: "Simple or sparkling?",
+        quebec2: "De l'eau plate",
+        english2: "Is just tap water",
+        quebec3: "De l'eau pétillante",
+        english3: "Is sparkling water",
+        quebec4: "Juste un verre d'eau",
+        english4: "Just a glass of water",
+        src1: './assets/audios/176.mp3',
+        src2: './assets/audios/177.mp3',
+        img:'./assets/images-main/lesson1/restaurant5.jpg'
+    },
+    {
+        id: 'restaurant6',
+        name: 'La vente-trottoir',
+        p1: "Merchants often take advantage of the beautiful days of spring, summer and fall to sell their merchandise at reduced prices on the street.",
+        quebec1: "",
+        english1: "",
+        quebec2: "",
+        english2: "",
+        quebec3: "",
+        english3: "",
+        quebec4: "",
+        english4: "",
+        src1: './assets/audios/176.mp3',
+        src2: './assets/audios/177.mp3',
+        img:'./assets/images-main/lesson1/restaurant6.jpg'
+    },
+   
 ]

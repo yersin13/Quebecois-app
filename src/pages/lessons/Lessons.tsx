@@ -53,13 +53,13 @@ useEffect(()=>{
       <IonContent>
 <br />
         <IonList>
-<IonItem  button
+<IonItem lines='none'  button
        onClick={() => {
          present({
            message: 'Loading...',
            duration: 300
          })
-       }} routerLink="/facts/" className="expressions-item card fact-card">
+       }} routerLink="/facts/" className=" card fact-card">
   <h1 className='fact-title font'>Facts Québécois</h1>
   <IonThumbnail slot='end'>
   <img src="/assets/images-main/facts/facts.jpg" alt="" />
@@ -67,7 +67,7 @@ useEffect(()=>{
 </IonItem>
 
 <br />
-<IonItem>
+<IonItem >
   <div>
   <h1>Lessons</h1>
 <p>(This part is still in progress)... <IonIcon icon={walkOutline} /></p>
@@ -88,7 +88,7 @@ useEffect(()=>{
 
 </IonCard>
 )} */}
-<IonCard className="card">
+<IonCard className="card" routerLink="/lessons/lesson1">
 <img src="/assets/1.png" alt="" />
 <IonCardTitle>
 

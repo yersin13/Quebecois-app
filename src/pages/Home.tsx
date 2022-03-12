@@ -95,9 +95,9 @@ const Home: React.FC = () => {
 
           </IonCard>
 
-          <IonGrid>
+          <IonGrid className='home-grid'>
             <IonRow>
-              <IonCol size="6">
+              <IonCol size="6" className="home-col">
 
                 <IonCard button
                 onClick={() => {
@@ -122,7 +122,7 @@ const Home: React.FC = () => {
 
                 </IonCard>
               </IonCol>
-              <IonCol size="6">
+              <IonCol size="6" className="home-col">
                 <IonCard button
                 onClick={() => {
                   present({
@@ -148,9 +148,9 @@ const Home: React.FC = () => {
 
 
 
-          <IonGrid>
+          <IonGrid className='home-grid'>
             <IonRow>
-              <IonCol size="6">
+              <IonCol size="6" className="home-col" >
 
                 <IonCard button
                 onClick={() => {
@@ -176,7 +176,7 @@ const Home: React.FC = () => {
                 </IonCard>
 
               </IonCol>
-              <IonCol size="6">
+              <IonCol size="6" className="home-col">
                 <IonCard button routerLink="/corner" className="card home-card "
                   onClick={() => {
                     present({
@@ -202,7 +202,7 @@ const Home: React.FC = () => {
 
             </IonRow>
           </IonGrid>
-          <IonCard button routerLink="/lessons/" className="card  "
+          <IonCard button routerLink="/lessons/" className="card  card-random"
                   onClick={() => {
                     present({
                       message: 'Loading...',

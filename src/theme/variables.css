@@ -181,6 +181,7 @@ ion-item {
 
 .card{
   background-color: #001f97;
+  /* margin: 0; */
 }
 .expecial-card{
   background-color: #63c3e9;

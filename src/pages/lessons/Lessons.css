@@ -16,22 +16,38 @@
     color:darkblue;
 }
 .fact-img{
-    height: 80px;
-    width: 100%;
-    object-fit: cover;
-    /* opacity: 0.9; */
-    /* filter: grayscale(100%); */
-    filter: opacity(60%);
-    /* filter: blur(0.9px); */
+  border-radius: 10px;
 }
 
-.fact-title{
-    padding-top: 15px;
-    padding-bottom: 20px;
-}
 
 .fact-card{
-    margin: 15px;
+    margin: 5px;
+    /* height: 260Px; */
 
     
 }
+
+.fact-text{
+    padding-top: 5px;
+
+}
+
+.lesson-slide{
+    /* display: flex; */
+}
+
+.fab-lesson1 {
+    position: absolute;
+    bottom:20px;
+    left: 60px;
+  }
+  
+  .fab-lesson2 {
+    position: absolute;
+    bottom:20px;
+    right: 50px;
+  }
+  
+.container-fab {
+   position: relative;
+  }

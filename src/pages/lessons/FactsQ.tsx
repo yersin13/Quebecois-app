@@ -1,4 +1,4 @@
-import { IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonChip, IonContent, IonFab, IonFabButton, IonFabList, IonFooter, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonPage, IonSearchbar, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToast, IonToolbar, useIonLoading } from '@ionic/react';
+import { IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonChip, IonCol, IonContent, IonFab, IonFabButton, IonFabList, IonFooter, IonGrid, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonPage, IonRow, IonSearchbar, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToast, IonToolbar, useIonLoading } from '@ionic/react';
 import { add, addCircle, arrowDown, arrowDownCircle, arrowDownCircleOutline, bookmarkOutline, chatbubblesOutline, chevronDownCircleOutline, closeCircle, downloadOutline, headsetSharp, heart, heartDislike, heartOutline, share, shareSocial, star, starHalfSharp, starOutline, starSharp, trash } from 'ionicons/icons'
 import { home as homeIcon, settings as settingsIcon, planetOutline as planetIcon } from 'ionicons/icons'
 import './Lessons.css';
@@ -71,7 +71,46 @@ const FactsQ: React.FC = () => {
 
         <IonList>
           <br />
-          {facts.map((entry) =>
+          <IonGrid className='home-grid'>
+            <IonRow>
+            {facts.map((entry) =>
+          
+<IonCol size="6" className="home-col">
+
+<IonCard button
+onClick={() => {
+  present({
+    message: 'Loading...',
+    duration: 300
+  })
+}}
+routerLink={`/facts/${entry.id}`} className="card home-card " >
+
+  <IonCardHeader>
+  <img src={entry.img} alt="" className='fact-img' />
+  <h4 className='home-title font fact-text'>
+      {entry.name}
+      
+      </h4>
+    <IonCardTitle>
+
+    
+    </IonCardTitle>
+  </IonCardHeader>
+
+
+
+</IonCard>
+</IonCol>
+
+
+          )}
+              
+             
+            </IonRow>
+          </IonGrid>
+
+          {/* {facts.map((entry) =>
             <IonItem button
               onClick={() => {
                 present({
@@ -85,20 +124,9 @@ const FactsQ: React.FC = () => {
               </IonThumbnail>
             </IonItem>
 
-/* <IonCard className="card fact-card" routerLink={`/facts/${entry.id}`}>
-<h4 className='home-title font  fact-title'>
-{entry.name}
-</h4>
-<img src={entry.img} alt="" className='fact-img'/>
 
 
-
-
-
-
-</IonCard> */
-
-          )}
+          )} */}
 
         </IonList>
 

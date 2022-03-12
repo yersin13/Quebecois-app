@@ -35,6 +35,7 @@ import CornerMuseums from './pages/corner/CornerMuseums';
 import Lessons from './pages/lessons/Lessons';
 import FactsQ from './pages/lessons/FactsQ';
 import Fact from './pages/lessons/Fact';
+import Lesson1 from './pages/lessons/lesson1';
 
 
 
@@ -56,6 +57,9 @@ const App: React.FC = () => (
         </Route>
       <Route exact path="/lessons/">
         <Lessons />
+        </Route>
+        <Route exact path="/lessons/lesson1">
+        <Lesson1 />
         </Route>
         <Route exact path="/home">
         <Home />

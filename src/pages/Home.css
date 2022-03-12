@@ -139,7 +139,7 @@ align-items:center;
     /* background-color:rgb(255, 255, 255); */
     border-radius: 10px;
     padding: 0;
-    margin: 5px;
+    margin: 0;
     margin-top: 0;
     margin-bottom: 0;
    
@@ -183,6 +183,9 @@ border-radius: 10px;
 .card-random{
     background-color: #ffffff;
     border-radius: 10px;
+    margin: 4px;
+    margin-bottom: 4px;
+    margin-top: 4px;
   }
 
   .home-logo-text{
@@ -261,4 +264,19 @@ font-size: 20px;
 
 .font-random{
     color: white;
+}
+
+.home-grid{
+    padding: 0;
+    margin: 0;
+    
+}
+
+.home-nothing{
+    margin: 0px;
+    padding: 0px;
+}
+
+.home-col{
+    padding: 5px;
 }
