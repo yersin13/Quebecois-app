@@ -36,6 +36,9 @@ import Lessons from './pages/lessons/Lessons';
 import FactsQ from './pages/lessons/FactsQ';
 import Fact from './pages/lessons/Fact';
 import Lesson1 from './pages/lessons/lesson1';
+import Lesson2 from './pages/lessons/lesson2';
+import Lesson3 from './pages/lessons/lesson3';
+import HomeExpressionsList from './pages/HomeExpressionsList';
 
 
 
@@ -60,6 +63,13 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/lessons/lesson1">
         <Lesson1 />
+        </Route>
+
+        <Route exact path="/lessons/lesson2">
+        <Lesson2 />
+        </Route>
+        <Route exact path="/lessons/lesson3">
+        <Lesson3 />
         </Route>
         <Route exact path="/home">
         <Home />
@@ -115,12 +125,16 @@ const App: React.FC = () => (
         <Film />
         </Route>
 
-        <Route exact path="/expressions-list">
-        <ExpressionsList />
+        <Route exact path="/home-expressions-list">
+        <HomeExpressionsList />
         </Route>
+
        
         <Route exact path="/expressions-list/:id">
         <Expressions />
+        </Route>
+        <Route exact path="/home-expressions-list/:id">
+        <ExpressionsList />
         </Route>
         
         <Route exact path="/game-home">

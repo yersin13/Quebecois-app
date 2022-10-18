@@ -138,12 +138,39 @@
     --ion-toolbar-background: #121212;
   
     --ion-tab-bar-background: #121212;
+
   }
   
 
+  /* slides style----------------------------------> */
+.swiper-pagination{
+
+  height: 10px;
+  
+}
+ /* div.swiper-pagination { top:-10px; bottom:inherit;}  */
+
+  /* .swiper-pagination-bullet {
+
+    background:white;
 
 
+    height: 23px;
+    width: 23px;
 
+
+  }
+  
+  .swiper-pagination-bullet-active {
+
+    background:white;
+    font-size: 30px;
+    color: white;
+
+   height: 23px;
+    width: 23px;
+
+  }  */
 
 
 
@@ -182,6 +209,7 @@ ion-item {
 .card{
   background-color: #001f97;
   /* margin: 0; */
+  border-radius:20px;
 }
 .expecial-card{
   background-color: #63c3e9;
@@ -210,19 +238,7 @@ color:white;
   font-weight: 600;
 } */
 ion-content {
-   /* background-color: rgba(30,78,245,1); */
 
-
-   /* background-color: rgb(8, 0, 0); */
-   
-   /* background-color: #001f97; */
-   /* background-color: rgb(228, 220, 220); */
-  /* background-image:  url("../back.jpg"); */
-   /* background-image: linear-gradient(to bottom, #9cfaf9, #00c9eb, #0096df, #0060c7, #001f97); */
-   
-   /* background-image: linear-gradient(to bottom, #051551, #04144b, #031344, #03113e, #040f38); */
-   
-   /* background-image: linear-gradient(0deg, rgba(0,31,151,1) 12%, rgba(88,125,240,1) 100%); */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

@@ -1,10 +1,10 @@
-import { IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonChip, IonContent, IonFab, IonFabButton, IonFabList, IonFooter, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonPage, IonSearchbar, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToast, IonToolbar, useIonLoading } from '@ionic/react';
+import { IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonChip, IonCol, IonContent, IonFab, IonFabButton, IonFabList, IonFooter, IonGrid, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonPage, IonRow, IonSearchbar, IonSlide, IonSlides, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToast, IonToolbar, useIonLoading } from '@ionic/react';
 import { add, addCircle, arrowDown, arrowDownCircle, arrowDownCircleOutline, bookmarkOutline, chatbubblesOutline, chevronDownCircleOutline, closeCircle, downloadOutline, headsetSharp, heart, heartDislike, heartOutline, share, shareSocial, star, starHalfSharp, starOutline, starSharp, trash } from 'ionicons/icons'
 import { home as homeIcon, settings as settingsIcon, planetOutline as planetIcon, walkOutline } from 'ionicons/icons'
 import './Lessons.css';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useParams } from 'react-router';
-import { facts } from '../../data-lessons';
+import { facts, lesson1, lessons } from '../../data-lessons';
 // import * as htmlToImage from 'html-to-image';
 
 
@@ -18,23 +18,34 @@ interface RouteParams {
 const Lessons: React.FC = () => {
   const [present, dismiss] = useIonLoading();
   const [color, setColor] = useState(false)
-const theme = localStorage.getItem('theme')
+  const theme = localStorage.getItem('theme')
 
-useEffect(()=>{
-  if (theme?.match("dark")) {
-   
-    setColor(true)
+  useEffect(() => {
+    if (theme?.match("dark")) {
 
-  } else if (theme?.match("light")) {
-    
-    setColor(false)
- 
-    
-  }
-})  
+      setColor(true)
+
+    } else if (theme?.match("light")) {
+
+      setColor(false)
+
+
+    }
+  })
   const { id } = useParams<RouteParams>();
 
-
+  const slideOpts = {
+    initialSlide:1,
+    slidesPerView: 3,
+    // coverflowEffect: {
+    //   rotate: 50,
+    //   stretch: 0,
+    //   depth: 100,
+    //   modifier: 1,
+    //   slideShadows: true,
+    // },
+    speed: 400
+  };
 
   return (
     <IonPage>
@@ -51,89 +62,97 @@ useEffect(()=>{
         </IonToolbar>
       </IonHeader>
       <IonContent>
-<br />
+        <br />
         <IonList>
-<IonItem lines='none'  button
-       onClick={() => {
-         present({
-           message: 'Loading...',
-           duration: 300
-         })
-       }} routerLink="/facts/" className=" card fact-card">
-  <h1 className='fact-title font'>Facts Québécois</h1>
-  <IonThumbnail slot='end'>
-  <img src="/assets/images-main/facts/facts.jpg" alt="" />
-  </IonThumbnail>
+          {/* <IonItem lines='none' button
+            onClick={() => {
+              present({
+                message: 'Loading...',
+                duration: 300
+              })
+            }} routerLink="/facts/" className=" card fact-card card-lesson">
+            <h1 className='fact-title font '>Facts Québécois</h1>
+            <IonThumbnail slot='end'>
+              <img src="/assets/images-main/facts/facts.jpg" alt="" />
+            </IonThumbnail>
+          </IonItem> */}
+<IonItem lines='none'>
+  <h1>Facts Quebecois</h1>
 </IonItem>
-
-<br />
-<IonItem >
-  <div>
-  <h1>Lessons</h1>
-<p>(This part is still in progress)... <IonIcon icon={walkOutline} /></p>
-  </div>
-
-</IonItem>
-
-{/* {facts.map((entry) =>
-<IonCard className="card">
-<img src="/assets/1.png" alt="" />
-<IonCardTitle>
-
-<h4 className='home-title font'>
-{entry.name}
-</h4>
-</IonCardTitle>
+       
+              <IonSlides pager={true} options={slideOpts}
+                slot="">
+               
+                {facts.map((entry) =>
 
 
-</IonCard>
-)} */}
-<IonCard className="card" routerLink="/lessons/lesson1">
-<img src="/assets/1.png" alt="" />
-<IonCardTitle>
+<IonSlide>
+<IonCard button
+    onClick={() => {
+      present({
+        message: 'Loading...',
+        duration: 300
+      })
+    }}
+    routerLink={`/facts/${entry.id}`} className=" card-fact " >
 
-<h4 className='home-title font'>
-Lesson 1: At the restaurant
-</h4>
-<br />
-</IonCardTitle>
+      <img src={entry.img} alt="" className='' />
+  
 
 
-</IonCard>
 
-<IonCard className="card">
-<img src="/assets/1.png" alt="" />
-<IonCardTitle>
+  </IonCard>
+  </IonSlide>
 
-<h4 className='home-title font'>
-Lesson 2: Shopping
-</h4>
-<br />
-</IonCardTitle>
 
-</IonCard>
-<IonCard className="card">
-<img src="/assets/1.png" alt="" />
-<IonCardTitle>
 
-<h4 className='home-title font'>
-Lesson 3: Car Vocabulary
-</h4>
-<br />
-</IonCardTitle>
 
-</IonCard>
-<IonCard className="card">
-<img src="/assets/1.png" alt="" />
-<IonCardTitle>
+)}
+             
+              </IonSlides>
+             
 
-<h4 className='home-title font'>
-Lesson 4: 
-</h4>
-<br />
-</IonCardTitle>
 
-</IonCard>
+          <br />
+          <IonItem lines='none'>
+        
+              <h1>Lessons</h1>
+              {/* <p>(This part is still in progress)... <IonIcon icon={walkOutline} /></p> */}
+            
+
+          </IonItem>
+
+
+
+
+          {lessons.map((entry) =>
+
+            <IonCard className="card card-lesson " routerLink={`/lessons/${entry.link}`}>
+              <img src={entry.img} alt="" className='' />
+              <IonCardHeader>
+                <IonCardSubtitle  className="text-dark">Lesson:</IonCardSubtitle>
+                <IonCardTitle className="text-dark"> {entry.name}</IonCardTitle>
+              </IonCardHeader>
+              <IonCardContent  className="text-dark">
+                {entry.description}
+              </IonCardContent>
+              <br />
+
+
+
+
+            </IonCard>
+
+
+
+          )}
+
+
+
+
+
+
+
 
         </IonList>
 

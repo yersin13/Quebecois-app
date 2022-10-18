@@ -9,9 +9,7 @@
     /* color:white; */
 }
 
-/* .expressions-item{
-    
-} */
+
 
 .expressions-img{
     border-radius: 10px;
@@ -39,7 +37,9 @@
 
 .drop-item-dark{
  
-    background-color: rgb(5, 11, 66);
+    background-color: rgb(30, 42, 153);
+  /* margin-bottom: 10px; */
+  padding-bottom: 10px;
   
 }
 .drop-main-item-dark{
@@ -56,4 +56,11 @@
     /* background-color: rgb(35, 24, 83); */
     background-color: #001f97;
     color:white;
+}
+
+
+.home-expressions-col{
+   
+    padding-left: 10px;
+    padding-right:10px;
 }

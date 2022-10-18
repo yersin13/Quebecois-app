@@ -129,7 +129,7 @@ if (searchText == ""){
           
        
             <IonAccordion value="clothes">
-              <IonItem className={colorMain ? 'drop-main-item-dark ' : "drop-main-item-light"} slot="header">
+              <IonItem lines='none' className={colorMain ? 'drop-main-item-dark ' : "drop-main-item-light"} slot="header">
                 <IonLabel>Clothes & Appearance</IonLabel>
                 <IonThumbnail>
                   <img className='' src="../assets/images-main/clothes.png" alt="" />
@@ -144,13 +144,14 @@ if (searchText == ""){
                   if (entry.category === "clothes")
                     return entry
                 }).map((entry) =>
+               
                   <IonItem button
                     onClick={() => {
                       present({
                         message: 'Loading...',
                         duration: 300
                       })
-                    }} routerLink={`/words-list/${entry.id}`} className="expressions-item">
+                    }} routerLink={`/words-list/${entry.id}`}>
                     <div>
 
                       <IonLabel ><h2 className="expressions-text">
@@ -163,12 +164,13 @@ if (searchText == ""){
                       <IonIcon icon={arrowForward} />
                     </IonThumbnail>
                   </IonItem>
+           
                 )}
               </IonList>
             </IonAccordion>
 
             <IonAccordion value="food">
-              <IonItem className={colorMain ? 'drop-main-item-dark ' : "drop-main-item-light"} slot="header">
+              <IonItem lines='none' className={colorMain ? 'drop-main-item-dark ' : "drop-main-item-light"} slot="header">
                 <IonLabel>Food & Kitchen</IonLabel>
                 <IonThumbnail>
                   <img className='' src="../assets/images-main/food.png" alt="" />
@@ -208,7 +210,7 @@ if (searchText == ""){
             </IonAccordion>
 
             <IonAccordion value="feelings">
-              <IonItem className={colorMain ? 'drop-main-item-dark ' : "drop-main-item-light"} slot="header">
+              <IonItem lines='none' className={colorMain ? 'drop-main-item-dark ' : "drop-main-item-light"} slot="header">
                 <IonLabel>Feelings & Emotions</IonLabel>
                 <IonThumbnail>
                   <img className='' src="../assets/images-main/feelings.png" alt="" />
@@ -247,7 +249,7 @@ if (searchText == ""){
             </IonAccordion>
 
             <IonAccordion value="daily">
-              <IonItem className={colorMain ? 'drop-main-item-dark ' : "drop-main-item-light"} slot="header">
+              <IonItem lines='none' className={colorMain ? 'drop-main-item-dark ' : "drop-main-item-light"} slot="header">
                 <IonLabel>Daily Basics</IonLabel>
                 <IonThumbnail>
                   <img className='' src="../assets/images-main/daily.png" alt="" />
@@ -286,7 +288,7 @@ if (searchText == ""){
             </IonAccordion>
 
             <IonAccordion value="house">
-              <IonItem className={colorMain ? 'drop-main-item-dark ' : "drop-main-item-light"} slot="header">
+              <IonItem lines='none' className={colorMain ? 'drop-main-item-dark ' : "drop-main-item-light"} slot="header">
                 <IonLabel>House & Family</IonLabel>
                 <IonThumbnail>
                   <img className='' src="../assets/images-main/house.png" alt="" />
@@ -325,7 +327,7 @@ if (searchText == ""){
             </IonAccordion>
 
             <IonAccordion value="sex">
-              <IonItem className={colorMain ? 'drop-main-item-dark ' : "drop-main-item-light"} slot="header">
+              <IonItem lines='none' className={colorMain ? 'drop-main-item-dark ' : "drop-main-item-light"} slot="header">
                 <IonLabel>Love & Sex</IonLabel>
                 <IonThumbnail>
                   <img className='' src="../assets/images-main/sex.png" alt="" />
@@ -364,7 +366,7 @@ if (searchText == ""){
             </IonAccordion>
 
             <IonAccordion value="curse">
-              <IonItem className={colorMain ? 'drop-main-item-dark ' : "drop-main-item-light"} slot="header">
+              <IonItem lines='none' className={colorMain ? 'drop-main-item-dark ' : "drop-main-item-light"} slot="header">
                 <IonLabel>Sacres</IonLabel>
                 <IonThumbnail>
                   <img className='' src="../assets/images-main/curse.png" alt="" />
@@ -379,7 +381,7 @@ if (searchText == ""){
                   if (entry.category === "curse")
                     return entry
                 }).map((entry) =>
-                  <IonItem button
+                  <IonItem button 
                     onClick={() => {
                       present({
                         message: 'Loading...',
@@ -403,7 +405,7 @@ if (searchText == ""){
             </IonAccordion>
 
             <IonAccordion value="weather">
-              <IonItem className={colorMain ? 'drop-main-item-dark ' : "drop-main-item-light"} slot="header">
+              <IonItem lines='none' className={colorMain ? 'drop-main-item-dark ' : "drop-main-item-light"} slot="header">
                 <IonLabel>Weather</IonLabel>
                 <IonThumbnail>
                   <img className='' src="../assets/images-main/weather.png" alt="" />
@@ -443,7 +445,7 @@ if (searchText == ""){
             </IonAccordion>
 
             <IonAccordion value="work">
-              <IonItem className={colorMain ? 'drop-main-item-dark ' : "drop-main-item-light"} slot="header">
+              <IonItem lines='none' className={colorMain ? 'drop-main-item-dark ' : "drop-main-item-light"} slot="header">
                 <IonLabel>Work & School</IonLabel>
                 <IonThumbnail>
                   <img className='' src="../assets/images-main/work.png" alt="" />
@@ -482,7 +484,7 @@ if (searchText == ""){
             </IonAccordion>
 
             <IonAccordion value="greetings">
-              <IonItem className={colorMain ? 'drop-main-item-dark ' : "drop-main-item-light"} slot="header">
+              <IonItem  lines='none' className={colorMain ? 'drop-main-item-dark ' : "drop-main-item-light"} slot="header">
                 <IonLabel>Greetings</IonLabel>
                 <IonThumbnail>
                   <img className='' src="../assets/images-main/greetings.png" alt="" />

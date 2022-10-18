@@ -1076,7 +1076,7 @@ export const entriesWords =[
         quebec: "Toutoune ",
         french: "Se dit d’une femme qui fait de l’embonpoint",
         english: "Said of a woman who is overweight",
-        // src: './assets/images/100.jpg  ',
+        src: './assets/images/100.jpg  ',
         category:"daily"
       },
       {
@@ -1148,7 +1148,7 @@ export const entriesWords =[
         quebec: "Accoté ",
         french: "Représente le fait d’être en concubinage",
         english: "Represents the fact of being in concubinage",
-        // src: './assets/images/100.jpg  ',
+        src: './assets/images/100.jpg  ',
         category:"sex"
       },
       {
@@ -1238,7 +1238,7 @@ export const entriesWords =[
         quebec: "Boucane ",
         french: "Se dit de la fumée",
         english: "Said of the smoke",
-        // src: './assets/images/100.jpg  ',
+        src: './assets/icon.png ',
         category:"food"
       },
       {
@@ -1247,7 +1247,7 @@ export const entriesWords =[
         quebec: "BS (il est sur l’BS) ",
         french: " L’aide sociale",
         english: "Social assistance",
-        // src: './assets/images/100.jpg  ',
+        src: './assets/icon.png  ',
         category:"daily"
       },
       {
@@ -1400,7 +1400,7 @@ export const entriesWords =[
         quebec: "Ajusteur ",
         french: "C’est un expert dans les assurances",
         english: "He is an insurance expert.",
-        // src: './assets/images/100.jpg  ',
+        src: './assets/icon.png  ',
         category:"daily"
       },
       {
@@ -1418,7 +1418,7 @@ export const entriesWords =[
         quebec: "Backer ",
         french: "Donner son accord, son approbation",
         english: "Giving consent, approval",
-        // src: './assets/images/100.jpg  ',
+        src: './assets/icon.png  ',
         category:"daily"
       },
       {
@@ -1427,7 +1427,7 @@ export const entriesWords =[
         quebec: "Barguinner ",
         french: "Cela signifie marchander quelque chose",
         english: "It means to haggle over something",
-        // src: './assets/images/100.jpg  ',
+        src: './assets/icon.png  ',
         category:"daily"
       },
       {
@@ -1454,7 +1454,7 @@ export const entriesWords =[
         quebec: "Canceller ",
         french: "Vient de l’anglais cancel signifiant annuler",
         english: "Comes from the English cancel meaning to cancel",
-        // src: './assets/images/100.jpg  ',
+        src: './assets/images/100.jpg  ',
         category:"work"
       },
       {
@@ -1481,7 +1481,7 @@ export const entriesWords =[
         quebec: "Commandite ",
         french: "C’est un sponsor",
         english: "He's a sponsor",
-        // src: './assets/images/100.jpg  ',
+        src: './assets/icon.png ',
         category:"work"
       },
       {
@@ -1490,7 +1490,7 @@ export const entriesWords =[
         quebec: "Filière ",
         french: "Dossier",
         english: "Case",
-        // src: './assets/images/100.jpg  ',
+        src: './assets/icon.png  ',
         category:"work"
       },
       {
@@ -1499,7 +1499,7 @@ export const entriesWords =[
         quebec: "Plugger ",
         french: " Brancher",
         english: "Connect",
-        // src: './assets/images/100.jpg  ',
+        src: './assets/icon.png  ',
         category:"work"
       },
       {
@@ -1517,7 +1517,7 @@ export const entriesWords =[
         quebec: "Royautés ",
         french: "Ce sont les droits d’auteur",
         english: "It's copyright",
-        // src: './assets/images/100.jpg  ',
+        src: './assets/icon.png  ',
         category:"work"
       },
       {
@@ -1607,7 +1607,7 @@ export const entriesWords =[
         quebec: "Flasheur ",
         french: "C’est le clignotant des voitures",
         english: "It's the flashing lights of cars",
-        // src: './assets/images/100.jpg  ',
+        src: './assets/icon.png  ',
         category:"transport"
       },
       {
@@ -1616,7 +1616,7 @@ export const entriesWords =[
         quebec: "Gaz ",
         french: "C’est l’essence que l’on met dans nos voitures ou chars pour ceux qui ont suivi",
         english: "It is the gasoline that we put in our cars or tanks for those who followed",
-        // src: './assets/images/100.jpg  ',
+        src: './assets/icon.png  ',
         category:"transport"
       },
       {
@@ -1625,7 +1625,7 @@ export const entriesWords =[
         quebec: "Lignes ",
         french: "C’est la frontière américaine",
         english: "This is the US border",
-        // src: './assets/images/100.jpg  ',
+        src: './assets/images/100.jpg  ',
         category:"transport"
       },
       {
@@ -1724,7 +1724,7 @@ export const entriesWords =[
         quebec: "Ca fitte ben ",
         french: " Ca correspond",
         english: "It matches",
-        // src: './assets/images/100.jpg  ',
+        src: './assets/icon.png   ',
         category:"clothes"
       },
       {
@@ -1760,7 +1760,7 @@ export const entriesWords =[
         quebec: "Flyé ",
         french: "Se dit de quelque chose d’original",
         english: "Said of something original",
-        // src: './assets/images/100.jpg  ',
+        src: './assets/icon.png   ',
         category:"daily"
       },
       {
@@ -1805,7 +1805,7 @@ export const entriesWords =[
         quebec: "Verge ",
         french: "C’est une mesure de tissu (36 pouces 91,44 cm)",
         english: "This is a fabric measurement (36 inches 91.44 cm)",
-        // src: './assets/images/100.jpg  ',
+        src: './assets/icon.png   ',
         category:"clothes"
       },
       {
@@ -1814,7 +1814,7 @@ export const entriesWords =[
         quebec: "Zipper ",
         french: "C’est fermer une fermeture éclair",
         english: "It's closing a zipper",
-        // src: './assets/images/100.jpg  ',
+        src: './assets/icon.png   ',
         category:"clothes"
       },
       {
@@ -1823,7 +1823,7 @@ export const entriesWords =[
         quebec: "Bière tablette ",
         french: "Se dit d’une bière tiède",
         english: "Said of a lukewarm beer",
-        // src: './assets/images/100.jpg  ',
+        src: './assets/icon.png   ',
         category:"food"
       },
       {
@@ -1922,7 +1922,6 @@ export const entriesWords =[
         quebec: "Bitcher ",
         french: "Dire du mal de quelqu’un",
         english: "Speak ill of someone",
-        // src: './assets/images/100.jpg  ',
         src:"../assets/images-main/curse.png",
         category:"curse"
       },
@@ -1933,7 +1932,6 @@ export const entriesWords =[
         french: "Un fou",
         english: "A mad person",
         src: './assets/images/206.jpg  ',
-        // src:"../assets/images-main/curse.png",
         category:"curse"
       },
       {
@@ -1942,7 +1940,6 @@ export const entriesWords =[
         quebec: "Crosseur ",
         french: "Se dit de quelqu’un de malhonnête",
         english: "Said of someone who is dishonest",
-        // src: './assets/images/100.jpg  ',
         src:"../assets/images-main/curse.png",
         category:"curse"
       },
@@ -1952,7 +1949,6 @@ export const entriesWords =[
         quebec: "Epais ",
         french: " se dit de quelqu’un qui est niais, idiot",
         english: "Said of someone who is silly, stupid",
-        // src: './assets/images/100.jpg  ',
         src:"../assets/images-main/curse.png",
         category:"curse"
       },
@@ -1962,7 +1958,7 @@ export const entriesWords =[
         quebec: "Gino ",
         french: "Se dit d’un macho",
         english: "Said of a macho",
-        // src: './assets/images/100.jpg  ',
+        src: './assets/icon.png  ',
         category:"feelings"
       },
       {
@@ -1971,7 +1967,6 @@ export const entriesWords =[
         quebec: "Guidoune ",
         french: " Une pétasse",
         english: "A bitch",
-        // src: './assets/images/100.jpg  ',
         src:"../assets/images-main/curse.png",
         category:"curse"
       },
@@ -1981,7 +1976,6 @@ export const entriesWords =[
         quebec: "Quétaine ",
         french: " Ringard, Kitch",
         english: "Nerdy, kitsch",
-        // src: './assets/images/100.jpg  ',
         src:"../assets/images-main/curse.png",
         category:"curse"
       },
@@ -1991,7 +1985,6 @@ export const entriesWords =[
         quebec: "Niaiseux ",
         french: "C’est un imbécile, idiot",
         english: "He's a fool, fool",
-        // src: './assets/images/100.jpg  ',
         src:"../assets/images-main/curse.png",
         category:"curse"
       },
@@ -2001,7 +1994,6 @@ export const entriesWords =[
         quebec: "Nono, nounoune ",
         french: "c’est un abruti",
         english: "He's a jerk",
-        // src: './assets/images/100.jpg  ',
         src:"../assets/images-main/curse.png",
         category:"curse"
       },
@@ -2011,7 +2003,6 @@ export const entriesWords =[
         quebec: "Ostie, ‘stie ! ",
         french: "Ce sont des jurons, plus précisément M… ou p….!",
         english: "These are swear words, more precisely M… or p….!",
-        // src: './assets/images/100.jpg  ',
         src:"../assets/images-main/curse.png",
         category:"curse"
       },
@@ -2021,7 +2012,6 @@ export const entriesWords =[
         quebec: "Robineux ",
         french: "Est un clochard",
         english: "Is a tramp",
-        // src: './assets/images/100.jpg  ',
         src:"../assets/images-main/curse.png",
         category:"curse"
       },
@@ -2031,7 +2021,6 @@ export const entriesWords =[
         quebec: "Sacrer ",
         french: "Signifie jurer, blasphémer",
         english: "Means to swear, to blaspheme",
-        // src: './assets/images/100.jpg  ',
         src:"../assets/images-main/curse.png",
         category:"curse"
       },
@@ -2041,7 +2030,6 @@ export const entriesWords =[
         quebec: "Tabarnac ",
         french: " C’est le blasphème",
         english: "It's blasphemy",
-        // src: './assets/images/100.jpg  ',
         src:"../assets/images-main/curse.png",
         category:"curse"
       },
@@ -2051,7 +2039,6 @@ export const entriesWords =[
         quebec: "Tannant ou tannante ",
         french: " Se dit de quelqu’un ou de quelque chose qui est énervant",
         english: "Said of someone or something that is annoying",
-        // src: './assets/images/100.jpg  ',
         src:"../assets/images-main/curse.png",
         category:"curse"
       },
@@ -2061,7 +2048,6 @@ export const entriesWords =[
         quebec: "Téteux ",
         french: " C’est un fayot",
         english: "It's a bean",
-        // src: './assets/images/100.jpg  ',
         src:"../assets/images-main/curse.png",
         category:"curse"
       },
@@ -2071,7 +2057,6 @@ export const entriesWords =[
         quebec: "Ti-cul ",
         french: "C’est un morveux",
         english: "He's a brat",
-        // src: './assets/images/100.jpg  ',
         src:"../assets/images-main/curse.png",
         category:"curse"
       },
@@ -2081,7 +2066,6 @@ export const entriesWords =[
         quebec: "Toton ",
         french: "C’est un nigaud,  un  imbécile",
         english: "He's a simpleton, a fool",
-        // src: './assets/images/100.jpg  ',
         src:"../assets/images-main/curse.png",
         category:"curse"
       },
@@ -2091,7 +2075,6 @@ export const entriesWords =[
         quebec: "Trappe ",
         french: "Veut dire la gueule",
         english: "Means the mouth",
-        // src: './assets/images/100.jpg  ',
         src:"../assets/images-main/curse.png",
         category:"curse"
       },
@@ -2101,7 +2084,6 @@ export const entriesWords =[
         quebec: "Twit ",
         french: "C’est un crétin, un idiot",
         english: "He's a moron, an idiot",
-        // src: './assets/images/100.jpg  ',
         src:"../assets/images-main/curse.png",
         category:"curse"
       },
@@ -2120,7 +2102,6 @@ export const entriesWords =[
         quebec: "Glace ",
         french: " Patinoire",
         english: "Rink",
-        // src: './assets/icon.png ',
         src:"../assets/images-main/curse.png",
         category:"curse"
       },

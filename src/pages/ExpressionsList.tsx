@@ -1,13 +1,21 @@
 import { IonAccordion, IonAccordionGroup, IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonContent, IonFab, IonFabButton, IonFooter, IonHeader, IonIcon, IonImg, IonInfiniteScroll, IonInfiniteScrollContent, IonItem, IonLabel, IonList, IonPage, IonSearchbar, IonTabBar, IonTabButton, IonText, IonThumbnail, IonTitle, IonToolbar, useIonLoading, useIonViewWillEnter } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
-import { entriesExpressions } from '../data-expressions';
+import { CategoriesExpresions, entriesExpressions } from '../data-expressions';
 import { arrowUp, chevronForward, closeCircle, gameController } from 'ionicons/icons'
 import { home as homeIcon, settings as settingsIcon, planetOutline as planetIcon } from 'ionicons/icons'
 import './WordsList.css';
 
 import { useEffect, useRef, useState } from 'react';
+import { useParams } from 'react-router';
+
+interface RouteParams {
+  id: string;
+}
 
 const ExpressionsList: React.FC = () => {
+
+   
+  const { id } = useParams<RouteParams>();
   const [colorMain, setColorMain] = useState(false)
   const [colorDrop, setColorDrop] = useState(false)
   const localStorageContent = localStorage.getItem('theme')
@@ -89,349 +97,59 @@ const ExpressionsList: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent ref={contentRef} scrollEvents={true}>
-       
-        <IonList>
-        
-    
-          <IonAccordionGroup>
-          <IonAccordion value="clothes">
-            <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"} slot="header">
-              <IonLabel>Clothes & Appearance</IonLabel>
-              <IonThumbnail>
-                <img className='' src="../assets/images-main/clothes.png" alt="" />
-                </IonThumbnail>
-            </IonItem>
-      
-            <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
-            {sortedArray.sort(function (a, b) {
-                  
-                  return a.english.toLowerCase().localeCompare(b.english.toLowerCase());
-                }).filter((entry) => {
-            if (entry.category === "clothes")
-              return entry
-          }).map((entry) =>
-            <IonItem button
-              onClick={() => {
-                present({
-                  message: 'Loading...',
-                  duration: 300
-                })
-              }} routerLink={`/expressions-list/${entry.id}`} className="expressions-item">
-                  <div>
-              
-              <IonLabel ><h2 className="expressions-text">
-                {/* <img className='sub-logo-expression' src="../assets/usa.png" alt="" /> */}
-                 {entry.english}</h2><p className="expressions-text">
-                {/* <img className='sub-logo-expression' src="../assets/qcflag.png" alt="" /> */}
-                 {entry.quebec}</p></IonLabel>
-            </div>
-
-            </IonItem>
-          )}
-            </IonList>
-          </IonAccordion>
-          <IonAccordion value="daily">
-            <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"} slot="header">
-              <IonLabel>Daily Basics</IonLabel>
-              <IonThumbnail>
-                <img className='' src="../assets/images-main/daily.png" alt="" />
-                </IonThumbnail>
-            </IonItem>
-      
-            <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
-            {sortedArray.sort(function (a, b) {
-                  
-                  return a.english.toLowerCase().localeCompare(b.english.toLowerCase());
-                }).filter((entry) => {
-            if (entry.category === "daily")
-              return entry
-          }).map((entry) =>
-            <IonItem button
-              onClick={() => {
-                present({
-                  message: 'Loading...',
-                  duration: 300
-                })
-              }} routerLink={`/expressions-list/${entry.id}`} className="expressions-item">
-                  <div>
-              
-              <IonLabel ><h2 className="expressions-text">
-                {/* <img className='sub-logo-expression' src="../assets/usa.png" alt="" /> */}
-                 {entry.english}</h2><p className="expressions-text">
-                {/* <img className='sub-logo-expression' src="../assets/qcflag.png" alt="" /> */}
-                 {entry.quebec}</p></IonLabel>
-            </div>
-
-            </IonItem>
-          )}
-            </IonList>
-          </IonAccordion>
-          <IonAccordion value="feelings">
-            <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"} slot="header">
-              <IonLabel>Feelings & Emotions</IonLabel>
-              <IonThumbnail>
-                <img className='' src="../assets/images-main/feelings.png" alt="" />
-                </IonThumbnail>
-            </IonItem>
-      
-            <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
-            {sortedArray.sort(function (a, b) {
-                  
-                  return a.english.toLowerCase().localeCompare(b.english.toLowerCase());
-                }).filter((entry) => {
-            if (entry.category === "feelings")
-              return entry
-          }).map((entry) =>
-            <IonItem button
-              onClick={() => {
-                present({
-                  message: 'Loading...',
-                  duration: 300
-                })
-              }} routerLink={`/expressions-list/${entry.id}`} className="expressions-item">
-                  <div>
-              
-              <IonLabel ><h2 className="expressions-text">
-                {/* <img className='sub-logo-expression' src="../assets/usa.png" alt="" /> */}
-                 {entry.english}</h2><p className="expressions-text">
-                {/* <img className='sub-logo-expression' src="../assets/qcflag.png" alt="" /> */}
-                 {entry.quebec}</p></IonLabel>
-            </div>
-
-            </IonItem>
-          )}
-            </IonList>
-          </IonAccordion>
-
-          <IonAccordion value="food">
-            <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"} slot="header">
-              <IonLabel>Food & Kitchen</IonLabel>
              
-                <IonThumbnail>
-                <img className='' src="../assets/images-main/food.png" alt="" />
-                </IonThumbnail>
-              
-            </IonItem>
-      
-            <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
-            {sortedArray.sort(function (a, b) {
-                  
-                  return a.english.toLowerCase().localeCompare(b.english.toLowerCase());
-                }).filter((entry) => {
-            if (entry.category === "food")
+            <IonList className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"} >
+          
+            {CategoriesExpresions.filter((entry) => {
+            if (entry.id === id)
               return entry
           }).map((entry) =>
-            <IonItem button
-              onClick={() => {
-                present({
-                  message: 'Loading...',
-                  duration: 300
-                })
-              }} routerLink={`/expressions-list/${entry.id}`} className="expressions-item">
-              <div>
-              
-                <IonLabel ><h2 className="expressions-text">
-                  {/* <img className='sub-logo-expression' src="../assets/usa.png" alt="" /> */}
-                   {entry.english}</h2><p className="expressions-text">
-                  {/* <img className='sub-logo-expression' src="../assets/qcflag.png" alt="" /> */}
-                   {entry.quebec}</p></IonLabel>
-              </div>
-          
-            </IonItem>
             
-          )}
-            </IonList>
-          </IonAccordion>
-
-          <IonAccordion value="house">
-            <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"} slot="header">
-              <IonLabel>House & Family</IonLabel>
-              <IonThumbnail>
-                <img className='' src="../assets/images-main/house.png" alt="" />
-                </IonThumbnail>
-            </IonItem>
-      
-            <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
-            {sortedArray.sort(function (a, b) {
-                  
-                  return a.english.toLowerCase().localeCompare(b.english.toLowerCase());
-                }).filter((entry) => {
-            if (entry.category === "house")
-              return entry
-          }).map((entry) =>
-            <IonItem button
-              onClick={() => {
-                present({
-                  message: 'Loading...',
-                  duration: 300
-                })
-              }} routerLink={`/expressions-list/${entry.id}`} className="expressions-item">
-                  <div>
+                <IonCard>
+                   <h2 className="expressions-text"> {entry.title}</h2>
+                     <img className="image-home-expressions-single" src={`/assets/images-main/${entry.img}`} alt="" />
+                    
+                </IonCard>
               
-              <IonLabel ><h2 className="expressions-text">
-                {/* <img className='sub-logo-expression' src="../assets/usa.png" alt="" /> */}
-                 {entry.english}</h2><p className="expressions-text">
-                {/* <img className='sub-logo-expression' src="../assets/qcflag.png" alt="" /> */}
-                 {entry.quebec}</p></IonLabel>
-            </div>
-
-            </IonItem>
-          )}
-            </IonList>
-          </IonAccordion>
-          <IonAccordion value="sex">
-            <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"} slot="header">
-              <IonLabel>Love & Sex</IonLabel>
-              <IonThumbnail>
-                <img className='' src="../assets/images-main/sex.png" alt="" />
-                </IonThumbnail>
-            </IonItem>
-      
-            <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
-            {sortedArray.sort(function (a, b) {
-                  
-                  return a.english.toLowerCase().localeCompare(b.english.toLowerCase());
-                }).filter((entry) => {
-            if (entry.category === "sex")
-              return entry
-          }).map((entry) =>
-            <IonItem button
-              onClick={() => {
-                present({
-                  message: 'Loading...',
-                  duration: 300
-                })
-              }} routerLink={`/expressions-list/${entry.id}`} className="expressions-item">
-                  <div>
-              
-              <IonLabel ><h2 className="expressions-text">
-                {/* <img className='sub-logo-expression' src="../assets/usa.png" alt="" /> */}
-                 {entry.english}</h2><p className="expressions-text">
-                {/* <img className='sub-logo-expression' src="../assets/qcflag.png" alt="" /> */}
-                 {entry.quebec}</p></IonLabel>
-            </div>
-
-            </IonItem>
-          )}
-            </IonList>
-          </IonAccordion>
-          <IonAccordion value="curse">
-            <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"} slot="header">
-              <IonLabel>Sacres</IonLabel>
-              <IonThumbnail>
-                <img className='' src="../assets/images-main/curse.png" alt="" />
-                </IonThumbnail>
-            </IonItem>
-      
-            <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
-            {sortedArray.sort(function (a, b) {
-                  
-                  return a.english.toLowerCase().localeCompare(b.english.toLowerCase());
-                }).filter((entry) => {
-            if (entry.category === "curse")
-              return entry
-          }).map((entry) =>
-            <IonItem button
-              onClick={() => {
-                present({
-                  message: 'Loading...',
-                  duration: 300
-                })
-              }} routerLink={`/expressions-list/${entry.id}`} className="expressions-item">
-                   <div>
-              
-              <IonLabel ><h2 className="expressions-text">
-                {/* <img className='sub-logo-expression' src="../assets/usa.png" alt="" /> */}
-                 {entry.english}</h2><p className="expressions-text">
-                {/* <img className='sub-logo-expression' src="../assets/qcflag.png" alt="" /> */}
-                 {entry.quebec}</p></IonLabel>
-            </div>
-
-            </IonItem>
-          )}
-            </IonList>
-          </IonAccordion>
-         
-          <IonAccordion value="weather">
-            <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"} slot="header">
-              <IonLabel>Weather</IonLabel>
-              <IonThumbnail>
-                <img className='' src="../assets/images-main/weather.png" alt="" />
-                </IonThumbnail>
-            </IonItem>
-      
-            <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
-            {sortedArray.sort(function (a, b) {
-                  
-                  return a.english.toLowerCase().localeCompare(b.english.toLowerCase());
-                }).filter((entry) => {
-            if (entry.category === "weather")
-              return entry
-          }).map((entry) =>
-            <IonItem button
-              onClick={() => {
-                present({
-                  message: 'Loading...',
-                  duration: 300
-                })
-              }} routerLink={`/expressions-list/${entry.id}`} className="expressions-item">
-                  <div>
-              
-              <IonLabel ><h2 className="expressions-text">
-                {/* <img className='sub-logo-expression' src="../assets/usa.png" alt="" /> */}
-                 {entry.english}</h2><p className="expressions-text">
-                {/* <img className='sub-logo-expression' src="../assets/qcflag.png" alt="" /> */}
-                 {entry.quebec}</p></IonLabel>
-            </div>
-
-            </IonItem>
-          )}
-            </IonList>
-          </IonAccordion>
-
-          <IonAccordion value="work">
-            <IonItem className={colorMain? 'drop-main-item-dark ': "drop-main-item-light"} slot="header">
-              <IonLabel>Work & School</IonLabel>
-              <IonThumbnail>
-                <img className='' src="../assets/images-main/work.png" alt="" />
-                </IonThumbnail>
-            </IonItem>
-      
-            <IonList className={colorDrop? 'drop-item-dark': "drop-item-light"}  slot="content">
-            {sortedArray.sort(function (a, b) {
-                  
-                  return a.english.toLowerCase().localeCompare(b.english.toLowerCase());
-                }).filter((entry) => {
-            if (entry.category === "work")
-              return entry
-          }).map((entry) =>
-            <IonItem button
-              onClick={() => {
-                present({
-                  message: 'Loading...',
-                  duration: 300
-                })
-              }} routerLink={`/expressions-list/${entry.id}`} className="expressions-item">
-                  <div>
-              
-              <IonLabel ><h2 className="expressions-text">
-                {/* <img className='sub-logo-expression' src="../assets/usa.png" alt="" /> */}
-                 {entry.english}</h2><p className="expressions-text">
-                {/* <img className='sub-logo-expression' src="../assets/qcflag.png" alt="" /> */}
-                 {entry.quebec}</p></IonLabel>
-            </div>
-
-            </IonItem>
-          )}
-            </IonList>
-          </IonAccordion>
 
           
+            )}
+            {sortedArray.sort(function (a, b) {
+                  
+                  return a.english.toLowerCase().localeCompare(b.english.toLowerCase());
+                }).filter((entry) => {
+            if (entry.category === id)
+              return entry
+          }).map((entry) =>
+           
+ <IonItem button lines='none'
+              onClick={() => {
+                present({
+                  message: 'Loading...',
+                  duration: 300
+                })
+              }} routerLink={`/expressions-list/${entry.id}`} className="expressions-item">
+               
+               
+ 
+        <IonLabel><h2 className="expressions-text">
+                {/* <img className='sub-logo-expression' src="../assets/usa.png" alt="" /> */}
+                 {entry.english}</h2><p className="expressions-text">
+                {/* <img className='sub-logo-expression' src="../assets/qcflag.png" alt="" /> */}
+                 {entry.quebec}</p></IonLabel>
+      </IonItem>
+             
+         
 
-          </IonAccordionGroup>
+      
+           
+          )}
+            </IonList>
+  
+
            
    
-        </IonList>
+ 
 
         <IonInfiniteScroll
           onIonInfinite={loadData}
@@ -467,3 +185,34 @@ const ExpressionsList: React.FC = () => {
 };
 
 export default ExpressionsList;
+
+
+
+// {sortedArray.sort(function (a, b) {
+                  
+//   return a.english.toLowerCase().localeCompare(b.english.toLowerCase());
+// }).filter((entry) => {
+// if (entry.category === "clothes")
+// return entry
+// }).map((entry) =>
+// <div>
+// <IonItem button lines='none'
+// onClick={() => {
+// present({
+//   message: 'Loading...',
+//   duration: 300
+// })
+// }} routerLink={`/expressions-list/${entry.id}`} className="expressions-item">
+//   <div>
+
+// <IonLabel ><h2 className="expressions-text">
+
+//  {entry.english}</h2><p className="expressions-text">
+
+//  {entry.quebec}</p></IonLabel>
+// </div>
+
+// </IonItem>
+// </div>
+
+// )}

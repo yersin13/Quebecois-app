@@ -107,6 +107,7 @@ export const facts =[
 export const lesson1 =[
     {
         id: 'restaurant1',
+        module:"Module 1",
         name: 'La vente-trottoir',
         p1: "This is a common greeting in a restaurant in Montreal, is a way to let you know that you can talk in French or English, and they will be able to understand you.",
         quebec1: "",
@@ -119,10 +120,12 @@ export const lesson1 =[
         english4: "",
         src1: './assets/audios/176.mp3',
         src2: './assets/audios/177.mp3',
-        img:'./assets/images-main/lesson1/restaurant1.jpg'
+        img:'./assets/images-main/lesson1/restaurant1.jpg',
+        color:"red"
     },
     {
         id: 'restaurant2',
+        module:"Module 2",
         name: 'La vente-trottoir',
         p1: "Some restaurants are free service, and you have to order your food and take it to your table.",
         quebec1: "C'est pour ici ou pour emporter?",
@@ -139,6 +142,7 @@ export const lesson1 =[
     },
     {
         id: 'restaurant3',
+        module:"Module 3",
         name: 'La vente-trottoir',
         p1: "This is to know how many people is coming to eat with you.",
         quebec1: "C'est pour combien de personnes?",
@@ -155,6 +159,7 @@ export const lesson1 =[
     },
     {
         id: 'restaurant4',
+        module:"Module 4",
         name: 'La vente-trottoir',
         p1: "From here you can ask wherever you want to drink, but one of the tricky options is asking just for water.",
         quebec1: "Quelque chose à boire?",
@@ -171,6 +176,7 @@ export const lesson1 =[
     },
     {
         id: 'restaurant5',
+        module:"Module 5",
         name: 'La vente-trottoir',
         p1: "From here you can choose which ever type you want, but if you just want simple water you can say:",
         quebec1: "Plate ou pétillante?",
@@ -187,6 +193,7 @@ export const lesson1 =[
     },
     {
         id: 'restaurant6',
+        module:"Module 6",
         name: 'La vente-trottoir',
         p1: "Merchants often take advantage of the beautiful days of spring, summer and fall to sell their merchandise at reduced prices on the street.",
         quebec1: "",
@@ -202,4 +209,241 @@ export const lesson1 =[
         img:'./assets/images-main/lesson1/restaurant6.jpg'
     },
    
+]
+
+export const lesson2 =[
+    {
+        id: 'car1',
+        module:"Car 1",
+        name: 'La vente-trottoir',
+        p1: "This is a common greeting in a restaurant in Montreal, is a way to let you know that you can talk in French or English, and they will be able to understand you.",
+        quebec: "Donner un lift",
+        english: "Giving someone a drive",  
+        src1: './assets/audios/176.mp3',
+        src2: './assets/audios/177.mp3',
+        img:'./assets/images-main/lesson2/car1.jpg',
+        
+    },
+    {
+        id:'car2',
+        quebec: "Chauffer un char",
+        english: "Driving a car",
+        src1: './assets/audios/176.mp3',
+        src2: './assets/audios/177.mp3',
+        img:'./assets/images-main/lesson2/car2.jpg',
+    },
+    {
+        id:'car3',
+        quebec: "Faire une embardée",
+        english: "Take the field",
+        src1: './assets/audios/176.mp3',
+        src2: './assets/audios/177.mp3',
+        img:'./assets/images-main/lesson2/car3.jpg',
+    },
+    {
+        id:'car4',
+        quebec: "Obtenir son permis de conduire",
+        english: "Passing the driving license",
+        src1: './assets/audios/176.mp3',
+        src2: './assets/audios/177.mp3',
+        img:'./assets/images-main/lesson2/car4.jpg',
+    },
+    {
+        id:'car5',
+        quebec: "Booster un char",
+        english: "To recharge the battery",
+        src1: './assets/audios/176.mp3',
+        src2: './assets/audios/177.mp3',
+        img:'./assets/images-main/lesson2/car5.jpg',
+    },
+    {
+        id:'car6',
+        quebec: "Faire spinner ses pneus",
+        english: "To do a burn-out",
+        src1: './assets/audios/176.mp3',
+        src2: './assets/audios/177.mp3',
+        img:'./assets/images-main/lesson2/car6.jpg',
+    },
+    {
+        id:'car7',
+        quebec: "Pièce usagée",
+        english: "Second hand body part",
+        src1: './assets/audios/176.mp3',
+        src2: './assets/audios/177.mp3',
+        img:'./assets/images-main/lesson2/car7.jpg',
+    },
+    {
+        id:'car8',
+        quebec: "La pile est à plat",
+        english: "The battery is down",
+        src1: './assets/audios/176.mp3',
+        src2: './assets/audios/177.mp3',
+        img:'./assets/images-main/lesson2/car8.jpg',
+    },
+    {
+        id:'car9',
+        quebec: "Embarquer dans une auto",
+        english: "To get into a car",
+        src1: './assets/audios/176.mp3',
+        src2: './assets/audios/177.mp3',
+        img:'./assets/images-main/lesson2/car9.jpg',
+    },
+    {
+        id:'car10',
+        quebec: "Bazou",
+        english: "Old car",
+        src1: './assets/audios/176.mp3',
+        img:'./assets/images-main/lessons/car.jpg',
+    },
+    {
+        id:'car11',
+        quebec: "Clotch",
+        english: "Vehicle clutch system",
+        src1: './assets/audios/176.mp3',
+        img:'./assets/images-main/lessons/car.jpg',
+    },
+    {
+        id:'car12',
+        quebec: "Brake à bras",
+        english: "Hand brake",
+        src1: './assets/audios/176.mp3',
+        img:'./assets/images-main/lessons/car.jpg',
+    },
+    {
+        id:'car13',
+        quebec: "Strappe",
+        english: "Belt",
+        src1: './assets/audios/176.mp3',
+        img:'./assets/images-main/lessons/car.jpg',
+    },
+    {
+        id:'car14',
+        quebec: "Tire de spare",
+        english: "Spare wheel",
+        src1: './assets/audios/176.mp3',
+        img:'./assets/images-main/lessons/car.jpg',
+    },
+    {
+        id:'car15',
+        quebec: "Robeur",
+        english: "Rubber",
+        src1: './assets/audios/176.mp3',
+        img:'./assets/images-main/lessons/car.jpg',
+    },
+    {
+        id:'car16',
+        quebec: "Spidomètre",
+        english: "Speed indicator",
+        src1: './assets/audios/176.mp3',
+        img:'./assets/images-main/lessons/car.jpg',
+    },
+    {
+        id:'car17',
+        quebec: "Valise",
+        english: "Rear trunk of a car",
+        src1: './assets/audios/176.mp3',
+        img:'./assets/images-main/lessons/car.jpg',
+    },
+    
+   
+    
+]
+
+
+export const lesson3 =[
+    {
+        id:'family1',
+        quebec: "Être en balloune",
+        english: "To be pregnant",
+        src1: './assets/audios/176.mp3',
+        img:'./assets/images-main/lesson3/family1.jpg',
+    },
+    {
+        id:'family2',
+        quebec: "Sauter la clôture",
+        english: "To have an extra marital affair",
+        src1: './assets/audios/176.mp3',
+        img:'./assets/images-main/lesson3/family2.jpg',
+    },
+    {
+        id:'family3',
+        quebec: "Être en famille",
+        english: "Being pregnant",
+        src1: './assets/audios/176.mp3',
+        img:'./assets/images-main/lesson3/family1.jpg',
+    },
+    {
+        id:'family4',
+        quebec: "Être accoté",
+        english: "To live together",
+        src1: './assets/audios/176.mp3',
+        img:'./assets/images-main/lesson3/family4.jpg',
+    },
+    {
+        id:'family5',
+        quebec: "Faire son coming-out",
+        english: "To come out of the closet",
+        src1: './assets/audios/176.mp3',
+        img:'./assets/images-main/lesson3/family5.jpg',
+    },
+    {
+        id:'family6',
+        quebec: "Faire une belle paire",
+        english: "forms a beautiful pair",
+        src1: './assets/audios/176.mp3',
+        img:'./assets/images-main/lesson3/family6.jpg',
+    },
+    {
+        id:'family7',
+        quebec: "Trouver chaussure à son pied",
+        english: "Find a good partner",
+        src1: './assets/audios/176.mp3',
+        img:'./assets/images-main/lesson3/family7.jpg',
+    },
+    {
+        id:'family8',
+        quebec: "Blonde",
+        english: "Girlfriend",
+        src1: './assets/audios/176.mp3',
+        img:'./assets/images-main/lesson3/family8.jpg',
+    },
+    {
+        id:'family9',
+        quebec: "Cliquer",
+        english: "Have good chemistry",
+        src1: './assets/audios/176.mp3',
+        img:'./assets/images-main/lesson3/family9.jpg',
+    },
+]
+
+
+export const lessons =  [
+    {
+        id: 'lesson1',
+        name: 'At the restaurant',
+        description: 'useful vocabulary ',
+        img:'./assets/images-main/lessons/restaurant.jpg',
+        link:"lesson1"
+    },
+    {
+        id: 'lesson2',
+        name: 'Car vocabulary',
+        description: 'https://carnaval.qc.ca/en/',
+        img:'./assets/images-main/lessons/car.jpg',
+        link:"lesson2"
+    },
+    {
+        id: 'lesson3',
+        name: 'Family',
+        description: 'https://carnaval.qc.ca/en/',
+        img:'./assets/images-main/lessons/family.jpg',
+        link:"lesson3"
+    },
+    {
+        // id: 'lesson4',
+        name: 'Comming soon...',
+        // description: 'https://carnaval.qc.ca/en/',
+        // img:'./assets/images-main/lessons/school.jpg',
+        // link:"lesson4"
+    },
 ]
